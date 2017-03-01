@@ -1,0 +1,28 @@
+/*
+    Header
+*/
+author = "HoverGuy";
+onLoadName = "Simple Shops";
+onLoadMission = "v 1.4";
+overviewPicture = "";
+
+/*
+    Classes
+*/
+
+#include "HG\UI\HG_DialogsMaster.h"
+
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_HUD.h"
+};
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+class CfgFunctions 
+{
+	#include "HG\Functions\HG_Functions.h"
+};

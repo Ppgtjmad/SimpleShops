@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="HG">
+    <Package name="General">
+	    <Key ID="STR_HG_CLOTHING_BOUGHT">
+		    <Original>You have bought clothes for a total of %1</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	    <Key ID="STR_HG_ITEM_BOUGHT">
+		    <Original>You have bought a %1 for %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_VEHICLE_BOUGHT">
+		    <Original>You have bought a %1 for %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NOTHING_TO_BUY">
+		    <Original>Nothing to buy</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
+		    <Original>You don't have enough money, requires %1</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ERR_ON_LOAD_1">
+		    <Original>::ERROR:: Dialog Loading - Passed param type is not a STRING</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ERR_ON_LOAD_2">
+		    <Original>::ERROR:: Dialog Loading - Passed param is an empty STRING</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ERR_ON_LOAD_3">
+		    <Original>::ERROR:: Dialog Loading - Passed param type is not an ARRAY</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ERR_ON_LOAD_4">
+		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ACCESS_DENIED">
+		    <Original>Access denied</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NOT_A_NUMBER">
+		    <Original>Value entered is not a number</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NEGATIVE_OR_ZERO">
+		    <Original>Value can't be negative or equal to zero</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_TOO_MUCH">
+		    <Original>You can't give more than what you have</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SENT_MONEY">
+		    <Original>You have sent %1 to %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_RECEIVED_MONEY">
+		    <Original>You have received %1 from %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_PAYCHECK_NOTF">
+		    <Original>You will receive your next paycheck in %1 minute(s)</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_TIME_TO_PAY">
+		    <Original>You have received a paycheck of %1, next in %2 minute(s)</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NONE">
+		    <Original>None</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NOTHING_TO_DISPLAY">
+		    <Original>Nothing to display</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_VEHICLE_LOCKED">
+		    <Original>Vehicle is now LOCKED</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_VEHICLE_UNLOCKED">
+		    <Original>Vehicle is now UNLOCKED</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SPAWN_POINTS_BUSY">
+		    <Original>All the available spawn points are busy</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NO_VEHICLES">
+		    <Original>There are no vehicles on the store point</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NO_OWNED_VEHICLES">
+		    <Original>There are no owned vehicles on the store point</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	</Package>
+	<Package name="Dialogs">
+	    <Container name="General">
+		    <Key ID="STR_HG_DLG_TOOLTIP">
+		        <Original>[HG] Simple Shops v1.3</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
+		        <Original>Close current dialog</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_MC">
+		        <Original>You have %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_MC_TOOLTIP">
+		        <Original>Hint your current cash</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_PRICE_TAG">
+		        <Original>Price: %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+	    <Container name="ClothingShop">
+			<Key ID="STR_HG_DLG_CS_TITLE_LIST">
+		        <Original>Available Clothing</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_CS_RESET_TOOLTIP">
+		        <Original>Reset gear</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>    
+		    <Key ID="STR_HG_DLG_CS_BUY_TOOLTIP">
+		        <Original>Buy selected item(s)</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_CS_SLIDER_TOOLTIP">
+		        <Original>Turn player left or right</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+		<Container name="Garage">
+		    <Key ID="STR_HG_GRG_REFRESH_TOOLTIP">
+		        <Original>Refresh garage</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_GRG_SPAWN_TOOLTIP">
+		        <Original>Spawn selected vehicle</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
+		        <Original>Delete selected vehicle (will be lost forever)</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_QUERYING_SERVER">
+		        <Original>Querying server...</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
+		        <Original>Requested vehicle is being spawned...</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
+		        <Original>Requested vehicle has be spawned</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_VEHICLE_DELETING">
+		        <Original>Selected vehicle is being deleted...</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_VEHICLE_DELETED">
+		        <Original>Selected vehicle has been deleted</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_GRG_VEHICLE_STORED">
+		        <Original>Vehicle has been stored</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+		<Container name="VehiclesShop">
+		    <Key ID="STR_HG_DLG_VS_TITLE_LIST">
+		        <Original>Available Vehicles</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
+		        <Original>Vehicle Infos</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_VS_BUY_TOOLTIP">
+		        <Original>Buy selected vehicle</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_VS_SPEED">
+		        <Original>Max Speed - %2 Mph</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_VS_ARMOR">
+		        <Original>Armor - %3 AP</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_VS_SEATS">
+		        <Original>Seats - %4</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_VS_ENGINE">
+		        <Original>Engine - %5 HP</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_VS_FUEL_MAX">
+		        <Original>Max Fuel - %6 L</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_VS_PRICE_TAG">
+		        <Original>Price - %7</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+        <Container name="WeaponsShop">
+			<Key ID="STR_HG_DLG_WS_BUY_TOOLTIP">
+		        <Original>Buy selected item</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+	</Package>
+	<Package name="Shops">
+	    <Key ID="STR_HG_SHOP_UNIFORMS">
+		    <Original>Uniforms</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_VESTS">
+		    <Original>Vests</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_BACKPACKS">
+		    <Original>Backpacks</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_HEADGEAR">
+		    <Original>Headgear</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_FACEWEAR">
+		    <Original>Facewear</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	    <Key ID="STR_HG_SHOP_SCOPES">
+		    <Original>Scopes</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_WEAPONS">
+		    <Original>Weapons</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_MAGAZINES">
+		    <Original>Magazines</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_ITEMS">
+		    <Original>Items</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_CIVILIAN">
+		    <Original>Civilian</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_MILITARY">
+		    <Original>Military</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_MARKER_1">
+		    <Original>Civilian HQ</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_MARKER_2">
+		    <Original>Military HQ</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	</Package>
+</Project>

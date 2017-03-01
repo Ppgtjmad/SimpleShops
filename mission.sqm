@@ -1,0 +1,230 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=13;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={3748.543,9.8563328,3717.0566};
+		dir[]={0.025859313,-0.67095768,0.74104774};
+		up[]={0.023399184,0.74149567,0.67054886};
+		aside[]={0.99939466,5.9821105e-008,-0.034874637};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Ui_F",
+	"A3_Structures_F_Civ_InfoBoards"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=12369516;
+class ScenarioData
+{
+	author="HoverGuy AKA PeePee";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Entities
+	{
+		items=6;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3748.1631,5.0014391,3720.9651};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeAllWeapons this; removeAllItems this;";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=3;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={3760.658,0,3723.1794};
+			name="military_vehicles_spawn_1";
+			text=" Military";
+			type="mil_warning";
+			colorName="ColorWEST";
+			id=6;
+			atlOffset=-5;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={3766.0442,0,3725.6582};
+			name="garage_spawn_1";
+			text=" Garage Spawn Point";
+			type="mil_warning";
+			colorName="ColorCIV";
+			id=9;
+			atlOffset=-5;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={3765.9436,0,3723.1489};
+			name="garage_store";
+			text=" Garage Store Point";
+			type="mil_warning";
+			colorName="ColorCIV";
+			id=10;
+			atlOffset=-5;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3748.2881,5.5753641,3722.6741};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""<img image='HG\UI\Icons\gun.paa' size='1.5'/><t color='#FF0000'>Open Weapons Shop</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\clothing.paa' size='1.5'/><t color='#FF0000'>Open Clothing Shop</t>"",{_this call HG_fnc_dialogOnLoadClothing},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\car.paa' size='1.5'/><t color='#FF0000'>Open Vehicles Shop</t>"",{_this call HG_fnc_dialogOnLoadVehicles},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Open Garage</t>"",{_this call HG_fnc_dialogOnLoadGarage},[""garage_spawn_1""],0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];  " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Store Vehicle</t>"",{_this call HG_fnc_storeVehicleC},""garage_store"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];";
+			};
+			id=11;
+			type="Land_InfoStand_V1_F";
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={3760.8162,0,3725.636};
+			name="civilian_vehicles_spawn_1";
+			text=" Civilian";
+			type="mil_warning";
+			colorName="ColorCIV";
+			id=5;
+			atlOffset=-5;
+		};
+	};
+};
