@@ -28,12 +28,13 @@
 #define HG_GARAGE_DELETE_BTN_IDC      6105
 
 #define HG_CLOTHING_SHOP_IDD	      7000
-#define HG_CLOTHING_SWITCH_IDC		  7001
-#define HG_CLOTHING_LIST_IDC          7002
-#define HG_CLOTHING_RESET_IDC         7003
-#define HG_CLOTHING_BUY_IDC           7004
-#define HG_CLOTHING_MC_IDC            7005
-#define HG_CLOTHING_SLIDER_IDC        7006
+#define HG_CLOTHING_TOTAL_IDC         7001
+#define HG_CLOTHING_SWITCH_IDC		  7002
+#define HG_CLOTHING_LIST_IDC          7003
+#define HG_CLOTHING_RESET_IDC         7004
+#define HG_CLOTHING_BUY_IDC           7005
+#define HG_CLOTHING_MC_IDC            7006
+#define HG_CLOTHING_SLIDER_IDC        7007
 
 #define HG_GM_IDD                     7100
 #define HG_GM_EDIT_IDC                7101

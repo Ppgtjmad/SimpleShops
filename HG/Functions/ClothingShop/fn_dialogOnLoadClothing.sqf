@@ -13,17 +13,27 @@ disableSerialization;
 
 createDialog "HG_ClothingShop";
 
-private["_shopList","_ind"];
+private["_shopList","_arr","_ind"];
 
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop);
 	
 lbClear HG_CLOTHING_SWITCH;
 HG_CLOTHING_SLIDER sliderSetRange [0,360];
+HG_STRING_HANDLER = _whatShop;
 
 {
-	_ind = HG_CLOTHING_SWITCH lbAdd (getText(_x >> "displayName"));
-	HG_CLOTHING_SWITCH lbSetData [_ind,format["%1/%2",_whatShop,(configName _x)]];
-	HG_CLOTHING_SWITCH lbSetValue [_ind,(getNumber(_x >> "cameraType"))];
+    _arr = switch (configName _x) do
+	{
+	    case "Glasses": {[(localize "STR_HG_SHOP_FACEWEAR"),0]};
+		case "Headgear": {[(localize "STR_HG_SHOP_HEADGEAR"),0]};
+		case "Vest": {[(localize "STR_HG_SHOP_VESTS"),2]};
+		case "Uniform": {[(localize "STR_HG_SHOP_UNIFORMS"),2]};
+		case "Backpack": {[(localize "STR_HG_SHOP_BACKPACKS"),1]};
+	};
+	
+	_ind = HG_CLOTHING_SWITCH lbAdd (_arr select 0);
+	HG_CLOTHING_SWITCH lbSetData [_ind,(configName _x)];
+	HG_CLOTHING_SWITCH lbSetValue [_ind,(_arr select 1)];
 } forEach _shopList;
 
 HG_CLOTHING_SWITCH lbSetCurSel 0;

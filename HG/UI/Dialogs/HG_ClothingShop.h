@@ -68,6 +68,15 @@ class HG_ClothingShop
 			h = 2 * GUI_GRID_H;
 		};
 		
+		class TotalText: HG_RscText
+		{
+			idc = HG_CLOTHING_TOTAL_IDC;
+			x = 20 * GUI_GRID_W + GUI_GRID_X;
+			y = -10 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8.5 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
 		class ResetBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\reset.paa";
@@ -144,7 +153,7 @@ class HG_ClothingShop
 		{
 			idc = HG_CLOTHING_BUY_IDC;
 			tooltip = "$STR_HG_DLG_CS_BUY_TOOLTIP";
-			onButtonClick = "_this call HG_fnc_buyClothing";
+			onButtonClick = "[] call HG_fnc_buyClothing";
 			x = 30 * GUI_GRID_W + GUI_GRID_X;
 			y = -10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
@@ -169,7 +178,7 @@ class HG_ClothingShop
 			tooltip = "$STR_HG_DLG_CS_SLIDER_TOOLTIP";
 			x = 3.5 * GUI_GRID_W + GUI_GRID_X;
 			y = -9.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 22.5 * GUI_GRID_W;
+			w = 16 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
 		

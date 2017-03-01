@@ -11,10 +11,8 @@
 			whitelisted - BOOL - Is the shop whitelisted?
 		    whitelistRank - STRING - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL, not used when whitelisted is set to false
 			
-			class YourShopCategory - Shop category, can be whatever you want (Facewear, Uniforms, etc...)
+			class ShopCategory - Shop category, can only be Glasses/Headgear/Vest/Uniform/Backpack
 			{
-				displayName - STRING - Category display name
-				cameraType - INTEGER - Camera type - Used for the camera positioning - MANDATORY / 0 = Headgear / Facewear - 1 = Backpack - 2 = Uniform / Vest
 				content - ARRAY OF ARRAYS - Shop content
 				|- 0 - STRING - Classname
 				|- 1 - INTEGER - Price
@@ -30,10 +28,8 @@ class HG_ClothingShopCfg // Has to be left untouched
 		whitelisted = false;
 		whitelistRank = "";
 		
-		class Facewear
+		class Glasses
 		{
-			displayName = "$STR_HG_SHOP_FACEWEAR";
-			cameraType = 0;
 			content[] =
 			{
 				{"G_Balaclava_blk",50},
@@ -43,38 +39,30 @@ class HG_ClothingShopCfg // Has to be left untouched
 		
 		class Headgear
 		{
-			displayName = "$STR_HG_SHOP_HEADGEAR";
-			cameraType = 0;
 			content[] =
 			{
 				{"H_HelmetB_light_grass",1500}
 			};
 		};
 		
-		class Vests
+		class Vest
 	    {
-	        displayName = "$STR_HG_SHOP_VESTS";
-			cameraType = 2;
 		    content[] =
 		    {
 		        {"V_PlateCarrierGL_mtp",500}
 		    };
 	    };
 		
-        class Uniforms
+        class Uniform
 	    {
-	        displayName = "$STR_HG_SHOP_UNIFORMS";
-			cameraType = 2;
 		    content[] =
 		    {
 		        {"U_B_FullGhillie_ard",150}
 		    };
 	    };
 		
-		class Backpacks
+		class Backpack
 		{
-			displayName = "$STR_HG_SHOP_BACKPACKS";
-			cameraType = 1;
 			content[] =
 			{
 				{"B_Carryall_oucamo",800}

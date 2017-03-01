@@ -1,4 +1,4 @@
-<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.3</h1>
+<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.5</h1>
 
 <b>How to try it</b>
 
@@ -139,3 +139,6 @@ _v 1.4_<br/>
 Garage - Dialog can be moved with mouse while holding top left icon<br/>
 Weapons Shop - Dialog can be moved with mouse while holding top left icon<br/>
 Global - Better currency support
+
+_v 1.5_<br/>
+Clothing Shop - Added total price text in top bar & added option to remove glasses/headgear/uniform/vest/backpack in dialog list

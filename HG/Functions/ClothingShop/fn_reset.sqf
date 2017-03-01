@@ -53,5 +53,6 @@ if((HG_GEAR_SAVED select 6) != "") then
 };
 
 HG_GEAR_PREVIEW = [[],[],[],[],[]];
+HG_CLOTHING_TOTAL ctrlSetText format[(localize "STR_HG_DLG_CS_TOTAL_TEXT"),([0,true] call HG_fnc_currencyToText)]; 
 
 true;

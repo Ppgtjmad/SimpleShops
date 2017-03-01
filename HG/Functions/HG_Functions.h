@@ -13,7 +13,6 @@ class HG
 		class dialogOnLoadClothing {};
 		class dialogOnUnloadClothing {};
 		class fillBox {};
-		class gearPreview {};
 		class reset {};
 	    class setCamPos {};
 		class xClothingSelectionChanged {};

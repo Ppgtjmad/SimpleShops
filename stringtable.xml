@@ -25,14 +25,6 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
-		<Key ID="STR_HG_NOTHING_TO_BUY">
-		    <Original>Nothing to buy</Original>
-		    <French></French>
-			<German></German>
-			<Russian></Russian>
-			<Spanish></Spanish>
-			<Italian></Italian>
-		</Key>
 		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
 		    <Original>You don't have enough money, requires %1</Original>
 		    <French></French>
@@ -197,7 +189,7 @@
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v1.3</Original>
+		        <Original>[HG] Simple Shops v1.5</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -246,6 +238,22 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
+			<Key ID="STR_HG_DLG_CS_TOTAL_TEXT">
+			    <Original>Total - %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+			</Key>
+			<Key ID="STR_HG_DLG_CS_REMOVE">
+			    <Original>Remove %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+			</Key>
 			<Key ID="STR_HG_DLG_CS_RESET_TOOLTIP">
 		        <Original>Reset gear</Original>
 		        <French></French>
