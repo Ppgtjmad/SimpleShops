@@ -78,22 +78,29 @@ Weapons Shop
 ```
 this addAction["<img image='HG\UI\gun.paa' size='1.5'/><t color='#FF0000'>Open Weapons Shop</t>",{_this call HG_fnc_dialogOnLoadItems},"HG_DefaultShop",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 ```
+"HG_DefaultShop" refers to the class in the vehicles shop config, can be anything you want as long as it's defined in the proper config file
 
 Clothing Shop
 ```
 this addAction["<img image='HG\UI\clothing.paa' size='1.5'/><t color='#FF0000'>Open Clothing Shop</t>",{_this call HG_fnc_dialogOnLoadClothing},"HG_DefaultShop",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 ```
+"HG_DefaultShop" refers to the class in the vehicles shop config, can be anything you want as long as it's defined in the proper config file
 
 Vehicles Shop
 ```
 this addAction["<img image='HG\UI\car.paa' size='1.5'/><t color='#FF0000'>Open Vehicles Shop</t>",{_this call HG_fnc_dialogOnLoadVehicles},"HG_DefaultShop",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 ```
+"HG_DefaultShop" refers to the class in the vehicles shop config, can be anything you want as long as it's defined in the proper config file
 
 Virtual Garage
 ```
 this addAction["<img image='HG\UI\garage.paa' size='1.5'/><t color='#FF0000'>Open Garage</t>",{_this call HG_fnc_dialogOnLoadGarage},["garage_spawn_1"],0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 this addAction["<img image='HG\UI\garage.paa' size='1.5'/><t color='#FF0000'>Store Vehicle</t>",{_this call HG_fnc_storeVehicleC},"garage_store",0,false,false,"",'(alive player) && !dialog && player distance _target < 3'];
 ```
+["garage_spawn_1"] is an array of strings (markers) that are required to spawn vehicles, you can have many<br/>
+"garage_store" is the marker where you have to park your vehicle for the garage system to be able to detect it & therefore store it properly
+
+Note: A store point can also be used as a spawn point & reciprocally
 
 <b>Updates</b>
 
