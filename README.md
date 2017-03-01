@@ -2,8 +2,9 @@
 
 <b>How to try it</b>
 
-Copy the whole HG.VR folder to your Arma 3 mission folder (the one attached to the profile you use)
-Go in game and load the mission
+Download ZIP folder, make a folder called HG.VR, move all files from downloaded folder to HG.VR<br/>
+Put HG.VR in your mission folder (the one tied to your profile)<br/>
+Go in game, select <b>Virtual Reality</b> world and load the mission
 
 <b>How to use it in your custom mission</b>
 
