@@ -8,7 +8,34 @@ Go in game, select <b>Virtual Reality</b> world and load the mission
 
 <b>How to use it in your custom mission</b>
 
-You should know how to do it, do you?
+Copy <b>HG</b> folder to your mission root directory<br/>
+Copy <b>stringtable.xml</b> (or merge with yours)<br/>
+Copy <b>initPlayerLocal.sqf</b> (or merge with yours)<br/>
+Copy <b>initPlayerServer.sqf</b> (or merge with yours)<br/>
+Copy <b>initServer.sqf</b> (or merge with yours)<br/>
+
+Open your <b>description.ext</b> & add this at the end:
+
+```
+#include "HG\UI\HG_DialogsMaster.h"
+
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_HUD.h"
+};
+
+class CfgClient
+{
+    #include "HG\Config\HG_Config.h"
+};
+
+class CfgFunctions 
+{
+	#include "HG\Functions\HG_Functions.h"
+};
+```
+
+Note: If your already have a description.ext just copy the relevant parts
 
 <b>How to configure</b>
 
@@ -21,8 +48,8 @@ HG\Config\HG_WeaponsShopCfg.h
 
 <b>How to setup kill reward</b>
 
-Note1: If you use AIs in your mission, make sure to add this code in the file where you spawn AIs.<br/>
-Note2: If you already have a Killed EVH set on AIs, just copy the relevant part.
+Note1: If you use AIs in your mission, make sure to add this code in the file where you spawn AIs<br/>
+Note2: If you already have a Killed EVH set on AIs, just copy the relevant part
 
 ```
 if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
