@@ -4,10 +4,13 @@
 */
 
 /*
-    Add action to player
+    Add give money action to player (if applicable)
 */
-player addAction["<img image='HG_SWSS\UI\money.paa' size='1.5'/><t color='#FF0000'>Give Money</t>",{HG_CURSOR_OBJECT = cursorObject; createDialog "HG_GiveMoney"},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (alive cursorObject) AND (player distance cursorObject < 2) AND !dialog'];
-
+if((getNumber(missionConfigFile >> "CfgClient" >> "enableGiveMoney")) isEqualTo 1) then
+{
+    player addAction["<img image='HG_SWSS\UI\money.paa' size='1.5'/><t color='#FF0000'>Give Money</t>",{HG_CURSOR_OBJECT = cursorObject; createDialog "HG_GiveMoney"},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (alive cursorObject) AND (player distance cursorObject < 2) AND !dialog'];
+};
+	
 /*
     Init money variable
 */
@@ -22,7 +25,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) th
 };
 
 /*
-    Init HUD if applicable
+    Init HUD (if applicable)
 */
 if((getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1) then
 {
@@ -30,7 +33,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1) the
 };
 
 /*
-    Init paycheck thread if applicable
+    Init paycheck thread (if applicable)
 */
 if((getNumber(missionConfigFile >> "CfgClient" >> "enablePaycheck")) isEqualTo 1) then
 {
@@ -48,7 +51,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enablePaycheck")) isEqualTo 1
 };
 
 /*
-    Killed EVH for money reward
+    Killed EVH for money reward (if applicable)
 */
 if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
 {

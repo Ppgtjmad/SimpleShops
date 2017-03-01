@@ -14,7 +14,11 @@ params[["_price",0]];
 } forEach HG_GEAR_PREVIEW;
 
 [_price,1] call HG_fnc_addOrSubCash;
-[] call HG_fnc_fillBox;
+
+if((getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1) then
+{
+    [] call HG_fnc_fillBox;
+};
 
 HG_CLOTHING_BOUGHT = true;
 HG_GEAR_SAVED = [(goggles player),(headgear player),(vest player),(vestItems player),(uniform player),(uniformItems player),(backpack player),(backpackItems player)];

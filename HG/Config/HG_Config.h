@@ -10,6 +10,8 @@
 	enablePaycheck - BOOL - Enable paycheck?
 	enableKillReward - BOOL - Only works with REAL players not AIs (has to be setup separately in your AI spawn system)
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
+	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
+	enableGiveMoney - BOOL - Enable ability to give money to others?
 	clearInventory - BOOL - Clear vehicle inventory when spawning?
 	
 	class HG_MoneyCfg
@@ -32,6 +34,8 @@ enableHUD = true;
 enablePaycheck = true;
 enableKillReward = true;
 enableTeamKillPenalty = true;
+enableCrate = true;
+enableGiveMoney = true;
 clearInventory = true;
 
 class HG_MoneyCfg

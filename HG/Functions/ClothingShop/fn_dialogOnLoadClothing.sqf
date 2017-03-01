@@ -38,19 +38,22 @@ HG_STRING_HANDLER = _whatShop;
 
 HG_CLOTHING_SWITCH lbSetCurSel 0;
 
-if(isNil "HG_PLAYER_BOX") then
+if(((getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1) AND (isNil "HG_PLAYER_BOX")) then
 {
-    HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
-    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Delete Crate</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
-	HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Empty Crate</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0)},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
+    if(isNil "HG_PLAYER_BOX") then
+	{
+	    HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
+        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Delete Crate</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
+	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Empty Crate</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0)},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
+	};
+	
+    HG_PLAYER_BOX setPos [(getPos player select 0)+1,(getPos player select 1),(getPos player select 2)];
+    HG_PLAYER_BOX setDir (getDir player)+90;
+    clearItemCargo HG_PLAYER_BOX;
+    clearMagazineCargo HG_PLAYER_BOX;
+    clearWeaponCargo HG_PLAYER_BOX;
+    clearBackpackCargo HG_PLAYER_BOX;
 };
-
-HG_PLAYER_BOX setPos [(getPos player select 0)+1,(getPos player select 1),(getPos player select 2)];
-HG_PLAYER_BOX setDir (getDir player)+90;
-clearItemCargo HG_PLAYER_BOX;
-clearMagazineCargo HG_PLAYER_BOX;
-clearWeaponCargo HG_PLAYER_BOX;
-clearBackpackCargo HG_PLAYER_BOX;
 
 if(sunOrMoon <= 0.5) then
 {
