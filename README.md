@@ -143,4 +143,6 @@ Weapons Shop - Dialog can be moved with mouse while holding top left icon<br/>
 Global - Better currency support
 
 _v 1.5_<br/>
-Clothing Shop - Added total price text in top bar & added option to remove glasses/headgear/uniform/vest/backpack in dialog list
+Clothing Shop - Added total price text in top bar & added option to remove glasses/headgear/uniform/vest/backpack in dialog list<br/>
+Global - Toggleable clothing crate<br/>
+Global - Toggleable give money action<br/>
