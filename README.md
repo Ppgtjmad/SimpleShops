@@ -50,6 +50,8 @@ HG\Config\HG_WeaponsShopCfg.h
 
 <b>How to setup kill reward</b>
 
+<i>Has to be enabled in HG_Config.h first (see enableKillReward).</i>
+
 Note1: If you use AIs in your mission, make sure to add this code in the file where you spawn AIs<br/>
 Note2: If you already have a Killed EVH set on AIs, just copy the relevant part
 
