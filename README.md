@@ -67,7 +67,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo
 
             if(isPlayer _killer) then
             {
-	            if((side _killer) isEqualTo playerSide) then
+	            if((side _killer) isEqualTo (side _unit)) then
 		        {
 		            if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
 		            {
