@@ -5,8 +5,8 @@
 */
 params["_amount","_mode","_saveEnabled","_hudEnabled","_oldVal","_newVal"];
 
-_saveEnabled = if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then {true} else {false};
-_hudEnabled = if((getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1) then {true} else {false};
+_saveEnabled = (getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1;
+_hudEnabled = (getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1;
 
 if(_saveEnabled) then
 {
