@@ -75,4 +75,19 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo
 			};			
 		}
 	];
+	
+	HG_RATING_EVH = player addEventHandler
+	[
+	    "HandleRating",
+		{
+		    params["_unit","_rating"];
+			
+			if(_rating <= 0) then
+			{
+			    _rating = 0;
+			};
+			
+			_rating;
+		}
+	];
 };
