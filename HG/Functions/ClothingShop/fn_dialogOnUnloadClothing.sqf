@@ -16,13 +16,6 @@ if(!isNull HG_PLAYER_PREVIEW) then
 	HG_PLAYER_PREVIEW = nil;
 };
 
-{
-    if(_x != player) then 
-	{
-	    _x hideObject false;
-	};
-} forEach playableUnits;
-
 HG_CAMERA_PREVIEW cameraEffect ["TERMINATE","BACK"];
 camDestroy HG_CAMERA_PREVIEW;
 

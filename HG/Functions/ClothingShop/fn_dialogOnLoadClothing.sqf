@@ -80,11 +80,4 @@ HG_GEAR_PREVIEW = [[],[],[],[],[]];
 HG_GEAR_SAVED = [(goggles player),(headgear player),(vest player),(vestItems player),(uniform player),(uniformItems player),(backpack player),(backpackItems player)];
 HG_CLOTHING_BOUGHT = false;
 
-{
-    if(_x != player) then 
-	{
-	    _x hideObject true;
-	};
-} forEach playableUnits;
-
 true;
