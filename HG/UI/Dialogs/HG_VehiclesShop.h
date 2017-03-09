@@ -24,14 +24,6 @@ class HG_VehiclesShop
 			h = 1.5 * GUI_GRID_H;
 		};
 		
-		class ListWhiteLine: HG_RscPicture
-		{
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
-		};
-		
 		class ListBackground: HG_RscText
 		{
 			colorBackground[] = {0,0,0,0.5};
@@ -44,9 +36,18 @@ class HG_VehiclesShop
 		class ListBackgroundFrame: HG_RscFrame
 		{
 			x = -28 * GUI_GRID_W + GUI_GRID_X;
+			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 22.5 * GUI_GRID_H;
+		};
+		
+		class ListWhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = -28 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 21 * GUI_GRID_H;
+			h = 0.1 * GUI_GRID_H;
 		};
 		
 		class TextHeader: HG_RscText
@@ -72,9 +73,18 @@ class HG_VehiclesShop
 		class TextBackgroundFrame: HG_RscFrame
 		{
 			x = 49 * GUI_GRID_W + GUI_GRID_X;
+			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 22.5 * GUI_GRID_H;
+		};
+		
+		class TextWhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 49 * GUI_GRID_W + GUI_GRID_X;
 			y = 3 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 21 * GUI_GRID_H;
+			h = 0.1 * GUI_GRID_H;
 		};
 		
 		class ActionBarBackground: HG_RscText

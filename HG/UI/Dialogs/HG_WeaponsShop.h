@@ -22,14 +22,6 @@ class HG_WeaponsShop
 			h = 2 * GUI_GRID_H;
 		};
 		
-		class WhiteLine: HG_RscPicture
-		{
-			x = 3 * GUI_GRID_W + GUI_GRID_X;
-			y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 34 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
-		};
-		
 		class Background: HG_RscText
 		{
 			colorBackground[] = {0,0,0,0.5};
@@ -42,9 +34,18 @@ class HG_WeaponsShop
 		class BackgroundFrame: HG_RscFrame
 		{
 			x = 3 * GUI_GRID_W + GUI_GRID_X;
-		    y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+		    y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 		    w = 34 * GUI_GRID_W;
-		    h = 19.5 * GUI_GRID_H;
+		    h = 21.5 * GUI_GRID_H;
+		};
+		
+		class WhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 3 * GUI_GRID_W + GUI_GRID_X;
+			y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 34 * GUI_GRID_W;
+			h = 0.1 * GUI_GRID_H;
 		};
 		
 		class ShopPicture: HG_RscPicture

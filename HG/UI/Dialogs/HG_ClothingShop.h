@@ -24,14 +24,6 @@ class HG_ClothingShop
 			h = 1.5 * GUI_GRID_H;
 		};
 		
-		class ListWhiteLine: HG_RscText
-		{
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
-		};
-		
 		class ListBackground: HG_RscText
 		{
 			colorBackground[] = {0,0,0,0.5};
@@ -44,9 +36,18 @@ class HG_ClothingShop
 		class ListBackgroundFrame: HG_RscFrame
 		{
 			x = -28 * GUI_GRID_W + GUI_GRID_X;
+			y = 4 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 21 * GUI_GRID_H;
+		};
+		
+		class ListWhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = -28 * GUI_GRID_W + GUI_GRID_X;
 			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 19.5 * GUI_GRID_H;
+			h = 0.1 * GUI_GRID_H;
 		};
 		
 		class ActionBarBackground: HG_RscText

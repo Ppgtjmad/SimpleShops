@@ -1,4 +1,6 @@
 /*
+    Author - HoverGuy
+    © All Fucks Reserved
     Player server initialization
 */
 params["_player"];

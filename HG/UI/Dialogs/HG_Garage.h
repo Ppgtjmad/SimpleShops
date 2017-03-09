@@ -33,12 +33,21 @@ class HG_Garage
 			h = 17 * GUI_GRID_H;
 		};
 		
-		class Frame: HG_RscFrame
+		class BackgroundFrame: HG_RscFrame
 		{
+			x = 9 * GUI_GRID_W + GUI_GRID_X;
+			y = 3 * GUI_GRID_H + GUI_GRID_Y;
+			w = 22 * GUI_GRID_W;
+			h = 19 * GUI_GRID_H;
+		};
+		
+		class WhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
 			x = 9 * GUI_GRID_W + GUI_GRID_X;
 			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 22 * GUI_GRID_W;
-			h = 17 * GUI_GRID_H;
+			h = 0.1 * GUI_GRID_H;
 		};
 		
 		class MainPicture: HG_RscPicture
