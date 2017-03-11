@@ -5,6 +5,12 @@
 
 class HG
 {
+	class AI
+	{
+	    file = "HG\Functions\AI";
+		class aiSetup {};
+	};
+	
 	class ClothingShop
 	{
 		file = "HG\Functions\ClothingShop";
