@@ -52,49 +52,11 @@ HG\Config\HG_WeaponsShopCfg.h
 
 <i>Has to be enabled in HG_Config.h first (see enableKillReward).</i>
 
-Note1: If you use AIs in your mission, make sure to add this code in the file where you spawn AIs<br/>
-Note2: If you already have a Killed EVH set on AIs, just copy the relevant part
+Note: If you use AIs in your mission, make sure to add this line in the file where you spawn AIs<br/>
 
 ```
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
-{
-    // _ai represents the already created AI unit
-    _ai addEventHandler
-    [
-        "Killed",
-        {
-            params ["_unit","_killer"];
-
-            if(isPlayer _killer) then
-            {
-	            if((side _killer) isEqualTo (side _unit)) then
-		        {
-		            if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
-		            {
-		                [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank _unit) >> "tkPenalty")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
-		            };
-		        } else {
-                    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank _unit) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
-                };
-			};
-        }
-    ];
-    
-    _ai addEventHandler
-    [
-        "HandleRating",
-        {
-            params["_unit","_rating"];
-			
-            if(_rating <= 0) then
-            {
-                _rating = 0;
-            };
-			
-            _rating;
-        }
-    ];
-};
+// _AI is the unit
+[_AI] call HG_fnc_aiSetup;
 ```
 
 <b>Usage</b>
