@@ -133,3 +133,9 @@ _v 1.5_<br/>
 Clothing Shop - Added total price text in top bar & added option to remove glasses/headgear/uniform/vest/backpack in dialog list<br/>
 Global - Toggleable clothing crate<br/>
 Global - Toggleable give money action<br/>
+
+_v 1.6_<br/>
+Global - Fixed rewards
+Global - Added rating handling (players can't have negative rating anymore so they are not considered enemies)
+Global - Fixed cash hints
+Global - Removed hiding of units when in shop view (muzzle flashs were still visible)
