@@ -41,7 +41,7 @@ class HG_VehiclesShopCfg // Has to be left untouched
 		    };
 			spawnPoints[] =
 			{
-				{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn"}}
+				{"$STR_HG_MARKER_1",{"civilian_vehicles_spawn_1"}}
 			};
 	    };
 	
@@ -54,7 +54,7 @@ class HG_VehiclesShopCfg // Has to be left untouched
 		    };
 			spawnPoints[] =
 			{
-				{"$STR_HG_MARKER_2",{"military_vehicles_spawn"}}
+				{"$STR_HG_MARKER_2",{"military_vehicles_spawn_1"}}
 			};
 	    };
 	};
