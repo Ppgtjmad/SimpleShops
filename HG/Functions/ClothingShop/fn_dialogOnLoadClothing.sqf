@@ -38,7 +38,7 @@ HG_STRING_HANDLER = _whatShop;
 
 HG_CLOTHING_SWITCH lbSetCurSel 0;
 
-if(((getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1) AND (isNil "HG_PLAYER_BOX")) then
+if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
 {
     if(isNil "HG_PLAYER_BOX") then
 	{

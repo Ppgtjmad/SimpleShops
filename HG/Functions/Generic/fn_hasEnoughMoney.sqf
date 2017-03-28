@@ -2,11 +2,9 @@
     Author - HoverGuy
     © All Fucks Reserved
 */
-params["_value","_saveEnabled","_cash",["_hasEnough",false]];
+params["_value","_cash",["_hasEnough",false]];
 
-_saveEnabled = if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then {true} else {false};
-
-if(_saveEnabled) then
+if(HG_SAVE_ENABLED) then
 {
     _cash = profileNamespace getVariable "HG_Save";
 } else {

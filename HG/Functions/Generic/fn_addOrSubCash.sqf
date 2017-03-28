@@ -3,12 +3,9 @@
     Description - Used to add or substract money from the money variable
     © All Fucks Reserved
 */
-params["_amount","_mode","_saveEnabled","_hudEnabled","_oldVal","_newVal"];
+params["_amount","_mode","_oldVal","_newVal"];
 
-_saveEnabled = (getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1;
-_hudEnabled = (getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1;
-
-if(_saveEnabled) then
+if(HG_SAVE_ENABLED) then
 {
     _oldVal = profileNamespace getVariable "HG_Save";
 } else {
@@ -27,7 +24,7 @@ switch(_mode) do
 	};
 };
 
-if(_saveEnabled) then
+if(HG_SAVE_ENABLED) then
 {
     profileNamespace setVariable["HG_Save",_newVal];
 	saveProfileNamespace;
@@ -35,7 +32,7 @@ if(_saveEnabled) then
     player setVariable["HG_myCash",_newVal];
 };
 
-if(_hudEnabled) then
+if(HG_HUD_ENABLED) then
 {
     [1] call HG_fnc_HUD;
 };

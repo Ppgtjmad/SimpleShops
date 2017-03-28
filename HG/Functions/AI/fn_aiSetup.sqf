@@ -4,11 +4,11 @@
 */
 params["_ai"];
 
+// _ai represents the passed AI to the function
 if(_ai != "OBJECT") exitWith {diag_log (localize "STR_HG_ERR_NOT_OBJECT");};
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
+if(HG_KILL_REWARD_ENABLED) then
 {
-    // _ai represents the passed AI to the function
     _ai addEventHandler
     [
         "Killed",
@@ -19,7 +19,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo
             {
                 if((side _killer) isEqualTo (side _unit)) then
                 {
-                    if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
+                    if(HG_TEAM_KILL_PENALTY_ENABLED) then
                     {
                         [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank _unit) >> "tkPenalty")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
                     };

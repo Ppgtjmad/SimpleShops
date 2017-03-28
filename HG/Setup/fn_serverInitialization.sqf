@@ -37,6 +37,13 @@ HG_fnc_spawnVehicle =
 	_vehicle setDir (markerDir _sp);
 	_vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate],true];
 	_vehicle lock 2;
+	if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1) then
+	{
+		clearItemCargoGlobal _vehicle;
+	    clearMagazineCargoGlobal _vehicle;
+		clearWeaponCargoGlobal _vehicle;
+		clearBackpackCargoGlobal _vehicle;
+	};
 	_vehicle allowDamage true;
 	[_vehicle] remoteExecCall ["HG_fnc_addActions",(owner _unit),false];
 	_garage = profileNamespace getVariable[format["HG_Garage_%1",(getPlayerUID _unit)],[]];

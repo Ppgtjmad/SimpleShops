@@ -17,7 +17,7 @@ switch(_mode) do
 	case 1:
 	{
 	    private "_cash";
-	    if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then
+	    if(HG_SAVE_ENABLED) then
 		{
 		    _cash = profileNamespace getVariable "HG_Save";
 		} else {

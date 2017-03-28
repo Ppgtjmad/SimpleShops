@@ -15,7 +15,7 @@ params[["_price",0]];
 
 [_price,1] call HG_fnc_addOrSubCash;
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1) then
+if(HG_CRATE_ENABLED) then
 {
     [] call HG_fnc_fillBox;
 };

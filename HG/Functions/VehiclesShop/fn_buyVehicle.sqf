@@ -28,7 +28,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 		_vehicle setVariable["HG_Owner",[(getPlayerUID player),round(random(100000))],true];
 		_vehicle lock 2;
 		[_vehicle] call HG_fnc_addActions;
-		if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1) then
+		if(HG_CLEAR_INVENTORY_ENABLED) then
 		{
 		    clearItemCargoGlobal _vehicle;
 			clearMagazineCargoGlobal _vehicle;
