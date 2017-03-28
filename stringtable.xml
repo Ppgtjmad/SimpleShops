@@ -228,6 +228,14 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
+			<Key ID="STR_HG_DLG_MC_TOOLTIP_DISABLED">
+		        <Original>Not available when HUD is enabled</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
 			<Key ID="STR_HG_DLG_PRICE_TAG">
 		        <Original>Price: %1</Original>
 		        <French></French>

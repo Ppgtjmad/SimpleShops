@@ -15,6 +15,15 @@ createDialog "HG_WeaponsShop";
 
 private["_shopList","_ind"];
 
+if(HG_HUD_ENABLED) then 
+{
+    HG_WEAPONS_MC ctrlEnable false; 
+	HG_WEAPONS_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP_DISABLED");
+} else {
+    HG_WEAPONS_MC ctrlEnable true;
+	HG_WEAPONS_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP");
+};
+
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_WeaponsShopCfg" >> _whatShop);
 	
 lbClear HG_WEAPONS_ITEM_SWITCH;
