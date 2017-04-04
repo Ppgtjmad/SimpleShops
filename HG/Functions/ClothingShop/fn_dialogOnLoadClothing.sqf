@@ -15,15 +15,6 @@ createDialog "HG_ClothingShop";
 
 private["_shopList","_arr","_ind"];
 
-if(HG_HUD_ENABLED) then 
-{
-    HG_CLOTHING_MC ctrlEnable false; 
-	HG_CLOTHING_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP_DISABLED");
-} else {
-    HG_CLOTHING_MC ctrlEnable true;
-	HG_CLOTHING_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP");
-};
-
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop);
 	
 lbClear HG_CLOTHING_SWITCH;

@@ -7,7 +7,7 @@
     Init variables
 */
 HG_SAVE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1;
-HG_RESET_SAVE_MONEY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1;
+HG_RESET_SAVED_MONEY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1;
 HG_HUD_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1;
 HG_PAYCHECK_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
@@ -21,13 +21,13 @@ HG_CLEAR_INVENTORY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "cle
 */
 if(HG_SAVE_ENABLED) then
 {
-    if((isNil {profileNamespace getVariable "HG_Save"}) OR HG_RESET_SAVE_MONEY_ENABLED) then
+    if((isNil {profileNamespace getVariable "HG_Save"}) OR HG_RESET_SAVED_MONEY_ENABLED) then
 	{
 	    profileNamespace setVariable["HG_Save",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank player) >> "startCash"))];
 	};
 } else {
     player setVariable["HG_myCash",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank player) >> "startCash"))];
-}
+};
 
 /*
     Init HUD (if applicable)
@@ -50,6 +50,7 @@ if(HG_PAYCHECK_ENABLED OR HG_GIVE_MONEY_ENABLED) then
 	{
 	    HG_PAYCHECK_THREAD = [] spawn HG_fnc_paycheck;
 	};
+	
 	HG_RESPAWN_EVH = player addEventHandler
     [
         "Respawn",

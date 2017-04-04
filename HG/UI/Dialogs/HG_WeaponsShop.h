@@ -169,6 +169,7 @@ class HG_WeaponsShop
 		{
 			idc = HG_WEAPONS_MC_IDC;
 			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),if(HG_SAVE_ENABLED) then {[(profileNamespace getVariable 'HG_Save'),true] call HG_fnc_currencyToText} else {[(player getVariable 'HG_myCash'),true] call HG_fnc_currencyToText}]";
+			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;

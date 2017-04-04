@@ -18,15 +18,6 @@ HG_VEHICLE_PREVIEW = objNull;
 
 private["_shopList","_ind","_h"];
 
-if(HG_HUD_ENABLED) then 
-{
-    HG_VEHICLES_MC ctrlEnable false; 
-	HG_VEHICLES_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP_DISABLED");
-} else {
-    HG_VEHICLES_MC ctrlEnable true;
-	HG_VEHICLES_MC ctrlSetTooltip (localize "STR_HG_DLG_MC_TOOLTIP");
-};
-
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
 
 lbClear HG_VEHICLES_SWITCH;
