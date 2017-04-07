@@ -2,10 +2,10 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
-private "_value";
 
-_value = parseNumber(ctrlText HG_GM_EDIT);
+private _value = parseNumber(ctrlText HG_GM_EDIT);
 
 if(!([_value] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
 if(_value <= 0) exitWith {hint (localize "STR_HG_NEGATIVE_OR_ZERO");};

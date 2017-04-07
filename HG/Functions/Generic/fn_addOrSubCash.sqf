@@ -2,6 +2,7 @@
     Author - HoverGuy
     Description - Used to add or substract money from the money variable
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_amount","_mode","_oldVal","_newVal"];
 

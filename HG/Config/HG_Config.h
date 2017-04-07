@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 	
 	currencyType - STRING - Currency you want to use (ISO format)
 	enableSave - BOOL - Save money?
@@ -12,7 +13,9 @@
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
-	clearInventory - BOOL - Clear vehicle inventory when spawning?
+	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
+	enablePlayerInventorySave - BOOL - Enable player gear saving (client profileNamespace)? Disable this if you have a custom saving system
+	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	
 	class HG_MoneyCfg
 	{
@@ -37,6 +40,8 @@ enableTeamKillPenalty = true;
 enableCrate = true;
 enableGiveMoney = true;
 clearInventory = true;
+enablePlayerInventorySave = true;
+enableVehicleInventorySave = true;
 
 class HG_MoneyCfg
 {

@@ -3,6 +3,7 @@
     Author - HoverGuy
     Description - Called when you click "Buy" button in dialog
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 private "_price";
 

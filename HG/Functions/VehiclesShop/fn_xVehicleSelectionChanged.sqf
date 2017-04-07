@@ -3,6 +3,7 @@
     Author - HoverGuy
     Description - Called when selection in xListbox has changed
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_ctrl","_index","_shopType","_shopContent","_spawnPoints","_itemName","_ind"];
 

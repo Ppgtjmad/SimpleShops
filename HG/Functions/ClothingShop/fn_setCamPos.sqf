@@ -1,35 +1,32 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
-params["_type"];
+params["_type",["_camPos",[]]];
 
-switch(_type) do
+_camPos = switch(_type) do
 {
 	case 0: // Facewear & headgear view
 	{
-	    HG_CAMERA_PREVIEW camSetTarget (player modelToWorld [0,0,1.4]);
-		HG_CAMERA_PREVIEW camSetPos (player modelToWorld [-0.1,2,1.4]);
-		HG_CAMERA_PREVIEW camCommit 1;
+	    [(player modelToWorld [0,0,1.4]),(player modelToWorld [-0.1,2,1.4])];
 	};
 	case 1: // Backpack view
 	{
-	    HG_CAMERA_PREVIEW camSetTarget (player modelToWorld [0,-0.15,1.3]);
-		HG_CAMERA_PREVIEW camSetPos (player modelToWorld [1,-4,2]);
-		HG_CAMERA_PREVIEW camCommit 1;
+	    [(player modelToWorld [0,-0.15,1.3]),(player modelToWorld [1,-4,2])];
 	};
 	case 2: // Uniform & vest view
 	{
-	    HG_CAMERA_PREVIEW camSetTarget (player modelToWorld [0,0,1]);
-        HG_CAMERA_PREVIEW camSetPos (player modelToWorld [1,4,2]);
-        HG_CAMERA_PREVIEW camCommit 1;
+	    [(player modelToWorld [0,0,1]),(player modelToWorld [1,4,2])];
 	};
 	default
 	{
-	    HG_CAMERA_PREVIEW camSetTarget (player modelToWorld [0,0,1]);
-        HG_CAMERA_PREVIEW camSetPos (player modelToWorld [1,4,2]);
-        HG_CAMERA_PREVIEW camCommit 1;
+	    [(player modelToWorld [0,0,1]),(player modelToWorld [1,4,2])];
 	};
 };
+
+HG_CAMERA_PREVIEW camSetTarget (_camPos select 0);
+HG_CAMERA_PREVIEW camSetPos (_camPos select 1);
+HG_CAMERA_PREVIEW camCommit 1;
 
 true;

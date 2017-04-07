@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+	Website - http://www.sunrise-production.com
 */
 
 class HG
@@ -41,8 +42,10 @@ class HG
 		class addOrSubCash {};
 	    class currencyToText {};
 		class getConfig {};
+		class getGear {};
 		class hasEnoughMoney {};
 		class isNumeric {};
+		class parseGear {};
 		class paycheck {};
 	};
 	

@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 
 removeGoggles player;
@@ -32,7 +33,7 @@ if((HG_GEAR_SAVED select 2) != "") then
 
 if((HG_GEAR_SAVED select 4) != "") then
 {
-    player addUniform (HG_GEAR_SAVED select 4);
+    player forceAddUniform (HG_GEAR_SAVED select 4);
     if(count (HG_GEAR_SAVED select 5) != 0) then
     {
 	    {

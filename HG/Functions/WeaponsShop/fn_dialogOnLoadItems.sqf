@@ -3,6 +3,7 @@
     Author - HoverGuy
     Description - Called by the player to open and feed the dialog with data
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_target","_caller","_id","_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};

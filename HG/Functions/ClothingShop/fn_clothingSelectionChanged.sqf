@@ -3,6 +3,7 @@
     Author - HoverGuy
     Description - Called when selection in listbox has changed
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_ctrl","_index","_sel",["_price",0],["_count",0]];
 	
@@ -70,7 +71,7 @@ if(_sel in ["Glasses","Headgear","Vest","Uniform","Backpack"]) then
         case "Uniform": 
 	    {
 	        removeUniform player;
-		    player addUniform _sel;
+		    player forceAddUniform _sel;
 		    HG_GEAR_PREVIEW set[3,[_sel,_val]];
 	    };
 	    case "Backpack": 

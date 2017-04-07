@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_target","_caller","_id","_storePoint"];
 if((typeName _storePoint) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};

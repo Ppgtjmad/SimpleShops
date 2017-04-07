@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_target","_caller","_id","_spawnPoints"];
 if((typeName _spawnPoints) != "ARRAY") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_3");};

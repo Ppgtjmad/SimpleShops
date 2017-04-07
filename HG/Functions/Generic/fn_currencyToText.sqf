@@ -2,6 +2,7 @@
     Author - HoverGuy
     Description - Function to return currency symbol & passed amount as text
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
     Parameters
     - 0 - INTEGER - Value
     - 1 - BOOL (OPTIONAL) - true for specific currency input instead of automatic detection (which is less precise)

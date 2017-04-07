@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
 	© All Fucks Reserved
+	Website - http://www.sunrise-production.com
 */
 
 #include "HG_ControlTypes.h"

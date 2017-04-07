@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
 	© All Fucks Reserved
+	Website - http://www.sunrise-production.com
 */
 
 class HG_ClothingShop
@@ -9,7 +10,7 @@ class HG_ClothingShop
     idd = HG_CLOTHING_SHOP_IDD;
 	enableSimulation = true;
 	name = "HG_ClothingShop";
-	onUnload = "_this call HG_fnc_dialogOnUnloadClothing";
+	onUnload = "[] call HG_fnc_dialogOnUnloadClothing";
 	
 	class ControlsBackground
 	{

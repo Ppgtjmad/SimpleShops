@@ -3,6 +3,7 @@
     Description - Called when you click "Buy" button in dialog
     Returns - Empty string if all spawn points are busy else first empty spawn point
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_spawnPoints",["_sp",""]];
 

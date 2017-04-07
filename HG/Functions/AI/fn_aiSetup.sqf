@@ -1,11 +1,12 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_ai"];
 
 // _ai represents the passed AI to the function
-if(_ai != "OBJECT") exitWith {diag_log (localize "STR_HG_ERR_NOT_OBJECT");};
+if((typeName _ai) != "OBJECT") exitWith {diag_log (localize "STR_HG_ERR_NOT_OBJECT");};
 
 if(HG_KILL_REWARD_ENABLED) then
 {

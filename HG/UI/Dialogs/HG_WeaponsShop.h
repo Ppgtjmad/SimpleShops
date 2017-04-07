@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
 	© All Fucks Reserved
+	Website - http://www.sunrise-production.com
 */
 
 class HG_WeaponsShop
@@ -10,6 +11,7 @@ class HG_WeaponsShop
 	enableSimulation = true;
 	movingEnable = true;
 	name = "HG_WeaponsShop";
+	onUnload = "[] call HG_fnc_getGear";
 	
 	class ControlsBackground
 	{

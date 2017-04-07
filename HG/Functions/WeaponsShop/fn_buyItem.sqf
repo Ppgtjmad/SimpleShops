@@ -3,17 +3,16 @@
     Author - HoverGuy
     Description - Called when you click "Buy" button in dialog
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
-private "_price";
 
 disableSerialization;
 
-_price = HG_WEAPONS_ITEM_LIST lbValue (lbCurSel HG_WEAPONS_ITEM_LIST);
+private _price = HG_WEAPONS_ITEM_LIST lbValue (lbCurSel HG_WEAPONS_ITEM_LIST);
 
 if([_price] call HG_fnc_hasEnoughMoney) then
 {
-    private "_selectedItem";
-    _selectedItem = HG_WEAPONS_ITEM_LIST lbData (lbCurSel HG_WEAPONS_ITEM_LIST);
+    private _selectedItem = HG_WEAPONS_ITEM_LIST lbData (lbCurSel HG_WEAPONS_ITEM_LIST);
 	if([_selectedItem,true] call HG_fnc_handleItems) then
 	{
 	    private["_itemClass","_displayName"];

@@ -2,6 +2,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+	Website - http://www.sunrise-production.com
 */
 
 #define HG_CLOTHING_SHOP_DISP	  findDisplay HG_CLOTHING_SHOP_IDD

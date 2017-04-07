@@ -153,6 +153,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
+		    <Original>You can't open inventory when it's locked</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_VEHICLE_LOCKED">
 		    <Original>Vehicle is now LOCKED</Original>
 		    <French></French>
@@ -161,8 +169,24 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_CRATE_EMPTIED">
+		    <Original>Crate has been EMPTIED</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_VEHICLE_UNLOCKED">
 		    <Original>Vehicle is now UNLOCKED</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_VEHICLE_EMPTIED">
+		    <Original>Vehicle has been EMPTIED</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>

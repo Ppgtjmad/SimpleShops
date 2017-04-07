@@ -3,6 +3,7 @@
     Author - HoverGuy
     Description - Called when selection in listbox has changed
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 params["_ctrl","_index","_item","_price","_itemClass","_itemPicture","_itemDescription"];
 

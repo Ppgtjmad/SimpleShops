@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
     © All Fucks Reserved
+    Website - http://www.sunrise-production.com
 */
 
 /*
@@ -15,6 +16,8 @@ HG_KILL_REWARD_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableK
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
 HG_CRATE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1;
 HG_CLEAR_INVENTORY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1;
+HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
+HG_VEHICLE_INVENTORY_SAVE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1;
 
 /*
     Init money variable
@@ -27,6 +30,19 @@ if(HG_SAVE_ENABLED) then
 	};
 } else {
     player setVariable["HG_myCash",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MoneyCfg" >> (rank player) >> "startCash"))];
+};
+
+/*
+    Init gear
+*/
+if(HG_PLAYER_INVENTORY_SAVE_ENABLED) then
+{
+    if(isNil {profileNamespace getVariable "HG_Gear"}) then
+	{
+	    [] call HG_fnc_getGear;
+	} else {
+	    (profileNamespace getVariable "HG_Gear") call HG_fnc_parseGear;
+	};
 };
 
 /*
@@ -110,4 +126,45 @@ if(HG_KILL_REWARD_ENABLED) then
 			_rating;
 		}
 	];
+};
+
+/*
+    Inventory override (or not)
+*/
+HG_INVENTORY_OPENED_EVH = player addEventHandler
+[
+    "InventoryOpened",
+	{
+	    params["_unit","_targetContainer","_secContainer",["_handled",false]];
+		
+		if((_targetContainer isKindOf "LandVehicle") OR (_targetContainer isKindOf "Ship") OR (_targetContainer isKindOf "Air")) then
+		{
+		    if((locked _targetContainer) isEqualTo 2) then
+			{
+			    private _ownerUID = (_targetContainer getVariable "HG_Owner") select 0;
+			    if((getPlayerUID player) != _ownerUID) then
+			    {
+			        _handled = true;
+					hint (localize "STR_HG_CANNOT_OPEN_INVENTORY");
+			    };
+			};
+		};
+		
+		_handled;
+	}
+];
+
+if(HG_PLAYER_INVENTORY_SAVE_ENABLED) then
+{
+    HG_INVENTORY_CLOSED_EVH = player addEventHandler
+    [
+        "InventoryClosed",
+	    {
+	        params["_unit","_targetContainer","_secContainer",["_handled",false]];
+		
+		    [] call HG_fnc_getGear;
+		
+		    _handled;
+	    }
+    ];
 };
