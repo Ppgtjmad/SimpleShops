@@ -139,3 +139,12 @@ Global - Fixed rewards<br/>
 Global - Added rating handling (players can't have negative rating anymore so they are not considered enemies)<br/>
 Global - Fixed cash hints<br/>
 Global - Removed hiding of units when in shop view (muzzle flashs were still visible)
+
+_v 1.7_<br/>
+Global - Player inventory saving (toggleable)
+Global - Vehicles inventory saving (toggleable)
+Global - Locked inventory when vehicle is locked (vehicle owner can still access it)
+Global - Added sound for locking/unlocking vehicles
+Global - Fixed AI script
+Global - Fixed missing ; in fn_clientInitialization.sqf
+Global - Changed addUniform to forceAddUniform
