@@ -31,9 +31,14 @@ class CfgClient
     #include "HG\Config\HG_Config.h"
 };
 
+class CfgSounds
+{
+    #include "HG\Sounds\HG_Sounds.h"
+};
+
 class CfgFunctions 
 {
-	#include "HG\Functions\HG_Functions.h"
+    #include "HG\Functions\HG_Functions.h"
 };
 ```
 
