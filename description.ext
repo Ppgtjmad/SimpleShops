@@ -3,7 +3,7 @@
 */
 author = "HoverGuy";
 onLoadName = "Simple Shops";
-onLoadMission = "v 1.6";
+onLoadMission = "v 1.7";
 
 /*
     Classes
