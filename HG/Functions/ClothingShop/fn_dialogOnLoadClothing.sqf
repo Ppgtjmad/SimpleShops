@@ -44,8 +44,8 @@ if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
     if(isNil "HG_PLAYER_BOX") then
 	{
 	    HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
-        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Delete Crate</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
-	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Empty Crate</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) && !dialog && player distance _target < 2'];
+        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Delete Crate</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog AND ((player distance _target) < 2)'];
+	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>Empty Crate</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) AND !dialog && ((player distance _target) < 2)'];
 	};
 	
     HG_PLAYER_BOX setPos [(getPos player select 0)+1,(getPos player select 1),(getPos player select 2)];
