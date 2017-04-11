@@ -1,4 +1,4 @@
-<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.7</h1>
+<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.8</h1>
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
 
@@ -57,11 +57,11 @@ HG\Config\HG_WeaponsShopCfg.h
 
 <i>Has to be enabled in HG_Config.h first (see enableKillReward).</i>
 
-Note: If you use AIs in your mission, make sure to add this line in the file where you spawn AIs<br/>
+Note: If you use AIs in your mission, make sure to add the required line in the file where you spawn AIs<br/>
 
 ```
-// _AI is the unit
-[_AI] call HG_fnc_aiSetup;
+// For units, _unit is the AI unit
+[_unit] call HG_fnc_aiUnitSetup;
 ```
 
 <b>Usage</b>
@@ -153,3 +153,9 @@ Global - Added sound for locking/unlocking vehicles<br/>
 Global - Fixed AI script<br/>
 Global - Fixed missing ; in fn_clientInitialization.sqf<br/>
 Global - Changed addUniform to forceAddUniform
+
+_v 1.8_<br/>
+Global - XP (ranks) system (toggleable)<br/>
+Global - Kill count in HUD (toggleable)<br/>
+Global - Player tags (toggleable)<br/>
+Global - Map markers showing teammates in real time (toggleable)
