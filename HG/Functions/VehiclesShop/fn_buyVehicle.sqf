@@ -5,11 +5,10 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-private "_price";
 
 disableSerialization;
 
-_price = HG_VEHICLES_LIST lbValue (lbCurSel HG_VEHICLES_LIST);
+private _price = HG_VEHICLES_LIST lbValue (lbCurSel HG_VEHICLES_LIST);
 
 if([_price] call HG_fnc_hasEnoughMoney) then
 {

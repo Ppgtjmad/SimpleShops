@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-	© All Fucks Reserved
+	Â© All Fucks Reserved
 	Website - http://www.sunrise-production.com
 */
 

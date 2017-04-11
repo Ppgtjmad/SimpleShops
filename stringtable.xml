@@ -58,7 +58,7 @@
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_OBJECT">
-		    <Original>::ERROR:: AI Setup (fn_aiSetup.sqf) - Passed param is not an OBJECT</Original>
+		    <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
@@ -217,11 +217,35 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_XP_MAXED">
+		    <Original>Maxed</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_PROMOTED">
+		    <Original>Congratulations! You have been promoted to %1 from %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_DEMOTED">
+		    <Original>You have been demoted to %1 from %2</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v1.7</Original>
+		        <Original>[HG] Simple Shops v1.8</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -246,14 +270,6 @@
 		    </Key>
 		    <Key ID="STR_HG_DLG_MC_TOOLTIP">
 		        <Original>Hint your current cash</Original>
-		        <French></French>
-			    <German></German>
-			    <Russian></Russian>
-			    <Spanish></Spanish>
-			    <Italian></Italian>
-		    </Key>
-			<Key ID="STR_HG_DLG_MC_TOOLTIP_DISABLED">
-		        <Original>Not available when HUD is enabled</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

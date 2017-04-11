@@ -9,23 +9,30 @@
 	resetSavedMoney - BOOL - Reset saved money? Useful if you enable persistence then disable it and re-enable it, if it's set to true old saved money will be reset to startCash value, only used if enableSave is set to true
 	enableHUD - BOOL - Enable money display in HUD?
 	enablePaycheck - BOOL - Enable paycheck?
-	enableKillReward - BOOL - Only works with REAL players not AIs (has to be setup separately in your AI spawn system)
+	enableKillReward - BOOL - Enable kill reward?
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
 	enablePlayerInventorySave - BOOL - Enable player gear saving (client profileNamespace)? Disable this if you have a custom saving system
 	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
+	enableXP - BOOL - Enable XP system?
+	enableKillCount - BOOL - Enable kill count in HUD?
+	enableTags - BOOL - Enable player tags?
+	enableMarkers - BOOL - Enable teammates position markers on map?
 	
-	class HG_MoneyCfg
+	class HG_MasterCfg
 	{
 		class Rank - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL
 		{
 			paycheck - INTEGER - Paycheck amount
 			paycheckPeriod - INTEGER - Time (in minutes) between each paycheck iteration, only used if enablePaycheck is set to true
 			startCash - INTEGER - Obvious...
-			killedReward - INTEGER - Money earned by killer
-			tkPenalty - INTEGER - Money taken when player of the same side is killed (team kill)
+			killedReward - INTEGER - Money earned by killer, only used if enableKillReward is set to true
+			tkPenalty - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
+			xpPenalty - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
+			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
+			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
 		};
 	};
 */
@@ -42,8 +49,12 @@ enableGiveMoney = true;
 clearInventory = true;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
+enableXP = true;
+enableKillCount = true;
+enableTags = true;
+enableMarkers = true;
 
-class HG_MoneyCfg
+class HG_MasterCfg
 {
 	class PRIVATE
 	{
@@ -52,6 +63,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 500;
 		tkPenalty = 500;
+		xpPenalty = 10;
+		xpReward = 10;
+		xpToLvlUp = 1000;
 	};
 	class CORPORAL
 	{
@@ -60,6 +74,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 1000;
 		tkPenalty = 1000;
+		xpPenalty = 20;
+		xpReward = 20;
+		xpToLvlUp = 1500;
 	};
 	class SERGEANT
 	{
@@ -68,6 +85,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 1500;
 		tkPenalty = 1500;
+		xpPenalty = 30;
+		xpReward = 30;
+		xpToLvlUp = 2000;
 	};
 	class LIEUTENANT
 	{
@@ -76,6 +96,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 2000;
 		tkPenalty = 2000;
+		xpPenalty = 40;
+		xpReward = 40;
+		xpToLvlUp = 2500;
 	};
 	class CAPTAIN
 	{
@@ -84,6 +107,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 2500;
 		tkPenalty = 2500;
+		xpPenalty = 50;
+		xpReward = 50;
+		xpToLvlUp = 3000;
 	};
 	class MAJOR
 	{
@@ -92,6 +118,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 3000;
 		tkPenalty = 3000;
+		xpPenalty = 60;
+		xpReward = 60;
+		xpToLvlUp = 3500;
 	};
 	class COLONEL
 	{
@@ -100,6 +129,9 @@ class HG_MoneyCfg
 		startCash = 50000;
 		killedReward = 3500;
 		tkPenalty = 3500;
+		xpPenalty = 70;
+		xpReward = 70;
+		xpToLvlUp = 0;
 	};
 };
 

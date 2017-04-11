@@ -3,7 +3,7 @@
 */
 author = "HoverGuy";
 onLoadName = "Simple Shops";
-onLoadMission = "v 1.7";
+onLoadMission = "v 1.8";
 
 /*
     Classes
@@ -14,6 +14,7 @@ onLoadMission = "v 1.7";
 class RscTitles
 {
     #include "HG\UI\Dialogs\HG_HUD.h"
+	#include "HG\UI\Dialogs\HG_Tags.h"
 };
 
 class CfgClient

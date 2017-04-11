@@ -9,7 +9,7 @@ class HG
 	class AI
 	{
 	    file = "HG\Functions\AI";
-		class aiSetup {};
+		class aiUnitSetup {};
 	};
 	
 	class ClothingShop
@@ -23,6 +23,16 @@ class HG
 		class reset {};
 	    class setCamPos {};
 		class xClothingSelectionChanged {};
+	};
+	
+	class EVH
+	{
+		file = "HG\Functions\EVH";
+		class handleRating {};
+		class inventoryClosed {};
+		class inventoryOpened {};
+		class killed {};
+		class respawn {};
 	};
 	
 	class Garage
@@ -40,11 +50,14 @@ class HG
 	{
 		file = "HG\Functions\Generic";
 		class addOrSubCash {};
+		class addOrSubKills {};
+		class addOrSubXP {};
 	    class currencyToText {};
 		class getConfig {};
 		class getGear {};
 		class hasEnoughMoney {};
 		class isNumeric {};
+		class markers {};
 		class parseGear {};
 		class paycheck {};
 	};
@@ -59,6 +72,12 @@ class HG
 	{
 		file = "HG\Functions\HUD";
 		class HUD {};
+	};
+	
+	class Tags
+	{
+		file = "HG\Functions\Tags";
+		class playerTags {};
 	};
 	
 	class VehiclesShop

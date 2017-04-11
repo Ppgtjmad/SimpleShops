@@ -18,8 +18,7 @@ switch(_mode) do
 	// Spawn
 	case 1: 
 	{
-	    private "_spawnBusy";
-		_spawnPoint = [HG_SPAWN_POINTS] call HG_fnc_isItBusy;
+		private _spawnPoint = [HG_SPAWN_POINTS] call HG_fnc_isItBusy;
 		if(_spawnPoint != "") then
 		{
 		    hint (localize "STR_HG_GRG_VEHICLE_SPAWNING");
