@@ -19,6 +19,11 @@ switch(_mode) do
 	};
 };
 
+if(_newVal < 0) then 
+{
+    _newVal = 0
+};
+
 [4] call HG_fnc_HUD;
 
 profileNamespace setVariable["HG_KillCount",_newVal];
