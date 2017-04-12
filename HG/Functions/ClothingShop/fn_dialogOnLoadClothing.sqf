@@ -8,7 +8,11 @@
 params["_target","_caller","_id","_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
-if((getNumber(missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop >> "whitelisted") isEqualTo 1) AND ((rank player) != (getText(missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop >> "whitelistRank")))) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
+
+private["_whitelist","_isOk"];
+_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop >> "whitelistRanks");
+_isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
+if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 disableSerialization;
 

@@ -9,8 +9,7 @@
     {
 		class YourShopClass - Used as a param for the call, basically the shop you want to display
 		{
-			whitelisted - BOOL - Is the shop whitelisted?
-		    whitelistRank - STRING - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL, not used when whitelisted is set to false
+		    whitelistRanks - ARRAY OF STRINGS - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL or mixed
 			
 			class YourShopCategory - Shop category, can be whatever you want (Tanks, Jets, Bananas, etc...)
 			{
@@ -30,8 +29,7 @@ class HG_VehiclesShopCfg // Has to be left untouched
 {
 	class HG_DefaultShop // Default shop is just a placeholder for testing purposes, you can delete it completely and make your own
 	{
-		whitelisted = false;
-		whitelistRank = "";
+		whitelistRanks[] = {};
 		
         class Civilian
 	    {
