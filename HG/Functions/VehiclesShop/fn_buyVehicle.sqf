@@ -25,8 +25,8 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	    _vehicle = _vehicle createVehicle (markerPos _spawnPoint);
 		_vehicle allowDamage false;
 		_vehicle setVectorUp (surfaceNormal (markerPos _spawnPoint));
-		_vehicle setVariable["HG_Owner",[(getPlayerUID player),round(random(100000))],true];
 		_vehicle lock 2;
+		[_vehicle,player] call HG_fnc_setOwner;
 		[_vehicle] call HG_fnc_addActions;
 		if(HG_CLEAR_INVENTORY_ENABLED) then
 		{

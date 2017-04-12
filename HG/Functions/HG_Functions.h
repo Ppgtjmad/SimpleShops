@@ -60,6 +60,7 @@ class HG
 		class markers {};
 		class parseGear {};
 		class paycheck {};
+		class setOwner {};
 	};
 	
 	class GiveMoney
