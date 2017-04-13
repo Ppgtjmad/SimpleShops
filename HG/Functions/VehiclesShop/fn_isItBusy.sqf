@@ -8,7 +8,7 @@
 params["_spawnPoints",["_sp",""]];
 
 {
-    _isBusy = nearestObjects [(markerPos _x),["Car","Truck","Air","Tank","Ship"],5];
+    _isBusy = nearestObjects [(markerPos _x),["Car","Truck","Air","Tank","Ship","Submarine"],5];
 	if((count _isBusy) isEqualTo 0) exitWith
 	{
 	    _sp = _x;

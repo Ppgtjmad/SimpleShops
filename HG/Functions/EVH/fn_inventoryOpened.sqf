@@ -5,7 +5,7 @@
 */
 params["_unit","_targetContainer","_secContainer",["_handled",false]];
 
-if((_targetContainer isKindOf "LandVehicle") OR (_targetContainer isKindOf "Ship") OR (_targetContainer isKindOf "Air")) then
+if((_targetContainer isKindOf "LandVehicle") OR (_targetContainer isKindOf "Ship") OR (_targetContainer isKindOf "Air") OR (_targetContainer isKindOf "Submarine")) then
 {
 	if((locked _targetContainer) isEqualTo 2) then
 	{

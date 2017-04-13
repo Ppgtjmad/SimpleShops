@@ -156,7 +156,7 @@ HG_fnc_disconnect = compileFinal
 				deleteVehicle _x;
 			};
 		};
-	} forEach (allMissionObjects 'LandVehicle') + (allMissionObjects 'Air') + (allMissionObjects 'Ship');
+	} forEach (allMissionObjects 'LandVehicle') + (allMissionObjects 'Air') + (allMissionObjects 'Ship') + (allMissionObjects 'Submarine');
 	
 	profileNamespace setVariable[format['HG_Garage_%1',_uid],_garage];
 	saveProfileNamespace;
