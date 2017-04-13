@@ -241,6 +241,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_NOW_OWNER">
+		    <Original>You are now owner of a new vehicle (%1)</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">

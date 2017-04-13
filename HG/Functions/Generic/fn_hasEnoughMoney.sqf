@@ -12,7 +12,7 @@ if(HG_SAVE_ENABLED) then
     _cash = player getVariable "HG_myCash";
 };
 
-if(_cash > _value) then
+if(_cash >= _value) then
 {
     _hasEnough = true;
 };

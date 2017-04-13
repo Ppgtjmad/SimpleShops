@@ -6,5 +6,7 @@
 params["_vehicle","_unit"];
 
 _vehicle setVariable["HG_Owner",[(getPlayerUID _unit),round(random(100000))],true];
+[_vehicle] call HG_fnc_addActions;
+hint format[(localize "STR_HG_NOW_OWNER"),(getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName"))];
 
 true;

@@ -64,6 +64,18 @@ Note: If you use AIs in your mission, make sure to add the required line in the 
 [_unit] call HG_fnc_aiUnitSetup;
 ```
 
+<b>How to set vehicle ownership</b>
+
+If you have a system in your mission that allows players to find vehicles on map and claim ownership, you can use this function:
+
+```
+/*
+    _vehicle refers to the actual vehicle you want to claim
+	_unit refers to the new vehicle owner
+*/
+[_vehicle,_unit] call HG_fnc_setOwner
+```
+
 <b>Usage</b>
 
 Action to open shop dialogs (from editor placed object):
