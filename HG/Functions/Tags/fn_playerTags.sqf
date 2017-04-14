@@ -4,10 +4,10 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-if(!isNull objectParent player) exitWith {};
-if((isNull cursorObject) OR !(alive cursorObject)) exitWith {};
-if(!(cursorObject isKindOf "Man")) exitWith {};
-if((side cursorObject) != (side player)) exitWith {};
+if(!isNull objectParent player) exitWith {HG_TAGS_TEXT ctrlShow false;};
+if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
+if(!(cursorObject isKindOf "Man")) exitWith {HG_TAGS_TEXT ctrlShow false;};
+if((side cursorObject) != (side player)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
 if(isNull HG_TAGS_DISP) then 
 {

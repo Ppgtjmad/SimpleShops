@@ -24,7 +24,7 @@ class HG_HUD
 			idc = HG_HUD_XP_PIC_IDC;
 		    text = "HG\UI\Icons\xp.paa";
 			x = 65 * GUI_GRID_W + GUI_GRID_X;
-			y = 25 * GUI_GRID_H + GUI_GRID_Y;
+			y = 26 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -36,7 +36,7 @@ class HG_HUD
 			style = "0x01";
 			shadow = 0;
 			x = 52 * GUI_GRID_W + GUI_GRID_X;
-			y = 25.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 26.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -47,7 +47,7 @@ class HG_HUD
 			idc = HG_HUD_KILL_COUNT_PIC_IDC;
 			text = "HG\UI\Icons\gun.paa";
 			x = 65 * GUI_GRID_W + GUI_GRID_X;
-			y = 27.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 28.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
 		};
@@ -59,7 +59,7 @@ class HG_HUD
 			style = "0x01";
 			shadow = 0;
 			x = 52 * GUI_GRID_W + GUI_GRID_X;
-			y = 28 * GUI_GRID_H + GUI_GRID_Y;
+			y = 29 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -68,7 +68,7 @@ class HG_HUD
 		{
 			idc = HG_HUD_RANK_PIC_IDC;
 		    x = 65.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 30.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 31.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 2 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};
@@ -79,7 +79,7 @@ class HG_HUD
 			style = "0x01";
 			shadow = 0;
 			x = 52 * GUI_GRID_W + GUI_GRID_X;
-			y = 30.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 31.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 		};

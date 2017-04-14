@@ -17,9 +17,9 @@
 				vehicles - ARRAY OF ARRAYS - Shop content
 				|- 0 - STRING - Classname
 				|- 1 - INTEGER - Price
-				spawnPoints - ARRAY OF ARRAYS - Spawn pos (markers)
+				spawnPoints - ARRAY OF ARRAYS - Spawn pos (markers/objects/positions)
 				|- 0 - STRING - Display name in the dialog
-				|- 1 - ARRAY - Markers variables
+				|- 1 - ARRAY OF MIXED - Markers/objects/positions
 			};
 		};
 	};

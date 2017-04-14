@@ -61,6 +61,7 @@ class HG
 		class parseGear {};
 		class paycheck {};
 		class setOwner {};
+		class setRank {};
 	};
 	
 	class GiveMoney

@@ -11,6 +11,7 @@ class HG_Garage
 	enableSimulation = true;
 	movingEnable = true;
 	name = "HG_Garage";
+	onUnload = "HG_SPAWN_POINTS = nil";
 	
 	class ControlsBackground
 	{
