@@ -14,4 +14,10 @@ if(HG_XP_ENABLED) then
 	saveProfileNamespace;
 };
 
+if(HG_HUD_ENABLED) then
+{
+    [2] call HG_fnc_HUD;
+	[4] call HG_fnc_HUD;
+};
+
 true;
