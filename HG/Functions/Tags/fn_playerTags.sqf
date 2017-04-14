@@ -9,11 +9,6 @@ if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlSh
 if(!(cursorObject isKindOf "Man")) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((side cursorObject) != (side player)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
-if(isNull HG_TAGS_DISP) then 
-{
-	("HG_Tags" call BIS_fnc_rscLayer) cutRsc ["HG_Tags","PLAIN"];
-};
-
 _target = cursorObject;
 _posShoulder = [((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 0),((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 1),((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 2)];
 _screenPosShoulder = worldToScreen _posShoulder;

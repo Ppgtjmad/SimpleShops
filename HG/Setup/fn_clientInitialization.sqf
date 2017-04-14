@@ -93,6 +93,7 @@ if(HG_HUD_ENABLED) then
 */
 if(HG_TAGS_ENABLED) then
 {
+    ("HG_Tags" call BIS_fnc_rscLayer) cutRsc ["HG_Tags","PLAIN"];
     HG_DRAW_3D_MEVH = addMissionEventHandler ["Draw3D",{[] call HG_fnc_playerTags}];
 };
 
