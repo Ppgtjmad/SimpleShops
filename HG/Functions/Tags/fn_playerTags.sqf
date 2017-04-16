@@ -8,13 +8,14 @@ if(!isNull objectParent player) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if(!(cursorObject isKindOf "Man")) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((side cursorObject) != (side player)) exitWith {HG_TAGS_TEXT ctrlShow false;};
+if(visibleMap) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
 _target = cursorObject;
-_posShoulder = [((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 0),((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 1),((_target modelToWorld (_target selectionPosition "LeftShoulder")) select 2)];
-_screenPosShoulder = worldToScreen _posShoulder;
-_distance = _posShoulder distance player;
+_pos = [(visiblePosition _target) select 0,(visiblePosition _target) select 1,((_target modelToWorld (_target selectionPosition "Head")) select 2)];
+_screenPosShoulder = worldToScreen _pos;
+_distance = _pos distance player;
 
-if(((count _screenPosShoulder) > 1) AND (_distance < 2) AND {_screenPosShoulder distance [0.5,0.5] < 0.5}) then
+if(((count _screenPosShoulder) > 1) AND (_distance < 5) AND {_screenPosShoulder distance [0.5,0.5] < 1}) then
 {
 	_icon = [(rank _target),"texture"] call BIS_fnc_rankParams;
 	_text = parseText format
