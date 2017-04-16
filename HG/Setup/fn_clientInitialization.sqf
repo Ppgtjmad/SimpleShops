@@ -112,7 +112,7 @@ if(HG_PAYCHECK_ENABLED OR HG_GIVE_MONEY_ENABLED) then
 {
     if(HG_GIVE_MONEY_ENABLED) then
 	{
-	    player addAction ["<img image='HG\UI\money.paa' size='1.5'/><t color='#FF0000'>Give Money</t>",{HG_CURSOR_OBJECT = cursorObject; createDialog "HG_GiveMoney"},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (alive cursorObject) AND (player distance cursorObject < 2) AND !dialog'];
+	    player addAction ["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>Give Money</t>",{HG_CURSOR_OBJECT = cursorObject; createDialog "HG_GiveMoney"},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (alive cursorObject) AND (player distance cursorObject < 2) AND !dialog'];
 	};
 	if(HG_PAYCHECK_ENABLED) then
 	{
