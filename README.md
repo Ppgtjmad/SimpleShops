@@ -71,7 +71,7 @@ If you have a system in your mission that allows players to find vehicles on map
 ```
 /*
     _vehicle refers to the actual vehicle you want to claim
-	_unit refers to the new vehicle owner
+    _unit refers to the new vehicle owner
 */
 [_vehicle,_unit] call HG_fnc_setOwner
 ```
@@ -81,7 +81,7 @@ If you have a system in your mission that allows players to find vehicles on map
 ```
 /*
     _unit refers to the unit you want the rank to be set
-	"COLONEL" refers to the rank you want to set
+    "COLONEL" refers to the rank you want to set
 */
 [_unit,"COLONEL"] call HG_fnc_setRank
 ```
