@@ -10,7 +10,7 @@ _unit setRank _rank;
 
 if(HG_XP_ENABLED) then
 {
-	profileNamespace setVariable["HG_XP",0];
+	profileNamespace setVariable["HG_XP",[_rank,0]];
 	saveProfileNamespace;
 };
 

@@ -54,7 +54,7 @@ switch(_mode) do
 		
 		if((rank player) != "COLONEL") then 
 		{
-		    _text = format["%1/%2",(profileNamespace getVariable ["HG_XP",0]),(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
+		    _text = format["%1/%2",((profileNamespace getVariable "HG_XP") select 1),(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
 		} else {
 		    _text = (localize "STR_HG_XP_MAXED");
 		};

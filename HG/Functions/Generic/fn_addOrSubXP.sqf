@@ -8,7 +8,7 @@ params["_amount","_mode",["_ranks",["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT"
 if((rank player) isEqualTo "COLONEL") exitWith {};
 
 private["_curXp","_rankIndex","_newXp"];
-_curXp = profileNamespace getVariable "HG_XP";
+_curXp = (profileNamespace getVariable "HG_XP") select 1;
 _rankIndex = _ranks find (rank player);
 
 if(_mode isEqualTo 1) then
@@ -22,7 +22,7 @@ if(_mode isEqualTo 1) then
 		if((rank player) != "PRIVATE") then
 		{
 		    private _newRank = (_ranks select (_rankIndex - 1));
-			hint format[(localize "STR_HG_DEMOTED"),(rank player),_newRank];
+			hint format[(localize "STR_HG_DEMOTED"),_newRank,(rank player)];
 	        player setRank _newRank;
 		};
 	};
@@ -34,18 +34,18 @@ if(_mode isEqualTo 1) then
 	{
 	    _newXp = 0;
 		private _newRank = (_ranks select (_rankIndex + 1));
-		hint format[(localize "STR_HG_PROMOTED"),(rank player),_newRank];
+		hint format[(localize "STR_HG_PROMOTED"),_newRank,(rank player)];
 		player setRank _newRank;
 	};
 };
+
+profileNamespace setVariable ["HG_XP",[(rank player),_newXp]];
+saveProfilenamespace;
 
 if(HG_HUD_ENABLED) then
 {
     [2] call HG_fnc_HUD;
 	[3] call HG_fnc_HUD;
 };
-
-profileNamespace setVariable ["HG_XP",_newXp];
-saveProfilenamespace;
 
 true;

@@ -52,7 +52,9 @@ if(HG_XP_ENABLED) then
 {
     if(isNil {profileNamespace getVariable "HG_XP"}) then
 	{
-	    profileNamespace setVariable["HG_XP",0];
+	    profileNamespace setVariable["HG_XP",[(rank player),0]];
+	} else {
+	    player setRank ((profileNamespace getVariable "HG_XP") select 0);
 	};
 };
 
