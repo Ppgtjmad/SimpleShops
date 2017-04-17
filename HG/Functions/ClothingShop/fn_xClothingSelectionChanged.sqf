@@ -25,7 +25,7 @@ HG_CLOTHING_LIST lbSetValue [_ind,0];
     _ind = HG_CLOTHING_LIST lbAdd _itemName;
     HG_CLOTHING_LIST lbSetData[_ind,(_x select 0)];
     HG_CLOTHING_LIST lbSetValue[_ind,(_x select 1)];
-	HG_CLOTHING_LIST lbSetTooltip[_ind,format[(localize "STR_HG_DLG_PRICE_TAG"),([(_x select 1),true] call HG_fnc_currencyToText)]];
+	HG_CLOTHING_LIST lbSetTooltip[_ind,format[(localize "STR_HG_DLG_PRICE_TAG"),if((_x select 1) <= 0) then {(localize "STR_HG_DLG_FREE")} else {([(_x select 1),true] call HG_fnc_currencyToText)}]];
 } forEach _shopItems;
 
 [_camera] call HG_fnc_setCamPos;

@@ -19,6 +19,10 @@ if(_cat isEqualTo "Weapon") then
 	    {
 	        player removeWeapon (secondaryWeapon player);
 	    };
+		case "RocketLauncher":
+		{
+		    player removeWeapon (secondaryWeapon player);
+		};
 	    case "Handgun":
 	    {
 	        player removeWeapon (handgunWeapon player);

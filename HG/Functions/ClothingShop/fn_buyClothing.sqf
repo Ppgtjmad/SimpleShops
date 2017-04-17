@@ -14,7 +14,10 @@ params[["_price",0]];
 	};
 } forEach HG_GEAR_PREVIEW;
 
-[_price,1] call HG_fnc_addOrSubCash;
+if(_price > 0) then
+{
+    [_price,1] call HG_fnc_addOrSubCash;
+};
 
 if(HG_CRATE_ENABLED) then
 {
@@ -27,6 +30,6 @@ HG_GEAR_PREVIEW = [[],[],[],[],[]];
 
 closeDialog 0;
 
-titleText [format[(localize "STR_HG_CLOTHING_BOUGHT"),([_price,true] call HG_fnc_currencyToText)],"PLAIN DOWN",1];
+titleText [format[(localize "STR_HG_CLOTHING_BOUGHT"),if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}],"PLAIN DOWN",1];
 
 true;

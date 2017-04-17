@@ -18,8 +18,11 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	    private["_itemClass","_displayName"];
 	    _itemClass = [_selectedItem] call HG_fnc_getConfig;
 	    _displayName = getText(configFile >> _itemClass >> _selectedItem >> "displayName");
-        [_price,1] call HG_fnc_addOrSubCash;
-        hint format[(localize "STR_HG_ITEM_BOUGHT"),_displayName,([_price,true] call HG_fnc_currencyToText)];
+		if(_price > 0) then
+		{
+		    [_price,1] call HG_fnc_addOrSubCash;
+		};
+        hint format[(localize "STR_HG_ITEM_BOUGHT"),_displayName,if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
 	};
 } else {
     hint format[(localize "STR_HG_NOT_ENOUGH_MONEY"),([_price,true] call HG_fnc_currencyToText)];

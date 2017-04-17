@@ -5,12 +5,11 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_ctrl","_index","_item","_price","_itemClass","_itemPicture","_itemDescription"];
+params["_ctrl","_index","_item","_itemClass","_itemPicture","_itemDescription"];
 
 disableSerialization;
 
 _item = _ctrl lbData _index;
-_price = _ctrl lbValue _index;
 _itemClass = [_item] call HG_fnc_getConfig;
 _itemPicture = getText(configFile >> _itemClass >> _item >> "Picture");
 _itemDescription = getText(configFile >> _itemClass >> _item >> "descriptionShort");

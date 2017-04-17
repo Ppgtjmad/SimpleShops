@@ -33,7 +33,7 @@ HG_VEHICLES_TEXT ctrlSetStructuredText parseText format
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "transportSoldier"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "enginePower"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "fuelCapacity"),
-	[_price,true] call HG_fnc_currencyToText
+	if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {[_price,true] call HG_fnc_currencyToText}
 ];
 
 _veh = _vehicle createVehicleLocal (getPosATL player);

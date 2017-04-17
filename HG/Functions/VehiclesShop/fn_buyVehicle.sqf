@@ -39,7 +39,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 		_vehicle allowDamage true;
 		[_price,1] call HG_fnc_addOrSubCash;
 		closeDialog 0;
-		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),_displayName,([_price,true] call HG_fnc_currencyToText)];
+		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),_displayName,if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
 	} else {
 	    titleText [(localize "STR_HG_SPAWN_POINTS_BUSY"),"PLAIN DOWN",1];
 	};
