@@ -194,7 +194,7 @@ Global - Added set rank function, set unit rank on the go (HG_fnc_setRank)<br/>
 Global - Added set owner function, set vehicle ownership on the go (HG_fnc_setOwner)<br/>
 Global - Added multiple ranks whitelist to shops (instead of only one rank for one shop)<br/>
 Global - Added arrows to set number of items to buy in weapons shop, you can now buy 1,2,3,4... magazines in one click<br/>
-Global - Altered fn_handleItems to reflect the above change
+Global - Altered fn_handleItems to reflect the above change<br/>
 Global - Changed the HG_XP variable type, you will have to run this in editor before tryin to join any server (you will lose your old XP & rank)
 ```
 profileNamespace setVariable ["HG_XP",["PRIVATE",0]]; 
