@@ -4,8 +4,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_item","_mode","_itemType","_cat",["_handled",true]];
-
+params["_item","_mode",["_qty",1],"_itemType","_cat",["_handled",true]];
 _itemType = [_item] call BIS_fnc_itemType;
 _cat = _itemType select 0;
 	
@@ -42,14 +41,25 @@ if(_cat isEqualTo "Weapon") then
     {
 	    if(_mode) then
 	    {
-		    if(player canAdd _item) then
+		    if(player canAdd [_item,_qty]) then
 		    {
-			    player addItem _item;
+			    if(_cat isEqualTo "Item") then
+				{
+				    for "_i" from 0 to _qty do
+					{
+				        player addItem _item;
+					};
+				} else {
+				    player addMagazines [_item,_qty];
+				};
 		    } else {
 		        _handled = false;
 		    };
         } else {
-	        player removeItem _item;
+		    for "_i" from 0 to _qty do
+			{
+				player removeItem _item;
+			};
 	    };
     };
 };

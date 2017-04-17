@@ -10,7 +10,7 @@
 			<Italian></Italian>
 		</Key>
 	    <Key ID="STR_HG_ITEM_BOUGHT">
-		    <Original>You have bought a %1 for %2</Original>
+		    <Original>You have bought %1x %2 for %3</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
@@ -253,7 +253,7 @@
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v1.8</Original>
+		        <Original>[HG] Simple Shops v1.9</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -500,8 +500,32 @@
 		    </Key>
 		</Container>
         <Container name="WeaponsShop">
+		    <Key ID="STR_HG_DLG_WS_ADD_TOOLTIP">
+		        <Original>+1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		    <Key ID="STR_HG_DLG_WS_SUB_TOOLTIP">
+		        <Original>-1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
 			<Key ID="STR_HG_DLG_WS_BUY_TOOLTIP">
 		        <Original>Buy selected item</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_WS_TOTAL">
+		        <Original>Total - %1</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

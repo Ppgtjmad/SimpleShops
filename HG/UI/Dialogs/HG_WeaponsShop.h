@@ -61,6 +61,24 @@ class HG_WeaponsShop
 			h = 2 * GUI_GRID_H;
 		};
 		
+		class AddBtnPicture: HG_RscPicture
+		{
+			text = "HG\UI\Icons\add.paa";
+			x = 14.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
+		class SubBtnPicture: HG_RscPicture
+		{
+			text = "HG\UI\Icons\sub.paa";
+			x = 7 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
 		class BuyBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\buy.paa";
@@ -131,6 +149,27 @@ class HG_WeaponsShop
 			w = 15 * GUI_GRID_W;
 			h = 5.5 * GUI_GRID_H;
 		};
+		
+		class AmountText: HG_RscText
+		{
+			idc = HG_WEAPONS_AMOUNT_IDC;
+			style = "0x02";
+			x = 10.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3.5 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
+		class TotalText: HG_RscText
+		{
+			idc = HG_WEAPONS_TOTAL_IDC;
+			style = "0x02";
+			shadow = 0;
+			x = 18 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 8 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
 	};
 	
 	class Controls
@@ -156,11 +195,33 @@ class HG_WeaponsShop
 			h = 1 * GUI_GRID_H;
 		};
 		
+		class AddButton: HG_RscButtonInvisible
+		{
+			idc = HG_WEAPONS_ADD_IDC;
+			tooltip = "$STR_HG_DLG_WS_ADD_TOOLTIP";
+			onButtonClick = "[0] call HG_fnc_itemBtns";
+			x = 14.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
+		class SubButton: HG_RscButtonInvisible
+		{
+			idc = HG_WEAPONS_SUB_IDC;
+			tooltip = "$STR_HG_DLG_WS_SUB_TOOLTIP";
+			onButtonClick = "[1] call HG_fnc_itemBtns";
+			x = 7 * GUI_GRID_W + GUI_GRID_X;
+			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
 		class BuyButton: HG_RscButtonInvisible
 		{
 			idc = HG_WEAPONS_BUY_IDC;
 			tooltip = "$STR_HG_DLG_WS_BUY_TOOLTIP";
-			onButtonClick = "_this call HG_fnc_buyItem";
+			onButtonClick = "[2] call HG_fnc_itemBtns";
 			x = 27 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;

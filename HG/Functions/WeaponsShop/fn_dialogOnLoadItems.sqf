@@ -21,7 +21,7 @@ createDialog "HG_WeaponsShop";
 private["_shopList","_ind"];
 
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_WeaponsShopCfg" >> _whatShop);
-	
+
 lbClear HG_WEAPONS_ITEM_SWITCH;
 
 {

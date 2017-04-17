@@ -1,4 +1,4 @@
-<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.8</h1>
+<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 1.9</h1>
 
 <p align="center"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
 
@@ -74,6 +74,16 @@ If you have a system in your mission that allows players to find vehicles on map
 	_unit refers to the new vehicle owner
 */
 [_vehicle,_unit] call HG_fnc_setOwner
+```
+
+<b>How to set player rank</b>
+
+```
+/*
+    _unit refers to the unit you want the rank to be set
+	"COLONEL" refers to the rank you want to set
+*/
+[_unit,"COLONEL"] call HG_fnc_setRank
 ```
 
 <b>Usage</b>
@@ -171,3 +181,17 @@ Global - XP (ranks) system (toggleable)<br/>
 Global - Kill count in HUD (toggleable)<br/>
 Global - Player tags (toggleable)<br/>
 Global - Map markers showing teammates in real time (toggleable)
+
+_v 1.9_<br/>
+Global - Fixed XP not updating<br/>
+Global - Fixed killed count addition & HUD killed count update<br/>
+Global - Fixed player tags were laggin<br/>
+Global - Fixed missing money icon error<br/>
+Global - Added Submarine type for vehicle spawn detection<br/>
+Global - Added function to add or sub XP (HG_fnc_addOrSubXP)<br/>
+Global - Added function to add or sub kills (HG_fnc_addOrSubKills)<br/>
+Global - Added set rank function, set unit rank on the go (HG_fnc_setRank)<br/>
+Global - Added set owner function, set vehicle ownership on the go (HG_fnc_setOwner)<br/>
+Global - Added multiple ranks whitelist to shops (instead of only one rank for one shop)<br/>
+Global - Added arrows to set number of items to buy in weapons shop, you can now buy 1,2,3,4... magazines in one click<br/>
+Global - Altered fn_handleItems to reflect the above change

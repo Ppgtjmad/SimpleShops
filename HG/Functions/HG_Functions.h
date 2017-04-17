@@ -98,9 +98,9 @@ class HG
 	class WeaponsShop
 	{
 		file = "HG\Functions\WeaponsShop";
-		class buyItem {};
 		class dialogOnLoadItems {};
 		class handleItems {};
+		class itemBtns {};
 		class itemSelectionChanged {};
 		class xItemSelectionChanged {};
 	};
