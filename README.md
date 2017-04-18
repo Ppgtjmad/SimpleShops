@@ -187,6 +187,8 @@ Global - Fixed XP not updating<br/>
 Global - Fixed killed count addition & HUD killed count update<br/>
 Global - Fixed player tags were laggin<br/>
 Global - Fixed missing money icon error<br/>
+Global - Fixed double addActions on vehicles<br/>
+Global - Fixed locked up in vehicles<br/>
 Global - Added Submarine type for vehicle spawn detection<br/>
 Global - Added function to add or sub XP (HG_fnc_addOrSubXP)<br/>
 Global - Added function to add or sub kills (HG_fnc_addOrSubKills)<br/>
