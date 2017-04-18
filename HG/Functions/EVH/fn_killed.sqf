@@ -14,7 +14,10 @@ if(HG_KILL_REWARD_ENABLED) then
 		    if(HG_TEAM_KILL_PENALTY_ENABLED) then
 		    {
 			    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "tkPenalty")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
-			    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpPenalty")),1] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
+			    if(HG_XP_ENABLED) then
+				{
+				    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpPenalty")),1] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
+				};
 		    };
 	    } else {
 		    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];

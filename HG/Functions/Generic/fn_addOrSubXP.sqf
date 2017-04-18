@@ -40,7 +40,7 @@ if(_mode isEqualTo 1) then
 };
 
 profileNamespace setVariable ["HG_XP",[(rank player),_newXp]];
-saveProfilenamespace;
+saveProfileNamespace;
 
 if(HG_HUD_ENABLED) then
 {

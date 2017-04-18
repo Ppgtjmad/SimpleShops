@@ -7,15 +7,15 @@ params["_mode","_oldVal","_newVal"];
 
 _oldVal = profileNamespace getVariable "HG_KillCount";
 
-switch(_mode) do
+_newVal = switch(_mode) do
 {
     case 0: 
 	{
-		_newVal = _oldVal + 1;
+		_oldVal + 1;
 	};
 	case 1:
 	{
-		_newVal = _oldVal - 1;
+		_oldVal - 1;
 	};
 };
 

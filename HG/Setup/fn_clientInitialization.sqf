@@ -40,6 +40,7 @@ if(HG_SAVE_ENABLED) then
     if((isNil {profileNamespace getVariable "HG_Save"}) OR HG_RESET_SAVED_MONEY_ENABLED) then
 	{
 	    profileNamespace setVariable["HG_Save",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "startCash"))];
+		saveProfileNamespace;
 	};
 } else {
     player setVariable["HG_myCash",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "startCash"))];
@@ -50,9 +51,10 @@ if(HG_SAVE_ENABLED) then
 */
 if(HG_XP_ENABLED) then
 {
-    if(isNil {profileNamespace getVariable "HG_XP"}) then
+    if(isNil {profileNamespace getVariable ["HG_XP",[(rank player),0]]}) then
 	{
 	    profileNamespace setVariable["HG_XP",[(rank player),0]];
+		saveProfileNamespace;
 	} else {
 	    player setRank ((profileNamespace getVariable "HG_XP") select 0);
 	};
@@ -63,9 +65,10 @@ if(HG_XP_ENABLED) then
 */
 if(HG_KILL_COUNT_ENABLED) then
 {
-    if(isNil {profileNamespace getVariable "HG_KillCount"}) then
+    if(isNil {profileNamespace getVariable ["HG_KillCount",0]}) then
 	{
 	    profileNamespace setVariable["HG_KillCount",0];
+		saveProfileNamespace;
 	};
 };
 

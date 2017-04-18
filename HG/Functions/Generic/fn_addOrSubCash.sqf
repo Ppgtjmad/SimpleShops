@@ -13,15 +13,15 @@ if(HG_SAVE_ENABLED) then
     _oldVal = player getVariable "HG_myCash";
 };
 
-switch(_mode) do
+_newVal = switch(_mode) do
 {
     case 0: 
 	{
-		_newVal = _oldVal + _amount;
+		_oldVal + _amount;
 	};
 	case 1:
 	{
-		_newVal = _oldVal - _amount;
+		_oldVal - _amount;
 	};
 };
 
