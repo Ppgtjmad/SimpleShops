@@ -5,12 +5,11 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_ctrl","_index","_cat","_camera","_shopItems","_ind","_itemConfig","_itemName"];
+params["_ctrl","_index","_cat","_shopItems","_ind","_itemConfig","_itemName"];
 
 disableSerialization;
 	
 _cat = _ctrl lbData _index;
-_camera = _ctrl lbValue _index;
 _shopItems = getArray(missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> HG_STRING_HANDLER >> _cat >> "content");
 
 lbClear HG_CLOTHING_LIST;
@@ -27,8 +26,6 @@ HG_CLOTHING_LIST lbSetValue [_ind,0];
     HG_CLOTHING_LIST lbSetValue[_ind,(_x select 1)];
 	HG_CLOTHING_LIST lbSetTooltip[_ind,format[(localize "STR_HG_DLG_PRICE_TAG"),if((_x select 1) <= 0) then {(localize "STR_HG_DLG_FREE")} else {([(_x select 1),true] call HG_fnc_currencyToText)}]];
 } forEach _shopItems;
-
-[_camera] call HG_fnc_setCamPos;
 
 //HG_CLOTHING_LIST lbSetCurSel -1;
 
