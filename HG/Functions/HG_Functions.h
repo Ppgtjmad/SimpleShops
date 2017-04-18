@@ -21,7 +21,6 @@ class HG
 		class dialogOnUnloadClothing {};
 		class fillBox {};
 		class reset {};
-	    class setCamPos {};
 		class xClothingSelectionChanged {};
 	};
 	
