@@ -36,32 +36,32 @@ if(_cat isEqualTo "Weapon") then
 	{
 	    player addWeapon _item;
 	};
-} else {
-    if(_cat in ["Magazine","Mine","Item"]) then
-    {
-	    if(_mode) then
-	    {
-		    if(player canAdd [_item,_qty]) then
-		    {
-			    if(_cat isEqualTo "Item") then
-				{
-				    for "_i" from 0 to _qty do
-					{
-				        player addItem _item;
-					};
-				} else {
-				    player addMagazines [_item,_qty];
-				};
-		    } else {
-		        _handled = false;
-		    };
-        } else {
-		    for "_i" from 0 to _qty do
+};
+
+if(_cat in ["Magazine","Mine","Item"]) then
+{
+	if(_mode) then
+	{
+		if(player canAdd [_item,_qty]) then
+		{
+			if(_cat isEqualTo "Item") then
 			{
-				player removeItem _item;
+				for "_i" from 0 to _qty do
+				{
+				    player addItem _item;
+				};
+			} else {
+				player addMagazines [_item,_qty];
 			};
-	    };
-    };
+		} else {
+		    _handled = false;
+		};
+    } else {
+		for "_i" from 0 to _qty do
+		{
+			player removeItem _item;
+		};
+	};
 };
 
 _handled;

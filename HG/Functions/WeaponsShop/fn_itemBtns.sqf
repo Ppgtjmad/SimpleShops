@@ -25,7 +25,7 @@ switch(_mode) do
 	case 1:
 	{
 	    _qty = _qty - 1;
-		if(_qty < 0) then {_qty = 1;};
+		if(_qty <= 0) then {_qty = 1;};
 		
 		HG_WEAPONS_AMOUNT ctrlSetText str _qty;
 		HG_WEAPONS_TOTAL ctrlSetText format[(localize "STR_HG_DLG_WS_TOTAL"),([(_price * _qty),true] call HG_fnc_currencyToText)];
@@ -41,14 +41,16 @@ switch(_mode) do
 			
 		    if([_selectedItem,true,_qty] call HG_fnc_handleItems) then
 			{
-			    private["_itemClass","_displayName"];
-				_itemClass = [_selectedItem] call HG_fnc_getConfig;
-				_displayName = getText(configFile >> _itemClass >> _selectedItem >> "displayName");
+			    private["_config","_displayName"];
+				_config = [_selectedItem] call HG_fnc_getConfig;
+				_displayName = getText(configFile >> _config >> _selectedItem >> "displayName");
 				if(_price > 0) then
 				{
 				    [_price,1] call HG_fnc_addOrSubCash;
 				};
 				hint format[(localize "STR_HG_ITEM_BOUGHT"),_qty,_displayName,if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
+			} else {
+			    hint (localize "STR_HG_INVENTORY_FULL");
 			};
 		} else {
 		    hint format[(localize "STR_HG_NOT_ENOUGH_MONEY"),([_price,true] call HG_fnc_currencyToText)];

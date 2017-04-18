@@ -249,6 +249,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_INVENTORY_FULL">
+		    <Original>It seems like your inventory is either full or it can't hold that many items</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">
