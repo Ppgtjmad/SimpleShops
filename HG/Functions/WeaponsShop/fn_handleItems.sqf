@@ -46,7 +46,7 @@ if(_cat in ["Magazine","Mine","Item"]) then
 		{
 			if(_cat isEqualTo "Item") then
 			{
-				for "_i" from 0 to _qty do
+				for "_i" from 1 to _qty do
 				{
 				    player addItem _item;
 				};
@@ -57,7 +57,7 @@ if(_cat in ["Magazine","Mine","Item"]) then
 		    _handled = false;
 		};
     } else {
-		for "_i" from 0 to _qty do
+		for "_i" from 1 to _qty do
 		{
 			player removeItem _item;
 		};
