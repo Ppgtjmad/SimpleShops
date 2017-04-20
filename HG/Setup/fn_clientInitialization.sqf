@@ -33,67 +33,6 @@ HG_INVENTORY_OPENED_EVH = player addEventHandler["InventoryOpened",{_this call H
 HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call HG_fnc_inventoryClosed}];
 
 /*
-    Init money variable
-*/
-if(HG_SAVE_ENABLED) then
-{
-    if((isNil {profileNamespace getVariable "HG_Save"}) OR HG_RESET_SAVED_MONEY_ENABLED) then
-	{
-	    profileNamespace setVariable["HG_Save",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "startCash"))];
-		saveProfileNamespace;
-	};
-} else {
-    player setVariable["HG_myCash",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "startCash"))];
-};
-
-/*
-    Init XP variable (if applicable)
-*/
-if(HG_XP_ENABLED) then
-{
-    if(isNil {profileNamespace getVariable ["HG_XP",[(rank player),0]]}) then
-	{
-	    profileNamespace setVariable["HG_XP",[(rank player),0]];
-		saveProfileNamespace;
-	} else {
-	    player setRank ((profileNamespace getVariable "HG_XP") select 0);
-	};
-};
-
-/*
-    Init kill count variable (if applicable)
-*/
-if(HG_KILL_COUNT_ENABLED) then
-{
-    if(isNil {profileNamespace getVariable ["HG_KillCount",0]}) then
-	{
-	    profileNamespace setVariable["HG_KillCount",0];
-		saveProfileNamespace;
-	};
-};
-
-/*
-    Init gear (if applicable)
-*/
-if(HG_PLAYER_INVENTORY_SAVE_ENABLED) then
-{
-    if(isNil {profileNamespace getVariable "HG_Gear"}) then
-	{
-	    [] call HG_fnc_getGear;
-	} else {
-	    (profileNamespace getVariable "HG_Gear") call HG_fnc_parseGear;
-	};
-};
-
-/*
-    Init HUD (if applicable)
-*/
-if(HG_HUD_ENABLED) then
-{
-    [0] call HG_fnc_HUD;
-};
-
-/*
     Init Tags (if applicable)
 */
 if(HG_TAGS_ENABLED) then

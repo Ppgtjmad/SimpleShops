@@ -40,7 +40,7 @@ switch(_mode) do
 		
 	    if(HG_SAVE_ENABLED) then
 		{
-		    _cash = profileNamespace getVariable "HG_Save";
+		    _cash = HG_CASH;
 		} else {
 		    _cash = player getVariable "HG_myCash";
 		};
@@ -54,7 +54,7 @@ switch(_mode) do
 		
 		if((rank player) != "COLONEL") then 
 		{
-		    _text = format["%1/%2",((profileNamespace getVariable "HG_XP") select 1),(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
+		    _text = format["%1/%2",(HG_XP select 1),(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
 		} else {
 		    _text = (localize "STR_HG_XP_MAXED");
 		};
@@ -70,7 +70,7 @@ switch(_mode) do
 	// HUD Kill Count Update
 	case 4:
 	{
-	    HG_HUD_KILL_COUNT_TEXT ctrlSetText format["%1",(profileNamespace getVariable ["HG_KillCount",0])];
+	    HG_HUD_KILL_COUNT_TEXT ctrlSetText format["%1",HG_KILL_COUNT];
 	};
 	// HUD Off
 	case 5:

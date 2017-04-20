@@ -8,7 +8,7 @@ params["_amount","_mode",["_ranks",["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT"
 if((rank player) isEqualTo "COLONEL") exitWith {};
 
 private["_curXp","_rankIndex","_newXp"];
-_curXp = (profileNamespace getVariable "HG_XP") select 1;
+_curXp = HG_XP select 1;
 _rankIndex = _ranks find (rank player);
 
 if(_mode isEqualTo 1) then
@@ -39,8 +39,15 @@ if(_mode isEqualTo 1) then
 	};
 };
 
-profileNamespace setVariable ["HG_XP",[(rank player),_newXp]];
-saveProfileNamespace;
+HG_CLIENT = [[(rank player),_newXp],(getPlayerUID player),0];
+if(isServer) then
+{
+	[HG_CLIENT] call HG_fnc_pvarLocal;
+} else {
+    publicVariableServer "HG_CLIENT";
+};
+HG_CLIENT = nil;
+HG_XP = [(rank player),_newXp];
 
 if(HG_HUD_ENABLED) then
 {

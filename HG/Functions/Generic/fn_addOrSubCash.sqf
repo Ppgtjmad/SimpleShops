@@ -8,7 +8,7 @@ params["_amount","_mode","_oldVal","_newVal"];
 
 if(HG_SAVE_ENABLED) then
 {
-    _oldVal = profileNamespace getVariable "HG_Save";
+    _oldVal = HG_CASH;
 } else {
     _oldVal = player getVariable "HG_myCash";
 };
@@ -27,10 +27,17 @@ _newVal = switch(_mode) do
 
 if(HG_SAVE_ENABLED) then
 {
-    profileNamespace setVariable["HG_Save",_newVal];
-	saveProfileNamespace;
+    HG_CLIENT = [_newVal,(getPlayerUID player),1];
+	if(isServer) then
+	{
+	    [HG_CLIENT] call HG_fnc_pvarLocal;
+	} else {
+        publicVariableServer "HG_CLIENT";
+	};
+	HG_CLIENT = nil;
+	HG_CASH = _newVal;
 } else {
-    player setVariable["HG_myCash",_newVal];
+    player setVariable ["HG_myCash",_newVal];
 };
 
 if(HG_HUD_ENABLED) then

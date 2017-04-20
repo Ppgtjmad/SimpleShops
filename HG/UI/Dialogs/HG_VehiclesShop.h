@@ -192,7 +192,7 @@ class HG_VehiclesShop
 		class MyCashButton: HG_RscButtonInvisible
 		{
 			idc = HG_VEHICLES_MC_IDC;
-			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),if(HG_SAVE_ENABLED) then {[(profileNamespace getVariable 'HG_Save'),true] call HG_fnc_currencyToText} else {[(player getVariable 'HG_myCash'),true] call HG_fnc_currencyToText}],'PLAIN DOWN',0.5]";
+			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),if(HG_SAVE_ENABLED) then {[HG_CASH,true] call HG_fnc_currencyToText} else {[(player getVariable 'HG_myCash'),true] call HG_fnc_currencyToText}],'PLAIN DOWN',0.5]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 33 * GUI_GRID_W + GUI_GRID_X;
 			y = -10 * GUI_GRID_H + GUI_GRID_Y;

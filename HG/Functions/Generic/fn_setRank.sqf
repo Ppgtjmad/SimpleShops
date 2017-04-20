@@ -10,8 +10,15 @@ _unit setRank _rank;
 
 if(HG_XP_ENABLED) then
 {
-	profileNamespace setVariable["HG_XP",[_rank,0]];
-	saveProfileNamespace;
+    HG_CLIENT = [[_rank,0],(getPlayerUID player),0];
+	if(isServer) then
+	{
+	    [HG_CLIENT] call HG_fnc_pvarLocal;
+	} else {
+	    publicVariableServer "HG_CLIENT";
+	};
+	HG_CLIENT = nil;
+	HG_XP = [_rank,0];
 };
 
 if(HG_HUD_ENABLED) then

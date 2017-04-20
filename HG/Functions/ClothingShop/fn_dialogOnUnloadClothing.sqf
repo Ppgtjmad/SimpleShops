@@ -10,7 +10,7 @@ if(!HG_CLOTHING_BOUGHT) then
 {
     [] call HG_fnc_reset;
 } else {
-    [] call HG_fnc_getGear;
+    [player] remoteExecCall ["HG_fnc_getGear",2,false];
 };
 
 if(!isNull HG_PLAYER_PREVIEW) then

@@ -162,4 +162,36 @@ HG_fnc_disconnect = compileFinal
 	saveProfileNamespace;
 ";
 
+HG_fnc_pvarLocal = compileFinal
+"
+    params['_value','_val','_puid','_mode','_var'];
+	
+	_val = _value select 0;
+	_puid = _value select 1;
+	_mode = _value select 2;
+	
+	_var = switch(_mode) do
+	{
+	    // Xp
+	    case 0:
+		{
+		    'HG_XP';
+		};
+		// Cash
+		case 1:
+		{
+		    'HG_Save';
+		};
+		// Kill count
+		case 2:
+		{
+		    'HG_KillCount';
+		};
+	};
+	
+	profileNamespace setVariable [format['%1_%2',_var,_puid],_val];
+	saveProfileNamespace;
+";
+
 addMissionEventHandler ["HandleDisconnect",{_this call HG_fnc_disconnect; false;}];
+"HG_CLIENT" addPublicVariableEventHandler {(_this select 1) call HG_fnc_pvarLocal;};

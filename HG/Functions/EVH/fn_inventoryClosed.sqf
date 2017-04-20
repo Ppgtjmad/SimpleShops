@@ -7,7 +7,7 @@ params["_unit","_targetContainer","_secContainer",["_handled",false]];
 
 if(HG_PLAYER_INVENTORY_SAVE_ENABLED) then
 {
-    [] call HG_fnc_getGear;
+    [player] remoteExecCall ["HG_fnc_getGear",2,false];
 };
 
 _handled;

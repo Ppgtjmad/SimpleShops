@@ -7,7 +7,7 @@ params["_value","_cash",["_hasEnough",false]];
 
 if(HG_SAVE_ENABLED) then
 {
-    _cash = profileNamespace getVariable "HG_Save";
+    _cash = HG_CASH;
 } else {
     _cash = player getVariable "HG_myCash";
 };

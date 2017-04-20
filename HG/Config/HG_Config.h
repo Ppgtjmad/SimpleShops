@@ -14,7 +14,7 @@
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
-	enablePlayerInventorySave - BOOL - Enable player gear saving (client profileNamespace)? Disable this if you have a custom saving system
+	enablePlayerInventorySave - BOOL - Enable player gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableXP - BOOL - Enable XP system?
 	enableKillCount - BOOL - Enable kill count in HUD?
