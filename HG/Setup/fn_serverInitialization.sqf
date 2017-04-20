@@ -172,17 +172,14 @@ HG_fnc_pvarLocal = compileFinal
 	
 	_var = switch(_mode) do
 	{
-	    // Xp
 	    case 0:
 		{
 		    'HG_XP';
 		};
-		// Cash
 		case 1:
 		{
 		    'HG_Save';
 		};
-		// Kill count
 		case 2:
 		{
 		    'HG_KillCount';
