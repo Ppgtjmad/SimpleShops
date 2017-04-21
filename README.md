@@ -4,10 +4,11 @@
 
 <p align="center">
 <i>Click on one of those links to get what you need</i><br/><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-try-it" target="_blank">How to try it</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-configure" target="_blank">How to configure</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards" target="_blank">How to setup kill reward</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Usage" target="_blank">Usage</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Useful-Functions" target="_blank">Useful Functions</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Updates" target="_blank">Updates</a></b>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-try-it">How to try it</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-use-it-in-your-custom-mission">How to use it in your custom mission</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-configure">How to configure</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards">How to setup kill reward</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Usage">Usage</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Useful-Functions">Useful Functions</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Updates">Updates</a></b>
 </p>
