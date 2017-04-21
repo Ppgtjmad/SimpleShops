@@ -22,6 +22,7 @@ params
 if((uniform _unit) != "") then 
 {
     _tmp = [];
+	
     _uMagList = getMagazineCargo uniformContainer _unit;
     {
         _amntList = _uMagList select 1;
@@ -33,6 +34,7 @@ if((uniform _unit) != "") then
         _amntList = _uItemList select 1;
         _tmp pushBack [_x,(_amntList select _forEachIndex)];
     } forEach (_uItemList select 0);
+	
 	if((count _tmp) != 0) then
 	{
 	    _uItems pushBack _tmp;
@@ -42,6 +44,7 @@ if((uniform _unit) != "") then
 if((vest _unit) != "") then 
 {
     _tmp = [];
+	
     _vMagList = getMagazineCargo vestContainer _unit;
     {
         _amntList = _vMagList select 1;
@@ -53,6 +56,7 @@ if((vest _unit) != "") then
         _amntList = _vItemList select 1;
         _tmp pushBack [_x,(_amntList select _forEachIndex)];
     } forEach (_vItemList select 0);
+	
 	if((count _tmp) != 0) then
 	{
 	    _vItems pushBack _tmp;
@@ -62,6 +66,7 @@ if((vest _unit) != "") then
 if((backpack _unit) != "") then 
 {
     _tmp = [];
+	
     _bMagList = getMagazineCargo backpackContainer _unit;
     {
         _amntList = _bMagList select 1;
@@ -73,6 +78,7 @@ if((backpack _unit) != "") then
         _amntList = _bItemList select 1;
         _tmp pushBack [_x,(_amntList select _forEachIndex)];
     } forEach (_bItemList select 0);
+	
 	if((count _tmp) != 0) then
 	{
 	    _bItems pushBack _tmp;

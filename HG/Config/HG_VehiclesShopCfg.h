@@ -11,7 +11,7 @@
 		{
 		    whitelistRanks - ARRAY OF STRINGS - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL or mixed
 			
-			class YourShopCategory - Shop category, can be whatever you want (Tanks, Jets, Bananas, etc...)
+			class YourShopCategory - Shop category, can be whatever you want
 			{
 				displayName - STRING - Category display name
 				vehicles - ARRAY OF ARRAYS - Shop content

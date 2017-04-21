@@ -31,11 +31,8 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
 	};
 	
 	HG_XP = profileNamespace getVariable format["HG_XP_%1",_uid];
-	if(!hasInterface) then
-	{
-	    (owner _player) publicVariableClient "HG_XP";
-	    HG_XP = nil;
-	};
+	(owner _player) publicVariableClient "HG_XP";
+	HG_XP = nil;
 };
 
 /*
@@ -51,11 +48,8 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) th
 	};
 	
 	HG_CASH = profileNamespace getVariable format["HG_Cash_%1",_uid];
-	if(!hasInterface) then
-	{
-	    (owner _player) publicVariableClient "HG_CASH";
-	    HG_CASH = nil;
-	};
+	(owner _player) publicVariableClient "HG_CASH";
+	HG_CASH = nil;
 } else {
     _player setVariable["HG_myCash",(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"))];
 };
@@ -73,11 +67,8 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 
 	};
 	
 	HG_KILL_COUNT = profileNamespace getVariable format["HG_KillCount_%1",_uid];
-	if(!hasInterface) then
-	{
-	    (owner _player) publicVariableClient "HG_KILL_COUNT";
-	    HG_KILL_COUNT = nil;
-	};
+	(owner _player) publicVariableClient "HG_KILL_COUNT";
+	HG_KILL_COUNT = nil;
 };
 
 /*

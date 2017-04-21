@@ -178,7 +178,7 @@ HG_fnc_pvarLocal = compileFinal
 		};
 		case 1:
 		{
-		    'HG_Save';
+		    'HG_Cash';
 		};
 		case 2:
 		{

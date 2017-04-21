@@ -38,7 +38,7 @@ if(_cat isEqualTo "Weapon") then
 	};
 };
 
-if(_cat in ["Magazine","Mine","Item"]) then
+if(_cat in ["Magazine","Mine","Item","Grenade"]) then
 {
 	if(_mode) then
 	{

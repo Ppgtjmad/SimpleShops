@@ -11,7 +11,7 @@
 		{
 			whitelistRanks - ARRAY OF STRINGS - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL or mixed
 			
-			class ShopCategory - Shop category, can only be Glasses/Headgear/Vest/Uniform/Backpack
+			class ShopCategory - Shop category, can only be Glasses/Headgear/Uniform/Vest/Backpack
 			{
 				content - ARRAY OF ARRAYS - Shop content
 				|- 0 - STRING - Classname
