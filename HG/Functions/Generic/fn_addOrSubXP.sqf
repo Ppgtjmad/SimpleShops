@@ -40,7 +40,7 @@ if(_mode isEqualTo 1) then
 };
 
 HG_CLIENT = [[(rank player),_newXp],(getPlayerUID player),0];
-if(isServer AND hasInterface) then
+if(isServer) then
 {
 	[HG_CLIENT] call HG_fnc_pvarLocal;
 } else {
