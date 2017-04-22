@@ -191,4 +191,4 @@ HG_fnc_pvarLocal = compileFinal
 ";
 
 addMissionEventHandler ["HandleDisconnect",{_this call HG_fnc_disconnect; false;}];
-"HG_CLIENT" addPublicVariableEventHandler {(_this select 1) call HG_fnc_pvarLocal;};
+"HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_pvarLocal;};

@@ -130,7 +130,7 @@
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_TIME_TO_PAY">
-		    <Original>You have received a paycheck of %1, next in %2 minute(s)</Original>
+		    <Original>You have received a paycheck of %1</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
