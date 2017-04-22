@@ -28,7 +28,7 @@ _newVal = switch(_mode) do
 if(HG_SAVE_ENABLED) then
 {
     HG_CLIENT = [_newVal,(getPlayerUID player),1];
-	if(isServer) then
+	if(isServer AND hasInterface) then
 	{
 	    [HG_CLIENT] call HG_fnc_pvarLocal;
 	} else {

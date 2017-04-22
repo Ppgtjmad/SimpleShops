@@ -23,7 +23,7 @@ if(_newVal < 0) then
 };
 
 HG_CLIENT = [_newVal,(getPlayerUID player),2];
-if(isServer) then
+if(isServer AND hasInterface) then
 {
 	[HG_CLIENT] call HG_fnc_pvarLocal;
 } else {
