@@ -17,7 +17,7 @@ params
 
 {
     _gear pushBack _x;
-} forEach [(uniform player),(vest player),(backpack player),(goggles _unit),(headgear _unit),(assignedItems _unit)];
+} forEach [(uniform _unit),(vest _unit),(backpack _unit),(goggles _unit),(headgear _unit),(assignedItems _unit)];
 
 if((uniform _unit) != "") then 
 {
