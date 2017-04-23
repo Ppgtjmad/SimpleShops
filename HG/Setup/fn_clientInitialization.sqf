@@ -22,6 +22,7 @@ HG_XP_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEq
 HG_KILL_COUNT_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1;
 HG_TAGS_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableTags")) isEqualTo 1;
 HG_MARKERS_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableMarkers")) isEqualTo 1;
+HG_ADMINS = getArray(missionConfigFile >> "CfgClient" >> "admins");
 
 /*
     Init EVHs
@@ -31,6 +32,12 @@ HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];
 HG_INVENTORY_OPENED_EVH = player addEventHandler["InventoryOpened",{_this call HG_fnc_inventoryOpened}];
 HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call HG_fnc_inventoryClosed}];
+
+if((getPlayerUID player) in HG_ADMINS) then
+{
+    waitUntil {!isNull (findDisplay 46)};
+    HG_KEY_DOWN_EVH = (findDisplay 46) displayAddEventHandler ["KeyDown",{if(((_this select 1) isEqualTo 219) && !dialog) then {[] call HG_fnc_dialogOnLoadAdminMenu}}];
+};
 
 /*
     Init Tags (if applicable)

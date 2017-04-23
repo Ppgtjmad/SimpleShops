@@ -7,7 +7,7 @@
 
 disableSerialization;
 
-HG_GARAGE_BACK ctrlSetText (localize "STR_HG_GRG_QUERYING_SERVER");
+HG_GARAGE_BACK ctrlSetText (localize "STR_HG_DLG_QUERYING_SERVER");
 
 lbClear HG_GARAGE_LIST;
 

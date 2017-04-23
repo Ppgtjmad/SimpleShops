@@ -265,11 +265,19 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_KILLED_BY_ADMIN">
+		    <Original>You've been killed by an ADMINISTRATOR</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>    
+		</Key>
 	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v1.9</Original>
+		        <Original>[HG] Simple Shops v2.0</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -310,6 +318,144 @@
 		    </Key>
 			<Key ID="STR_HG_DLG_PRICE_TAG">
 		        <Original>Price: %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_QUERYING_SERVER">
+		        <Original>Querying server...</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_PLAYER_COUNT">
+		        <Original>Online - %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+		</Container>
+		<Container name="AdminMenu">
+		    <Key ID="STR_HG_DLG_AM_REFRESH_TOOLTIP">
+			    <Original>Refresh player list</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_KILL_TOOLTIP">
+			    <Original>Kill selected player</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_RANK_TOOLTIP">
+			    <Original>Set rank</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
+			    <Original>Set XP</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
+			    <Original>Set kills</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_CASH_TOOLTIP">
+			    <Original>Set cash</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
+			    <Original>Tick this box to REMOVE</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
+			    <Original>Tick this box to ADD</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_LIST">
+			    <Original>%1 - %2</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_UID">
+			    <Original>UID - %1</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_SIDE">
+			    <Original>Side - %2</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_RANK">
+			    <Original>Rank - %3</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_XP">
+			    <Original>XP - %4/%5</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_CASH">
+			    <Original>Cash - %6</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_KILLS">
+			    <Original>Kills - %7</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -386,14 +532,6 @@
 		    </Key>
 		    <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
 		        <Original>Delete selected vehicle (will be lost forever)</Original>
-		        <French></French>
-			    <German></German>
-			    <Russian></Russian>
-			    <Spanish></Spanish>
-			    <Italian></Italian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_QUERYING_SERVER">
-		        <Original>Querying server...</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

@@ -4,24 +4,17 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_amount","_mode","_oldVal","_newVal"];
-
-if(HG_SAVE_ENABLED) then
-{
-    _oldVal = HG_CASH;
-} else {
-    _oldVal = player getVariable "HG_myCash";
-};
+params[["_amount",1,[0]],["_mode",0,[0]],"_newVal"];
 
 _newVal = switch(_mode) do
 {
     case 0: 
 	{
-		_oldVal + _amount;
+		HG_CASH + _amount;
 	};
 	case 1:
 	{
-		_oldVal - _amount;
+		HG_CASH - _amount;
 	};
 };
 
@@ -35,10 +28,10 @@ if(HG_SAVE_ENABLED) then
         publicVariableServer "HG_CLIENT";
 	};
 	HG_CLIENT = nil;
-	HG_CASH = _newVal;
-} else {
-    player setVariable ["HG_myCash",_newVal];
 };
+
+HG_CASH = _newVal;
+player setVariable ["HG_Cash",HG_CASH,true];
 
 if(HG_HUD_ENABLED) then
 {

@@ -182,7 +182,7 @@ HG_fnc_pvarLocal = compileFinal
 		};
 		case 2:
 		{
-		    'HG_KillCount';
+		    'HG_Kills';
 		};
 	};
 	

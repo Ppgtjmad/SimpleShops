@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_amount","_mode",["_ranks",["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"]]];
+params[["_amount",1,[0]],["_mode",0,[0]],["_ranks",["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"]]];
 
 if((rank player) isEqualTo "COLONEL") exitWith {};
 
@@ -48,6 +48,7 @@ if(isServer) then
 };
 HG_CLIENT = nil;
 HG_XP = [(rank player),_newXp];
+player setVariable ["HG_XP",HG_XP,true];
 
 if(HG_HUD_ENABLED) then
 {

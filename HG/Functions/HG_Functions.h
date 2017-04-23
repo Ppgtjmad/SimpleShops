@@ -6,6 +6,16 @@
 
 class HG
 {
+	class AdminMenu
+	{
+		file = "HG\Functions\AdminMenu";
+		class adminMenuBtns {};
+		class adminMenuListChanged {};
+		class checkboxChanged {};
+		class dialogOnLoadAdminMenu {};
+		class refreshPlayers {};
+	};
+	
 	class AI
 	{
 	    file = "HG\Functions\AI";

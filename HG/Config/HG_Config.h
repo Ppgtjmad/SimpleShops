@@ -20,6 +20,7 @@
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable teammates position markers on map?
+	admins - ARRAY OF STRINGS - Admins PUIDs
 	
 	class HG_MasterCfg
 	{
@@ -53,6 +54,7 @@ enableXP = true;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
+admins[] = {};
 
 class HG_MasterCfg
 {

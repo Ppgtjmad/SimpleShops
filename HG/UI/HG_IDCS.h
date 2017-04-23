@@ -53,3 +53,24 @@
 #define HG_HUD_MONEY_TEXT_IDC         8006
 
 #define HG_TAGS_TEXT_IDC              8100
+
+#define HG_ADM_IDD                    9000
+#define HG_ADM_TEXT_IDC               9001
+#define HG_ADM_COUNT_IDC              9002
+#define HG_ADM_LIST_IDC               9003
+#define HG_ADM_COMBO_IDC              9004
+#define HG_ADM_REFRESH_IDC            9005
+#define HG_ADM_KILL_IDC               9006
+#define HG_ADM_RANK_IDC               9007
+#define HG_ADM_XP_IDC                 9008
+#define HG_ADM_KILLS_IDC              9009
+#define HG_ADM_CASH_IDC               9010
+#define HG_ADM_XP_EDIT_IDC            9011
+#define HG_ADM_KILLS_EDIT_IDC         9012
+#define HG_ADM_CASH_EDIT_IDC          9013
+#define HG_ADM_XP_SUB_IDC             9014
+#define HG_ADM_KILLS_SUB_IDC          9015
+#define HG_ADM_CASH_SUB_IDC           9016
+#define HG_ADM_XP_ADD_IDC             9017
+#define HG_ADM_KILLS_ADD_IDC          9018
+#define HG_ADM_CASH_ADD_IDC           9019

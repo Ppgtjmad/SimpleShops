@@ -19,14 +19,14 @@ if(!isNull HG_VEHICLE_PREVIEW) then
 
 HG_VEHICLES_TEXT ctrlSetStructuredText parseText format
 [
-    " <br/>"+
-	" <img image='%1' size='2' align='center'></img><br/><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_SPEED")+ "</t><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_ARMOR")+ "</t><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_SEATS")+ "</t><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_ENGINE")+ "</t><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_FUEL_MAX")+ "</t><br/>"+
-	" <t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_PRICE_TAG")+ "</t>",
+    "<br/>"+
+	"<img image='%1' size='2' align='center'></img><br/><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_SPEED")+ "</t><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_ARMOR")+ "</t><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_SEATS")+ "</t><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_ENGINE")+ "</t><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_FUEL_MAX")+ "</t><br/>"+
+	"<t align='center' size='1'>"+ (localize "STR_HG_DLG_VS_PRICE_TAG")+ "</t>",
 	getText(configFile >> "CfgVehicles" >> _vehicle >> "picture"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "maxSpeed"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "armor"),

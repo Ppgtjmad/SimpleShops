@@ -231,7 +231,7 @@ class HG_WeaponsShop
 		class MyCashButton: HG_RscButtonInvisible
 		{
 			idc = HG_WEAPONS_MC_IDC;
-			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),if(HG_SAVE_ENABLED) then {[HG_CASH,true] call HG_fnc_currencyToText} else {[(player getVariable 'HG_myCash'),true] call HG_fnc_currencyToText}]";
+			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),([HG_CASH,true] call HG_fnc_currencyToText)]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 30.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;

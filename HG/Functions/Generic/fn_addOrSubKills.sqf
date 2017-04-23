@@ -3,17 +3,17 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_mode","_newVal"];
+params[["_mode",0,[0]],["_amount",1,[0]],"_newVal"];
 
 _newVal = switch(_mode) do
 {
     case 0: 
 	{
-		HG_KILL_COUNT + 1;
+		HG_KILLS + _amount;
 	};
 	case 1:
 	{
-		HG_KILL_COUNT - 1;
+		HG_KILLS - _amount;
 	};
 };
 
@@ -30,7 +30,8 @@ if(isServer) then
     publicVariableServer "HG_CLIENT";
 };
 HG_CLIENT = nil;
-HG_KILL_COUNT = _newVal; 
+HG_KILLS = _newVal; 
+player setVariable ["HG_Kills",HG_KILLS,true];
 
 [4] call HG_fnc_HUD;
 

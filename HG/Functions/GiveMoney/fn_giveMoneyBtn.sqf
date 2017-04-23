@@ -9,9 +9,7 @@ private _value = parseNumber(ctrlText HG_GM_EDIT);
 
 if(!([_value] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
 if(_value <= 0) exitWith {hint (localize "STR_HG_NEGATIVE_OR_ZERO");};
-
-private _cash = if(HG_SAVE_ENABLED) then {HG_CASH} else {(player getVariable "HG_myCash")};
-if(_value > _cash) exitWith {hint (localize "STR_HG_TOO_MUCH");};
+if(_value > HG_CASH) exitWith {hint (localize "STR_HG_TOO_MUCH");};
 
 [_value,0] remoteExecCall ["HG_fnc_addOrSubCash",HG_CURSOR_OBJECT,false];
 hint format[(localize "STR_HG_SENT_MONEY"),([_value,true] call HG_fnc_currencyToText),(name HG_CURSOR_OBJECT)];

@@ -36,16 +36,7 @@ switch(_mode) do
 	// HUD Cash Update
 	case 1:
 	{
-	    private "_cash";
-		
-	    if(HG_SAVE_ENABLED) then
-		{
-		    _cash = HG_CASH;
-		} else {
-		    _cash = player getVariable "HG_myCash";
-		};
-		
-		HG_HUD_MONEY_TEXT ctrlSetText format["%1",([_cash] call BIS_fnc_numberText)];
+		HG_HUD_MONEY_TEXT ctrlSetText format["%1",([HG_CASH] call BIS_fnc_numberText)];
 	};
 	// HUD XP Update
 	case 2:
@@ -70,7 +61,7 @@ switch(_mode) do
 	// HUD Kill Count Update
 	case 4:
 	{
-	    HG_HUD_KILL_COUNT_TEXT ctrlSetText format["%1",HG_KILL_COUNT];
+	    HG_HUD_KILL_COUNT_TEXT ctrlSetText format["%1",HG_KILLS];
 	};
 	// HUD Off
 	case 5:

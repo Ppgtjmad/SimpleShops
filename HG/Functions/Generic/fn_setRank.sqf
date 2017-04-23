@@ -19,12 +19,16 @@ if(HG_XP_ENABLED) then
 	};
 	HG_CLIENT = nil;
 	HG_XP = [_rank,0];
+	player setVariable ["HG_XP",HG_XP,true];
 };
 
 if(HG_HUD_ENABLED) then
 {
     [2] call HG_fnc_HUD;
-	[3] call HG_fnc_HUD;
+	if(HG_XP_ENABLED) then
+	{
+	    [3] call HG_fnc_HUD;
+	};
 };
 
 true;
