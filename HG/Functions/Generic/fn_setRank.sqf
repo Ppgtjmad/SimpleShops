@@ -24,11 +24,11 @@ if(HG_XP_ENABLED) then
 
 if(HG_HUD_ENABLED) then
 {
-    [2] call HG_fnc_HUD;
-	if(HG_XP_ENABLED) then
+    if(HG_XP_ENABLED) then
 	{
-	    [3] call HG_fnc_HUD;
+        [2] call HG_fnc_HUD;
 	};
+	[3] call HG_fnc_HUD;
 };
 
 true;
