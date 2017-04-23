@@ -36,7 +36,16 @@ HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call H
 if((getPlayerUID player) in HG_ADMINS) then
 {
     waitUntil {!isNull (findDisplay 46)};
-    HG_KEY_DOWN_EVH = (findDisplay 46) displayAddEventHandler ["KeyDown",{if(((_this select 1) isEqualTo 219) && !dialog) then {[] call HG_fnc_dialogOnLoadAdminMenu}}];
+    HG_KEY_DOWN_EVH = (findDisplay 46) displayAddEventHandler 
+	[
+	    "KeyDown",
+		{
+	        if(((_this select 1) isEqualTo 219) AND (getPlayerUID in HG_ADMINS) AND !dialog) then
+			{
+			    [] call HG_fnc_dialogOnLoadAdminMenu;
+			}
+		}
+	];
 };
 
 /*
