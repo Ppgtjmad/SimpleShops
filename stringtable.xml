@@ -57,6 +57,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_ERR_ON_LOAD_4">
+		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_ERR_NOT_OBJECT">
 		    <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
 		    <French></French>
@@ -65,8 +73,8 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
-		<Key ID="STR_HG_ERR_ON_LOAD_4">
-		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
+		<Key ID="STR_HG_ERR_NOT_MAN">
+		    <Original>::ERROR:: AI Setup (%1) - Passed object is not kind of "Man"</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>

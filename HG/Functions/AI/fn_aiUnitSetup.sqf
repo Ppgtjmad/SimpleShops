@@ -7,6 +7,7 @@ params["_ai"];
 
 // _ai represents the passed AI unit to the function
 if((typeName _ai) != "OBJECT") exitWith {diag_log format[(localize "STR_HG_ERR_NOT_OBJECT"),"HG\Functions\AI\fn_aiUnitSetup.sqf"];};
+if(!(_ai isKindOf "Man")) exitWith {diag_log format[(localize "STR_HG_ERR_NOT_MAN"),"HG\Functions\AI\fn_aiUnitSetup.sqf"];};
 
 if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
 {
@@ -18,7 +19,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo
 
             if(isPlayer _killer) then
             {
-                if((side _killer) isEqualTo (side _unit)) then
+                if((side (group _unit)) isEqualTo (side (group _killer))) then
                 {
                     if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
                     {
