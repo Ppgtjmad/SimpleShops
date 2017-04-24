@@ -40,7 +40,7 @@ if((getPlayerUID player) in HG_ADMINS) then
 	[
 	    "KeyDown",
 		{
-	        if(((_this select 1) isEqualTo 219) AND ((getPlayerUID player) in HG_ADMINS) AND !dialog) then
+	        if(((_this select 1) isEqualTo (getNumber(missionConfigFile >> "CfgClient" >> "adminKey"))) AND ((getPlayerUID player) in HG_ADMINS) AND !dialog) then
 			{
 			    [] call HG_fnc_dialogOnLoadAdminMenu;
 			};

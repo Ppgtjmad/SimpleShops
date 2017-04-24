@@ -4,6 +4,8 @@
     Website - http://www.sunrise-production.com
 */
 
+HG_SAVING_METHOD = getText(missionConfigFile >> "CfgClient" >> "savingMethod");
+
 HG_fnc_findIndex = compileFinal 
 "
     params['_value','_array','_return'];

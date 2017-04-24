@@ -21,6 +21,8 @@
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable teammates position markers on map?
 	admins - ARRAY OF STRINGS - Admins PUIDs
+	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
+	savingMethod - STRING - Can be either "serverProfile" or "extDB" if the latest make sure you have extDB loaded & setup correctly *NOT IMPLEMENTED*
 	
 	class HG_MasterCfg
 	{
@@ -55,6 +57,8 @@ enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
 admins[] = {};
+adminKey = 0xDB;
+savingMethod = "serverProfile";
 
 class HG_MasterCfg
 {
