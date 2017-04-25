@@ -11,7 +11,7 @@ _unit setRank _rank;
 if(HG_XP_ENABLED) then
 {
     HG_CLIENT = [[_rank,0],(getPlayerUID player),0];
-	if(isServer AND hasInterface) then
+	if(isServer) then
 	{
 	    [HG_CLIENT] call HG_fnc_pvarLocal;
 	} else {
