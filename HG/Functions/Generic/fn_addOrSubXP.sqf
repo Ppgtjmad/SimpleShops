@@ -23,7 +23,7 @@ if(_mode isEqualTo 1) then
 		{
 		    private _newRank = (_ranks select (_rankIndex - 1));
 			hint format[(localize "STR_HG_DEMOTED"),_newRank,(rank player)];
-	        player setRank _newRank;
+	        player setUnitRank _newRank;
 		};
 	};
 } else {
@@ -35,7 +35,7 @@ if(_mode isEqualTo 1) then
 	    _newXp = 0;
 		private _newRank = (_ranks select (_rankIndex + 1));
 		hint format[(localize "STR_HG_PROMOTED"),_newRank,(rank player)];
-		player setRank _newRank;
+		player setUnitRank _newRank;
 	};
 };
 

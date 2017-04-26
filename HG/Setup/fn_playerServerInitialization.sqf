@@ -27,7 +27,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
 		saveProfileNamespace;
 	} else {
 	    private _rank = (profileNamespace getVariable format["HG_XP_%1",_uid]) select 0;
-	    _player setRank _rank
+	    _player setUnitRank _rank
 	};
 	
 	HG_XP = profileNamespace getVariable format["HG_XP_%1",_uid];

@@ -6,7 +6,7 @@
 params["_unit",["_rank","PRIVATE",[""]]];
 if(_rank isEqualTo "") exitWith {};
 
-_unit setRank _rank;
+_unit setUnitRank _rank;
 
 if(HG_XP_ENABLED) then
 {
