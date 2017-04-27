@@ -94,8 +94,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) 
 	{
 	    [_player] call HG_fnc_getGear;
 	} else {
-	    _gear pushBack _player;
-	    _gear call HG_fnc_parseGear;
+	    _gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
 	};
 };
 
