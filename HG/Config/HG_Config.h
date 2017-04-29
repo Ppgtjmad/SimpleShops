@@ -141,6 +141,17 @@ class HG_MasterCfg
 	};
 };
 
-#include "HG_ClothingShopCfg.h"
-#include "HG_VehiclesShopCfg.h"
-#include "HG_WeaponsShopCfg.h"
+class HG_ClothingShopCfg // Has to be left untouched
+{
+    #include "HG_ClothingShopCfg.h"
+};
+
+class HG_VehiclesShopCfg // Has to be left untouched
+{
+    #include "HG_VehiclesShopCfg.h"
+};
+
+class HG_WeaponsShopCfg // Has to be left untouched
+{
+    #include "HG_WeaponsShopCfg.h"
+};
