@@ -32,3 +32,14 @@ if(HG_KILL_REWARD_ENABLED) then
 	    };
     };
 };
+
+if(HG_TAGS_ENABLED) then
+{
+    ("HG_Tags" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
+	removeMissionEventhandler ["Draw3D",HG_DRAW_3D_MEVH];
+};
+
+if(HG_MARKERS_ENABLED) then
+{
+    removeMissionEventhandler ["Map",HG_MAP_MEVH];
+};
