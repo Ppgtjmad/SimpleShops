@@ -6,7 +6,7 @@
 Due to recent changes, if you're updating from an older version make sure you delete both client & server profile vars file (username.vars.Arma3Profile), thanks</i></b></p>
 
 <p align="center">
-<i>Click on one of those links to get what you need</i><br/><br/>
+<i>Click on one of these links to get started</i><br/><br/>
 == Wiki ==<br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-try-it">How to try it</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-use-it-in-your-custom-mission">How to use it in your custom mission</a></b><br/>
