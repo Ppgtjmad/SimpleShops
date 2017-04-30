@@ -8,6 +8,7 @@ Due to recent changes, if you're updating from an older version make sure you de
 <p align="center"><b><i>
 To be able to use the admin menu in editor/singleplayer & in multiplayer as well the admins array should look like this
 </i></b></p>
+
 ```
 admins[] = {"_SP_PLAYER_","YOUR_PUID_HERE","SOMEONE_ELSE_PUID_HERE","ETC"}; // In SP getPlayerUID player command returns "_SP_PLAYER_"
 ```
