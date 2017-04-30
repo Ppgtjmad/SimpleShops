@@ -10,7 +10,7 @@ if(_storePoint isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 disableSerialization;
 
-private _near = (nearestObjects [(markerPos _storePoint),["Car","Air","Tank","Boat"],8]) select {alive _x};
+private _near = (nearestObjects [(markerPos _storePoint),["Car","Truck","Air","Tank","Ship","Submarine"],8]) select {alive _x};
 
 if((count _near) > 0) then
 {
