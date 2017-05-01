@@ -6,7 +6,7 @@
 */
 if(!isNull objectParent player) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
-if(!(cursorObject isKindOf "Man") OR !(isPlayer cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
+if(!(cursorObject isKindOf "Man") AND !(isPlayer cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((side cursorObject) != (side player)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if(visibleMap) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
