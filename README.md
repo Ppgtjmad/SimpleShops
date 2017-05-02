@@ -14,6 +14,7 @@ Due to recent changes, if you're updating from an older version make sure you de
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards">How to setup kill reward</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Usage">Usage</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Useful-Functions">Useful Functions</a></b><br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Variables">Variables</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Updates">Updates</a></b><br/>
 == Support ==<br/>
 <b><a href="http://sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a></b>
