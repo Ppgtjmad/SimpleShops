@@ -3,7 +3,23 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-_this params ["_uniform","_vest","_backpack","_goggles","_headgear","_assigned","_prim","_sec","_handgun","_uItems","_vItems","_bItems","_hmd","_binocular"];
+_this params 
+[
+    ["_uniform","",[""]],
+	["_vest","",[""]],
+	["_backpack","",[""]],
+	["_goggles","",[""]],
+	["_headgear","",[""]],
+	["_assigned",[],[[]]],
+	["_prim",[],[[]]],
+	["_sec",[],[[]]],
+	["_handgun",[],[[]]],
+	["_uItems",[],[[]]],
+	["_vItems",[],[[]]],
+	["_bItems",[],[[]]],
+	["_hmd","",[""]],
+	["_binocular","",[""]]
+];
 
 // Strip down unit
 {
