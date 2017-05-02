@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-_this params ["_uniform","_vest","_backpack","_goggles","_headgear","_assigned","_prim","_sec","_handgun","_uItems","_vItems","_bItems"];
+_this params ["_uniform","_vest","_backpack","_goggles","_headgear","_assigned","_prim","_sec","_handgun","_uItems","_vItems","_bItems","_hmd","_binocular"];
 
 // Strip down unit
 {
@@ -131,6 +131,16 @@ if((count _assigned) != 0) then
 		    player assignItem _x;
 	    };
     } forEach _assigned;
+};
+
+if(_hmd != "") then
+{
+    player addWeaponGlobal _hmd;
+};
+
+if(_binocular != "") then
+{
+    player addWeaponGlobal _binocular;
 };
 
 true;

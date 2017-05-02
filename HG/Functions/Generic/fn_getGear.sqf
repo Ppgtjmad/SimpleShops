@@ -126,7 +126,7 @@ if((handgunWeapon _unit) != "") then
 
 {
     _gear pushBack _x;
-} forEach [_pWeapon,_sWeapon,_hWeapon,_uItems,_vItems,_bItems];
+} forEach [_pWeapon,_sWeapon,_hWeapon,_uItems,_vItems,_bItems,(hmd _unit),(binocular _unit)];
 
 profileNamespace setVariable [format["HG_Gear_%1",(getPlayerUID _unit)],_gear];
 saveProfileNamespace;
