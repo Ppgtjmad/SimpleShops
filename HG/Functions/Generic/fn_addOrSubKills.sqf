@@ -22,7 +22,7 @@ if(_newVal < 0) then
     _newVal = 0
 };
 
-HG_CLIENT = [_newVal,(getPlayerUID player),2];
+HG_CLIENT = [format["HG_Kills_%1",(getPlayerUID player)],_newVal];
 if(isServer) then
 {
 	[HG_CLIENT] call HG_fnc_pvarLocal;

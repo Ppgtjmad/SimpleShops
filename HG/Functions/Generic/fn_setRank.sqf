@@ -10,7 +10,7 @@ _unit setUnitRank _rank;
 
 if(HG_XP_ENABLED) then
 {
-    HG_CLIENT = [[_rank,0],(getPlayerUID player),0];
+    HG_CLIENT = [format["HG_XP_%1",(getPlayerUID player)],[_rank,0]];
 	if(isServer) then
 	{
 	    [HG_CLIENT] call HG_fnc_pvarLocal;

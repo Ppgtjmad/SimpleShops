@@ -39,7 +39,7 @@ if(_mode isEqualTo 1) then
 	};
 };
 
-HG_CLIENT = [[(rank player),_newXp],(getPlayerUID player),0];
+HG_CLIENT = [format["HG_XP_%1",(getPlayerUID player)],[(rank player),_newXp]];
 if(isServer) then
 {
 	[HG_CLIENT] call HG_fnc_pvarLocal;

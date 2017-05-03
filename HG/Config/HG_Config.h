@@ -14,6 +14,7 @@
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
+	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
 	enablePlayerInventorySave - BOOL - Enable player gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableXP - BOOL - Enable XP system?
@@ -50,6 +51,7 @@ enableTeamKillPenalty = true;
 enableCrate = true;
 enableGiveMoney = true;
 clearInventory = true;
+storeVehiclesOnDisconnect = true;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
 enableXP = true;

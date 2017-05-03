@@ -1,3 +1,5 @@
+__EXEC(HG_Profile = allVariables profileNamespace)
+
 /*
     Header
 */

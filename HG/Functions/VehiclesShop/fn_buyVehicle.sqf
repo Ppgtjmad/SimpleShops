@@ -19,27 +19,13 @@ if([_price] call HG_fnc_hasEnoughMoney) then
     _spawnPoint = [((_spawnPoints select (HG_VEHICLES_SP lbValue (lbCurSel HG_VEHICLES_SP))) select 1)] call HG_fnc_isItBusy;
 	if(_spawnPoint != "") then
 	{
-	    private["_vehicle","_displayName"];
-		_vehicle = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
-	    _displayName = getText(configFile >> "CfgVehicles" >> _vehicle >> "displayName");
-	    _vehicle = _vehicle createVehicle (markerPos _spawnPoint);
-		_vehicle allowDamage false;
-		_vehicle setVectorUp (surfaceNormal (markerPos _spawnPoint));
-		_vehicle lock 2;
-		_vehicle setVariable["HG_Owner",[(getPlayerUID player),round(random(100000))],true];
-		[_vehicle] call HG_fnc_addActions;
-		if(HG_CLEAR_INVENTORY_ENABLED) then
-		{
-		    clearItemCargoGlobal _vehicle;
-			clearMagazineCargoGlobal _vehicle;
-			clearWeaponCargoGlobal _vehicle;
-			clearBackpackCargoGlobal _vehicle;
-		};
-		_vehicle setDir (markerDir _spawnPoint);
-		_vehicle allowDamage true;
+	    private["_classname","_displayName"];
+		_classname = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
+	    _displayName = getText(configFile >> "CfgVehicles" >> _classname >> "displayName");
 		[_price,1] call HG_fnc_addOrSubCash;
 		closeDialog 0;
 		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),_displayName,if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
+		[0,player,_classname,_spawnPoint] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
 	} else {
 	    titleText [(localize "STR_HG_SPAWN_POINTS_BUSY"),"PLAIN DOWN",1];
 	};

@@ -20,7 +20,7 @@ _newVal = switch(_mode) do
 
 if(HG_SAVE_ENABLED) then
 {
-    HG_CLIENT = [_newVal,(getPlayerUID player),1];
+    HG_CLIENT = [format["HG_Cash_%1",(getPlayerUID player)],_newVal];
 	if(isServer) then
 	{
 	    [HG_CLIENT] call HG_fnc_pvarLocal;

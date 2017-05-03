@@ -23,7 +23,7 @@ switch(_mode) do
 		{
 		    hint (localize "STR_HG_GRG_VEHICLE_SPAWNING");
 		    closeDialog 0;
-	        [player,(HG_GARAGE_LIST lbData (lbCurSel HG_GARAGE_LIST)),(HG_GARAGE_LIST lbValue (lbCurSel HG_GARAGE_LIST)),_spawnPoint] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
+	        [1,player,(HG_GARAGE_LIST lbData (lbCurSel HG_GARAGE_LIST)),_spawnPoint,(HG_GARAGE_LIST lbValue (lbCurSel HG_GARAGE_LIST))] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
 		} else {
 		    hint (localize "STR_HG_SPAWN_POINTS_BUSY");
 		};
