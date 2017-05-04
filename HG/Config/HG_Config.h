@@ -15,6 +15,7 @@
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
+	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
 	enablePlayerInventorySave - BOOL - Enable player gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableXP - BOOL - Enable XP system?
@@ -52,6 +53,7 @@ enableCrate = true;
 enableGiveMoney = true;
 clearInventory = true;
 storeVehiclesOnDisconnect = true;
+resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
 enableXP = true;

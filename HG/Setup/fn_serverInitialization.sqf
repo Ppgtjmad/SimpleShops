@@ -22,6 +22,26 @@ HG_fnc_findIndex = compileFinal
     _return;
 ";
 
+HG_fnc_resetGarages = compileFinal
+"
+    private _vars = parsingNamespace getVariable 'HG_Profile';
+
+    {
+        if(['hg_garage_',_x,false] call BIS_fnc_inString) then
+        {
+            _vehicles = profileNamespace getVariable _x;
+			
+            if((count _vehicles) != 0) then
+            {
+                profileNamespace setVariable [_x,[]];
+                saveProfileNamespace;
+            };
+        };
+    } forEach _vars;
+	
+    true;
+";
+
 HG_fnc_activeReset = compileFinal
 "
     private _vars = parsingNamespace getVariable 'HG_Profile';
@@ -96,10 +116,22 @@ HG_fnc_setInventory = compileFinal
 
 HG_fnc_requestGarage = compileFinal
 "
-    params['_unit','_garage'];
+    params['_unit','_garage',['_toSend',[],[[]]]];
 	
-    _garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
-    _garage remoteExecCall ['HG_fnc_fillGarage',(owner _unit),false];
+	_garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
+	
+	if((count _garage) != 0) then
+	{
+	    {
+	        _active = _x select 2;
+			if(_active isEqualTo 0) then
+			{
+			    _toSend pushBack [(_x select 0),(_x select 1)];
+			};
+	    } forEach _garage;
+	};
+	
+    _toSend remoteExecCall ['HG_fnc_fillGarage',(owner _unit),false];
 	
 	true;
 ";
@@ -224,6 +256,11 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) 
     addMissionEventHandler ["HandleDisconnect",{_this call HG_fnc_disconnect; false;}];
 };
 
-"HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_pvarLocal;};
+if((getNumber(missionConfigFile >> "CfgClient" >> "resetGaragesOnServerStart")) isEqualTo 1) then
+{
+    [] call HG_fnc_resetGarages;
+} else {
+    [] call HG_fnc_activeReset;
+};
 
-[] call HG_fnc_activeReset;
+"HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_pvarLocal;};

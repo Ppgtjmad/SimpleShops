@@ -15,14 +15,14 @@ switch(_mode) do
 	{
 	    ("HG_HUD" call BIS_fnc_rscLayer) cutRsc ["HG_HUD","PLAIN"];
 		
-		if(HG_XP_ENABLED) then
+		if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
 		{
 		    {
 			    _x ctrlShow true;
 			} forEach [HG_HUD_XP_PIC,HG_HUD_XP_TEXT];
 			[2] call HG_fnc_HUD;
 		};
-		if(HG_KILL_COUNT_ENABLED) then
+		if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
 		{
 		    {
 			    _x ctrlShow true;
