@@ -84,7 +84,7 @@ HG_fnc_getInventory = compileFinal
 "
     params['_vehicle','_owner','_uid','_plate','_inventory'];
 	
-	_owner = _x getVariable 'HG_Owner';
+	_owner = _vehicle getVariable 'HG_Owner';
 	_uid = _owner select 0;
 	_plate = _owner select 1;
 	_inventory = [(getItemCargo _vehicle),(getMagazineCargo _vehicle),(getWeaponCargo _vehicle),(getBackpackCargo _vehicle)];
@@ -221,11 +221,11 @@ HG_fnc_storeVehicleS = compileFinal
 	_index = [_plate,_garage] call HG_fnc_findIndex;
 	(_garage select _index) set [2,0];
 	profileNamespace setVariable[format['HG_Garage_%1',(getPlayerUID _unit)],_garage];
+	saveProfileNamespace;
 	if((getNumber(missionConfigFile >> 'CfgClient' >> 'enableVehicleInventorySave')) isEqualTo 1) then
 	{
 	    [_vehicle] call HG_fnc_getInventory;
 	};
-	saveProfileNamespace;
 	deleteVehicle _vehicle;
 	(localize 'STR_HG_GRG_VEHICLE_STORED') remoteExecCall ['hint',(owner _unit),false];
 	
