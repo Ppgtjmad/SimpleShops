@@ -277,7 +277,7 @@
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v2.0</Original>
+		        <Original>[HG] Simple Shops v2.1</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

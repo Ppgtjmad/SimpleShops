@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -39,21 +39,21 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -210,7 +210,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""<img image='HG\UI\Icons\gun.paa' size='1.5'/><t color='#FF0000'>Open Weapons Shop</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\clothing.paa' size='1.5'/><t color='#FF0000'>Open Clothing Shop</t>"",{_this call HG_fnc_dialogOnLoadClothing},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\car.paa' size='1.5'/><t color='#FF0000'>Open Vehicles Shop</t>"",{_this call HG_fnc_dialogOnLoadVehicles},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Open Garage</t>"",{_this call HG_fnc_dialogOnLoadGarage},[""garage_spawn_1""],0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];  " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Store Vehicle</t>"",{_this call HG_fnc_storeVehicleC},""garage_store"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];";
+				init="this addAction[""<img image='HG\UI\Icons\gun.paa' size='1.5'/><t color='#FF0000'>Open Weapons Shop</t>"",{_this call HG_fnc_dialogOnLoadItems},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\clothing.paa' size='1.5'/><t color='#FF0000'>Open Clothing Shop</t>"",{_this call HG_fnc_dialogOnLoadClothing},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; this addAction[""<img image='HG\UI\Icons\car.paa' size='1.5'/><t color='#FF0000'>Open Vehicles Shop</t>"",{_this call HG_fnc_dialogOnLoadVehicles},""HG_DefaultShop"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3']; " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Open Garage</t>"",{_this call HG_fnc_dialogOnLoadGarage},""HG_DefaultGarage"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];  " \n "this addAction[""<img image='HG\UI\Icons\garage.paa' size='1.5'/><t color='#FF0000'>Store Vehicle</t>"",{_this call HG_fnc_storeVehicleC},""HG_DefaultGarage"",0,false,false,"""",'(alive player) && !dialog && player distance _target < 3'];";
 			};
 			id=11;
 			type="Land_InfoStand_V1_F";
