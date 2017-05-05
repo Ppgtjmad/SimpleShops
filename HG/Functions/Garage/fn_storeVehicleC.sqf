@@ -4,13 +4,16 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_target","_caller","_id","_storePoint"];
-if((typeName _storePoint) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
-if(_storePoint isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
+params["_target","_caller","_id","_garage"];
+if((typeName _garage) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
+if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 disableSerialization;
 
-private _near = (nearestObjects [(markerPos _storePoint),["Car","Truck","Air","Tank","Ship","Submarine"],8]) select {alive _x};
+private["_allowedTypes","_storePoint","_near"];
+_allowedTypes = getArray(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
+_storePoint = getText(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
+_near = (nearestObjects [(markerPos _storePoint),_allowedTypes,8]) select {alive _x};
 
 if((count _near) > 0) then
 {

@@ -150,6 +150,11 @@ class HG_ClothingShopCfg // Has to be left untouched
     #include "HG_ClothingShopCfg.h"
 };
 
+class HG_GaragesCfg // Has to be left untouched
+{
+    #include "HG_GaragesCfg.h"
+};
+
 class HG_VehiclesShopCfg // Has to be left untouched
 {
     #include "HG_VehiclesShopCfg.h"

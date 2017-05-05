@@ -22,6 +22,20 @@ HG_fnc_findIndex = compileFinal
     _return;
 ";
 
+HG_fnc_getType = compileFinal
+"
+    params['_class',['_type','',['']]];
+
+    {
+        if(_class isKindOf _x) then
+	    {
+	        _type = _x;
+	    } else {};
+    } forEach ['Car','Truck','Tank','Air','Ship','Submarine'];
+	
+	_type;
+";
+
 HG_fnc_resetGarages = compileFinal
 "
     private _vars = parsingNamespace getVariable 'HG_Profile';
@@ -116,17 +130,21 @@ HG_fnc_setInventory = compileFinal
 
 HG_fnc_requestGarage = compileFinal
 "
-    params['_unit','_garage',['_toSend',[],[[]]]];
+    params['_unit','_types','_garage',['_toSend',[],[[]]]];
 	
 	_garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
 	
 	if((count _garage) != 0) then
 	{
 	    {
-	        _active = _x select 2;
-			if(_active isEqualTo 0) then
+		    _type = [_x select 0] call HG_fnc_getType;
+			if(_type in _types) then
 			{
-			    _toSend pushBack [(_x select 0),(_x select 1)];
+			    _active = _x select 2;
+			    if(_active isEqualTo 0) then
+			    {
+			        _toSend pushBack [(_x select 0),(_x select 1)];
+			    };
 			};
 	    } forEach _garage;
 	};

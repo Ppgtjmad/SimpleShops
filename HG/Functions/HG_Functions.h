@@ -65,6 +65,7 @@ class HG
 		class getConfig {};
 		class getGear {};
 		class hasEnoughMoney {};
+		class isItBusy {};
 		class isNumeric {};
 		class markers {};
 		class parseGear {};
@@ -98,7 +99,6 @@ class HG
 		class buyVehicle {};
 		class dialogOnLoadVehicles {};
 		class dialogOnUnloadVehicles {};
-		class isItBusy {};
 		class vehicleRotate {};
 		class vehicleSelectionChanged {};
 		class xVehicleSelectionChanged {};

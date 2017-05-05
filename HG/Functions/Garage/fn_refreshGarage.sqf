@@ -15,6 +15,6 @@ lbClear HG_GARAGE_LIST;
     _x ctrlShow false;
 } forEach [HG_GARAGE_LIST,HG_GARAGE_REFRESH_BTN,HG_GARAGE_SPAWN_BTN,HG_GARAGE_DELETE_BTN];
 
-[player] remoteExecCall ["HG_fnc_requestGarage",2,false];
+[player,(getArray(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> HG_STRING_HANDLER >> "allowedTypes"))] remoteExecCall ["HG_fnc_requestGarage",2,false];
 
 true;

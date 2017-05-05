@@ -5,15 +5,11 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_spawnPoints",["_sp",""],["_pos",[]]];
+params["_spawnPoints",["_sp",""],["_pos",[]],["_isBusy",[],[[]]]];
 
 {
     _pos = switch(typeName _x) do
 	{
-	    case "OBJECT": 
-		{
-		    getPos _x;
-		};
 		case "STRING": 
 		{
 		    markerPos _x;
@@ -23,6 +19,7 @@ params["_spawnPoints",["_sp",""],["_pos",[]]];
 		    _x;
 		};
 	};
+	
     _isBusy = nearestObjects [_pos,["Car","Truck","Air","Tank","Ship","Submarine"],5];
 	if((count _isBusy) isEqualTo 0) exitWith
 	{
