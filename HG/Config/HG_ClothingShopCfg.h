@@ -30,7 +30,7 @@ class HG_DefaultShop // Default shop is just a placeholder for testing purposes,
 			{"G_Bandanna_shades",50}
 		};
 	};
-		
+	
 	class Headgear
 	{
 		content[] =
