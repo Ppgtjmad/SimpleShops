@@ -6,8 +6,8 @@
 */
 params["_vehicle"];
 
-_vehicle addAction ["<img image='HG\UI\Icons\lock.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_LOCK_VEHICLE")+"</t>",{[] call HG_fnc_lockOrUnlock},"",0,false,false,"",'(alive player) AND ((locked _target) isEqualTo 0) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
-_vehicle addAction ["<img image='HG\UI\Icons\unlock.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_UNLOCK_VEHICLE")+"</t>",{[] call HG_fnc_lockOrUnlock},"",0,false,false,"",'(alive player) AND ((locked _target) isEqualTo 2) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
+_vehicle addAction ["<img image='HG\UI\Icons\lock.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_LOCK_VEHICLE")+"</t>",{[(_this select 0)] call HG_fnc_lockOrUnlock},"",0,false,false,"",'(alive player) AND ((locked _target) isEqualTo 0) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
+_vehicle addAction ["<img image='HG\UI\Icons\unlock.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_UNLOCK_VEHICLE")+"</t>",{[(_this select 0)] call HG_fnc_lockOrUnlock},"",0,false,false,"",'(alive player) AND ((locked _target) isEqualTo 2) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
 _vehicle addAction ["<img image='HG\UI\Icons\clear.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_EMPTY_VEHICLE")+"</t>",{[(_this select 0)] spawn HG_fnc_emptyVehicle},"",0,false,false,"",'(alive player) AND (((player distance _target) < 5.5) OR ((objectParent player) isEqualTo _target))'];
 
 true;
