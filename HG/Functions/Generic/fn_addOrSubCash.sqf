@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Used to add or substract money from the money variable
+    Description - Used to add or subtract money from the money variable
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */

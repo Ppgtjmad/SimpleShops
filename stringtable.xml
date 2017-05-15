@@ -113,6 +113,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_GIVE_MONEY">
+		    <Original>Give Money</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_SENT_MONEY">
 		    <Original>You have sent %1 to %2</Original>
 		    <French></French>
@@ -139,6 +147,22 @@
 		</Key>
 		<Key ID="STR_HG_TIME_TO_PAY">
 		    <Original>You have received a paycheck of %1</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_YES">
+		    <Original>Yes</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_NO">
+		    <Original>No</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
@@ -185,8 +209,56 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_DELETE_CRATE">
+		    <Original>Delete Crate</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_EMPTY_CRATE">
+		    <Original>Empty Crate</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_VEHICLE_UNLOCKED">
 		    <Original>Vehicle is now UNLOCKED</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_EMPTY_QUESTION">
+		    <Original>Are you sure you want to empty the vehicle inventory?</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_EMPTY_VEHICLE">
+		    <Original>Empty Vehicle</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_LOCK_VEHICLE">
+		    <Original>Lock Vehicle</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_UNLOCK_VEHICLE">
+		    <Original>Unlock Vehicle</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>

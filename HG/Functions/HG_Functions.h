@@ -62,11 +62,13 @@ class HG
 		class addOrSubKills {};
 		class addOrSubXP {};
 	    class currencyToText {};
+		class emptyVehicle {};
 		class getConfig {};
 		class getGear {};
 		class hasEnoughMoney {};
 		class isItBusy {};
 		class isNumeric {};
+		class lockOrUnlock {};
 		class markers {};
 		class parseGear {};
 		class paycheck {};
