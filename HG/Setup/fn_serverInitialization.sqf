@@ -218,15 +218,6 @@ HG_fnc_deleteVehicle = compileFinal
 	true;
 ";
 
-HG_fnc_vehicleSetup = 
-"
-    params['_unit','_classname',['_plate',round(random(100000)),[0]],'_garage'];
-	
-	_garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
-	_garage pushBack [_classname,_plate,0];
-	saveProfileNamespace;
-";
-
 HG_fnc_storeVehicleS = compileFinal
 "
     params['_unit','_vehicle',['_plate',round(random(100000)),[0]],'_garage','_index'];
