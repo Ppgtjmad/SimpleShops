@@ -25,6 +25,14 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_VEHICLE_BOUGHT_TO_GARAGE">
+		    <Original>You have bought a %1 for %2, it has been stored in your garage</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
 		    <Original>You don't have enough money, requires %1</Original>
 		    <French></French>
@@ -619,7 +627,7 @@
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
-		        <Original>Requested vehicle has be spawned</Original>
+		        <Original>Requested vehicle has been spawned</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -662,6 +670,14 @@
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
 		        <Original>Vehicle Infos</Original>
+		        <French></French>
+			    <German></German>
+			    <Russian></Russian>
+			    <Spanish></Spanish>
+			    <Italian></Italian>
+		    </Key>
+			<Key ID="STR_HG_DLG_VS_TG_TOOLTIP">
+		        <Original>Buy selected vehicle and store it to garage</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

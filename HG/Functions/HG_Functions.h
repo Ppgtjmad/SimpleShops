@@ -98,6 +98,7 @@ class HG
 	{
 		file = "HG\Functions\VehiclesShop";
 		class addActions {};
+		class buyToGarage {};
 		class buyVehicle {};
 		class dialogOnLoadVehicles {};
 		class dialogOnUnloadVehicles {};

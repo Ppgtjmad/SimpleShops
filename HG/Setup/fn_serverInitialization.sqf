@@ -213,20 +213,40 @@ HG_fnc_deleteVehicle = compileFinal
 	true;
 ";
 
-HG_fnc_storeVehicleS = compileFinal
+HG_fnc_vehicleSetup = 
 "
-    params['_unit','_vehicle','_plate','_garage','_index'];
+    params['_unit','_classname',['_plate',round(random(100000)),[0]],'_garage'];
 	
 	_garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
-	_index = [_plate,_garage] call HG_fnc_findIndex;
-	(_garage select _index) set [2,0];
+	_garage pushBack [_classname,_plate,0];
+	saveProfileNamespace;
+";
+
+HG_fnc_storeVehicleS = compileFinal
+"
+    params['_unit','_vehicle',['_plate',round(random(100000)),[0]],'_garage','_index'];
+	
+	_garage = profileNamespace getVariable[format['HG_Garage_%1',(getPlayerUID _unit)],[]];
+	
+	if((typeName _vehicle) isEqualTo 'STRING') then
+	{
+	    _garage pushBack [_vehicle,_plate,0];
+	} else {
+	    _index = [_plate,_garage] call HG_fnc_findIndex;
+	    if(_index != -1) then
+	    {
+	        (_garage select _index) set [2,0];
+	    } else {
+	        _garage pushBack [(typeOf _vehicle),_plate,0];
+	    };
+	    if((getNumber(missionConfigFile >> 'CfgClient' >> 'enableVehicleInventorySave')) isEqualTo 1) then
+	    {
+	        [_vehicle] call HG_fnc_getInventory;
+	    };
+	    deleteVehicle _vehicle;
+	};
 	profileNamespace setVariable[format['HG_Garage_%1',(getPlayerUID _unit)],_garage];
 	saveProfileNamespace;
-	if((getNumber(missionConfigFile >> 'CfgClient' >> 'enableVehicleInventorySave')) isEqualTo 1) then
-	{
-	    [_vehicle] call HG_fnc_getInventory;
-	};
-	deleteVehicle _vehicle;
 	(localize 'STR_HG_GRG_VEHICLE_STORED') remoteExecCall ['hint',(owner _unit),false];
 	
 	true;
@@ -247,7 +267,12 @@ HG_fnc_disconnect = compileFinal
 			{
 			    _plate = _owner select 1;
 				_index = [_plate,_garage] call HG_fnc_findIndex;
-			    (_garage select _index) set [2,0];
+				if(_index != -1) then
+				{
+				    (_garage select _index) set [2,0];
+				} else {
+				    _garage pushBack [(typeOf _x),_plate,0];
+				};
 			    if(_saveInv) then
 				{
 				    [_x] call HG_fnc_getInventory;

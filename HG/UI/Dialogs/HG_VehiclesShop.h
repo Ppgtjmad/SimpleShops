@@ -107,6 +107,15 @@ class HG_VehiclesShop
 			h = 2 * GUI_GRID_H;
 		};
 		
+		class ToGarageBtnPicture: HG_RscPicture
+		{
+			text = "HG\UI\Icons\garage.paa";
+			x = 26 * GUI_GRID_W + GUI_GRID_X;
+			y = -10 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
 		class BuyBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\buy.paa";
@@ -178,11 +187,22 @@ class HG_VehiclesShop
 			h = 1 * GUI_GRID_H;
 		};
 		
+		class ToGarageButton: HG_RscButtonInvisible
+		{
+			idc = HG_VEHICLES_TG_IDC;
+			tooltip = "$STR_HG_DLG_VS_TG_TOOLTIP";
+			onButtonClick = "[] call HG_fnc_buyToGarage";
+			x = 26 * GUI_GRID_W + GUI_GRID_X;
+			y = -10 * GUI_GRID_H + GUI_GRID_Y;
+			w = 3 * GUI_GRID_W;
+			h = 2 * GUI_GRID_H;
+		};
+		
 		class BuyButton: HG_RscButtonInvisible
 		{
 			idc = HG_VEHICLES_BUY_IDC;
 			tooltip = "$STR_HG_DLG_VS_BUY_TOOLTIP";
-			onButtonClick = "_this call HG_fnc_buyVehicle";
+			onButtonClick = "[] call HG_fnc_buyVehicle";
 			x = 29.5 * GUI_GRID_W + GUI_GRID_X;
 			y = -10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 3 * GUI_GRID_W;
