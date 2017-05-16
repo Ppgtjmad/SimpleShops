@@ -163,7 +163,12 @@ HG_fnc_spawnVehicle = compileFinal
 	_vehicle setVectorUp (surfaceNormal (markerPos _sp));
 	_vehicle setDir (markerDir _sp);
 	_vehicle setVariable['HG_Owner',[(getPlayerUID _unit),_plate],true];
-	_vehicle lock 2;
+	if(local _vehicle) then
+	{
+	     _vehicle lock 2;
+	} else {
+	    [_vehicle,2] remoteExecCall ['lock',(owner _vehicle),false];
+	};
 	if((getNumber(missionConfigFile >> 'CfgClient' >> 'clearInventory')) isEqualTo 1) then
 	{
 		clearItemCargoGlobal _vehicle;
