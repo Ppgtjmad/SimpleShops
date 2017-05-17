@@ -18,7 +18,7 @@
 	};
 */
 
-class HG_DefaultShop // Default shop is just a placeholder for testing purposes, you can delete it completely and make your own
+class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
 	whitelistRanks[] = {};
 	

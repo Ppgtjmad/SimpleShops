@@ -158,10 +158,15 @@ HG_fnc_spawnVehicle = compileFinal
 "
     params['_mode','_unit','_classname','_sp',['_plate',round(random(100000)),[0]],'_vehicle','_garage','_index'];
 	
-	_vehicle = _classname createVehicle (markerPos _sp);
+	if((typeName _sp) isEqualTo 'ARRAY') then
+	{
+	    _vehicle = _classname createVehicle _sp;
+	} else {
+	    _vehicle = _classname createVehicle (markerPos _sp);
+		_vehicle setVectorUp (surfaceNormal (markerPos _sp));
+		_vehicle setDir (markerDir _sp);
+	};
 	_vehicle allowDamage false;
-	_vehicle setVectorUp (surfaceNormal (markerPos _sp));
-	_vehicle setDir (markerDir _sp);
 	_vehicle setVariable['HG_Owner',[(getPlayerUID _unit),_plate],true];
 	if(local _vehicle) then
 	{

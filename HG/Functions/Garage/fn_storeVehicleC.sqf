@@ -10,10 +10,18 @@ if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 disableSerialization;
 
-private["_allowedTypes","_storePoint","_near"];
+private["_allowedTypes","_storePoint","_pos","_near"];
 _allowedTypes = getArray(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
 _storePoint = getText(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
-_near = (nearestObjects [(markerPos _storePoint),_allowedTypes,8]) select {alive _x};
+
+if(_storePoint isEqualTo "") then
+{
+    _pos = player;
+} else {
+    _pos = markerPos _storePoint;
+};
+
+_near = (nearestObjects [_pos,_allowedTypes,8]) select {alive _x};
 
 if((count _near) > 0) then
 {
