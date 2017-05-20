@@ -300,11 +300,14 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) 
     addMissionEventHandler ["HandleDisconnect",{_this call HG_fnc_disconnect; false;}];
 };
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "resetGaragesOnServerStart")) isEqualTo 1) then
+if(!isNil "HG_Profile") then
 {
-    [] call HG_fnc_resetGarages;
-} else {
-    [] call HG_fnc_activeReset;
+    if((getNumber(missionConfigFile >> "CfgClient" >> "resetGaragesOnServerStart")) isEqualTo 1) then
+    {
+        [] call HG_fnc_resetGarages;
+    } else {
+        [] call HG_fnc_activeReset;
+    };
 };
 
 "HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_pvarLocal;};
