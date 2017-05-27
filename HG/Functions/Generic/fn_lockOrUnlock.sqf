@@ -21,7 +21,7 @@ if(local _vehicle) then
 {
     _vehicle lock _lock;
 } else {
-    [_vehicle,_lock] remoteExecCall ["lock",-2,false];
+    [_vehicle,_lock] remoteExecCall ["HG_fnc_lock",2,false];
 };
 
 true;

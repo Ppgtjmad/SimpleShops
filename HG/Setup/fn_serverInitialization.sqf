@@ -168,12 +168,7 @@ HG_fnc_spawnVehicle = compileFinal
 	};
 	_vehicle allowDamage false;
 	_vehicle setVariable['HG_Owner',[(getPlayerUID _unit),_plate],true];
-	if(local _vehicle) then
-	{
-	     _vehicle lock 2;
-	} else {
-	    [_vehicle,2] remoteExecCall ['lock',(owner _vehicle),false];
-	};
+	[_vehicle,2] call HG_fnc_lock;
 	if((getNumber(missionConfigFile >> 'CfgClient' >> 'clearInventory')) isEqualTo 1) then
 	{
 		clearItemCargoGlobal _vehicle;
@@ -293,6 +288,20 @@ HG_fnc_pvarLocal = compileFinal
 	
 	profileNamespace setVariable _value;
 	saveProfileNamespace;
+";
+
+HG_fnc_lock = compileFinal
+"
+    params['_vehicle','_lock'];
+	
+	if(local _vehicle) then
+	{
+	    _vehicle lock _lock;
+	} else {
+	    [_vehicle,_lock] remoteExecCall ['lock',(owner _vehicle),false];
+	};
+	
+	true;
 ";
 
 if((getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1) then

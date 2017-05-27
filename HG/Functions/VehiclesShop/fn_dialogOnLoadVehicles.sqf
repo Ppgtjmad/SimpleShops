@@ -23,6 +23,11 @@ HG_VEHICLE_PREVIEW = objNull;
 
 private["_shopList","_ind","_h"];
 
+if((getNumber(missionConfigFile >> "CfgClient" >> "enableBuyToGarage")) isEqualTo 0) then
+{
+    HG_VEHICLES_TG ctrlEnable false;
+};
+
 _shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
 
 lbClear HG_VEHICLES_SWITCH;

@@ -12,10 +12,10 @@ if(visibleMap) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
 _target = cursorObject;
 _pos = [(visiblePosition _target) select 0,(visiblePosition _target) select 1,((_target modelToWorld (_target selectionPosition "Head")) select 2)];
-_screenPosShoulder = worldToScreen _pos;
+_screenPos = worldToScreen _pos;
 _distance = _pos distance player;
 
-if(((count _screenPosShoulder) > 1) AND (_distance < 5) AND {_screenPosShoulder distance [0.5,0.5] < 1}) then
+if(((count _screenPos) > 1) AND (_distance < 5) AND {_screenPos distance [0.5,0.5] < 1}) then
 {
 	_icon = [(rank _target),"texture"] call BIS_fnc_rankParams;
 	_text = parseText format
@@ -25,7 +25,7 @@ if(((count _screenPosShoulder) > 1) AND (_distance < 5) AND {_screenPosShoulder 
 	];
 	
 	HG_TAGS_TEXT ctrlSetStructuredText _text;
-	HG_TAGS_TEXT ctrlSetPosition [(_screenPosShoulder select 0),(_screenPosShoulder select 1)-0.05,0.4,0.65];
+	HG_TAGS_TEXT ctrlSetPosition [(_screenPos select 0),(_screenPos select 1)-0.05,0.4,0.65];
     HG_TAGS_TEXT ctrlSetScale 0.8;
 	HG_TAGS_TEXT ctrlSetFade 0;
 	HG_TAGS_TEXT ctrlCommit 0;

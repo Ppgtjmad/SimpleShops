@@ -13,6 +13,7 @@
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
+	enableBuyToGarage - BOOL - Enable ability to automatically store vehicle in garage when bought? Set it to false if you don't use garage
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
 	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
@@ -21,7 +22,7 @@
 	enableXP - BOOL - Enable XP system?
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
-	enableMarkers - BOOL - Enable teammates position markers on map?
+	enableMarkers - BOOL - Enable group units position markers on map?
 	admins - ARRAY OF STRINGS - Admins PUIDs
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
 	savingMethod - STRING - Can be either "serverProfile" or "extDB" if the latest make sure you have extDB3 loaded & setup correctly *NOT IMPLEMENTED*
@@ -51,6 +52,7 @@ enableKillReward = true;
 enableTeamKillPenalty = true;
 enableCrate = true;
 enableGiveMoney = true;
+enableBuyToGarage = true;
 clearInventory = true;
 storeVehiclesOnDisconnect = true;
 resetGaragesOnServerStart = false;
