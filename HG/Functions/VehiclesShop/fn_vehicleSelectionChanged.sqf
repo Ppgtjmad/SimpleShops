@@ -30,7 +30,7 @@ HG_VEHICLES_TEXT ctrlSetStructuredText parseText format
 	getText(configFile >> "CfgVehicles" >> _vehicle >> "picture"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "maxSpeed"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "armor"),
-	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "transportSoldier"),
+	([_vehicle,true] call BIS_fnc_crewCount),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "enginePower"),
 	getNumber(configFile >> "CfgVehicles" >> _vehicle >> "fuelCapacity"),
 	if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {[_price,true] call HG_fnc_currencyToText}
