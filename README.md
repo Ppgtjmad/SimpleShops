@@ -18,5 +18,7 @@ Due to recent changes, if you're updating from an older version make sure you de
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Database">Database</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Updates">Updates</a></b><br/>
 == Support ==<br/>
-<b><a href="http://forums.sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a></b>
+<b><a href="http://forums.sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a></b><br/>
+== Issues ==<br/>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/issues">Tickets</a></b>
 </p>
