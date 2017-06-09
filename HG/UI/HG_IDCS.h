@@ -45,13 +45,15 @@
 #define HG_GM_IDD                     7100
 #define HG_GM_EDIT_IDC                7101
 
-#define HG_HUD_XP_PIC_IDC             8000
-#define HG_HUD_XP_TEXT_IDC            8001
-#define HG_HUD_KILL_COUNT_PIC_IDC     8002
-#define HG_HUD_KILL_COUNT_TEXT_IDC    8003
-#define HG_HUD_RANK_PIC_IDC           8004
-#define HG_HUD_RANK_TEXT_IDC          8005
-#define HG_HUD_MONEY_TEXT_IDC         8006
+#define HG_HUD_XP_BACK_IDC            8000
+#define HG_HUD_XP_PIC_IDC             8001
+#define HG_HUD_XP_TEXT_IDC            8002
+#define HG_HUD_KILL_COUNT_BACK_IDC    8003
+#define HG_HUD_KILL_COUNT_PIC_IDC     8004
+#define HG_HUD_KILL_COUNT_TEXT_IDC    8005
+#define HG_HUD_RANK_PIC_IDC           8006
+#define HG_HUD_RANK_TEXT_IDC          8007
+#define HG_HUD_MONEY_TEXT_IDC         8008
 
 #define HG_TAGS_TEXT_IDC              8100
 

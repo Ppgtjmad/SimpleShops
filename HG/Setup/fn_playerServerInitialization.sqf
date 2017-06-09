@@ -3,98 +3,141 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_player"];
-private _uid = getPlayerUID _player;
+params["_player","_jip","_uid","_cash"];
+_uid = getPlayerUID _player;
 
-/*
-    Init Garage variable
-*/
-if(isNil {profileNamespace getVariable [format["HG_Garage_%1",_uid],[]]}) then
+if(!HG_SAVING_EXTDB) then
 {
-    profileNamespace setVariable[format["HG_Garage_%1",_uid],[]];
-	saveProfileNamespace;
-};
+    if(isNil {profileNamespace getVariable [format["HG_Garage_%1",_uid],[]]}) then
+    {
+        profileNamespace setVariable[format["HG_Garage_%1",_uid],[]];
+	    saveProfileNamespace;
+    };
 
-/*
-    Init XP variable (if applicable)
-*/
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
-{
-    private _xp = profileNamespace getVariable format["HG_XP_%1",_uid];
-    if(isNil "_xp") then
-	{
-	    profileNamespace setVariable [format["HG_XP_%1",_uid],[(rank _player),0]];
-		saveProfileNamespace;
-	} else {
-	    private _rank = (profileNamespace getVariable format["HG_XP_%1",_uid]) select 0;
-	    _player setUnitRank _rank
-	};
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+    {
+        private _xp = profileNamespace getVariable format["HG_XP_%1",_uid];
+        if(isNil "_xp") then
+	    {
+		    _xp = [(rank _player),0];
+	        profileNamespace setVariable [format["HG_XP_%1",_uid],_xp];
+		    saveProfileNamespace;
+	    } else {
+	        _player setUnitRank (_xp select 0);
+	    };
 	
-	HG_XP = profileNamespace getVariable format["HG_XP_%1",_uid];
-	(owner _player) publicVariableClient "HG_XP";
-	_player setVariable ["HG_XP",HG_XP,true];
-	if(isServer AND !hasInterface) then
-	{
-	    HG_XP = nil;
-	};
-};
-
-/*
-    Init money variable
-*/
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then
-{
-    private _save = profileNamespace getVariable format["HG_Cash_%1",_uid];
-    if((isNil "_save") OR ((getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
-	{
-	    profileNamespace setVariable [format["HG_Cash_%1",_uid],(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"))];
-		saveProfileNamespace;
-	};
+	    _player setVariable ["HG_XP",_xp,true];
+    };
 	
-	HG_CASH = profileNamespace getVariable format["HG_Cash_%1",_uid];
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then
+    {
+        _cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
+        if((isNil "_cash") OR ((getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
+	    {
+		    _cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+	        profileNamespace setVariable [format["HG_Cash_%1",_uid],_cash];
+		    saveProfileNamespace;
+	    };
+    } else {
+        _cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+    };
+
+    _player setVariable ["HG_Cash",_cash,true];
+
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
+    {
+        private _kc = profileNamespace getVariable format["HG_Kills_%1",_uid];
+        if(isNil "_kc") then
+	    {
+		    _kc = 0;
+	        profileNamespace setVariable [format["HG_Kills_%1",_uid],_kc];
+		    saveProfileNamespace;
+	    };
+	
+	    _kc = profileNamespace getVariable format["HG_Kills_%1",_uid];
+	    _player setVariable ["HG_Kills",_kc,true];
+    };
+
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
+    {
+        private _gear = profileNamespace getVariable format["HG_Gear_%1",_uid];
+        if(isNil "_gear") then
+	    {
+	        [_player] call HG_fnc_getGear;
+	    } else {
+	        _gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
+	    };
+    };
 } else {
-    HG_CASH = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
-};
+    private["_query","_exists","_result"];
 
-(owner _player) publicVariableClient "HG_CASH";
-_player setVariable ["HG_Cash",HG_CASH,true];
-if(isServer AND !hasInterface) then
-{
-	HG_CASH = nil;
-};
-
-/*
-    Init kill count variable (if applicable)
-*/
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
-{
-    private _kc = profileNamespace getVariable format["HG_Kills_%1",_uid];
-    if(isNil "_kc") then
+    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{
-	    profileNamespace setVariable [format["HG_Kills_%1",_uid],0];
-		saveProfileNamespace;
+	    format["SELECT CASE WHEN EXISTS (SELECT PID FROM HG_Players WHERE PID = '%1') THEN 'true' ELSE 'false' END",_uid];
+	} else {
+	    format["HG_playerExist:%1",_uid];
 	};
 	
-	HG_KILLS = profileNamespace getVariable format["HG_Kills_%1",_uid];
-	(owner _player) publicVariableClient "HG_KILLS";
-	_player setVariable ["HG_Kills",HG_KILLS,true];
-	if(isServer AND !hasInterface) then
+	// Send query here _exists = 
+	
+	if(_exists) then
 	{
-	    HG_KILLS = nil;
-	};
-};
-
-/*
-    Init gear (if applicable)
-*/
-if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
-{
-    private _gear = profileNamespace getVariable format["HG_Gear_%1",_uid];
-    if(isNil "_gear") then
-	{
-	    [_player] call HG_fnc_getGear;
+	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
+		{
+		    format["SELECT Money, XP, Kills, Gear FROM HG_Players WHERE PID = '%1'",_uid];
+		} else {
+		    format["HG_playerSelect:%1",_uid];
+		};
+		
+		// Send query here _result = 
 	} else {
-	    _gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
+		
+	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
+		{
+		    format["INSERT INTO HG_Players (PID, XP, Gear) VALUES(?,?,?)",_uid,[(rank player),0],[]];
+		} else {
+		    format["HG_playerInsert:%1:%2:%3",_uid,[(rank player),0],[]];
+		};
+		
+		// Send query here
+		_result = [getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),[(rank player),0],0,[]];
+	};
+	
+	if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then
+    {
+	    _cash = _result select 0;
+	    if((getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1) then
+	    {
+		    _cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+		};
+	} else {
+	    _cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+	};
+	
+	_player setVariable ["HG_Cash",_cash,true];
+	
+	if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+    {
+	    private _xp = _result select 1;
+	    _player setVariable ["HG_XP",_xp,true];
+		_player setUnitRank (_xp select 0);
+	};
+	
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
+    {
+	    private _kc = _result select 2;
+	    _player setVariable ["HG_Kills",_kc,true];
+	};
+	
+    if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
+    {
+	    private _gear = _result select 3;
+	    if((count _gear) isEqualTo 0) then
+		{
+	        [_player] call HG_fnc_getGear;
+	    } else {
+	        _gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
+	    };
 	};
 };
 

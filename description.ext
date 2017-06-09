@@ -5,7 +5,7 @@ __EXEC(HG_Profile = allVariables profileNamespace)
 */
 author = "HoverGuy";
 onLoadName = "Simple Shops";
-onLoadMission = "v 2.1";
+onLoadMission = "v 2.2";
 
 /*
     Classes

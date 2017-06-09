@@ -5,6 +5,7 @@
     Website - http://www.sunrise-production.com
 	
 	currencyType - STRING - Currency you want to use (ISO format)
+	
 	enableSave - BOOL - Save money?
 	resetSavedMoney - BOOL - Reset saved money? Useful if you enable persistence then disable it and re-enable it, if it's set to true old saved money will be reset to startCash value, only used if enableSave is set to true
 	enableHUD - BOOL - Enable money display in HUD?
@@ -23,9 +24,12 @@
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable group units position markers on map?
+	
 	admins - ARRAY OF STRINGS - Admins PUIDs
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
-	savingMethod - STRING - Can be either "serverProfile" or "extDB" if the latest make sure you have extDB3 loaded & setup correctly *NOT IMPLEMENTED*
+	
+	savingMethod - STRING - Use "" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 loaded & setup correctly
+	savingProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
 	
 	class HG_MasterCfg
 	{
@@ -39,11 +43,17 @@
 			xpPenalty - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
 			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
 			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
+			wShopDiscount - INTEGER/FLOAT - Weapons shop discount in %, based on total price, 0 means no discount
+			cShopDiscount - INTEGER/FLOAT - Clothing shop discount in %, based on total price, 0 means no discount
+			vShopDiscount - INTEGER/FLOAT - Vehicles shop discount in %, 0 means no discount
 		};
 	};
 */
 
+/* MONEY */
 currencyType = "USD";
+
+/* SYSTEMS */
 enableSave = true;
 resetSavedMoney = false;
 enableHUD = true;
@@ -62,10 +72,16 @@ enableXP = true;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
+
+/* ADMIN */
 admins[] = {};
 adminKey = 0xDB;
-savingMethod = "serverProfile";
 
+/* SAVING */
+savingMethod = "";
+savingProtocol = "";
+
+/* MASTER CFG */
 class HG_MasterCfg
 {
 	class PRIVATE
@@ -78,6 +94,9 @@ class HG_MasterCfg
 		xpPenalty = 10;
 		xpReward = 10;
 		xpToLvlUp = 1000;
+		wShopDiscount = 0;
+		cShopDiscount = 0;
+		vShopDiscount = 0;
 	};
 	class CORPORAL
 	{
@@ -89,6 +108,9 @@ class HG_MasterCfg
 		xpPenalty = 20;
 		xpReward = 20;
 		xpToLvlUp = 1500;
+		wShopDiscount = 2;
+		cShopDiscount = 2;
+		vShopDiscount = 2;
 	};
 	class SERGEANT
 	{
@@ -100,6 +122,9 @@ class HG_MasterCfg
 		xpPenalty = 30;
 		xpReward = 30;
 		xpToLvlUp = 2000;
+		wShopDiscount = 4;
+		cShopDiscount = 4;
+		vShopDiscount = 4;
 	};
 	class LIEUTENANT
 	{
@@ -111,6 +136,9 @@ class HG_MasterCfg
 		xpPenalty = 40;
 		xpReward = 40;
 		xpToLvlUp = 2500;
+		wShopDiscount = 6;
+		cShopDiscount = 6;
+		vShopDiscount = 6;
 	};
 	class CAPTAIN
 	{
@@ -122,6 +150,9 @@ class HG_MasterCfg
 		xpPenalty = 50;
 		xpReward = 50;
 		xpToLvlUp = 3000;
+		wShopDiscount = 8;
+		cShopDiscount = 8;
+		vShopDiscount = 8;
 	};
 	class MAJOR
 	{
@@ -133,6 +164,9 @@ class HG_MasterCfg
 		xpPenalty = 60;
 		xpReward = 60;
 		xpToLvlUp = 3500;
+		wShopDiscount = 10;
+		cShopDiscount = 10;
+		vShopDiscount = 10;
 	};
 	class COLONEL
 	{
@@ -144,6 +178,9 @@ class HG_MasterCfg
 		xpPenalty = 70;
 		xpReward = 70;
 		xpToLvlUp = 0;
+		wShopDiscount = 12;
+		cShopDiscount = 12;
+		vShopDiscount = 12;
 	};
 };
 

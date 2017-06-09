@@ -12,18 +12,19 @@ HG_RESET_SAVED_MONEY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "r
 HG_HUD_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1;
 HG_PAYCHECK_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
+HG_BUY_TO_GARAGE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableBuyToGarage")) isEqualTo 1;
 HG_KILL_REWARD_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1;
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
 HG_CRATE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableCrate")) isEqualTo 1;
 HG_CLEAR_INVENTORY_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1;
 HG_STORE_VEHICLES_ON_DC = (getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1;
 HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
-HG_VEHICLE_INVENTORY_SAVE_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1;
 HG_XP_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1;
 HG_KILL_COUNT_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1;
 HG_TAGS_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableTags")) isEqualTo 1;
 HG_MARKERS_ENABLED = (getNumber(missionConfigFile >> "CfgClient" >> "enableMarkers")) isEqualTo 1;
 HG_ADMINS = getArray(missionConfigFile >> "CfgClient" >> "admins");
+HG_ADMIN_KEY = getNumber(missionConfigFile >> "CfgClient" >> "adminKey");
 
 /*
     Init EVHs
@@ -41,7 +42,7 @@ if((getPlayerUID player) in HG_ADMINS) then
 	[
 	    "KeyDown",
 		{
-	        if(((_this select 1) isEqualTo (getNumber(missionConfigFile >> "CfgClient" >> "adminKey"))) AND ((getPlayerUID player) in HG_ADMINS) AND !dialog) then
+	        if(((_this select 1) isEqualTo HG_ADMIN_KEY) AND !dialog) then
 			{
 			    [] call HG_fnc_dialogOnLoadAdminMenu;
 			};
@@ -50,7 +51,7 @@ if((getPlayerUID player) in HG_ADMINS) then
 };
 
 /*
-    Init Tags (if applicable)
+    Init tags (if applicable)
 */
 if(HG_TAGS_ENABLED) then
 {
@@ -59,7 +60,7 @@ if(HG_TAGS_ENABLED) then
 };
 
 /*
-    Init Markers (if applicable)
+    Init markers (if applicable)
 */
 if(HG_MARKERS_ENABLED) then
 {
@@ -73,7 +74,7 @@ if(HG_PAYCHECK_ENABLED OR HG_GIVE_MONEY_ENABLED) then
 {
     if(HG_GIVE_MONEY_ENABLED) then
 	{
-	    player addAction ["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GIVE_MONEY")+"</t>",{HG_CURSOR_OBJECT = cursorObject; createDialog "HG_GiveMoney"},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (isPlayer cursorObject) AND (alive cursorObject) AND (player distance cursorObject < 2) AND !dialog'];
+	    player addAction ["<img image='HG\UI\Icons\money.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_GIVE_MONEY")+"</t>",{[cursorObject] call HG_fnc_dialogOnLoadGiveMoney},"",0,false,false,"",'(alive player) AND (cursorObject isKindOf "Man") AND (isPlayer cursorObject) AND (alive cursorObject) AND ((player distance cursorObject) < 2) AND !dialog'];
 	};
 	if(HG_PAYCHECK_ENABLED) then
 	{

@@ -354,10 +354,28 @@
 			<Italian></Italian>    
 		</Key>
 	</Package>
+	<Package name="extDB">
+	    <Key ID="STR_HG_EXTDB_NOT_LOADED">
+		    <Original>[HG|extDB3|Code#1] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_EXTDB_NO_PROTOCOL">
+		    <Original>[HG|extDB3|Code#2] Saving method is set to "extDB" but it seems like no protocol (savingProtocol) has been set up... server profile is being used as a fallback</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v2.1</Original>
+		        <Original>[HG] Simple Shops v2.2</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>

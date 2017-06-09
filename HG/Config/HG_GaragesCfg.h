@@ -14,7 +14,7 @@
 			allowedTypes - ARRAY OF STRINGS - Allowed vehicle types to be retrieved from the garage, can be Car/Truck/Tank/Air/Ship/Submarine or mixed
 			spawnPoints - ARRAY OF MIXED - Spawn positions (markers/positions)
 			|- 0 - STRINGS/ARRAYS - Markers/positions
-			storePoint - STRING - Point (marker) where the vehicle should be placed to be able to store it, if left empty it will detect the nearest owned vehicle inside a 8m radius
+			storePoint - STRING - Point (marker) where the vehicle should be placed to be able to store it, if left empty it will detect the nearest owned vehicle inside a 8m radius around the player
 		};
 	};
 */

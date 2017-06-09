@@ -8,7 +8,7 @@ class HG
 {
 	class AdminMenu
 	{
-		file = "HG\Functions\AdminMenu";
+		file = "HG\Functions\Client\AdminMenu";
 		class adminMenuBtns {};
 		class adminMenuListChanged {};
 		class checkboxChanged {};
@@ -16,15 +16,9 @@ class HG
 		class refreshPlayers {};
 	};
 	
-	class AI
-	{
-	    file = "HG\Functions\AI";
-		class aiUnitSetup {};
-	};
-	
 	class ClothingShop
 	{
-		file = "HG\Functions\ClothingShop";
+		file = "HG\Functions\Client\ClothingShop";
 		class buyClothing {};
 		class clothingSelectionChanged {};
 		class dialogOnLoadClothing {};
@@ -36,7 +30,7 @@ class HG
 	
 	class EVH
 	{
-		file = "HG\Functions\EVH";
+		file = "HG\Functions\Client\EVH";
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};
@@ -46,7 +40,7 @@ class HG
 	
 	class Garage
 	{
-		file = "HG\Functions\Garage";
+		file = "HG\Functions\Client\Garage";
 		class delVehicle {};
 		class dialogOnLoadGarage {};
 		class fillGarage {};
@@ -57,14 +51,13 @@ class HG
 	
 	class Generic
 	{
-		file = "HG\Functions\Generic";
+		file = "HG\Functions\Client\Generic";
 		class addOrSubCash {};
 		class addOrSubKills {};
 		class addOrSubXP {};
 	    class currencyToText {};
 		class emptyVehicle {};
 		class getConfig {};
-		class getGear {};
 		class hasEnoughMoney {};
 		class isItBusy {};
 		class isNumeric {};
@@ -78,25 +71,26 @@ class HG
 	
 	class GiveMoney
 	{
-		file = "HG\Functions\GiveMoney";
+		file = "HG\Functions\Client\GiveMoney";
+		class dialogOnloadGiveMoney {};
 		class giveMoneyBtn {};
 	};
 	
 	class HUD
 	{
-		file = "HG\Functions\HUD";
+		file = "HG\Functions\Client\HUD";
 		class HUD {};
 	};
 	
 	class Tags
 	{
-		file = "HG\Functions\Tags";
+		file = "HG\Functions\Client\Tags";
 		class playerTags {};
 	};
 	
 	class VehiclesShop
 	{
-		file = "HG\Functions\VehiclesShop";
+		file = "HG\Functions\Client\VehiclesShop";
 		class addActions {};
 		class buyToGarage {};
 		class buyVehicle {};
@@ -109,7 +103,7 @@ class HG
 	
 	class WeaponsShop
 	{
-		file = "HG\Functions\WeaponsShop";
+		file = "HG\Functions\Client\WeaponsShop";
 		class dialogOnLoadItems {};
 		class handleItems {};
 		class itemBtns {};

@@ -10,42 +10,43 @@ class HG_GiveMoney
     idd = HG_GM_IDD;
 	enableSimulation = true;
 	name = "HG_GiveMoney";
+	onUnload = "HG_CURSOR_OBJECT = nil";
 	
 	class ControlsBackground
 	{
 		class Header: HG_RscText
 		{
 			colorBackground[] = {0.4,0.4,0.4,1};
-			x = 12.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 8 * GUI_GRID_H + GUI_GRID_Y;
-			w = 15 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.422656 * safeZoneW + safeZoneX;
+			y = 0.401 * safeZoneH + safeZoneY;
+			w = 0.154687 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class Background: HG_RscText
 		{
 			colorBackground[] = {0,0,0,0.5};
-			x = 12.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 15 * GUI_GRID_W;
-			h = 3.5 * GUI_GRID_H;
+			x = 0.422656 * safeZoneW + safeZoneX;
+			y = 0.445 * safeZoneH + safeZoneY;
+			w = 0.154687 * safeZoneW;
+			h = 0.077 * safeZoneH;
 		};
 		
 		class BackgroundFrame: HG_RscFrame
 		{
-			x = 12.5 * GUI_GRID_W + GUI_GRID_X;
-		    y = 8 * GUI_GRID_H + GUI_GRID_Y;
-		    w = 15 * GUI_GRID_W;
-		    h = 5.5 * GUI_GRID_H;
+			x = 0.422656 * safeZoneW + safeZoneX;
+		    y = 0.401 * safeZoneH + safeZoneY;
+		    w = 0.154687 * safeZoneW;
+		    h = 0.121 * safeZoneH;
 		};
 		
 		class WhiteLine: HG_RscPicture
 		{
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 12.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 15 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
+			x = 0.422656 * safeZoneW + safeZoneX;
+			y = 0.445 * safeZoneH + safeZoneY;
+			w = 0.154687 * safeZoneW;
+			h = 0.0022 * safeZoneH;
 		};
 		
 		class ShopPicture: HG_RscPicture
@@ -53,19 +54,19 @@ class HG_GiveMoney
 			moving = true;
 			text = "HG\UI\Icons\money.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
-			x = 12.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 8 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.422656 * safeZoneW + safeZoneX;
+			y = 0.401 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\close.paa";
-			x = 15 * GUI_GRID_W + GUI_GRID_X;
-			y = 8 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.448438 * safeZoneW + safeZoneX;
+			y = 0.401 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 
@@ -76,19 +77,19 @@ class HG_GiveMoney
 			idc = HG_GM_EDIT_IDC;
 			style = "0x02 + 0x40";
 			text = "1";
-			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 14 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.427812 * safeZoneW + safeZoneX;
+			y = 0.456 * safeZoneH + safeZoneY;
+			w = 0.144375 * safeZoneW;
+			h = 0.022 * safeZoneH;
 		};
 		
 		class GiveBtn: HG_RscButton
 		{
 			text = "Give";
-			x = 13 * GUI_GRID_W + GUI_GRID_X;
-			y = 12 * GUI_GRID_H + GUI_GRID_Y;
-			w = 14 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.427812 * safeZoneW + safeZoneX;
+			y = 0.489 * safeZoneH + safeZoneY;
+			w = 0.144375 * safeZoneW;
+			h = 0.022 * safeZoneH;
 			onButtonClick = "[] call HG_fnc_giveMoneyBtn";
 		};
 		
@@ -96,10 +97,10 @@ class HG_GiveMoney
 		{
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
-			x = 15 * GUI_GRID_W + GUI_GRID_X;
-			y = 8 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.448438 * safeZoneW + safeZoneX;
+			y = 0.401 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 };

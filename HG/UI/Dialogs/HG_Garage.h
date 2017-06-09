@@ -18,10 +18,10 @@ class HG_Garage
 		class Header: HG_RscText
 		{
 			colorBackground[] = {0.4,0.4,0.4,1};
-		    x = 9 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 22 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+		    x = 0.386562 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.226875 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class Background: HG_RscText
@@ -29,27 +29,27 @@ class HG_Garage
 			idc = HG_GARAGE_BACK_IDC;
 			style = "0x02";
 			colorBackground[] = {0,0,0,0.5};
-			x = 9 * GUI_GRID_W + GUI_GRID_X;
-			y = 5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 22 * GUI_GRID_W;
-			h = 17 * GUI_GRID_H;
+			x = 0.386562 * safeZoneW + safeZoneX;
+			y = 0.335 * safeZoneH + safeZoneY;
+			w = 0.226875 * safeZoneW;
+			h = 0.374 * safeZoneH;
 		};
 		
 		class BackgroundFrame: HG_RscFrame
 		{
-			x = 9 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 22 * GUI_GRID_W;
-			h = 19 * GUI_GRID_H;
+			x = 0.386562 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.226875 * safeZoneW;
+			h = 0.418 * safeZoneH;
 		};
 		
 		class WhiteLine: HG_RscPicture
 		{
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = 9 * GUI_GRID_W + GUI_GRID_X;
-			y = 5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 22 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
+			x = 0.386562 * safeZoneW + safeZoneX;
+			y = 0.335 * safeZoneH + safeZoneY;
+			w = 0.226875 * safeZoneW;
+			h = 0.0022 * safeZoneH;
 		};
 		
 		class MainPicture: HG_RscPicture
@@ -57,46 +57,46 @@ class HG_Garage
 			moving = true;
 			text = "HG\UI\Icons\garage.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
-			x = 9 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.386562 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class RefreshBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\refresh.paa";
-			x = 17.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.474219 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class SpawnBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\spawn.paa";
-			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.510312 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class DeleteBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\delete.paa";
-			x = 24.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.546406 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\close.paa";
-			x = 28 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.5825 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 	
@@ -107,10 +107,10 @@ class HG_Garage
 			idc = HG_GARAGE_LIST_IDC;
 			style = "0x02 + 16";
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-			x = 9.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 21 * GUI_GRID_W;
-			h = 16 * GUI_GRID_H;
+			x = 0.391719 * safeZoneW + safeZoneX;
+			y = 0.346 * safeZoneH + safeZoneY;
+			w = 0.216563 * safeZoneW;
+			h = 0.352 * safeZoneH;
 		};
 		
 		class RefreshBtn: HG_RscButtonInvisible
@@ -118,10 +118,10 @@ class HG_Garage
 			idc = HG_GARAGE_REFRESH_BTN_IDC;
 			tooltip = "$STR_HG_GRG_REFRESH_TOOLTIP";
 			onButtonClick = "[0] call HG_fnc_garageBtns";
-			x = 17.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.474219 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class SpawnBtn: HG_RscButtonInvisible
@@ -129,10 +129,10 @@ class HG_Garage
 			idc = HG_GARAGE_SPAWN_BTN_IDC;
 			tooltip = "$STR_HG_GRG_SPAWN_TOOLTIP";
 			onButtonClick = "[1] call HG_fnc_garageBtns";
-			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.510312 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class DeleteBtn: HG_RscButtonInvisible
@@ -140,20 +140,20 @@ class HG_Garage
 			idc = HG_GARAGE_DELETE_BTN_IDC;
 			tooltip = "$STR_HG_GRG_DELETE_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_garageBtns";
-			x = 24.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.546406 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ExitButton: HG_RscButtonInvisible
 		{
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
-			x = 28 * GUI_GRID_W + GUI_GRID_X;
-			y = 3 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.5825 * safeZoneW + safeZoneX;
+			y = 0.291 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 };

@@ -19,100 +19,100 @@ class HG_ClothingShop
 			style = "0x02";
 			text = "$STR_HG_DLG_CS_TITLE_LIST";
 			colorBackground[] = {0.4,0.4,0.4,1};
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 4 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
+			x = 0.005 * safeZoneW + safeZoneX;
+			y = 0.313 * safeZoneH + safeZoneY;
+			w = 0.195937 * safeZoneW;
+			h = 0.033 * safeZoneH;
 		};
 		
 		class ListBackground: HG_RscText
 		{
 			colorBackground[] = {0,0,0,0.5};
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 19.5 * GUI_GRID_H;
+			x = 0.005 * safeZoneW + safeZoneX;
+			y = 0.346 * safeZoneH + safeZoneY;
+			w = 0.195937 * safeZoneW;
+			h = 0.429 * safeZoneH;
 		};
 		
 		class ListBackgroundFrame: HG_RscFrame
 		{
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 4 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 21 * GUI_GRID_H;
+			x = 0.005 * safeZoneW + safeZoneX;
+			y = 0.313 * safeZoneH + safeZoneY;
+			w = 0.195937 * safeZoneW;
+			h = 0.462 * safeZoneH;
 		};
 		
 		class ListWhiteLine: HG_RscPicture
 		{
 			text = "#(argb,8,8,3)color(1,1,1,1)";
-			x = -28 * GUI_GRID_W + GUI_GRID_X;
-			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 19 * GUI_GRID_W;
-			h = 0.1 * GUI_GRID_H;
+			x = 0.005 * safeZoneW + safeZoneX;
+			y = 0.346 * safeZoneH + safeZoneY;
+			w = 0.195937 * safeZoneW;
+			h = 0.0022 * safeZoneH;
 		};
 		
 		class ActionBarBackground: HG_RscText
 		{
 			colorBackground[] = {0.4,0.4,0.4,1};
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 40 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.29375 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.4125 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ShopPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\clothing.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
-			x = 0 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.29375 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class TotalText: HG_RscText
 		{
 			idc = HG_CLOTHING_TOTAL_IDC;
-			x = 20 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 8.5 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.5 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0876563 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ResetBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\reset.paa";
-			x = 26.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.567031 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class BuyBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\buy.paa";
-			x = 30 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.603125 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class MyCashBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\mycash.paa";
-			x = 33.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.639219 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ExitBtnPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\close.paa";
-			x = 37 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.675312 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 	
@@ -122,10 +122,10 @@ class HG_ClothingShop
 		{
 			idc = HG_CLOTHING_SWITCH_IDC;
 			onLBSelChanged = "_this call HG_fnc_xClothingSelectionChanged";
-			x = -27.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 6 * GUI_GRID_H + GUI_GRID_Y;
-			w = 18 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.0101562 * safeZoneW + safeZoneX;
+			y = 0.357 * safeZoneH + safeZoneY;
+			w = 0.185625 * safeZoneW;
+			h = 0.022 * safeZoneH;
 		};
 		
 		class ClothingList: HG_RscListBox
@@ -134,10 +134,10 @@ class HG_ClothingShop
 			style = "0x02 + 16";
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			onLBSelChanged = "_this call HG_fnc_clothingSelectionChanged";
-			x = -27.5 * GUI_GRID_W + GUI_GRID_X;
-			y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 18 * GUI_GRID_W;
-			h = 17 * GUI_GRID_H;
+			x = 0.0101562 * safeZoneW + safeZoneX;
+			y = 0.39 * safeZoneH + safeZoneY;
+			w = 0.185625 * safeZoneW;
+			h = 0.374 * safeZoneH;
 		};
 		
 		class ResetButton: HG_RscButtonInvisible
@@ -145,10 +145,10 @@ class HG_ClothingShop
 			idc = HG_CLOTHING_RESET_IDC;
 			tooltip = "$STR_HG_DLG_CS_RESET_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_reset";
-			x = 26.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.567031 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class BuyButton: HG_RscButtonInvisible
@@ -156,21 +156,21 @@ class HG_ClothingShop
 			idc = HG_CLOTHING_BUY_IDC;
 			tooltip = "$STR_HG_DLG_CS_BUY_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_buyClothing";
-			x = 30 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.603125 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class MyCashButton: HG_RscButtonInvisible
 		{
 			idc = HG_CLOTHING_MC_IDC;
-			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([HG_CASH,true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
+			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
-			x = 33.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.639219 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 		
 		class ViewSlider: HG_RscXSliderH
@@ -178,20 +178,20 @@ class HG_ClothingShop
 			idc = HG_CLOTHING_SLIDER_IDC;
 		    onSliderPosChanged = "player setDir (360 - (_this select 1))";
 			tooltip = "$STR_HG_DLG_CS_SLIDER_TOOLTIP";
-			x = 3.5 * GUI_GRID_W + GUI_GRID_X;
-			y = -9.5 * GUI_GRID_H + GUI_GRID_Y;
-			w = 16 * GUI_GRID_W;
-			h = 1 * GUI_GRID_H;
+			x = 0.329844 * safeZoneW + safeZoneX;
+			y = 0.016 * safeZoneH + safeZoneY;
+			w = 0.165 * safeZoneW;
+			h = 0.022 * safeZoneH;
 		};
 		
 		class ExitButton: HG_RscButtonInvisible
 		{
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
-			x = 37 * GUI_GRID_W + GUI_GRID_X;
-			y = -10 * GUI_GRID_H + GUI_GRID_Y;
-			w = 3 * GUI_GRID_W;
-			h = 2 * GUI_GRID_H;
+			x = 0.675312 * safeZoneW + safeZoneX;
+			y = 0.00500001 * safeZoneH + safeZoneY;
+			w = 0.0309375 * safeZoneW;
+			h = 0.044 * safeZoneH;
 		};
 	};
 };
