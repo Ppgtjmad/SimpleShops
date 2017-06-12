@@ -10,11 +10,11 @@ private["_price","_discount"];
 disableSerialization;
 
 _price = HG_VEHICLES_LIST lbValue (lbCurSel HG_VEHICLES_LIST);
-_discount = (getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) != 0;
+_discount = ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) != 0) AND (_price != 0);
 
 if(_discount) then
 {
-	_price = round(_price - (_price * (_discount / 100)));
+	_price = round(_price - (_price * ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) / 100)));
 };
 
 if([_price] call HG_fnc_hasEnoughMoney) then

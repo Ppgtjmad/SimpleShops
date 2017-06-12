@@ -80,6 +80,11 @@ if(!HG_SAVING_EXTDB) then
 	
 	// Send query here _exists = 
 	
+	if((typeName _exists) isEqualTo "ARRAY") then 
+	{
+	    _exists = _exists select 0;
+	};
+	
 	if(_exists) then
 	{
 	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then

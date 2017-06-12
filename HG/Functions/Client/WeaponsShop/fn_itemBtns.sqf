@@ -34,11 +34,11 @@ switch(_mode) do
 	case 2:
 	{
 	    _price = _price * _qty;
-	    private _discount = (getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "wShopDiscount")) != 0;
+	    private _discount = ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "wShopDiscount")) != 0) AND (_price != 0);
 		
 		if(_discount) then
-		{
-		    _price = round(_price - (_price * (_discount / 100)));
+		{ 
+		    _price = round(_price - (_price * ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "wShopDiscount")) / 100)));
 	    };
 		
 		if([_price] call HG_fnc_hasEnoughMoney) then

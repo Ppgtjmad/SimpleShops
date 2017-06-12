@@ -94,11 +94,11 @@ if(_sel in ["Glasses","Headgear","Vest","Uniform","Backpack"]) then
 	};
 } forEach HG_GEAR_PREVIEW;
 
-_discount = (getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "cShopDiscount")) != 0;
+_discount = ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "cShopDiscount")) != 0) AND (_price != 0);
 
 if(_discount) then
 {
-    _price = round(_price - (_price * (_discount / 100)));
+    _price = round(_price - (_price * ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "cShopDiscount")) / 100)));
 };
 
 if(((count HG_GEAR_PREVIEW) isEqualTo _count) OR (!([_price] call HG_fnc_hasEnoughMoney))) then 

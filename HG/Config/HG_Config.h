@@ -74,7 +74,7 @@ enableTags = true;
 enableMarkers = true;
 
 /* ADMIN */
-admins[] = {};
+admins[] = {"_SP_PLAYER_"};
 adminKey = 0xDB;
 
 /* SAVING */
