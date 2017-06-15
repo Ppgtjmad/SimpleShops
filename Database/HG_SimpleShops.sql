@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `HG_Players` (
   `Kills` INT(100) NOT NULL DEFAULT '0',
   `Gear` TEXT NOT NULL,
   PRIMARY KEY (`ID`),
-  UNIQUE KEY `PlayerID` (`PID`)
+  UNIQUE KEY `PID` (`PID`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 -- --------------------------------------------------------
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `HG_Vehicles` (
   `Active` TINYINT NOT NULL,
   `Inventory` TEXT NOT NULL,
   PRIMARY KEY (`ID`),
-  KEY `PlayerID` (`PID`),
+  KEY `PID` (`PID`),
   KEY `Classname` (`Classname`),
   KEY `Plate` (`Plate`)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
