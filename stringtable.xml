@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project name="HG">
     <Package name="General">
-	    <Key ID="STR_HG_CLOTHING_BOUGHT">
-		    <Original>You have bought clothes for a total of %1</Original>
+	    <Key ID="STR_HG_GEAR_BOUGHT">
+		    <Original>You have bought stuff for a total of %1</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
@@ -233,6 +233,22 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_GARAGE">
+		    <Original>Garage</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_GARAGE_PARK">
+		    <Original>Park Vehicle</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_VEHICLE_UNLOCKED">
 		    <Original>Vehicle is now UNLOCKED</Original>
 		    <French></French>
@@ -375,7 +391,7 @@
 	<Package name="Dialogs">
 	    <Container name="General">
 		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops v2.2</Original>
+		        <Original>[HG] Simple Shops v2.3</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
@@ -561,16 +577,16 @@
 			    <Italian></Italian>
 		    </Key>
 		</Container>
-	    <Container name="ClothingShop">
-			<Key ID="STR_HG_DLG_CS_TITLE_LIST">
-		        <Original>Available Clothing</Original>
+	    <Container name="GearShop">
+			<Key ID="STR_HG_DLG_GS_TITLE_LIST">
+		        <Original>Available Gear</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
-			<Key ID="STR_HG_DLG_CS_TOTAL_TEXT">
+			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
 			    <Original>Total - %1</Original>
 		        <French></French>
 			    <German></German>
@@ -578,15 +594,15 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 			</Key>
-			<Key ID="STR_HG_DLG_CS_REMOVE">
-			    <Original>Remove %1</Original>
+			<Key ID="STR_HG_DLG_GS_REMOVE">
+			    <Original>Remove Current</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 			</Key>
-			<Key ID="STR_HG_DLG_CS_RESET_TOOLTIP">
+			<Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
 		        <Original>Reset gear</Original>
 		        <French></French>
 			    <German></German>
@@ -594,15 +610,15 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>    
-		    <Key ID="STR_HG_DLG_CS_BUY_TOOLTIP">
-		        <Original>Buy selected item(s)</Original>
+		    <Key ID="STR_HG_DLG_GS_BUY_TOOLTIP">
+		        <Original>Buy selected gear</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
-			<Key ID="STR_HG_DLG_CS_SLIDER_TOOLTIP">
+			<Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
 		        <Original>Turn player left or right</Original>
 		        <French></French>
 			    <German></German>
@@ -759,8 +775,8 @@
 			    <Italian></Italian>
 		    </Key>
 		</Container>
-        <Container name="WeaponsShop">
-		    <Key ID="STR_HG_DLG_WS_ADD_TOOLTIP">
+        <Container name="ItemsShop">
+		    <Key ID="STR_HG_DLG_IS_ADD_TOOLTIP">
 		        <Original>+1</Original>
 		        <French></French>
 			    <German></German>
@@ -768,7 +784,7 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
-		    <Key ID="STR_HG_DLG_WS_SUB_TOOLTIP">
+		    <Key ID="STR_HG_DLG_IS_SUB_TOOLTIP">
 		        <Original>-1</Original>
 		        <French></French>
 			    <German></German>
@@ -776,15 +792,15 @@
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
-			<Key ID="STR_HG_DLG_WS_BUY_TOOLTIP">
-		        <Original>Buy selected item</Original>
+			<Key ID="STR_HG_DLG_IS_BUY_TOOLTIP">
+		        <Original>Buy selected item(s)</Original>
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
 			    <Spanish></Spanish>
 			    <Italian></Italian>
 		    </Key>
-			<Key ID="STR_HG_DLG_WS_TOTAL">
+			<Key ID="STR_HG_DLG_IS_TOTAL">
 		        <Original>Total - %1</Original>
 		        <French></French>
 			    <German></German>
@@ -795,6 +811,30 @@
 		</Container>
 	</Package>
 	<Package name="Shops">
+	    <Key ID="STR_HG_GEAR_SHOP">
+		    <Original>Gear Shop</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_ITEMS_SHOP">
+		    <Original>Items Shop</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_VEHICLES_SHOP">
+		    <Original>Vehicles Shop</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
 	    <Key ID="STR_HG_SHOP_UNIFORMS">
 		    <Original>Uniforms</Original>
 		    <French></French>
@@ -835,16 +875,64 @@
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
-	    <Key ID="STR_HG_SHOP_SCOPES">
-		    <Original>Scopes</Original>
+		<Key ID="STR_HG_SHOP_MISSILE_LAUNCHER">
+		    <Original>Missile Launcher</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
 			<Spanish></Spanish>
 			<Italian></Italian>
 		</Key>
-		<Key ID="STR_HG_SHOP_WEAPONS">
-		    <Original>Weapons</Original>
+		<Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
+		    <Original>Rocket Launcher</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_HANDGUN">
+		    <Original>Handgun</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_ASSAULT_RIFLE">
+		    <Original>Assault Rifle</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_MACHINE_GUN">
+		    <Original>Machine Gun</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_SUB_MACHINE_GUN">
+		    <Original>Sub-Machine Gun</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+		<Key ID="STR_HG_SHOP_SNIPER_RIFLE">
+		    <Original>Sniper Rifle</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish></Spanish>
+			<Italian></Italian>
+		</Key>
+	    <Key ID="STR_HG_SHOP_SCOPES">
+		    <Original>Scopes</Original>
 		    <French></French>
 			<German></German>
 			<Russian></Russian>

@@ -39,6 +39,8 @@ if(!HG_SAVING_EXTDB) then
 			    } else {
 					_query = format["HG_vehicleActiveUpdate:%1:%2:%3",0,_uid,_plate];
 				};
+				
+				// Send update query here
 			};
 			
 			if(_saveInv) then

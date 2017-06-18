@@ -6,7 +6,7 @@
     Website - http://www.sunrise-production.com
 */
 
-if(!HG_CLOTHING_BOUGHT) then
+if(!HG_GEAR_BOUGHT) then
 {
     [] call HG_fnc_reset;
 } else {
@@ -26,6 +26,6 @@ HG_STRING_HANDLER = nil;
 HG_GEAR_SAVED = nil;
 HG_CAMERA_PREVIEW = nil;
 HG_GEAR_PREVIEW = nil;
-HG_CLOTHING_BOUGHT = nil;
+HG_GEAR_BOUGHT = nil;
 
 true;

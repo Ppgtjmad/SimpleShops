@@ -16,18 +16,6 @@ class HG
 		class refreshPlayers {};
 	};
 	
-	class ClothingShop
-	{
-		file = "HG\Functions\Client\ClothingShop";
-		class buyClothing {};
-		class clothingSelectionChanged {};
-		class dialogOnLoadClothing {};
-		class dialogOnUnloadClothing {};
-		class fillBox {};
-		class reset {};
-		class xClothingSelectionChanged {};
-	};
-	
 	class EVH
 	{
 		file = "HG\Functions\Client\EVH";
@@ -47,6 +35,19 @@ class HG
 	    class garageBtns {};
 		class refreshGarage {};
 		class storeVehicleC {};
+	};
+	
+	class GearShop
+	{
+		file = "HG\Functions\Client\GearShop";
+		class buyGear {};
+		class dialogOnLoadGear {};
+		class dialogOnUnloadGear {};
+		class fillBox {};
+		class gearSelectionChanged {};
+		class handleGear {};
+		class reset {};
+		class xGearSelectionChanged {};
 	};
 	
 	class Generic
@@ -82,6 +83,16 @@ class HG
 		class HUD {};
 	};
 	
+	class ItemsShop
+	{
+		file = "HG\Functions\Client\ItemsShop";
+		class dialogOnLoadItems {};
+		class handleItems {};
+		class itemBtns {};
+		class itemSelectionChanged {};
+		class xItemSelectionChanged {};
+	};
+	
 	class Tags
 	{
 		file = "HG\Functions\Client\Tags";
@@ -99,15 +110,5 @@ class HG
 		class vehicleRotate {};
 		class vehicleSelectionChanged {};
 		class xVehicleSelectionChanged {};
-	};
-	
-	class WeaponsShop
-	{
-		file = "HG\Functions\Client\WeaponsShop";
-		class dialogOnLoadItems {};
-		class handleItems {};
-		class itemBtns {};
-		class itemSelectionChanged {};
-		class xItemSelectionChanged {};
 	};
 };

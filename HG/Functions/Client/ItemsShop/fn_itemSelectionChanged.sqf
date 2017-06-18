@@ -9,7 +9,7 @@ params["_ctrl","_index","_item","_price","_itemClass","_itemType","_cat","_itemP
 
 disableSerialization;
 
-HG_WEAPONS_AMOUNT ctrlSetText "1";
+HG_ITEMS_AMOUNT ctrlSetText "1";
 
 _item = _ctrl lbData _index;
 _price = _ctrl lbValue _index;
@@ -23,17 +23,17 @@ if(_cat in ["Magazine","Mine","Item"]) then
 {
     {
 	    _x ctrlEnable true;
-	} forEach [HG_WEAPONS_ADD,HG_WEAPONS_SUB];
+	} forEach [HG_ITEMS_ADD,HG_ITEMS_SUB];
 } else {
     {
 	    _x ctrlEnable false;
-	} forEach [HG_WEAPONS_ADD,HG_WEAPONS_SUB];
+	} forEach [HG_ITEMS_ADD,HG_ITEMS_SUB];
 };
 
-HG_WEAPONS_TOTAL ctrlSetText format[(localize "STR_HG_DLG_WS_TOTAL"),([_price,true] call HG_fnc_currencyToText)];
+HG_ITEMS_TOTAL ctrlSetText format[(localize "STR_HG_DLG_IS_TOTAL"),([_price,true] call HG_fnc_currencyToText)];
 	
-HG_WEAPONS_ITEM_PICTURE ctrlSetText _itemPicture;
-HG_WEAPONS_ITEM_TEXT ctrlSetStructuredText parseText format
+HG_ITEMS_ITEM_PICTURE ctrlSetText _itemPicture;
+HG_ITEMS_ITEM_TEXT ctrlSetStructuredText parseText format
 [
 	"
 		<t align='center' size='1'><br />%1</t>

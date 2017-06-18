@@ -10,37 +10,28 @@ if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOA
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 private["_whitelist","_isOk"];
-_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop >> "whitelistRanks");
+_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_GearShopCfg" >> _whatShop >> "whitelistRanks");
 _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 disableSerialization;
 
-createDialog "HG_ClothingShop";
+createDialog "HG_GearShop";
 
 private["_shopList","_cat","_ind"];
 
-_shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_ClothingShopCfg" >> _whatShop);
+_shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_GearShopCfg" >> _whatShop);
 	
-lbClear HG_CLOTHING_SWITCH;
-HG_CLOTHING_SLIDER sliderSetRange [0,360];
+lbClear HG_GEAR_SWITCH;
+HG_GEAR_SLIDER sliderSetRange [0,360];
 HG_STRING_HANDLER = _whatShop;
 
 {
-    _cat = switch (configName _x) do
-	{
-	    case "Glasses": {(localize "STR_HG_SHOP_FACEWEAR")};
-		case "Headgear": {(localize "STR_HG_SHOP_HEADGEAR")};
-		case "Vest": {(localize "STR_HG_SHOP_VESTS")};
-		case "Uniform": {(localize "STR_HG_SHOP_UNIFORMS")};
-		case "Backpack": {(localize "STR_HG_SHOP_BACKPACKS")};
-	};
-	
-	_ind = HG_CLOTHING_SWITCH lbAdd _cat;
-	HG_CLOTHING_SWITCH lbSetData [_ind,(configName _x)];
+	_ind = HG_GEAR_SWITCH lbAdd (getText(_x >> "displayName"));
+	HG_GEAR_SWITCH lbSetData [_ind,(configName _x)];
 } forEach _shopList;
 
-HG_CLOTHING_SWITCH lbSetCurSel 0;
+HG_GEAR_SWITCH lbSetCurSel 0;
 
 if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
 {
@@ -53,6 +44,7 @@ if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
 	
     HG_PLAYER_BOX setPos [(getPos player select 0)+1,(getPos player select 1),(getPos player select 2)];
     HG_PLAYER_BOX setDir (getDir player)+90;
+	
     clearItemCargo HG_PLAYER_BOX;
     clearMagazineCargo HG_PLAYER_BOX;
     clearWeaponCargo HG_PLAYER_BOX;
@@ -80,8 +72,18 @@ HG_CAMERA_PREVIEW camSetFOV .33;
 HG_CAMERA_PREVIEW camSetFocus [50,0];
 HG_CAMERA_PREVIEW camCommit 0;
 
-HG_GEAR_PREVIEW = [[],[],[],[],[]];
-HG_GEAR_SAVED = [(goggles player),(headgear player),(vest player),(vestItems player),(uniform player),(uniformItems player),(backpack player),(backpackItems player)];
-HG_CLOTHING_BOUGHT = false;
+HG_GEAR_PREVIEW = [[],[],[],[],[],[],[],[]];
+HG_GEAR_SAVED = 
+[
+    [(uniform player),(uniformItems player)],
+    [(vest player),(vestItems player)],
+    [(backpack player),(backpackItems player)],
+    (goggles player),
+    (headgear player),
+    [(primaryWeapon player),(primaryWeaponMagazine player),(primaryWeaponItems player)],
+    [(secondaryWeapon player),(secondaryWeaponMagazine player),(secondaryWeaponItems player)],
+    [(handgunWeapon player),(handgunMagazine player),(handgunItems player)]
+];
+HG_GEAR_BOUGHT = false;
 
 true;

@@ -5,12 +5,12 @@
 	Website - http://www.sunrise-production.com
 */
 
-class HG_WeaponsShop
+class HG_ItemsShop
 {
-    idd = HG_WEAPONS_SHOP_IDD;
+    idd = HG_ITEMS_SHOP_IDD;
 	enableSimulation = true;
 	movingEnable = true;
-	name = "HG_WeaponsShop";
+	name = "HG_ItemsShop";
 	onUnload = "[player] remoteExecCall ['HG_fnc_getGear',2,false]";
 	
 	class ControlsBackground
@@ -53,7 +53,7 @@ class HG_WeaponsShop
 		class ShopPicture: HG_RscPicture
 		{
 			moving = true;
-			text = "HG\UI\Icons\gun.paa";
+			text = "HG\UI\Icons\money.paa";
 			tooltip = "$STR_HG_DLG_TOOLTIP";
 			x = 0.324687 * safezoneW + safezoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -108,7 +108,7 @@ class HG_WeaponsShop
 		
 		class ItemText: HG_RscStructuredText
 		{
-			idc = HG_WEAPONS_ITEM_TEXT_IDC;
+			idc = HG_ITEMS_ITEM_TEXT_IDC;
 			colorBackground[] = {0,0,0,0.5};
 			x = 0.515469 * safeZoneW + safeZoneX;
 			y = 0.467 * safeZoneH + safeZoneY;
@@ -143,7 +143,7 @@ class HG_WeaponsShop
 		
 		class ItemPicture: HG_RscPicture
 		{
-		    idc = HG_WEAPONS_ITEM_PICTURE_IDC;
+		    idc = HG_ITEMS_ITEM_PICTURE_IDC;
 			x = 0.515469 * safeZoneW + safeZoneX;
 			y = 0.335 * safeZoneH + safeZoneY;
 			w = 0.154687 * safeZoneW;
@@ -152,7 +152,7 @@ class HG_WeaponsShop
 		
 		class AmountText: HG_RscText
 		{
-			idc = HG_WEAPONS_AMOUNT_IDC;
+			idc = HG_ITEMS_AMOUNT_IDC;
 			style = "0x02";
 			x = 0.402031 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -162,7 +162,7 @@ class HG_WeaponsShop
 		
 		class TotalText: HG_RscText
 		{
-			idc = HG_WEAPONS_TOTAL_IDC;
+			idc = HG_ITEMS_TOTAL_IDC;
 			style = "0x02";
 			shadow = 0;
 			x = 0.479375 * safeZoneW + safeZoneX;
@@ -176,7 +176,7 @@ class HG_WeaponsShop
 	{
 	    class ItemList: HG_RscListBox
 		{
-			idc = HG_WEAPONS_ITEM_LIST_IDC;
+			idc = HG_ITEMS_ITEM_LIST_IDC;
 			style = "0x02 + 16";
 			onLBSelChanged = "_this call HG_fnc_itemSelectionChanged";
 			x = 0.329844 * safeZoneW + safeZoneX;
@@ -187,7 +187,7 @@ class HG_WeaponsShop
 		
 		class ItemSwitch: HG_RscXListBox
 		{
-		    idc = HG_WEAPONS_ITEM_SWITCH_IDC;
+		    idc = HG_ITEMS_ITEM_SWITCH_IDC;
 			onLBSelChanged = "_this call HG_fnc_xItemSelectionChanged";
 			x = 0.329844 * safeZoneW + safeZoneX;
 			y = 0.335 * safeZoneH + safeZoneY;
@@ -197,8 +197,8 @@ class HG_WeaponsShop
 		
 		class AddButton: HG_RscButtonInvisible
 		{
-			idc = HG_WEAPONS_ADD_IDC;
-			tooltip = "$STR_HG_DLG_WS_ADD_TOOLTIP";
+			idc = HG_ITEMS_ADD_IDC;
+			tooltip = "$STR_HG_DLG_IS_ADD_TOOLTIP";
 			onButtonClick = "[0] call HG_fnc_itemBtns";
 			x = 0.443281 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -208,8 +208,8 @@ class HG_WeaponsShop
 		
 		class SubButton: HG_RscButtonInvisible
 		{
-			idc = HG_WEAPONS_SUB_IDC;
-			tooltip = "$STR_HG_DLG_WS_SUB_TOOLTIP";
+			idc = HG_ITEMS_SUB_IDC;
+			tooltip = "$STR_HG_DLG_IS_SUB_TOOLTIP";
 			onButtonClick = "[1] call HG_fnc_itemBtns";
 			x = 0.365937 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -219,8 +219,8 @@ class HG_WeaponsShop
 		
 		class BuyButton: HG_RscButtonInvisible
 		{
-			idc = HG_WEAPONS_BUY_IDC;
-			tooltip = "$STR_HG_DLG_WS_BUY_TOOLTIP";
+			idc = HG_ITEMS_BUY_IDC;
+			tooltip = "$STR_HG_DLG_IS_BUY_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_itemBtns";
 			x = 0.572187 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -230,7 +230,7 @@ class HG_WeaponsShop
 		
 		class MyCashButton: HG_RscButtonInvisible
 		{
-			idc = HG_WEAPONS_MC_IDC;
+			idc = HG_ITEMS_MC_IDC;
 			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 0.608281 * safeZoneW + safeZoneX;

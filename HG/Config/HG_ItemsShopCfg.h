@@ -3,7 +3,7 @@
 	© All Fucks Reserved
 	Website - http://www.sunrise-production.com
 
-    Defines available weapon shops
+    Defines available items shops
 	
 	class YourShopClass - Used as a param for the call, basically the shop you want to display
 	{
@@ -22,17 +22,6 @@
 class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purposes, you can delete it completely and make your own
 {
 	whitelistRanks[] = {};
-	
-    class Weapons
-	{
-	    displayName = "$STR_HG_SHOP_WEAPONS";
-		items[] =
-		{
-		    {"arifle_MXC_F",12000},
-            {"arifle_MXM_F",13000},
-            {"hgun_P07_F",1500}
-		};
-	};
 	
 	class Items
 	{

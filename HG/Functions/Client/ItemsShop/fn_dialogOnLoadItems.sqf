@@ -10,25 +10,25 @@ if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOA
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 private["_whitelist","_isOk"];
-_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_WeaponsShopCfg" >> _whatShop >> "whitelistRanks");
+_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_ItemsShopCfg" >> _whatShop >> "whitelistRanks");
 _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 disableSerialization;
 
-createDialog "HG_WeaponsShop";
+createDialog "HG_ItemsShop";
 
 private["_shopList","_ind"];
 
-_shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_WeaponsShopCfg" >> _whatShop);
+_shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_ItemsShopCfg" >> _whatShop);
 
-lbClear HG_WEAPONS_ITEM_SWITCH;
+lbClear HG_ITEMS_ITEM_SWITCH;
 
 {
-	_ind = HG_WEAPONS_ITEM_SWITCH lbAdd (getText(_x >> "displayName"));
-	HG_WEAPONS_ITEM_SWITCH lbSetData [_ind,format["%1/%2",_whatShop,(configName _x)]];
+	_ind = HG_ITEMS_ITEM_SWITCH lbAdd (getText(_x >> "displayName"));
+	HG_ITEMS_ITEM_SWITCH lbSetData [_ind,format["%1/%2",_whatShop,(configName _x)]];
 } forEach _shopList;
 	
-HG_WEAPONS_ITEM_SWITCH lbSetCurSel 0;
+HG_ITEMS_ITEM_SWITCH lbSetCurSel 0;
 
 true;

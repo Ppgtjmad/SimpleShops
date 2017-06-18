@@ -96,6 +96,7 @@ if((count _prim) != 0) then
 	{
        	player addMagazine (_prim select 2);
     };
+	
     player addWeaponGlobal (_prim select 0);
 	
 	{
@@ -112,6 +113,7 @@ if((count _sec) != 0) then
 	{
        	player addMagazine (_sec select 2);
     };
+	
     player addWeaponGlobal (_sec select 0);
 	
 	{
@@ -128,6 +130,7 @@ if((count _handgun) != 0) then
 	{
        	player addMagazine (_handgun select 2);
     };
+
     player addWeaponGlobal (_handgun select 0);
 	
 	{

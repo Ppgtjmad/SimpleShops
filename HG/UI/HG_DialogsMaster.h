@@ -6,8 +6,8 @@
 
 #include "HG_ControlTypes.h"
 #include "Dialogs\HG_AdminMenu.h"
-#include "Dialogs\HG_ClothingShop.h"
 #include "Dialogs\HG_Garage.h"
+#include "Dialogs\HG_GearShop.h"
 #include "Dialogs\HG_GiveMoney.h"
+#include "Dialogs\HG_ItemsShop.h"
 #include "Dialogs\HG_VehiclesShop.h"
-#include "Dialogs\HG_WeaponsShop.h"

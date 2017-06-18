@@ -43,8 +43,8 @@
 			xpPenalty - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
 			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
 			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
-			wShopDiscount - INTEGER/FLOAT - Weapons shop discount in %, based on total price, 0 means no discount
-			cShopDiscount - INTEGER/FLOAT - Clothing shop discount in %, based on total price, 0 means no discount
+			iShopDiscount - INTEGER/FLOAT - Items shop discount in %, based on total price, 0 means no discount
+			gShopDiscount - INTEGER/FLOAT - Gear shop discount in %, based on total price, 0 means no discount
 			vShopDiscount - INTEGER/FLOAT - Vehicles shop discount in %, 0 means no discount
 		};
 	};
@@ -94,8 +94,8 @@ class HG_MasterCfg
 		xpPenalty = 10;
 		xpReward = 10;
 		xpToLvlUp = 1000;
-		wShopDiscount = 0;
-		cShopDiscount = 0;
+		iShopDiscount = 0;
+		gShopDiscount = 0;
 		vShopDiscount = 0;
 	};
 	class CORPORAL
@@ -108,8 +108,8 @@ class HG_MasterCfg
 		xpPenalty = 20;
 		xpReward = 20;
 		xpToLvlUp = 1500;
-		wShopDiscount = 2;
-		cShopDiscount = 2;
+		iShopDiscount = 2;
+		gShopDiscount = 2;
 		vShopDiscount = 2;
 	};
 	class SERGEANT
@@ -122,8 +122,8 @@ class HG_MasterCfg
 		xpPenalty = 30;
 		xpReward = 30;
 		xpToLvlUp = 2000;
-		wShopDiscount = 4;
-		cShopDiscount = 4;
+		iShopDiscount = 4;
+		gShopDiscount = 4;
 		vShopDiscount = 4;
 	};
 	class LIEUTENANT
@@ -136,8 +136,8 @@ class HG_MasterCfg
 		xpPenalty = 40;
 		xpReward = 40;
 		xpToLvlUp = 2500;
-		wShopDiscount = 6;
-		cShopDiscount = 6;
+		iShopDiscount = 6;
+		gShopDiscount = 6;
 		vShopDiscount = 6;
 	};
 	class CAPTAIN
@@ -150,8 +150,8 @@ class HG_MasterCfg
 		xpPenalty = 50;
 		xpReward = 50;
 		xpToLvlUp = 3000;
-		wShopDiscount = 8;
-		cShopDiscount = 8;
+		iShopDiscount = 8;
+		gShopDiscount = 8;
 		vShopDiscount = 8;
 	};
 	class MAJOR
@@ -164,8 +164,8 @@ class HG_MasterCfg
 		xpPenalty = 60;
 		xpReward = 60;
 		xpToLvlUp = 3500;
-		wShopDiscount = 10;
-		cShopDiscount = 10;
+		iShopDiscount = 10;
+		gShopDiscount = 10;
 		vShopDiscount = 10;
 	};
 	class COLONEL
@@ -178,15 +178,10 @@ class HG_MasterCfg
 		xpPenalty = 70;
 		xpReward = 70;
 		xpToLvlUp = 0;
-		wShopDiscount = 12;
-		cShopDiscount = 12;
+		iShopDiscount = 12;
+		gShopDiscount = 12;
 		vShopDiscount = 12;
 	};
-};
-
-class HG_ClothingShopCfg // Has to be left untouched
-{
-    #include "HG_ClothingShopCfg.h"
 };
 
 class HG_GaragesCfg // Has to be left untouched
@@ -194,12 +189,17 @@ class HG_GaragesCfg // Has to be left untouched
     #include "HG_GaragesCfg.h"
 };
 
+class HG_GearShopCfg // Has to be left untouched
+{
+    #include "HG_GearShopCfg.h"
+};
+
+class HG_ItemsShopCfg // Has to be left untouched
+{
+    #include "HG_ItemsShopCfg.h"
+};
+
 class HG_VehiclesShopCfg // Has to be left untouched
 {
     #include "HG_VehiclesShopCfg.h"
-};
-
-class HG_WeaponsShopCfg // Has to be left untouched
-{
-    #include "HG_WeaponsShopCfg.h"
 };

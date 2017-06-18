@@ -6,6 +6,7 @@
 params
 [
     "_unit",
+	["_return",false,[true]],
     ["_gear",[]],
 	["_pWeapon",[]],
 	["_sWeapon",[]],
@@ -161,4 +162,9 @@ if(!HG_SAVING_EXTDB) then
 	// Send update query here
 };
 
-true;
+if(_return) then 
+{
+    _gear;
+} else {
+    true;
+};

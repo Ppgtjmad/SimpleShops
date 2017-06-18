@@ -3,7 +3,7 @@
 	© All Fucks Reserved
 	Website - http://www.sunrise-production.com
 	
-    Defines available vehicle shops
+    Defines available garages
 	
 	class YourShopClass - Used as a param for the call, basically the shop you want to display
 	{
