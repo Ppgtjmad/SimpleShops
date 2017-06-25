@@ -47,7 +47,7 @@ HG_fnc_requestGarage = compileFinal preprocessFileLineNumbers "HG\Functions\Serv
 HG_fnc_resetGarages = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_resetGarages.sqf";
 HG_fnc_setInventory = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_setInventory.sqf";
 HG_fnc_spawnVehicle = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_spawnVehicle.sqf";
-HG_fnc_storeVehicleS = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_storeVehicleS.sqf";
+HG_fnc_storeVehicleServer = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_storeVehicleServer.sqf";
 
 if((getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1) then
 {

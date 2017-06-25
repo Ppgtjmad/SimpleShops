@@ -22,7 +22,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	closeDialog 0;
 	private _classname = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
 	hint format[(localize "STR_HG_VEHICLE_BOUGHT_TO_GARAGE"),(getText(configFile >> "CfgVehicles" >> _classname >> "displayName")),if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
-	[0,player,_classname] remoteExecCall ["HG_fnc_storeVehicleS",2,false];
+	[0,player,_classname] remoteExecCall ["HG_fnc_storeVehicleServer",2,false];
 } else {
     titleText [format[(localize "STR_HG_NOT_ENOUGH_MONEY"),([_price,true] call HG_fnc_currencyToText)],"PLAIN DOWN",1];
 };

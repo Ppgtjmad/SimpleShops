@@ -30,7 +30,7 @@ if((count _near) > 0) then
     _owner = _vehicle getVariable "HG_Owner";
 	if((_owner select 0) isEqualTo (getPlayerUID player)) then
 	{
-	    [1,player,_vehicle,(_owner select 1)] remoteExecCall ["HG_fnc_storeVehicleS",2,false];
+	    [1,player,_vehicle,(_owner select 1)] remoteExecCall ["HG_fnc_storeVehicleServer",2,false];
 	} else {
 	    hint (localize "STR_HG_NO_OWNED_VEHICLES");
 	};

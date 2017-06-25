@@ -34,7 +34,7 @@ class HG
 		class fillGarage {};
 	    class garageBtns {};
 		class refreshGarage {};
-		class storeVehicleC {};
+		class storeVehicleClient {};
 	};
 	
 	class GearShop
