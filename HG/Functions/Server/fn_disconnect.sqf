@@ -10,7 +10,7 @@ _saveInv = (getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventor
 
 if(!HG_SAVING_EXTDB) then
 {
-    private _garage = profileNamespace getVariable[format["HG_Garage_%1",_uid],[]];
+    _garage = profileNamespace getVariable[format["HG_Garage_%1",_uid],[]];
 };
 	
 {

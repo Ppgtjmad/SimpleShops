@@ -23,10 +23,10 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo
                 {
                     if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
                     {
-                        [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "tkPenalty")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
+                        [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "tkPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
 						if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
 						{
-						    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpPenalty")),1] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
+						    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
 						};
                     };
                 } else {

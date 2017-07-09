@@ -99,6 +99,11 @@ class HG
 		class playerTags {};
 	};
 	
+	class Trader
+	{
+		file = "HG\Functions\Client\Trader";
+	};
+	
 	class VehiclesShop
 	{
 		file = "HG\Functions\Client\VehiclesShop";
