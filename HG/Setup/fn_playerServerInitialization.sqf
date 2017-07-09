@@ -114,7 +114,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 
 	_player setVariable ["HG_Kills",_kc,true];
 };
 
-/*if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
+if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
 {
     private "_gear";
 	
@@ -131,7 +131,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 
 	} else {
 		_gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
 	};
-};*/
+};
 
 if(!HG_SAVING_EXTDB) then
 {
