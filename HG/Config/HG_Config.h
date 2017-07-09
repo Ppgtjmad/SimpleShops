@@ -18,8 +18,8 @@
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
 	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
-	enablePlayerInventorySave - BOOL - Enable player gear saving? Disable this if you have a custom saving system
-	enableVehicleInventorySave - BOOL - Enable vehicle gear saving? Disable this if you have a custom saving system
+	enablePlayerInventorySave - BOOL - Enable player gear saving (server profileNamespace)? Disable this if you have a custom saving system
+	enableVehicleInventorySave - BOOL - Enable vehicle gear saving (server profileNamespace)? Disable this if you have a custom saving system
 	enableXP - BOOL - Enable XP system?
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
@@ -39,10 +39,8 @@
 			paycheckPeriod - INTEGER - Time (in minutes) between each paycheck iteration, only used if enablePaycheck is set to true
 			startCash - INTEGER - Obvious...
 			killedReward - INTEGER - Money earned by killer, only used if enableKillReward is set to true
-			tkPenaltyPlayer - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
-			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly (https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards)
-			xpPenaltyPlayer - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
-			xpPenaltyAI - INTEGER - XP taken when AI of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true & AI is setup correctly (https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards)
+			tkPenalty - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
+			xpPenalty - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
 			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
 			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
 			iShopDiscount - INTEGER/FLOAT - Items shop discount in %, based on total price, 0 means no discount
@@ -92,10 +90,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 500;
-		tkPenaltyPlayer = 500;
-		tkPenaltyAI = 250;
-		xpPenaltyPlayer = 10;
-		xpPenaltyAI = 5;
+		tkPenalty = 500;
+		xpPenalty = 10;
 		xpReward = 10;
 		xpToLvlUp = 1000;
 		iShopDiscount = 0;
@@ -108,10 +104,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 1000;
-		tkPenaltyPlayer = 1000;
-		tkPenaltyAI = 500;
-		xpPenaltyPlayer = 20;
-		xpPenaltyAI = 10;
+		tkPenalty = 1000;
+		xpPenalty = 20;
 		xpReward = 20;
 		xpToLvlUp = 1500;
 		iShopDiscount = 2;
@@ -124,10 +118,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 1500;
-		tkPenaltyPlayer = 1500;
-		tkPenaltyAI = 750;
-		xpPenaltyPlayer = 30;
-		xpPenaltyAI = 15;
+		tkPenalty = 1500;
+		xpPenalty = 30;
 		xpReward = 30;
 		xpToLvlUp = 2000;
 		iShopDiscount = 4;
@@ -140,10 +132,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 2000;
-		tkPenaltyPlayer = 2000;
-		tkPenaltyAI = 1000;
-		xpPenaltyPlayer = 40;
-		xpPenaltyAI = 20;
+		tkPenalty = 2000;
+		xpPenalty = 40;
 		xpReward = 40;
 		xpToLvlUp = 2500;
 		iShopDiscount = 6;
@@ -156,10 +146,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 2500;
-		tkPenaltyPlayer = 2500;
-		tkPenaltyAI = 1250;
-		xpPenaltyPlayer = 50;
-		xpPenaltyAI = 25;
+		tkPenalty = 2500;
+		xpPenalty = 50;
 		xpReward = 50;
 		xpToLvlUp = 3000;
 		iShopDiscount = 8;
@@ -172,10 +160,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 3000;
-		tkPenaltyPlayer = 3000;
-		tkPenaltyAI = 1500;
-		xpPenaltyPlayer = 60;
-		xpPenaltyAI = 30;
+		tkPenalty = 3000;
+		xpPenalty = 60;
 		xpReward = 60;
 		xpToLvlUp = 3500;
 		iShopDiscount = 10;
@@ -188,10 +174,8 @@ class HG_MasterCfg
 		paycheckPeriod = 30;
 		startCash = 50000;
 		killedReward = 3500;
-		tkPenaltyPlayer = 3500;
-		tkPenaltyAI = 1750;
-		xpPenaltyPlayer = 70;
-		xpPenaltyAI = 35;
+		tkPenalty = 3500;
+		xpPenalty = 70;
 		xpReward = 70;
 		xpToLvlUp = 0;
 		iShopDiscount = 12;
