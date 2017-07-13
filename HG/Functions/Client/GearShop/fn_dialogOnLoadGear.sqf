@@ -52,15 +52,6 @@ if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
     clearBackpackCargo HG_PLAYER_BOX;
 };
 
-if(sunOrMoon <= 0.5) then
-{
-    HG_PLAYER_PREVIEW = "#lightpoint" createVehicleLocal getPos player;
-    HG_PLAYER_PREVIEW setlightbrightness 0.5;
-    HG_PLAYER_PREVIEW setlightcolor [1,1,1];
-    HG_PLAYER_PREVIEW setlightambient [1,1,1];
-    HG_PLAYER_PREVIEW lightAttachObject [player,[0,0,2]];
-};
-
 player setBehaviour "SAFE";
 player switchMove "AmovPercMstpSnonWnonDnon";
 
@@ -72,6 +63,22 @@ HG_CAMERA_PREVIEW camSetPos (player modelToWorld [1,4,2]);
 HG_CAMERA_PREVIEW camSetFOV .33;
 HG_CAMERA_PREVIEW camSetFocus [50,0];
 HG_CAMERA_PREVIEW camCommit 0;
+
+HG_PLAYER_PREVIEW = [];
+
+if(sunOrMoon <= 0.5) then
+{
+    private "_light";
+	
+    {
+	    _light = "#lightpoint" createVehicleLocal getPos player;
+        _light setlightbrightness 0.5;
+        _light setlightcolor [1,1,1];
+        _light setlightambient [1,1,1];
+		_light lightAttachObject [player,_x];
+		HG_PLAYER_PREVIEW pushBack _light;
+	} forEach [[-1,0,2],[1,0,2]];
+};
 
 HG_GEAR_PREVIEW = [[],[],[],[],[],[],[],[]];
 HG_GEAR_SAVED = 

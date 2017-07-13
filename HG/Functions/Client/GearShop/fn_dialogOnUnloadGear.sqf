@@ -13,10 +13,11 @@ if(!HG_GEAR_BOUGHT) then
     [player] remoteExecCall ["HG_fnc_getGear",2,false];
 };
 
-if(!isNull HG_PLAYER_PREVIEW) then
+if((count HG_PLAYER_PREVIEW) != 0) then
 {
-    deleteVehicle HG_PLAYER_PREVIEW;
-	HG_PLAYER_PREVIEW = nil;
+    {
+	    deleteVehicle _x;
+	} forEach HG_PLAYER_PREVIEW;
 };
 
 HG_CAMERA_PREVIEW cameraEffect ["TERMINATE","BACK"];
@@ -25,6 +26,7 @@ camDestroy HG_CAMERA_PREVIEW;
 HG_STRING_HANDLER = nil;
 HG_GEAR_SAVED = nil;
 HG_CAMERA_PREVIEW = nil;
+HG_PLAYER_PREVIEW = nil;
 HG_GEAR_PREVIEW = nil;
 HG_GEAR_BOUGHT = nil;
 

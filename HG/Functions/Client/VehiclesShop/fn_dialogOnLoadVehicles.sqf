@@ -20,6 +20,7 @@ createDialog "HG_VehiclesShop";
 
 HG_OBJECT_PREVIEW = objNull;
 HG_VEHICLE_PREVIEW = objNull;
+HG_VEHICLE_LIGHTS = [];
 
 private["_shopList","_ind","_h"];
 
@@ -49,6 +50,20 @@ HG_CAMERA_PREVIEW camSetFovRange [0.1,0.7];
 HG_CAMERA_PREVIEW camSetFOV 0.7;
 HG_CAMERA_PREVIEW camSetFocus [50,0];
 HG_CAMERA_PREVIEW camCommit 0;
+
+if(sunOrMoon <= 0.5) then
+{
+    private "_light";
+	
+    {
+	    _light = "#lightpoint" createVehicleLocal getPos player;
+        _light setlightbrightness 0.5;
+        _light setlightcolor [1,1,1];
+        _light setlightambient [1,1,1];
+        _light setPos (player modelToWorld _x);
+		HG_VEHICLE_LIGHTS pushBack _light;
+	} forEach [[-5,10,30],[5,10,30],[-5,10,35],[5,10,25]];
+};
 
 HG_VEHICLES_SWITCH lbSetCurSel 0;
 
