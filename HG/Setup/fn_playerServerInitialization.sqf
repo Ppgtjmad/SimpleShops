@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_player","_jip","_uid","_cash"];
+params["_player","_jip","_uid","_result","_cash"];
 _uid = getPlayerUID _player;
 
 if(HG_SAVING_EXTDB) then
