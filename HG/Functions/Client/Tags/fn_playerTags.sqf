@@ -17,11 +17,12 @@ _distance = _pos distance player;
 
 if(((count _screenPos) > 1) AND (_distance < 5) AND {_screenPos distance [0.5,0.5] < 1}) then
 {
-	_icon = [(rank _target),"texture"] call BIS_fnc_rankParams;
+	_rankIcon = [(rank _target),"texture"] call BIS_fnc_rankParams;
+	_rankName = [(rank _target),"displayName"] call BIS_fnc_rankParams;
 	_text = parseText format
 	[
 	    "<img image='%1' size='2' align='center' color='#FF0000' shadow='0'></img><br/><t color='#00FF00' align='center' size='1'>%2</t><br/><t color='#B6B6B6' align='center' size='1'>%3</t>",
-		_icon,(rank _target),(name _target)
+		_rankIcon,_rankName,(name _target)
 	];
 	
 	HG_TAGS_TEXT ctrlSetStructuredText _text;

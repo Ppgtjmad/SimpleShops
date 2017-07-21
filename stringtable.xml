@@ -6,7 +6,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tu has comprado con un descuento por un total de %1</Spanish>
 			<Italian></Italian>
 		</Key>
 	    <Key ID="STR_HG_ITEM_BOUGHT">
@@ -14,7 +14,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tu has comprado %1x %2 por %3</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT">
@@ -22,7 +22,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tu has comprado un %1 por %2</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT_TO_GARAGE">
@@ -30,7 +30,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Usted a comprado un %1 por %2, se a almacenado en su garage</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
@@ -38,7 +38,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No tienes dinero, necesitas %1</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_1">
@@ -46,7 +46,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parámetro no es una cadena</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_2">
@@ -54,7 +54,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro es una cadena vacia</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_3">
@@ -62,7 +62,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro no es un orden</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_4">
@@ -70,7 +70,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Cargando Dialogo - El parametro es una orden vacia</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_OBJECT">
@@ -78,7 +78,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Menu IA (%1) - Parámetro no es un objeto - </Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_MAN">
@@ -86,7 +86,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ACCESS_DENIED">
@@ -94,7 +94,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Acceso Denegado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NOT_A_NUMBER">
@@ -102,7 +102,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>El valor usado sobrepasa el número máximo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NEGATIVE_OR_ZERO">
@@ -110,7 +110,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>El valor no debe ser negativo o igual a cero</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_TOO_MUCH">
@@ -118,7 +118,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No puedes dar más dinero del que tienes</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_GIVE_MONEY">
@@ -126,7 +126,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Dar dinero</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SENT_MONEY">
@@ -134,7 +134,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>has enviado %1 a %2</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_RECEIVED_MONEY">
@@ -142,7 +142,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>has recibido %1 de %2</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_PAYCHECK_NOTF">
@@ -150,7 +150,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Recibiras tu siguiente pago en %1 minutos(s)</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_TIME_TO_PAY">
@@ -158,7 +158,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>has recibido un pago de %1</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_YES">
@@ -166,7 +166,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Si</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NO">
@@ -174,7 +174,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NONE">
@@ -182,7 +182,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>ninguna</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NOTHING_TO_DISPLAY">
@@ -190,7 +190,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Nada para mostrar</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
@@ -198,7 +198,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No puedes abrir el inventario cuando esta bloqueado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_LOCKED">
@@ -206,7 +206,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>El vehiculo esta ahora bloqueado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_CRATE_EMPTIED">
@@ -214,7 +214,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>La caja esta vacía</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_DELETE_CRATE">
@@ -222,7 +222,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Eliminar Caja</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_EMPTY_CRATE">
@@ -230,7 +230,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Vaciar Caja</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_GARAGE">
@@ -238,7 +238,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Garage</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_GARAGE_PARK">
@@ -246,7 +246,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Almacenar Vehiculo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_UNLOCKED">
@@ -254,7 +254,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>El vehiculo está desbloqueado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_EMPTY_QUESTION">
@@ -262,7 +262,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>¿Estás seguro de vaciar el inventario del vehículo?</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_EMPTY_VEHICLE">
@@ -270,7 +270,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Vaciar Vehiculo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_LOCK_VEHICLE">
@@ -278,7 +278,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Bloquear Vehiculo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_UNLOCK_VEHICLE">
@@ -286,7 +286,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Desbloquear Vehiculo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_EMPTIED">
@@ -294,7 +294,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>El Vehiculo esta vacio</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SPAWN_POINTS_BUSY">
@@ -302,7 +302,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Todo los puntos de reaparición estan ocupados</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NO_VEHICLES">
@@ -310,7 +310,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No está el vehiculo en el punto de guardado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NO_OWNED_VEHICLES">
@@ -318,7 +318,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>No hay vehiculos propios en el punto de la tienda</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_XP_MAXED">
@@ -326,7 +326,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Agotado</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_PROMOTED">
@@ -334,7 +334,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Felicitaciones! Has sido promocionado de %1 a %2</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_DEMOTED">
@@ -342,7 +342,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Has sido degradado de %1 a %2 </Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_NOW_OWNER">
@@ -350,7 +350,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Ahora eres propietario de un nuevo vehiculo (%1)</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_INVENTORY_FULL">
@@ -358,7 +358,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Al parecer su inventario esta lleno o tienes muchos objetos en la mano</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_KILLED_BY_ADMIN">
@@ -366,7 +366,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Has sido asesinado por un administrador</Spanish>
 			<Italian></Italian>    
 		</Key>
 	</Package>
@@ -376,7 +376,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>[HG]extDB3|Code#1] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_EXTDB_NO_PROTOCOL">
@@ -384,7 +384,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>[HG|extDB3|Code#2] El metodo de guardado es en "extDB" pero no hay protocolo (protocolo de guardado) el perfíl del servidor se está usando como alternativa</Spanish>
 			<Italian></Italian>
 		</Key>
 	</Package>
@@ -395,7 +395,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>[HG] Simple Shops v2.3</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
@@ -403,7 +403,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Cerrar dialogo actual</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_MC">
@@ -411,7 +411,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Tienes %1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_MC_TOOLTIP">
@@ -419,7 +419,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Indicio de su efectivo actual</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_FREE">
@@ -427,7 +427,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Gratis</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_PRICE_TAG">
@@ -435,7 +435,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Precio: %1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_QUERYING_SERVER">
@@ -443,7 +443,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Consultando Servidor</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_PLAYER_COUNT">
@@ -451,7 +451,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>En linea - %1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -461,7 +461,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Refrescar lista de jugadores</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILL_TOOLTIP">
@@ -469,7 +469,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Matar al jugador seleccionado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_RANK_TOOLTIP">
@@ -477,7 +477,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Dar Rango</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
@@ -485,7 +485,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Dar XP(experiencia)</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
@@ -493,7 +493,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Darle muertes</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_CASH_TOOLTIP">
@@ -501,7 +501,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Darle dinero (maximo valor 999999)</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
@@ -509,7 +509,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Marca esta casilla para REMOVER</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
@@ -517,7 +517,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Marca esta casilla para AÑADIR</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_LIST">
@@ -525,7 +525,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>%1 - %2</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_UID">
@@ -533,7 +533,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>UID - %1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_SIDE">
@@ -541,7 +541,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Facción - %2</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_RANK">
@@ -549,7 +549,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Rango</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP">
@@ -557,7 +557,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>XP - %4/%5</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_CASH">
@@ -565,7 +565,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Dinero - %6</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS">
@@ -573,7 +573,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Muertes - %7</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -583,7 +583,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Equipo disponible</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
@@ -591,7 +591,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Total - %1</Spanish>
 			    <Italian></Italian>
 			</Key>
 			<Key ID="STR_HG_DLG_GS_REMOVE">
@@ -599,7 +599,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Remover Efetivo</Spanish>
 			    <Italian></Italian>
 			</Key>
 			<Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
@@ -607,7 +607,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Resetear Equipo</Spanish>
 			    <Italian></Italian>
 		    </Key>    
 		    <Key ID="STR_HG_DLG_GS_BUY_TOOLTIP">
@@ -615,7 +615,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Comprar el equipo seleccionado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
@@ -623,7 +623,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Girar a la izquierda o a la derecha</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -633,7 +633,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Actualizar Garage</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_GRG_SPAWN_TOOLTIP">
@@ -641,7 +641,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Spawnear vehiculo seleccionado </Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
@@ -649,7 +649,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Eliminar vehiculo seleccionado (Lo pierdes para siempre)</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
@@ -657,7 +657,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Se está requiriendo el vehiculo en el spawn</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
@@ -665,7 +665,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>El Vehiculo requerido a sido spawneado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_DELETING">
@@ -673,7 +673,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Vehiculo seleccionado está siendo borrado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_DELETED">
@@ -681,7 +681,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Vehiculo seleccionado a sido borrado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_STORED">
@@ -689,7 +689,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Vehiculo almacenado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -699,7 +699,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Vehiculos disponibles</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
@@ -707,7 +707,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Informacion del Vehiculo</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_TG_TOOLTIP">
@@ -715,7 +715,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Comprar el vehiculo seleccionado y guardarlo en el garage</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_BUY_TOOLTIP">
@@ -723,7 +723,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Comprar el vehiculo seleccionado</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_SPEED">
@@ -731,7 +731,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Máxima Velocidad - %2 Kph</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_ARMOR">
@@ -739,7 +739,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Blindaje - %3 AP</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_SEATS">
@@ -747,7 +747,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Asientos - %4</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_ENGINE">
@@ -755,7 +755,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Potencia Motor - %5 HP</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_FUEL_MAX">
@@ -763,7 +763,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Max combustible - %6 L</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_PRICE_TAG">
@@ -771,7 +771,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Precio - %7</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -781,7 +781,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>+1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_IS_SUB_TOOLTIP">
@@ -789,7 +789,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>-1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_IS_BUY_TOOLTIP">
@@ -797,7 +797,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Comprar item(s)</Spanish>
 			    <Italian></Italian>
 		    </Key>
 			<Key ID="STR_HG_DLG_IS_TOTAL">
@@ -805,7 +805,7 @@
 		        <French></French>
 			    <German></German>
 			    <Russian></Russian>
-			    <Spanish></Spanish>
+			    <Spanish>Total - %1</Spanish>
 			    <Italian></Italian>
 		    </Key>
 		</Container>
@@ -816,7 +816,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tienda de Equipo</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_ITEMS_SHOP">
@@ -824,7 +824,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tienda de Items</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_VEHICLES_SHOP">
@@ -832,7 +832,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Tienda de Vehiculos</Spanish>
 			<Italian></Italian>
 		</Key>
 	    <Key ID="STR_HG_SHOP_UNIFORMS">
@@ -840,7 +840,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Uniformes</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_VESTS">
@@ -848,7 +848,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Chalecos</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_BACKPACKS">
@@ -856,7 +856,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Mochilas</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_HEADGEAR">
@@ -864,7 +864,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Cascos</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_FACEWEAR">
@@ -872,7 +872,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Accesorios</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_MISSILE_LAUNCHER">
@@ -880,7 +880,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Lanzador de Misiles</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
@@ -888,7 +888,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Lanzacohetes</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_HANDGUN">
@@ -896,7 +896,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Pistolas</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_ASSAULT_RIFLE">
@@ -904,7 +904,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Rifles de Asalto</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_MACHINE_GUN">
@@ -912,7 +912,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Ametralladoras</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_SUB_MACHINE_GUN">
@@ -920,7 +920,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Sub ametralladoras</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_SNIPER_RIFLE">
@@ -928,7 +928,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Rifles Sniper</Spanish>
 			<Italian></Italian>
 		</Key>
 	    <Key ID="STR_HG_SHOP_SCOPES">
@@ -936,7 +936,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Miras</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_MAGAZINES">
@@ -944,7 +944,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Munición</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_ITEMS">
@@ -952,7 +952,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Items</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_CIVILIAN">
@@ -960,7 +960,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Civiles</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_SHOP_MILITARY">
@@ -968,7 +968,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>Militares</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_MARKER_1">
@@ -976,7 +976,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>HQ Civiles</Spanish>
 			<Italian></Italian>
 		</Key>
 		<Key ID="STR_HG_MARKER_2">
@@ -984,7 +984,7 @@
 		    <French></French>
 			<German></German>
 			<Russian></Russian>
-			<Spanish></Spanish>
+			<Spanish>HQ Militares</Spanish>
 			<Italian></Italian>
 		</Key>
 	</Package>

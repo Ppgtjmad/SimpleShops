@@ -55,8 +55,8 @@ switch(_mode) do
 	// HUD Rank Update
 	case 3:
 	{
-	    HG_HUD_RANK_PIC ctrlSetText format["%1",([(rank player),"texture"] call BIS_fnc_rankParams)];
-		HG_HUD_RANK_TEXT ctrlSetText (rank player);
+	    HG_HUD_RANK_PIC ctrlSetText ([(rank player),"texture"] call BIS_fnc_rankParams);
+		HG_HUD_RANK_TEXT ctrlSetText ([(rank player),"displayName"] call BIS_fnc_rankParams);
 	};
 	// HUD Kill Count Update
 	case 4:
