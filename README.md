@@ -17,5 +17,7 @@
 == Support ==<br/>
 <b><a href="http://forums.sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a></b><br/>
 == Issues ==<br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/issues">Tickets</a></b>
+<b><a href="https://github.com/Ppgtjmad/SimpleShops/issues">Tickets</a></b><br/>
+== Credits ==<br/>
+<a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation
 </p>
