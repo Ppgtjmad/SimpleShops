@@ -23,10 +23,10 @@ class HG_HUD
 			show = 0;
 			idc = HG_HUD_XP_BACK_IDC;
 			text = "HG\UI\Textures\back.paa";
-			x = 0.809375 * safezoneW + safezoneX;
-			y = 0.731 * safezoneH + safezoneY;
-			w = 0.159844 * safezoneW;
-			h = 0.044 * safezoneH;
+			x = 0.835156 * safezoneW + safezoneX;
+			y = 0.83 * safezoneH + safezoneY;
+			w = 0.165 * safezoneW;
+			h = 0.033 * safezoneH;
 		};
 		
 		class XPPicture: HG_RscPicture
@@ -34,10 +34,10 @@ class HG_HUD
 			show = 0;
 			idc = HG_HUD_XP_PIC_IDC;
 		    text = "HG\UI\Icons\xp.paa";
-			x = 0.83 * safezoneW + safezoneX;
-			y = 0.7244 * safeZoneH + safeZoneY;
-			w = 0.04125 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.855781 * safezoneW + safezoneX;
+			y = 0.819 * safezoneH + safezoneY;
+			w = 0.04125 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class XPText: HG_RscText
@@ -46,19 +46,19 @@ class HG_HUD
 			idc = HG_HUD_XP_TEXT_IDC;
 			style = "0x01";
 			shadow = 0;
-			x = 0.866094 * safeZoneW + safeZoneX;
-			y = 0.7244 * safeZoneH + safeZoneY;
-			w = 0.0825 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.891875 * safezoneW + safezoneX;
+			y = 0.819 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class KillCountBack: XPBack
 		{
 			idc = HG_HUD_KILL_COUNT_BACK_IDC;
-			x = 0.804219 * safezoneW + safezoneX;
-			y = 0.786 * safezoneH + safezoneY;
-			w = 0.159844 * safezoneW;
-			h = 0.044 * safezoneH;	
+			x = 0.835156 * safezoneW + safezoneX;
+			y = 0.874 * safezoneH + safezoneY;
+			w = 0.165 * safezoneW;
+			h = 0.033 * safezoneH;	
 		};
 		
 		class KillCountPicture: HG_RscPicture
@@ -66,10 +66,10 @@ class HG_HUD
 			show = 0;
 			idc = HG_HUD_KILL_COUNT_PIC_IDC;
 			text = "HG\UI\Icons\gun.paa";
-			x = 0.824844 * safeZoneW + safeZoneX;
-			y = 0.7794 * safeZoneH + safeZoneY;
-			w = 0.04125 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.855781 * safezoneW + safezoneX;
+			y = 0.863 * safezoneH + safezoneY;
+			w = 0.04125 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class KillCountText: HG_RscText
@@ -78,28 +78,28 @@ class HG_HUD
 			idc = HG_HUD_KILL_COUNT_TEXT_IDC;
 			style = "0x01";
 			shadow = 0;
-			x = 0.855781 * safeZoneW + safeZoneX;
-			y = 0.7794 * safeZoneH + safeZoneY;
-			w = 0.0876563 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.891875 * safezoneW + safezoneX;
+			y = 0.863 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class RankBack: HG_RscPicture
 		{
 			text = "HG\UI\Textures\back.paa";
 			x = 0.835156 * safezoneW + safezoneX;
-			y = 0.841 * safezoneH + safezoneY;
-			w = 0.159844 * safezoneW;
-			h = 0.044 * safezoneH;	
+			y = 0.918 * safezoneH + safezoneY;
+			w = 0.165 * safezoneW;
+			h = 0.033 * safezoneH;	
 		};
 		
 		class RankPicture: HG_RscPicture
 		{
 			idc = HG_HUD_RANK_PIC_IDC;
-		    x = 0.865 * safeZoneW + safeZoneX;
-			y = 0.84 * safeZoneH + safeZoneY;
-			w = 0.03 * safeZoneW;
-			h = 0.044 * safeZoneH;
+		    x = 0.863 * safezoneW + safezoneX;
+			y = 0.91 * safezoneH + safezoneY;
+			w = 0.03 * safezoneW;
+			h = 0.044 * safezoneH;
 		};
 		
 		class RankText: HG_RscText
@@ -107,27 +107,27 @@ class HG_HUD
 			idc = HG_HUD_RANK_TEXT_IDC;
 			style = "0x01";
 			shadow = 0;
-			x = 0.881562 * safeZoneW + safeZoneX;
-			y = 0.8344 * safeZoneH + safeZoneY;
-			w = 0.0928125 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.891875 * safezoneW + safezoneX;
+			y = 0.907 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class MoneyBack: RankBack
 		{
-			x = 0.83 * safezoneW + safezoneX;
-			y = 0.896 * safezoneH + safezoneY;
-			w = 0.159844 * safezoneW;
-			h = 0.044 * safezoneH;
+			x = 0.835156 * safezoneW + safezoneX;
+			y = 0.962 * safezoneH + safezoneY;
+			w = 0.165 * safezoneW;
+			h = 0.033 * safezoneH;
 		};
 		
 		class MoneyPicture: HG_RscPicture
 		{
 			text = "HG\UI\Icons\money.paa";
-			x = 0.845469 * safeZoneW + safeZoneX;
-			y = 0.8894 * safeZoneH + safeZoneY;
-			w = 0.04125 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.855781 * safezoneW + safezoneX;
+			y = 0.951 * safezoneH + safezoneY;
+			w = 0.04125 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 		
 		class MoneyText: HG_RscText
@@ -135,10 +135,10 @@ class HG_HUD
 			idc = HG_HUD_MONEY_TEXT_IDC;
 			style = "0x01";
 			shadow = 0;
-			x = 0.876406 * safeZoneW + safeZoneX;
-			y = 0.8894 * safeZoneH + safeZoneY;
-			w = 0.0928125 * safeZoneW;
-			h = 0.055 * safeZoneH;
+			x = 0.891875 * safezoneW + safezoneX;
+			y = 0.951 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.055 * safezoneH;
 		};
 	};
 };
