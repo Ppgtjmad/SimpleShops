@@ -24,9 +24,10 @@
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable group units position markers on map?
+	lockUnlockKey - INTEGER - Key to push to lock/unlock owned vehicle, default is Y (0x15 / 44), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
 	
 	admins - ARRAY OF STRINGS - Admins PUIDs
-	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
+	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	
 	savingMethod - STRING - Use "" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 loaded & setup correctly
 	savingProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
@@ -74,6 +75,7 @@ enableXP = true;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
+lockUnlockKey = 0x15;
 
 /* ADMIN */
 admins[] = {"_SP_PLAYER_"};

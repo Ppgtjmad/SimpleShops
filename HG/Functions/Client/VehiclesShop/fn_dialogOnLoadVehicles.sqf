@@ -10,7 +10,7 @@ if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOA
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
 private["_whitelist","_isOk"];
-_whitelist = getArray(missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop >> "whitelistRanks");
+_whitelist = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop >> "whitelistRanks");
 _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
@@ -29,7 +29,7 @@ if(!HG_BUY_TO_GARAGE_ENABLED) then
     HG_VEHICLES_TG ctrlEnable false;
 };
 
-_shopList = "true" configClasses (missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
+_shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
 
 lbClear HG_VEHICLES_SWITCH;
 

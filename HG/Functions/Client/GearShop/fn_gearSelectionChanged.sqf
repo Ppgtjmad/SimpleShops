@@ -20,11 +20,11 @@ disableSerialization;
 	};
 } forEach HG_GEAR_PREVIEW;
 
-_discount = ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) != 0) AND (_price != 0);
+_discount = ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) != 0) AND (_price != 0);
 
 if(_discount) then
 {
-    _price = round(_price - (_price * ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)));
+    _price = round(_price - (_price * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)));
 };
 
 if(((count HG_GEAR_PREVIEW) isEqualTo _count) OR (!([_price] call HG_fnc_hasEnoughMoney))) then 

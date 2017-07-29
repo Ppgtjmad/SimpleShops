@@ -9,35 +9,35 @@ params["_ai"];
 if((typeName _ai) != "OBJECT") exitWith {diag_log format[(localize "STR_HG_ERR_NOT_OBJECT"),"HG\Functions\Server\AI\fn_aiUnitSetup.sqf"];};
 if(!(_ai isKindOf "Man")) exitWith {diag_log format[(localize "STR_HG_ERR_NOT_MAN"),"HG\Functions\Server\AI\fn_aiUnitSetup.sqf"];};
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillReward")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1) then
 {
     _ai addEventHandler
     [
         "Killed",
         {
-            params ["_unit","_killer"];
+            params ["_unit","_killer","_instigator"];
 
-            if(isPlayer _killer) then
+            if(isPlayer _instigator) then
             {
-                if((side (group _unit)) isEqualTo (side (group _killer))) then
+                if((side (group _unit)) isEqualTo (side (group _instigator))) then
                 {
-                    if((getNumber(missionConfigFile >> "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
+                    if((getNumber(getMissionConfig "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1) then
                     {
-                        [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "tkPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
-						if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+                        [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "tkPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+						if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 						{
-						    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
+						    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpPenaltyAI")),1] remoteExecCall ["HG_fnc_addOrSubXP",_instigator,false];
 						};
                     };
                 } else {
-                    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_killer,false];
-					if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+                    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+					if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 					{
-					    [(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpReward")),0] remoteExecCall ["HG_fnc_addOrSubXP",_killer,false];
+					    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _unit) >> "xpReward")),0] remoteExecCall ["HG_fnc_addOrSubXP",_instigator,false];
 					};
-					if(((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) AND ((getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1)) then
+					if(((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) AND ((getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1)) then
 					{
-					    [0] remoteExecCall ["HG_fnc_addOrSubKills",_killer,false];
+					    [0] remoteExecCall ["HG_fnc_addOrSubKills",_instigator,false];
 					};
                 };
             };

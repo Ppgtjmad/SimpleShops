@@ -51,7 +51,7 @@ _vehicle allowDamage false;
 _vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate],true];
 [_vehicle,2] call HG_fnc_lock;
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) then
 {
 	clearItemCargoGlobal _vehicle;
 	clearMagazineCargoGlobal _vehicle;
@@ -62,7 +62,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "clearInventory")) isEqualTo 1
 _vehicle allowDamage true;
 [_vehicle] remoteExecCall ["HG_fnc_addActions",(owner _unit),false];
 
-if(((getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) AND (_mode isEqualTo 1)) then
+if(((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) AND (_mode isEqualTo 1)) then
 {
 	[_vehicle] call HG_fnc_setInventory;
 };

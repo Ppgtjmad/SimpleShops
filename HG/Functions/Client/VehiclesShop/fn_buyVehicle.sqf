@@ -10,11 +10,11 @@ private["_price","_discount"];
 disableSerialization;
 
 _price = HG_VEHICLES_LIST lbValue (lbCurSel HG_VEHICLES_LIST);
-_discount = ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) != 0) AND (_price != 0);
+_discount = ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) != 0) AND (_price != 0);
 
 if(_discount) then
 {
-	_price = round(_price - (_price * ((getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) / 100)));
+	_price = round(_price - (_price * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "vShopDiscount")) / 100)));
 };
 
 if([_price] call HG_fnc_hasEnoughMoney) then
@@ -23,7 +23,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	
 	_shopType = HG_VEHICLES_SWITCH lbData (lbCurSel HG_VEHICLES_SWITCH);
 	_shopType = _shopType splitString "/";
-	_spawnPoints = getArray(missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
+	_spawnPoints = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
     _spawnPoint = [((_spawnPoints select (HG_VEHICLES_SP lbValue (lbCurSel HG_VEHICLES_SP))) select 1)] call HG_fnc_isItBusy;
 	
 	if(_spawnPoint != "") then

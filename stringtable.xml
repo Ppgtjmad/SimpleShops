@@ -273,22 +273,6 @@
 			<Spanish>Vaciar Vehiculo</Spanish>
 			<Italian></Italian>
 		</Key>
-		<Key ID="STR_HG_LOCK_VEHICLE">
-		    <Original>Lock Vehicle</Original>
-		    <French></French>
-			<German></German>
-			<Russian></Russian>
-			<Spanish>Bloquear Vehiculo</Spanish>
-			<Italian></Italian>
-		</Key>
-		<Key ID="STR_HG_UNLOCK_VEHICLE">
-		    <Original>Unlock Vehicle</Original>
-		    <French></French>
-			<German></German>
-			<Russian></Russian>
-			<Spanish>Desbloquear Vehiculo</Spanish>
-			<Italian></Italian>
-		</Key>
 		<Key ID="STR_HG_VEHICLE_EMPTIED">
 		    <Original>Vehicle has been EMPTIED</Original>
 		    <French></French>

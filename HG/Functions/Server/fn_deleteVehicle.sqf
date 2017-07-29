@@ -15,7 +15,7 @@ if(!HG_SAVING_EXTDB) then
 	
     profileNamespace setVariable[format["HG_Garage_%1",(getPlayerUID _unit)],_garage];
 	
-    if((getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) then
+    if((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) then
     {
 	    profileNamespace setVariable[format["HG_Inventory_%1_%2",(getPlayerUID _unit),_plate],nil];
     };

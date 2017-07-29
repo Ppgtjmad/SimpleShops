@@ -44,7 +44,7 @@ if(!HG_SAVING_EXTDB) then
 
 if(_mode isEqualTo 1) then
 {
-    if((getNumber(missionConfigFile >> "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) then
+    if((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) then
     {
 	    [_vehicle] call HG_fnc_getInventory;
     };

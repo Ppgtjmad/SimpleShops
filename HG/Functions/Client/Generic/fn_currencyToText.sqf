@@ -14,7 +14,7 @@ params
 [
     ["_value",0,[0]],
 	["_custom",false,[false]],
-	["_currency",getText(missionConfigFile >> "CfgClient" >> "currencyType"),[""]],
+	["_currency",getText(getMissionConfig "CfgClient" >> "currencyType"),[""]],
 	["_symbol",[],[]],
 	["_text","",[""]]
 ];

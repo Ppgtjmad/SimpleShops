@@ -27,7 +27,7 @@ if(_mode isEqualTo 1) then
 		};
 	};
 } else {
-    private _reqXp = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp");
+    private _reqXp = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp");
 	_newXp = _curXp + _amount;
 	
 	if(_newXp >= _reqXp) then

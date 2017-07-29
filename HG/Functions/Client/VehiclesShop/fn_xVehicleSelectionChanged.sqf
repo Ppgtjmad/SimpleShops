@@ -11,8 +11,8 @@ disableSerialization;
 
 _shopType = _ctrl lbData _index;
 _shopType = _shopType splitString "/";
-_shopContent = getArray(missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "vehicles");
-_spawnPoints = getArray(missionConfigFile >> "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
+_shopContent = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "vehicles");
+_spawnPoints = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
 
 lbClear HG_VEHICLES_LIST;
 lbClear HG_VEHICLES_SP;

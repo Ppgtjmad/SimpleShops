@@ -31,7 +31,7 @@ if(_sel != (localize "STR_HG_NONE")) then
 		(side HG_OBJECT),
 		(rank HG_OBJECT),
 		((HG_OBJECT getVariable "HG_XP") select 1),
-		(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank HG_OBJECT) >> "xpToLvlUp")),
+		(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank HG_OBJECT) >> "xpToLvlUp")),
 	    ([(HG_OBJECT getVariable "HG_Cash"),true] call HG_fnc_currencyToText),
 		(HG_OBJECT getVariable "HG_Kills")
 	];

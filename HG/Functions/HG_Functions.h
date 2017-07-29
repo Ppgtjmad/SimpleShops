@@ -22,6 +22,7 @@ class HG
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};
+		class keyDown {};
 		class killed {};
 		class respawn {};
 	};

@@ -15,14 +15,14 @@ switch(_mode) do
 	{
 	    ("HG_HUD" call BIS_fnc_rscLayer) cutRsc ["HG_HUD","PLAIN"];
 		
-		if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+		if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 		{
 		    {
 			    _x ctrlShow true;
 			} forEach [HG_HUD_XP_BACK,HG_HUD_XP_PIC,HG_HUD_XP_TEXT];
 			[2] call HG_fnc_HUD;
 		};
-		if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
+		if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) then
 		{
 		    {
 			    _x ctrlShow true;
@@ -45,7 +45,7 @@ switch(_mode) do
 		
 		if((rank player) != "COLONEL") then 
 		{
-		    _text = format["%1/%2",((player getVariable "HG_XP") select 1),(getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
+		    _text = format["%1/%2",((player getVariable "HG_XP") select 1),(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp"))];
 		} else {
 		    _text = (localize "STR_HG_XP_MAXED");
 		};

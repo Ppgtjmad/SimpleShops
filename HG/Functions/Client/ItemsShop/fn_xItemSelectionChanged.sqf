@@ -11,7 +11,7 @@ disableSerialization;
 
 _shopType = _ctrl lbData _index;
 _shopType = _shopType splitString "/";
-_shopItems = getArray(missionConfigFile >> "CfgClient" >> "HG_ItemsShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "items");
+_shopItems = getArray(getMissionConfig "CfgClient" >> "HG_ItemsShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "items");
 	
 lbClear HG_ITEMS_ITEM_LIST;
 	

@@ -11,8 +11,8 @@ if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 disableSerialization;
 
 private["_allowedTypes","_storePoint","_pos","_near"];
-_allowedTypes = getArray(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
-_storePoint = getText(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
+_allowedTypes = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
+_storePoint = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
 
 if(_storePoint isEqualTo "") then
 {

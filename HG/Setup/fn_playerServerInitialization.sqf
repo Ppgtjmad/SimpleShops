@@ -41,11 +41,11 @@ if(HG_SAVING_EXTDB) then
 		};
 		
 		// Send query here
-		_result = [getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),[(rank player),0],0,[]];
+		_result = [getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),[(rank player),0],0,[]];
 	};
 };
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enableSave")) isEqualTo 1) then
 {
 	if(HG_SAVING_EXTDB) then
 	{
@@ -54,9 +54,9 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) th
 		_cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
 	};
 	
-    if((isNil "_cash") OR ((getNumber(missionConfigFile >> "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
+    if((isNil "_cash") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
 	{
-		_cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+		_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
 		
 		if(!HG_SAVING_EXTDB) then
 		{
@@ -65,12 +65,12 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableSave")) isEqualTo 1) th
 		};
 	};
 } else {
-    _cash = getNumber(missionConfigFile >> "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+    _cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
 };
 	
 _player setVariable ["HG_Cash",_cash,true];
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 {
     private "_xp";
 	
@@ -93,7 +93,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableXP")) isEqualTo 1) then
 	_player setVariable ["HG_XP",_xp,true];
 };
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) then
 {
     private "_kc";
 	
@@ -114,7 +114,7 @@ if((getNumber(missionConfigFile >> "CfgClient" >> "enableKillCount")) isEqualTo 
 	_player setVariable ["HG_Kills",_kc,true];
 };
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1) then
 {
     private "_gear";
 	
@@ -145,7 +145,7 @@ if(!HG_SAVING_EXTDB) then
 /*
     Init HUD (if applicable)
 */
-if((getNumber(missionConfigFile >> "CfgClient" >> "enableHUD")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1) then
 {
     [0] remoteExecCall ["HG_fnc_HUD",(owner _player),false];
 };

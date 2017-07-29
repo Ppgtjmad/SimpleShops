@@ -10,7 +10,7 @@ params["_ctrl","_index","_cat","_shopItems","_ind","_itemConfig","_itemName"];
 disableSerialization;
 	
 _cat = _ctrl lbData _index;
-_shopItems = getArray(missionConfigFile >> "CfgClient" >> "HG_GearShopCfg" >> HG_STRING_HANDLER >> _cat >> "content");
+_shopItems = getArray(getMissionConfig "CfgClient" >> "HG_GearShopCfg" >> HG_STRING_HANDLER >> _cat >> "content");
 
 lbClear HG_GEAR_LIST;
 

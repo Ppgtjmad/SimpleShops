@@ -13,6 +13,6 @@ disableSerialization;
 createDialog "HG_Garage";
 
 HG_STRING_HANDLER = _garage;
-HG_SPAWN_POINTS = getArray(missionConfigFile >> "CfgClient" >> "HG_GaragesCfg" >> _garage >> "spawnPoints");
+HG_SPAWN_POINTS = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "spawnPoints");
 
 [] call HG_fnc_refreshGarage;

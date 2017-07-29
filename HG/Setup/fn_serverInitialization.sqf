@@ -4,7 +4,7 @@
     Website - http://www.sunrise-production.com
 */
 
-HG_SAVING_EXTDB = (getText(missionConfigFile >> "CfgClient" >> "savingMethod")) isEqualTo "extDB";
+HG_SAVING_EXTDB = (getText(getMissionConfig "CfgClient" >> "savingMethod")) isEqualTo "extDB";
 
 if(HG_SAVING_EXTDB) then
 {
@@ -23,7 +23,7 @@ if(HG_SAVING_EXTDB) then
 		HG_SAVING_EXTDB = false;
 	};
 	
-	private _protocol = getText(missionConfigFile >> "CfgClient" >> "savingProtocol");
+	private _protocol = getText(getMissionConfig "CfgClient" >> "savingProtocol");
 	if(_protocol isEqualTo "") exitWith
 	{
 	    diag_log (localize "STR_HG_EXTDB_NO_PROTOCOL");
@@ -49,12 +49,12 @@ HG_fnc_setInventory = compileFinal preprocessFileLineNumbers "HG\Functions\Serve
 HG_fnc_spawnVehicle = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_spawnVehicle.sqf";
 HG_fnc_storeVehicleServer = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_storeVehicleServer.sqf";
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1) then
 {
     addMissionEventHandler ["HandleDisconnect",{_this call HG_fnc_disconnect; false;}];
 };
 
-if((getNumber(missionConfigFile >> "CfgClient" >> "resetGaragesOnServerStart")) isEqualTo 1) then
+if((getNumber(getMissionConfig "CfgClient" >> "resetGaragesOnServerStart")) isEqualTo 1) then
 {
     [] call HG_fnc_resetGarages;
 } else {
