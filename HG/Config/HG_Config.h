@@ -29,8 +29,10 @@
 	admins - ARRAY OF STRINGS - Admins PUIDs
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	
-	savingMethod - STRING - Use "" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 loaded & setup correctly
-	savingProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
+	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/Database)
+	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
+	extDBProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
+	extDBCustomFile - STRING - If "extDB" is used as savingMethod & extDBProtocol is "SQL_CUSTOM", set the custom file to use (located in @extDB3\sql_custom folder)
 	
 	class HG_MasterCfg
 	{
@@ -82,8 +84,10 @@ admins[] = {"_SP_PLAYER_"};
 adminKey = 0xDB;
 
 /* SAVING */
-savingMethod = "";
-savingProtocol = "";
+savingMethod = "Profile";
+extDBDatabase = "HG";
+extDBProtocol = "SQL_CUSTOM";
+extDBCustomFile = "custom.ini";
 
 /* MASTER CFG */
 class HG_MasterCfg

@@ -15,12 +15,8 @@ if(HG_SAVING_EXTDB) then
 	    format["HG_playerExist:%1",_uid];
 	};
 	
-	// Send query here _exists = 
-	
-	if((typeName _exists) isEqualTo "ARRAY") then 
-	{
-	    _exists = _exists select 0;
-	};
+	_exists = [2,_query,false] call HG_fnc_asyncCall;
+	_exists = _exists select 0;
 	
 	if(_exists) then
 	{
@@ -31,16 +27,16 @@ if(HG_SAVING_EXTDB) then
 		    format["HG_playerSelect:%1",_uid];
 		};
 		
-		// Send query here _result = 
+		_result = [2,_query,false] call HG_fnc_asyncCall;
 	} else {
 	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 		{
-		    format["INSERT INTO HG_Players (PID, XP, Gear) VALUES(?,?,?)",_uid,[(rank player),0],[]];
+		    format["INSERT INTO HG_Players (PID, XP, Gear) VALUES('%1','%2','%3')",_uid,[(rank player),0],[]];
 		} else {
 		    format["HG_playerInsert:%1:%2:%3",_uid,[(rank player),0],[]];
 		};
 		
-		// Send query here
+		[1,_query] call HG_fnc_asyncCall;
 		_result = [getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),[(rank player),0],0,[]];
 	};
 };
@@ -125,10 +121,8 @@ if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEq
 	    _gear = profileNamespace getVariable [format["HG_Gear_%1",_uid],[]];
 	};
 
-    if((count _gear) isEqualTo 0) then
+    if((count _gear) != 0) then
 	{
-	    [_player] call HG_fnc_getGear;
-	} else {
 		_gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
 	};
 };

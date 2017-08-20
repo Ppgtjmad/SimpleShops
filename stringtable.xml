@@ -363,14 +363,6 @@
 			<Spanish>[HG]extDB3|Code#1] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
 			<Italian></Italian>
 		</Key>
-		<Key ID="STR_HG_EXTDB_NO_PROTOCOL">
-		    <Original>[HG|extDB3|Code#2] Saving method is set to "extDB" but it seems like no protocol (savingProtocol) has been set up... server profile is being used as a fallback</Original>
-		    <French></French>
-			<German></German>
-			<Russian></Russian>
-			<Spanish>[HG|extDB3|Code#2] El metodo de guardado es en "extDB" pero no hay protocolo (protocolo de guardado) el perfíl del servidor se está usando como alternativa</Spanish>
-			<Italian></Italian>
-		</Key>
 	</Package>
 	<Package name="Dialogs">
 	    <Container name="General">

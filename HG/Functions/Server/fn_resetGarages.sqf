@@ -31,7 +31,7 @@ if(!HG_SAVING_EXTDB) then
 	    "HG_resetGarages";
 	};
 	
-	// Send delete query here
+	[1,_query] call HG_fnc_asyncCall;
 };
 	
 true;

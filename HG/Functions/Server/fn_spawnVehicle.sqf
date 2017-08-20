@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_mode","_unit","_classname","_sp",["_plate",round(random(100000)),[0]],"_vehicle"];
+params["_mode","_unit","_classname","_sp",["_plate",round(random(100000))],"_vehicle"];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -35,7 +35,7 @@ if(!HG_SAVING_EXTDB) then
 		] select _mode;
 	};
 	
-	// Send insert/update query here
+	[1,_query] call HG_fnc_asyncCall;
 };
 
 if((typeName _sp) isEqualTo "ARRAY") then
@@ -69,7 +69,7 @@ if(((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) is
 
 if(_mode isEqualTo 1) then
 {
-	(localize "STR_HG_GRG_VEHICLE_SPAWNED") remoteExecCall ['hint',(owner _unit),false];
+	(localize "STR_HG_GRG_VEHICLE_SPAWNED") remoteExecCall ["hint",(owner _unit),false];
 };
 
 true;

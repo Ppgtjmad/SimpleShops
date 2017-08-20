@@ -22,7 +22,7 @@ if(!HG_SAVING_EXTDB) then
 	    format["HG_vehicleUpdateInventory:%1:%2:%3",_inventory,_uid,_plate];
 	};
 	
-	// Send update query here
+    [1,_query] call HG_fnc_asyncCall;
 };
 	
 true;

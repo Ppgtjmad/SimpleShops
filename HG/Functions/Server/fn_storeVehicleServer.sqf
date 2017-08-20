@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_mode","_unit","_vehicle",["_plate",round(random(100000)),[0]]];
+params["_mode","_unit","_vehicle",["_plate",round(random(100000))]];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -39,7 +39,7 @@ if(!HG_SAVING_EXTDB) then
 		] select _mode;
 	};
 	
-	// Send update/insert query here
+	[1,_query] call HG_fnc_asyncCall;
 };
 
 if(_mode isEqualTo 1) then

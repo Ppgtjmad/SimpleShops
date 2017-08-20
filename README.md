@@ -19,5 +19,6 @@
 == Issues ==<br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/issues">Tickets</a></b><br/>
 == Credits ==<br/>
+<a href="https://bitbucket.org/torndeco/extdb3/wiki/Home" target="_blank">Torndeco</a> - extDB3<br/>
 <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation
 </p>

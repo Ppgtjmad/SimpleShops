@@ -29,8 +29,8 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	if(_spawnPoint != "") then
 	{
 		[_price,1] call HG_fnc_addOrSubCash;
-		closeDialog 0;
 		private _classname = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
+		closeDialog 0;
 		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),(getText(configFile >> "CfgVehicles" >> _classname >> "displayName")),if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
 		[0,player,_classname,_spawnPoint] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
 	} else {

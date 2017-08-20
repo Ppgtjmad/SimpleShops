@@ -6,7 +6,8 @@ SET TIME_ZONE = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
-USE `insert_existing_database_name_here`; -- ! IMPORTANT ! --
+CREATE DATABASE IF NOT EXISTS `HG` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `HG`; -- ! IMPORTANT ! --
 
 --
 -- Table structure for table `HG_Players`
@@ -33,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `HG_Vehicles` (
   `ID` MEDIUMINT NOT NULL AUTO_INCREMENT,
   `PID` VARCHAR(50) NOT NULL,
   `Classname` VARCHAR(32) NOT NULL,
-  `Plate` VARCHAR(32) NOT NULL,
+  `Plate` INT(100) NOT NULL,
   `Alive` TINYINT NOT NULL DEFAULT 1,
   `Active` TINYINT NOT NULL,
   `Inventory` TEXT NOT NULL,

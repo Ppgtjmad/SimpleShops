@@ -35,12 +35,12 @@ if(!HG_SAVING_EXTDB) then
 		    } else {
 				private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 			    {
-					_query = format["UPDATE HG_Vehicles SET Active = '%1' WHERE PID = '%2' AND Plate = '%3'",0,_uid,_plate];
+					format["UPDATE HG_Vehicles SET Active = '%1' WHERE PID = '%2' AND Plate = '%3'",0,_uid,_plate];
 			    } else {
-					_query = format["HG_vehicleActiveUpdate:%1:%2:%3",0,_uid,_plate];
+					format["HG_vehicleActiveUpdate:%1:%2:%3",0,_uid,_plate];
 				};
 				
-				// Send update query here
+				[1,_query] call HG_fnc_asyncCall;
 			};
 			
 			if(_saveInv) then

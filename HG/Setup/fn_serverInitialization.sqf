@@ -15,19 +15,17 @@ if(HG_SAVING_EXTDB) then
 		HG_SAVING_EXTDB = false;
 	};
 	
-	// Double check just to be sure
-	private _result = "extDB3" callExtension "9:VERSION";
-	if(_result isEqualTo "") exitWith 
-	{
-	    diag_log (localize "STR_HG_EXTDB_NOT_LOADED");
-		HG_SAVING_EXTDB = false;
-	};
+	HG_fnc_asyncCall = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_asyncCall.sqf";
+	HG_fnc_extDBInit = compileFinal preprocessFileLineNumbers "HG\Functions\Server\fn_extDBInit.sqf";
 	
-	private _protocol = getText(getMissionConfig "CfgClient" >> "savingProtocol");
-	if(_protocol isEqualTo "") exitWith
+	private["_protocol","_ok"];
+	
+	_protocol = getText(getMissionConfig "CfgClient" >> "extDBProtocol");
+	_ok = [getText(getMissionConfig "CfgClient" >> "extDBDatabase"),_protocol,getText(getMissionConfig "CfgClient" >> "extDBCustomFile")] call HG_fnc_extDBInit;
+	
+	if(!_ok) exitWith
 	{
-	    diag_log (localize "STR_HG_EXTDB_NO_PROTOCOL");
-		HG_SAVING_EXTDB = false;
+	    HG_SAVING_EXTDB = false;
 	};
 	
 	HG_SAVING_PROTOCOL = _protocol;

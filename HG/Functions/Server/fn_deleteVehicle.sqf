@@ -29,7 +29,7 @@ if(!HG_SAVING_EXTDB) then
 	    format["HG_vehicleDelete:%1:%2",(getPlayerUID _unit),_plate];
 	};
 	
-	// Send delete query here
+	[1,_query] call HG_fnc_asyncCall;
 };
 
 (localize "STR_HG_GRG_VEHICLE_DELETED") remoteExecCall ["hint",(owner _unit),false];

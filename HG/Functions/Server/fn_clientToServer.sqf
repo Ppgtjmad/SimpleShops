@@ -36,7 +36,7 @@ if(!HG_SAVING_EXTDB) then
 		] select _mode;
 	};
 	
-	// Send update query here
+	[1,_query] call HG_fnc_asyncCall;
 };	
 
 true;
