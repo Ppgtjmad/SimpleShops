@@ -15,6 +15,7 @@
 			items - ARRAY OF ARRAYS - Shop content
 			|- 0 - STRING - Classname
 			|- 1 - INTEGER - Price
+			|- 2 - STRING - Condition that must return either true or false, if true the item appears in the list else no
 		};
 	};
 */
@@ -28,11 +29,11 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_ITEMS";
 		items[] =
 		{
-		    {"ItemWatch",50},
-			{"ItemCompass",50},
-			{"ItemGPS",50},
-			{"ItemRadio",50},
-			{"ItemMap",50}
+		    {"ItemWatch",50,"true"},
+			{"ItemCompass",50,"true"},
+			{"ItemGPS",50,"true"},
+			{"ItemRadio",50,"true"},
+			{"ItemMap",50,"true"}
 		};
 	};
 	
@@ -41,9 +42,9 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_MAGAZINES";
 		items[] =
 		{
-		    {"30Rnd_65x39_caseless_mag",250},
-            {"16Rnd_9x21_Mag",75},
-	        {"30Rnd_9x21_Mag",150}
+		    {"30Rnd_65x39_caseless_mag",250,"true"},
+            {"16Rnd_9x21_Mag",75,"true"},
+	        {"30Rnd_9x21_Mag",150,"true"}
 		};
 	};
 	
@@ -52,8 +53,8 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_SCOPES";
 		items[] =
 		{
-		    {"optic_Arco",1000},
-			{"optic_Hamr",1000}
+		    {"optic_Arco",1000,"true"},
+			{"optic_Hamr",1000,"true"}
 		};
 	};
 };

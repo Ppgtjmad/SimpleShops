@@ -12,4 +12,5 @@ switch true do
 	case(isClass(configFile >> "CfgWeapons" >> _item)): {"CfgWeapons"};
 	case(isClass(configFile >> "CfgVehicles" >> _item)): {"CfgVehicles"};
 	case(isClass(configFile >> "CfgGlasses" >> _item)): {"CfgGlasses"};
+	default {""};
 };

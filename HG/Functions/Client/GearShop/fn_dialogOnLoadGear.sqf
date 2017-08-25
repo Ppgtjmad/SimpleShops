@@ -24,6 +24,7 @@ _shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_GearShopCf
 	
 lbClear HG_GEAR_SWITCH;
 HG_GEAR_SLIDER sliderSetRange [0,360];
+HG_GEAR_TOTAL ctrlSetText format[(localize "STR_HG_DLG_GS_TOTAL_TEXT"),([0,true] call HG_fnc_currencyToText)];
 HG_STRING_HANDLER = _whatShop;
 
 {

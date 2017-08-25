@@ -8,7 +8,7 @@ params["_sel","_cat"];
 
 _cat = HG_GEAR_SWITCH lbData (lbCurSel HG_GEAR_SWITCH);
 
-if(_sel isEqualTo (localize "STR_HG_NONE")) then
+if(_sel isEqualTo (localize "STR_HG_DLG_GS_REMOVE")) then
 {
 	switch(_cat) do
     {

@@ -15,6 +15,7 @@
 			vehicles - ARRAY OF ARRAYS - Shop content
 			|- 0 - STRING - Classname
 			|- 1 - INTEGER - Price
+			|- 2 - STRING - Condition that must return either true or false, if true the vehicle appears in the list else no
 			spawnPoints - ARRAY OF ARRAYS - Spawn pos (markers/positions)
 			|- 0 - STRING - Display name in the dialog
 			|- 1 - ARRAY OF MIXED - Markers/positions
@@ -31,7 +32,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_CIVILIAN";
 		vehicles[] =
 		{
-		    {"C_SUV_01_F",15000}
+		    {"C_SUV_01_F",15000,"true"}
 		};
 	    spawnPoints[] =
 		{
@@ -44,7 +45,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	    displayName = "$STR_HG_SHOP_MILITARY";
 		vehicles[] =
 		{
-		    {"B_MRAP_01_F",45000}
+		    {"B_MRAP_01_F",45000,"true"}
 	    };
 		spawnPoints[] =
 		{

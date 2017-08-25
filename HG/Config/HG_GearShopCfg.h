@@ -14,6 +14,7 @@
 			content - ARRAY OF ARRAYS - Shop content
 			|- 0 - STRING - Classname
 			|- 1 - INTEGER - Price
+			|- 2 - STRING - Condition that must return either true or false, if true the item appears in the list else no
 		};
 	};
 */
@@ -27,8 +28,8 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_FACEWEAR";
 		content[] =
 		{
-			{"G_Balaclava_blk",50},
-			{"G_Bandanna_shades",50}
+			{"G_Balaclava_blk",50,"true"},
+			{"G_Bandanna_shades",50,"true"}
 		};
 	};
 	
@@ -37,7 +38,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_HEADGEAR";
 		content[] =
 		{
-			{"H_HelmetB_light_grass",1500}
+			{"H_HelmetB_light_grass",1500,"true"}
 	    };
 	};
 	
@@ -46,7 +47,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_UNIFORMS";
 		content[] =
 		{
-		    {"U_B_FullGhillie_ard",150}
+		    {"U_B_FullGhillie_ard",150,"true"}
 		};
 	};
 	
@@ -55,7 +56,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_VESTS";
 		content[] =
 		{
-		    {"V_PlateCarrierGL_mtp",500}
+		    {"V_PlateCarrierGL_mtp",500,"true"}
 		};
 	};
 	
@@ -64,7 +65,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_BACKPACKS";
 		content[] =
 		{
-			{"B_Carryall_oucamo",800}
+			{"B_Carryall_oucamo",800,"true"}
 		};
 	};
 	
@@ -73,7 +74,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_MISSILE_LAUNCHER";
 		content[] =
 		{
-			{"launch_B_Titan_F",50000}
+			{"launch_B_Titan_F",50000,"true"}
 		};
 	};
 	
@@ -82,7 +83,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_ROCKET_LAUNCHER";
 		content[] =
 		{
-			{"launch_RPG7_F",50000}
+			{"launch_RPG7_F",50000,"true"}
 		};
 	};
 	
@@ -91,7 +92,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_HANDGUN";
 		content[] =
 		{
-			{"hgun_P07_F",1500}
+			{"hgun_P07_F",1500,"true"}
 		};
 	};
 	
@@ -100,7 +101,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_ASSAULT_RIFLE";
 		content[] =
 		{
-			{"arifle_AKM_F",12000}
+			{"arifle_AKM_F",12000,"true"}
 		};
 	};
 	
@@ -109,7 +110,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_MACHINE_GUN";
 		content[] =
 		{
-			{"arifle_MX_SW_F",35000}
+			{"arifle_MX_SW_F",35000,"true"}
 		};
 	};
 	
@@ -118,7 +119,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_SUB_MACHINE_GUN";
 		content[] =
 		{
-			{"SMG_02_f",5000}
+			{"SMG_02_f",5000,"true"}
 		};
 	};
 	
@@ -127,7 +128,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 		displayName = "$STR_HG_SHOP_SNIPER_RIFLE";
 		content[] =
 		{
-			{"srifle_dmr_04_f",25000}
+			{"srifle_dmr_04_f",25000,"true"}
 		};
 	};
 };
