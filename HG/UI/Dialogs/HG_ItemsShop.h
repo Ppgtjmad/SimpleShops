@@ -144,6 +144,7 @@ class HG_ItemsShop
 		class ItemPicture: HG_RscPicture
 		{
 		    idc = HG_ITEMS_ITEM_PICTURE_IDC;
+			style = "0x30 + 0x800";
 			x = 0.515469 * safeZoneW + safeZoneX;
 			y = 0.335 * safeZoneH + safeZoneY;
 			w = 0.154687 * safeZoneW;

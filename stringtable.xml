@@ -281,6 +281,14 @@
 			<Spanish>El Vehiculo esta vacio</Spanish>
 			<Italian></Italian>
 		</Key>
+		<Key ID="STR_HG_SPAWN_POINT_BUSY">
+		    <Original>This spawn point is busy</Original>
+		    <French></French>
+			<German></German>
+			<Russian></Russian>
+			<Spanish>Eso punto de reaparición es ocupado</Spanish>
+			<Italian></Italian>
+		</Key>
 		<Key ID="STR_HG_SPAWN_POINTS_BUSY">
 		    <Original>All the available spawn points are busy</Original>
 		    <French></French>

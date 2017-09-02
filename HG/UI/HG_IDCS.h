@@ -29,9 +29,10 @@
 #define HG_GARAGE_IDD                 6100
 #define HG_GARAGE_BACK_IDC            6101
 #define HG_GARAGE_LIST_IDC            6102
-#define HG_GARAGE_REFRESH_BTN_IDC     6103
-#define HG_GARAGE_SPAWN_BTN_IDC       6104
-#define HG_GARAGE_DELETE_BTN_IDC      6105
+#define HG_GARAGE_SP_IDC              6103
+#define HG_GARAGE_REFRESH_BTN_IDC     6104
+#define HG_GARAGE_SPAWN_BTN_IDC       6105
+#define HG_GARAGE_DELETE_BTN_IDC      6106
 
 #define HG_GEAR_SHOP_IDD	          7000
 #define HG_GEAR_TOTAL_IDC             7001

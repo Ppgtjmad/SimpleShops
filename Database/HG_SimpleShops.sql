@@ -6,7 +6,7 @@ SET TIME_ZONE = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
-CREATE DATABASE IF NOT EXISTS `HG` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE IF NOT EXISTS `HG` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `HG`; -- ! IMPORTANT ! --
 
 --
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `HG_Players` (
   `Gear` TEXT NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `PID` (`PID`)
-) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 -- --------------------------------------------------------
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `HG_Vehicles` (
   KEY `PID` (`PID`),
   KEY `Classname` (`Classname`),
   KEY `Plate` (`Plate`)
-) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
 -- --------------------------------------------------------
 

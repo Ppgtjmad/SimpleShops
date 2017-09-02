@@ -8,7 +8,7 @@ params["_unit","_types","_garage",["_toSend",[],[[]]]];
 if(!HG_SAVING_EXTDB) then
 {
 	_garage = profileNamespace getVariable[format["HG_Garage_%1",(getPlayerUID _unit)],[]];
-	_garage select {(_x select 2) isEqualTo 0};
+	_garage = _garage select {(_x select 2) isEqualTo 0};
 } else {
     private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{

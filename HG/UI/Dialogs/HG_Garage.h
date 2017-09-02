@@ -110,7 +110,16 @@ class HG_Garage
 			x = 0.391719 * safeZoneW + safeZoneX;
 			y = 0.346 * safeZoneH + safeZoneY;
 			w = 0.216563 * safeZoneW;
-			h = 0.352 * safeZoneH;
+			h = 0.319 * safezoneH;
+		};
+		
+		class SpawnPointsList: HG_RscCombo
+		{
+			idc = HG_GARAGE_SP_IDC;
+			x = 0.391719 * safezoneW + safezoneX;
+			y = 0.676 * safezoneH + safezoneY;
+			w = 0.216563 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
 		
 		class RefreshBtn: HG_RscButtonInvisible

@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3748.543,9.8563328,3717.0566};
-		dir[]={0.025859313,-0.67095768,0.74104774};
-		up[]={0.023399184,0.74149567,0.67054886};
-		aside[]={0.99939466,5.9821105e-008,-0.034874637};
+		pos[]={3746.1296,8.6282463,3716.1558};
+		dir[]={0.49983519,-0.44136065,0.74523705};
+		up[]={0.24584819,0.89732558,0.36655119};
+		aside[]={0.83050412,-3.7733116e-008,-0.55702358};
 	};
 };
 binarizationWanted=0;
@@ -110,7 +110,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			dataType="Group";
@@ -180,9 +180,9 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={3766.0442,0,3725.6582};
+			position[]={3766.0439,0,3725.658};
 			name="garage_spawn_1";
-			text=" Garage Spawn Point";
+			text=" Garage Spawn Point 1";
 			type="mil_warning";
 			colorName="ColorCIV";
 			id=9;
@@ -191,7 +191,7 @@ class Mission
 		class Item3
 		{
 			dataType="Marker";
-			position[]={3765.9436,0,3723.1489};
+			position[]={3765.9441,0,3723.1489};
 			name="garage_store";
 			text=" Garage Store Point";
 			type="mil_warning";
@@ -224,6 +224,17 @@ class Mission
 			type="mil_warning";
 			colorName="ColorCIV";
 			id=5;
+			atlOffset=-5;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={3765.8689,0,3720.28};
+			name="garage_spawn_2";
+			text=" Garage Spawn Point 2";
+			type="mil_warning";
+			colorName="ColorCIV";
+			id=13;
 			atlOffset=-5;
 		};
 	};
