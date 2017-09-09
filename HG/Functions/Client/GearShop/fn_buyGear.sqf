@@ -5,7 +5,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params[["_price",0]];
+params[["_price",0],"_discount"];
 
 {
     if((count _x) != 0) then
@@ -13,6 +13,13 @@ params[["_price",0]];
         _price = _price + (_x select 1);
 	};
 } forEach HG_GEAR_PREVIEW;
+
+_discount = ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) != 0) AND (_price != 0);
+
+if(_discount) then
+{
+    _price = round(_price - (_price * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)));
+};
 
 if(_price > 0) then
 {
