@@ -21,6 +21,7 @@ createDialog "HG_VehiclesShop";
 HG_OBJECT_PREVIEW = objNull;
 HG_VEHICLE_PREVIEW = objNull;
 HG_VEHICLE_LIGHTS = [];
+HG_VEHICLE_COLORS = [];
 
 private["_shopList","_ind","_h"];
 

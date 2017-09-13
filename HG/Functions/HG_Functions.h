@@ -113,6 +113,7 @@ class HG
 		class buyVehicle {};
 		class dialogOnLoadVehicles {};
 		class dialogOnUnloadVehicles {};
+		class vehicleColor {};
 		class vehicleRotate {};
 		class vehicleSelectionChanged {};
 		class xVehicleSelectionChanged {};

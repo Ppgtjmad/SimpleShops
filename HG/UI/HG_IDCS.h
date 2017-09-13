@@ -21,10 +21,11 @@
 #define HG_VEHICLES_TEXT_IDC	      6001
 #define HG_VEHICLES_SWITCH_IDC		  6002
 #define HG_VEHICLES_LIST_IDC          6003
-#define HG_VEHICLES_SP_IDC            6004
-#define HG_VEHICLES_TG_IDC            6005
-#define HG_VEHICLES_BUY_IDC           6006
-#define HG_VEHICLES_MC_IDC            6007
+#define HG_VEHICLES_COLORS_IDC        6004
+#define HG_VEHICLES_SP_IDC            6005
+#define HG_VEHICLES_TG_IDC            6006
+#define HG_VEHICLES_BUY_IDC           6007
+#define HG_VEHICLES_MC_IDC            6008
 
 #define HG_GARAGE_IDD                 6100
 #define HG_GARAGE_BACK_IDC            6101

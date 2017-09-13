@@ -14,8 +14,9 @@ _shopType = _shopType splitString "/";
 _shopContent = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "vehicles");
 _spawnPoints = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
 
-lbClear HG_VEHICLES_LIST;
-lbClear HG_VEHICLES_SP;
+{
+    lbClear _x;
+} forEach [HG_VEHICLES_LIST,HG_VEHICLES_COLORS,HG_VEHICLES_SP];
 
 {
     _exists = isClass(configFile >> "CfgVehicles" >> (_x select 0));

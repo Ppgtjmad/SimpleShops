@@ -150,7 +150,7 @@ class HG_VehiclesShop
 			x = 0.804219 * safeZoneW + safeZoneX;
 			y = 0.302 * safeZoneH + safeZoneY;
 			w = 0.185625 * safeZoneW;
-			h = 0.407 * safeZoneH;
+			h = 0.374 * safeZoneH;
 		};
 	};
 	
@@ -176,6 +176,16 @@ class HG_VehiclesShop
 			y = 0.335 * safeZoneH + safeZoneY;
 			w = 0.185625 * safeZoneW;
 			h = 0.407 * safeZoneH;
+		};
+		
+		class ColorsList: HG_RscCombo
+		{
+			idc = HG_VEHICLES_COLORS_IDC;
+			onLBSelChanged = "_this call HG_fnc_vehicleColor";
+		  	x = 0.804219 * safezoneW + safezoneX;
+			y = 0.687 * safezoneH + safezoneY;
+			w = 0.185625 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
 		
 		class SpawnPointsList: HG_RscCombo

@@ -28,11 +28,15 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	
 	if(_spawnPoint != "") then
 	{
+	    private["_classname","_color"];
+		
 		[_price,1] call HG_fnc_addOrSubCash;
-		private _classname = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
+		_classname = HG_VEHICLES_LIST lbData (lbCurSel HG_VEHICLES_LIST);
+		_color = HG_VEHICLES_COLORS lbData (lbCurSel HG_VEHICLES_COLORS);
+		
 		closeDialog 0;
 		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),(getText(configFile >> "CfgVehicles" >> _classname >> "displayName")),if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
-		[0,player,_classname,_spawnPoint] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
+		[0,player,_classname,_spawnPoint,nil,_color] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
 	} else {
 	    titleText [(localize "STR_HG_SPAWN_POINTS_BUSY"),"PLAIN DOWN",1];
 	};

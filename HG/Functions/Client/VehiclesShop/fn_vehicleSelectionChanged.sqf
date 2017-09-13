@@ -18,13 +18,13 @@ if(!isNull HG_VEHICLE_PREVIEW) then
 
 if(_vehicle != (localize "STR_HG_NONE")) then
 {
-    private["_price","_veh"];
+    private["_price","_veh","_canColor"];
 	
     _price = _ctrl lbValue _index;
 	
 	{
 	    _x ctrlEnable true;
-	} forEach [HG_VEHICLES_TG,HG_VEHICLES_BUY];
+	} forEach [HG_VEHICLES_TG,HG_VEHICLES_BUY,HG_VEHICLES_COLORS];
 	
     HG_VEHICLES_TEXT ctrlSetStructuredText parseText format
     [
@@ -51,6 +51,27 @@ if(_vehicle != (localize "STR_HG_NONE")) then
     _veh enableSimulation false;
 
     HG_VEHICLE_PREVIEW = _veh;
+	
+	_canColor = isClass(configFile >> "CfgVehicles" >> _vehicle >> "TextureSources");
+	
+	if(_canColor) then
+	{
+	    private["_colors","_ind"];
+		
+	    _colors = "true" configClasses (configFile >> "CfgVehicles" >> _vehicle >> "TextureSources");
+		
+		lbClear HG_VEHICLES_COLORS;
+		
+		{
+		    _ind = HG_VEHICLES_COLORS lbAdd (configName _x);
+			HG_VEHICLES_COLORS lbSetData [_ind,(configName _x)];
+			HG_VEHICLES_COLORS lbSetValue [_ind,_forEachIndex];
+			HG_VEHICLE_COLORS pushBack (getArray(_x >> "textures"));
+		} forEach _colors;
+	} else {
+	    _ind = HG_VEHICLES_COLORS lbAdd (localize "STR_HG_DEFAULT");
+	    HG_VEHICLES_COLORS lbSetData[_ind,(localize "STR_HG_DEFAULT")];
+	};
 
     HG_CAMERA_PREVIEW camSetTarget (_veh modelToWorld [0,0,0.5]);
     if(_veh isKindOf "Air") then
@@ -64,12 +85,14 @@ if(_vehicle != (localize "STR_HG_NONE")) then
     _veh setDir round((getDir _veh)-45);
 
     [_veh] spawn HG_fnc_vehicleRotate;
+	
+	HG_VEHICLES_COLORS lbSetCurSel 0;
 } else {
     HG_VEHICLES_TEXT ctrlSetStructuredText parseText "<t align='center' size='1'>"+(localize "STR_HG_NOTHING_TO_DISPLAY")+"</t>";
     
 	{
 	    _x ctrlEnable false;
-	} forEach [HG_VEHICLES_TG,HG_VEHICLES_BUY];
+	} forEach [HG_VEHICLES_TG,HG_VEHICLES_BUY,HG_VEHICLES_COLORS];
 };
 
 true;

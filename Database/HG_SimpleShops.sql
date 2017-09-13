@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS `HG_Vehicles` (
   `Plate` INT(100) NOT NULL,
   `Alive` TINYINT NOT NULL DEFAULT 1,
   `Active` TINYINT NOT NULL,
+  `Color` VARCHAR(32) NOT NULL,
   `Inventory` TEXT NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `PID` (`PID`),

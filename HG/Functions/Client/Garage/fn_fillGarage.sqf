@@ -17,7 +17,7 @@ HG_GARAGE_BACK ctrlSetText "";
 if((count _this) != 0) then
 {
     {
-        _ind = HG_GARAGE_LIST lbAdd (getText(configFile >> "CfgVehicles" >> (_x select 0) >> "displayName"));
+        _ind = HG_GARAGE_LIST lbAdd format[(localize "STR_HG_GRG_LIST"),(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "displayName")),(_x select 2)];
 		HG_GARAGE_LIST lbSetData[_ind,(_x select 0)];
 		HG_GARAGE_LIST lbSetValue[_ind,(_x select 1)];
     } forEach _this;
