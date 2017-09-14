@@ -63,7 +63,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 		lbClear HG_VEHICLES_COLORS;
 		
 		{
-		    _ind = HG_VEHICLES_COLORS lbAdd (configName _x);
+		    _ind = HG_VEHICLES_COLORS lbAdd (getText(_x >> "displayName"));
 			HG_VEHICLES_COLORS lbSetData [_ind,(configName _x)];
 			HG_VEHICLES_COLORS lbSetValue [_ind,_forEachIndex];
 			HG_VEHICLE_COLORS pushBack (getArray(_x >> "textures"));
