@@ -51,6 +51,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
     _veh enableSimulation false;
 
     HG_VEHICLE_PREVIEW = _veh;
+	HG_VEHICLE_COLORS = [];
 	
 	_canColor = isClass(configFile >> "CfgVehicles" >> _vehicle >> "TextureSources");
 	
