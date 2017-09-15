@@ -28,9 +28,9 @@ if(!HG_SAVING_EXTDB) then
 				
 			    if(_index != -1) then
 			    {
-				    (_garage select _index) set [2,0];
+				    (_garage select _index) set [3,0];
 			    } else {
-				    _garage pushBack [(typeOf _x),_plate,0];
+				    _garage pushBack [(typeOf _x),_plate,(_owner select 2),0];
 			    };
 		    } else {
 				private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then

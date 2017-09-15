@@ -8,7 +8,7 @@ params["_unit","_types","_garage",["_toSend",[],[[]]]];
 if(!HG_SAVING_EXTDB) then
 {
 	_garage = profileNamespace getVariable[format["HG_Garage_%1",(getPlayerUID _unit)],[]];
-	_garage = _garage select {(_x select 2) isEqualTo 0};
+	_garage = _garage select {(_x select 3) isEqualTo 0};
 } else {
     private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{
@@ -26,7 +26,7 @@ if((count _garage) != 0) then
 		_type = [_x select 0] call HG_fnc_getType;
 		if(_type in _types) then
 		{
-			_toSend pushBack [(_x select 0),(_x select 1),(_x select 3)];
+			_toSend pushBack [(_x select 0),(_x select 1),(_x select 2)];
 		};
 	} forEach _garage;
 };

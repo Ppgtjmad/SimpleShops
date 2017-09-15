@@ -4,192 +4,239 @@
 	    <Key ID="STR_HG_GEAR_BOUGHT">
 		    <Original>You have bought stuff for a total of %1</Original>
 			<Spanish>Tu has comprado con un descuento por un total de %1</Spanish>
+			<French>Vous avez acheté du matériel pour un total de %1</French>
 		</Key>
 	    <Key ID="STR_HG_ITEM_BOUGHT">
 		    <Original>You have bought %1x %2 for %3</Original>
 			<Spanish>Tu has comprado %1x %2 por %3</Spanish>
+			<French>Vous avez acheté %1x %2 pour %3</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT">
 		    <Original>You have bought a %1 for %2</Original>
 			<Spanish>Tu has comprado un %1 por %2</Spanish>
+			<French>Vous avez acheté un(e) %1 pour %2</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT_TO_GARAGE">
 		    <Original>You have bought a %1 for %2, it has been stored in your garage</Original>
 			<Spanish>Usted a comprado un %1 por %2, se a almacenado en su garage</Spanish>
+			<French>Vous avez acheté un(e) %1 pour %2, il a été stocké dans votre garage</French>
 		</Key>
 		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
 		    <Original>You don't have enough money, requires %1</Original>
 			<Spanish>No tienes dinero, necesitas %1</Spanish>
+			<French>Vous n'avez pas assez d'argent, il vous faut %1</French>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_1">
 		    <Original>::ERROR:: Dialog Loading - Passed param type is not a STRING</Original>
 			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parámetro no es una cadena</Spanish>
+			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un STRING</French>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_2">
 		    <Original>::ERROR:: Dialog Loading - Passed param is an empty STRING</Original>
 			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro es una cadena vacia</Spanish>
+			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un STRING vide</French>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_3">
 		    <Original>::ERROR:: Dialog Loading - Passed param type is not an ARRAY</Original>
 			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro no es un orden</Spanish>
+			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un ARRAY</French>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_4">
 		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
 			<Spanish>::ERROR:: Cargando Dialogo - El parametro es una orden vacia</Spanish>
+			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un ARRAY vide</French>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_OBJECT">
 		    <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
-			<Spanish>::ERROR:: Menu IA (%1) - Parámetro no es un objeto - </Spanish>
+			<Spanish>::ERROR:: Menu IA (%1) - Parámetro no es un objeto</Spanish>
+			<French>::ERREUR:: Configuration IA (%1) - Le paramètre passé n'est pas un OBJET</French>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_MAN">
 		    <Original>::ERROR:: AI Setup (%1) - Passed object is not kind of "Man"</Original>
 			<Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
+			<French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
 		</Key>
 		<Key ID="STR_HG_ACCESS_DENIED">
 		    <Original>Access denied</Original>
 			<Spanish>Acceso Denegado</Spanish>
+			<French>Accès refusé</French>
 		</Key>
 		<Key ID="STR_HG_NOT_A_NUMBER">
 		    <Original>Value entered is not a number</Original>
 			<Spanish>El valor usado sobrepasa el número máximo</Spanish>
+			<French>La valeur entrée n'est pas un nombre</French>
 		</Key>
 		<Key ID="STR_HG_NEGATIVE_OR_ZERO">
 		    <Original>Value can't be negative or equal to zero</Original>
 			<Spanish>El valor no debe ser negativo o igual a cero</Spanish>
+			<French>La valeur ne peut ni être négative ni être égale à zéro</French>
 		</Key>
 		<Key ID="STR_HG_TOO_MUCH">
 		    <Original>You can't give more than what you have</Original>
 			<Spanish>No puedes dar más dinero del que tienes</Spanish>
+			<French>Vous ne pouvez pas donner plus que ce que vous avez</French>
 		</Key>
 		<Key ID="STR_HG_GIVE_MONEY">
 		    <Original>Give Money</Original>
 			<Spanish>Dar dinero</Spanish>
+			<French>Donner Argent</French>
 		</Key>
 		<Key ID="STR_HG_SENT_MONEY">
 		    <Original>You have sent %1 to %2</Original>
 			<Spanish>has enviado %1 a %2</Spanish>
+			<French>Vous avez envoyé %1 à %2</French>
 		</Key>
 		<Key ID="STR_HG_RECEIVED_MONEY">
 		    <Original>You have received %1 from %2</Original>
 			<Spanish>has recibido %1 de %2</Spanish>
+			<French>Vous avez reçu %1 de la part de %2</French>
 		</Key>
 		<Key ID="STR_HG_PAYCHECK_NOTF">
 		    <Original>You will receive your next paycheck in %1 minute(s)</Original>
-			<Spanish>Recibiras tu siguiente pago en %1 minutos(s)</Spanish>
+			<Spanish>Recibiras tu siguiente pago en %1 minuto(s)</Spanish>
+			<French>Vous recevrez votre prochain salaire dans %1 minute(s)</French>
 		</Key>
 		<Key ID="STR_HG_TIME_TO_PAY">
 		    <Original>You have received a paycheck of %1</Original>
 			<Spanish>has recibido un pago de %1</Spanish>
+			<French>Vous avez reçu un salaire de %1</French>
 		</Key>
 		<Key ID="STR_HG_YES">
 		    <Original>Yes</Original>
 			<Spanish>Si</Spanish>
+			<French>Oui</French>
 		</Key>
 		<Key ID="STR_HG_NO">
 		    <Original>No</Original>
 			<Spanish>No</Spanish>
+			<French>Non</French>
 		</Key>
 		<Key ID="STR_HG_NONE">
 		    <Original>None</Original>
 			<Spanish>Ninguna</Spanish>
+			<French>Aucun(e)</French>
 		</Key>
 		<Key ID="STR_HG_DEFAULT">
 		    <Original>Default</Original>
 			<Spanish>Defecto</Spanish>
+			<French>Défaut</French>
 		</Key>
 		<Key ID="STR_HG_NOTHING_TO_DISPLAY">
 		    <Original>Nothing to display</Original>
 			<Spanish>Nada para mostrar</Spanish>
+			<French>Rien à afficher</French>
 		</Key>
 		<Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
 		    <Original>You can't open inventory when it's locked</Original>
 			<Spanish>No puedes abrir el inventario cuando esta bloqueado</Spanish>
+			<French>Vous ne pouvez pas ouvrir l'inventaire quand c'est verrouillé</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_LOCKED">
 		    <Original>Vehicle is now LOCKED</Original>
 			<Spanish>El vehiculo esta ahora bloqueado</Spanish>
-		</Key>
-		<Key ID="STR_HG_CRATE_EMPTIED">
-		    <Original>Crate has been EMPTIED</Original>
-			<Spanish>La caja esta vacía</Spanish>
-		</Key>
-		<Key ID="STR_HG_DELETE_CRATE">
-		    <Original>Delete Crate</Original>
-			<Spanish>Eliminar Caja</Spanish>
-		</Key>
-		<Key ID="STR_HG_EMPTY_CRATE">
-		    <Original>Empty Crate</Original>
-			<Spanish>Vaciar Caja</Spanish>
-		</Key>
-		<Key ID="STR_HG_GARAGE">
-		    <Original>Garage</Original>
-			<Spanish>Garage</Spanish>
-		</Key>
-		<Key ID="STR_HG_GARAGE_PARK">
-		    <Original>Park Vehicle</Original>
-			<Spanish>Almacenar Vehiculo</Spanish>
+			<French>Le véhicule est maintenant verrouillé</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_UNLOCKED">
 		    <Original>Vehicle is now UNLOCKED</Original>
 			<Spanish>El vehiculo está desbloqueado</Spanish>
+			<French>Le véhicule est maintenant déverrouillé</French>
+		</Key>
+		<Key ID="STR_HG_CRATE_EMPTIED">
+		    <Original>Crate has been EMPTIED</Original>
+			<Spanish>La caja esta vacía</Spanish>
+			<French>La caisse a été vidé</French>
+		</Key>
+		<Key ID="STR_HG_DELETE_CRATE">
+		    <Original>Delete Crate</Original>
+			<Spanish>Eliminar Caja</Spanish>
+			<French>Supprimer Caisse</French>
+		</Key>
+		<Key ID="STR_HG_EMPTY_CRATE">
+		    <Original>Empty Crate</Original>
+			<Spanish>Vaciar Caja</Spanish>
+			<French>Vider Caisse</French>
+		</Key>
+		<Key ID="STR_HG_GARAGE">
+		    <Original>Garage</Original>
+			<Spanish>Garage</Spanish>
+			<French>Garage</French>
+		</Key>
+		<Key ID="STR_HG_GARAGE_PARK">
+		    <Original>Park Vehicle</Original>
+			<Spanish>Almacenar Vehiculo</Spanish>
+			<French>Stocker Véhicule</French>
 		</Key>
 		<Key ID="STR_HG_EMPTY_QUESTION">
 		    <Original>Are you sure you want to empty the vehicle inventory?</Original>
 			<Spanish>¿Estás seguro de vaciar el inventario del vehículo?</Spanish>
+			<French>Êtes-vous sur de vouloir vider l'inventaire du véhicule ?</French>
 		</Key>
 		<Key ID="STR_HG_EMPTY_VEHICLE">
 		    <Original>Empty Vehicle</Original>
 			<Spanish>Vaciar Vehiculo</Spanish>
+			<French>Vider Véhicule</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_EMPTIED">
 		    <Original>Vehicle has been EMPTIED</Original>
 			<Spanish>El Vehiculo esta vacio</Spanish>
+			<French>Le véhicule a été vidé</French>
 		</Key>
 		<Key ID="STR_HG_SPAWN_POINT_BUSY">
 		    <Original>This spawn point is busy</Original>
 			<Spanish>Eso punto de reaparición es ocupado</Spanish>
+			<French>Ce point d'apparition est déjà occupé</French>
 		</Key>
 		<Key ID="STR_HG_SPAWN_POINTS_BUSY">
 		    <Original>All the available spawn points are busy</Original>
 			<Spanish>Todo los puntos de reaparición estan ocupados</Spanish>
+			<French>Tous les points d'apparition sont déjà occupés</French>
 		</Key>
 		<Key ID="STR_HG_NO_VEHICLES">
 		    <Original>There are no vehicles on the store point</Original>
 			<Spanish>No está el vehiculo en el punto de guardado</Spanish>
+			<French>Il n'y a aucun véhicule sur le point de stockage</French>
 		</Key>
 		<Key ID="STR_HG_NO_OWNED_VEHICLES">
 		    <Original>There are no owned vehicles on the store point</Original>
 			<Spanish>No hay vehiculos propios en el punto de la tienda</Spanish>
+			<French>Il n'y a aucun véhicule vous appartenant sur le point de stockage</French>
 		</Key>
 		<Key ID="STR_HG_XP_MAXED">
 		    <Original>Maxed</Original>
 			<Spanish>Agotado</Spanish>
+			<French>Maximum</French>
 		</Key>
 		<Key ID="STR_HG_PROMOTED">
 		    <Original>Congratulations! You have been promoted to %1 from %2</Original>
 			<Spanish>Felicitaciones! Has sido promocionado de %1 a %2</Spanish>
+			<French>Félicitations ! Vous êtes passé de %2 à %1</French>
 		</Key>
 		<Key ID="STR_HG_DEMOTED">
 		    <Original>You have been demoted to %1 from %2</Original>
 			<Spanish>Has sido degradado de %1 a %2 </Spanish>
+			<French>Vous avez été dégradé de %2 à %1</French>
 		</Key>
 		<Key ID="STR_HG_NOW_OWNER">
 		    <Original>You are now owner of a new vehicle (%1)</Original>
 			<Spanish>Ahora eres propietario de un nuevo vehiculo (%1)</Spanish>
+			<French>Vous êtes maintenant le propriétaire d'un nouveau véhicule (%1)</French>
 		</Key>
 		<Key ID="STR_HG_INVENTORY_FULL">
 		    <Original>It seems like your inventory is either full or it can't hold that many items</Original>
 			<Spanish>Al parecer su inventario esta lleno o tienes muchos objetos en la mano</Spanish>
+			<French>Il semblerait que votre inventaire soit plein ou qu'il ne puisse pas contenir autant d'items</French>
 		</Key>
 		<Key ID="STR_HG_KILLED_BY_ADMIN">
 		    <Original>You've been killed by an ADMINISTRATOR</Original>
 			<Spanish>Has sido asesinado por un administrador</Spanish>
+			<French>Vous avez été tué par un ADMINISTRATEUR</French>
 		</Key>
 	</Package>
 	<Package name="extDB">
 	    <Key ID="STR_HG_EXTDB_NOT_LOADED">
 		    <Original>[HG|extDB3|Code#1] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
 			<Spanish>[HG]extDB3|Code#1] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
+			<French>[HG|extDB3|Code#1] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
 		</Key>
 	</Package>
 	<Package name="Dialogs">
@@ -197,220 +244,272 @@
 		    <Key ID="STR_HG_DLG_TOOLTIP">
 		        <Original>[HG] Simple Shops v2.3</Original>
 			    <Spanish>[HG] Simple Shops v2.3</Spanish>
+				<French>[HG] Simple Shops v2.3</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
 		        <Original>Close current dialog</Original>
 			    <Spanish>Cerrar dialogo actual</Spanish>
+				<French>Fermer le dialogue</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_MC">
 		        <Original>You have %1</Original>
 			    <Spanish>Tienes %1</Spanish>
+				<French>Vous avez %1</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_MC_TOOLTIP">
 		        <Original>Hint your current cash</Original>
 			    <Spanish>Indicio de su efectivo actual</Spanish>
+				<French>Affiche votre argent</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_FREE">
 		        <Original>Free</Original>
 			    <Spanish>Gratis</Spanish>
+				<French>Gratuit</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_PRICE_TAG">
 		        <Original>Price: %1</Original>
 			    <Spanish>Precio: %1</Spanish>
+				<French>Prix: %1</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_QUERYING_SERVER">
 		        <Original>Querying server...</Original>
 			    <Spanish>Consultando Servidor</Spanish>
+				<French>Interrogation du serveur...</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_PLAYER_COUNT">
 		        <Original>Online - %1</Original>
 			    <Spanish>En linea - %1</Spanish>
+				<French>En ligne - %1</French>
 		    </Key>
 		</Container>
 		<Container name="AdminMenu">
 		    <Key ID="STR_HG_DLG_AM_REFRESH_TOOLTIP">
 			    <Original>Refresh player list</Original>
 			    <Spanish>Refrescar lista de jugadores</Spanish>
+				<French>Rafraîchir la liste des joueurs</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILL_TOOLTIP">
 			    <Original>Kill selected player</Original>
 			    <Spanish>Matar al jugador seleccionado</Spanish>
+				<French>Tuer le joueur sélectionné</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_RANK_TOOLTIP">
 			    <Original>Set rank</Original>
 			    <Spanish>Dar Rango</Spanish>
+				<French>Mettre grade</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
 			    <Original>Set XP</Original>
-			    <Spanish>Dar XP(experiencia)</Spanish>
+			    <Spanish>Dar XP (experiencia)</Spanish>
+				<French>Mettre XP</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
 			    <Original>Set kills</Original>
 			    <Spanish>Darle muertes</Spanish>
+				<French>Mettre victimes</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_CASH_TOOLTIP">
-			    <Original>Set cash</Original>
+			    <Original>Set cash (max value 999999)</Original>
 			    <Spanish>Darle dinero (maximo valor 999999)</Spanish>
+				<French>Donner argent (valeur max 999999)</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
 			    <Original>Tick this box to REMOVE</Original>
 			    <Spanish>Marca esta casilla para REMOVER</Spanish>
+				<French>Cocher cette case pour SUPPRIMER</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
 			    <Original>Tick this box to ADD</Original>
 			    <Spanish>Marca esta casilla para AÑADIR</Spanish>
+				<French>Cocher cette case pour AJOUTER</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_LIST">
 			    <Original>%1 - %2</Original>
 			    <Spanish>%1 - %2</Spanish>
+				<French>%1 - %2</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_UID">
 			    <Original>UID - %1</Original>
 			    <Spanish>UID - %1</Spanish>
+				<French>UID - %1</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_SIDE">
 			    <Original>Side - %2</Original>
 			    <Spanish>Facción - %2</Spanish>
+				<French>Faction - %2</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_RANK">
 			    <Original>Rank - %3</Original>
-			    <Spanish>Rango</Spanish>
+			    <Spanish>Rango - %3</Spanish>
+				<French>Grade - %3</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP">
 			    <Original>XP - %4/%5</Original>
 			    <Spanish>XP - %4/%5</Spanish>
+				<French>XP - %4/%5</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_CASH">
 			    <Original>Cash - %6</Original>
 			    <Spanish>Dinero - %6</Spanish>
+				<French>Argent - %6</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS">
 			    <Original>Kills - %7</Original>
 			    <Spanish>Muertes - %7</Spanish>
+				<French>Victimes - %7</French>
 		    </Key>
 		</Container>
 	    <Container name="GearShop">
 			<Key ID="STR_HG_DLG_GS_TITLE_LIST">
 		        <Original>Available Gear</Original>
 			    <Spanish>Equipo disponible</Spanish>
+				<French>Équipement disponible</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
 			    <Original>Total - %1</Original>
 			    <Spanish>Total - %1</Spanish>
+				<French>Total - %1</French>
 			</Key>
 			<Key ID="STR_HG_DLG_GS_REMOVE">
 			    <Original>Remove Current</Original>
 			    <Spanish>Remover Efetivo</Spanish>
+				<French>Supprimer Actuel</French>
 			</Key>
 			<Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
 		        <Original>Reset gear</Original>
 			    <Spanish>Resetear Equipo</Spanish>
+				<French>Repartir de zéro</French>
 		    </Key>    
 		    <Key ID="STR_HG_DLG_GS_BUY_TOOLTIP">
 		        <Original>Buy selected gear</Original>
 			    <Spanish>Comprar el equipo seleccionado</Spanish>
+				<French>Acheter l'équipement sélectionné</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
 		        <Original>Turn player left or right</Original>
 			    <Spanish>Girar a la izquierda o a la derecha</Spanish>
+				<French>Tourne le joueur sur la gauche ou la droite</French>
 		    </Key>
 		</Container>
 		<Container name="Garage">
 		    <Key ID="STR_HG_GRG_LIST">
 		        <Original>%1 (%2)</Original>
 			    <Spanish>%1 (%2)</Spanish>
+				<French>%1 (%2)</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_REFRESH_TOOLTIP">
 		        <Original>Refresh garage</Original>
 			    <Spanish>Actualizar Garage</Spanish>
+				<French>Rafraîchir garage</French>
 		    </Key>
 			<Key ID="STR_HG_GRG_SPAWN_TOOLTIP">
 		        <Original>Spawn selected vehicle</Original>
 			    <Spanish>Spawnear vehiculo seleccionado </Spanish>
+				<French>Faire appaître le véhicule sélectionné</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
 		        <Original>Delete selected vehicle *WILL BE LOST FOREVER*</Original>
 			    <Spanish>Eliminar vehiculo seleccionado *LO PIERDES PARA SIEMPRE*</Spanish>
+				<French>Supprimer le véhicule sélectionné *IL SERA PERDU POUR TOUJOURS*</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
 		        <Original>Requested vehicle is being spawned...</Original>
 			    <Spanish>Se está requiriendo el vehiculo en el spawn</Spanish>
+				<French>Le véhicule sélectionné va apparaître...</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
 		        <Original>Requested vehicle has been spawned</Original>
 			    <Spanish>El Vehiculo requerido a sido spawneado</Spanish>
+				<French>Le véhicule sélectionné est apparu</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_DELETING">
 		        <Original>Selected vehicle is being deleted...</Original>
 			    <Spanish>Vehiculo seleccionado está siendo borrado</Spanish>
+				<French>Le véhicule sélectionné va être supprimé...</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_DELETED">
 		        <Original>Selected vehicle has been deleted</Original>
 			    <Spanish>Vehiculo seleccionado a sido borrado</Spanish>
+				<French>Le véhicule sélectionné a été supprimé</French>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_STORED">
 		        <Original>Vehicle has been stored</Original>
 			    <Spanish>Vehiculo almacenado</Spanish>
+				<French>Le véhicule a été stocké</French>
 		    </Key>
 		</Container>
 		<Container name="VehiclesShop">
 		    <Key ID="STR_HG_DLG_VS_TITLE_LIST">
 		        <Original>Available Vehicles</Original>
 			    <Spanish>Vehiculos disponibles</Spanish>
+				<French>Véhicules disponibles</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
 		        <Original>Vehicle Infos</Original>
 			    <Spanish>Informacion del Vehiculo</Spanish>
+				<French>Infos du véhicule</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_TG_TOOLTIP">
 		        <Original>Buy selected vehicle and store it to garage</Original>
 			    <Spanish>Comprar el vehiculo seleccionado y guardarlo en el garage</Spanish>
+				<French>Acheter le véhicule sélectionné et le stocker dans le garage</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_BUY_TOOLTIP">
 		        <Original>Buy selected vehicle</Original>
 			    <Spanish>Comprar el vehiculo seleccionado</Spanish>
+				<French>Acheter le véhicule sélectionné</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_SPEED">
 		        <Original>Max Speed - %2 Mph</Original>
 			    <Spanish>Máxima Velocidad - %2 Kph</Spanish>
+				<French>Vitesse Max - %2 Kph</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_ARMOR">
 		        <Original>Armor - %3 AP</Original>
 			    <Spanish>Blindaje - %3 AP</Spanish>
+				<French>Blindage - %3 PA</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_SEATS">
 		        <Original>Seats - %4</Original>
 			    <Spanish>Asientos - %4</Spanish>
+				<French>Siège(s) - %4</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_ENGINE">
 		        <Original>Engine - %5 HP</Original>
 			    <Spanish>Potencia Motor - %5 HP</Spanish>
+				<French>Moteur - %5 CV</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_VS_FUEL_MAX">
 		        <Original>Max Fuel - %6 L</Original>
 			    <Spanish>Max combustible - %6 L</Spanish>
+				<French>Essence Max - %6 L
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_PRICE_TAG">
 		        <Original>Price - %7</Original>
 			    <Spanish>Precio - %7</Spanish>
+				<French>Prix - %7</French>
 		    </Key>
 		</Container>
         <Container name="ItemsShop">
 		    <Key ID="STR_HG_DLG_IS_ADD_TOOLTIP">
 		        <Original>+1</Original>
 			    <Spanish>+1</Spanish>
+				<French>+1</French>
 		    </Key>
 		    <Key ID="STR_HG_DLG_IS_SUB_TOOLTIP">
 		        <Original>-1</Original>
 			    <Spanish>-1</Spanish>
+				<French>-1</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_IS_BUY_TOOLTIP">
 		        <Original>Buy selected item(s)</Original>
 			    <Spanish>Comprar item(s)</Spanish>
+				<French>Acheter item(s) sélectionné(s)</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_IS_TOTAL">
 		        <Original>Total - %1</Original>
 			    <Spanish>Total - %1</Spanish>
+				<French>Total - %1</French>
 		    </Key>
 		</Container>
 	</Package>
@@ -418,34 +517,42 @@
 	    <Key ID="STR_HG_GEAR_SHOP">
 		    <Original>Gear Shop</Original>
 			<Spanish>Tienda de Equipo</Spanish>
+			<French>Magasin d'équipement</French>
 		</Key>
 		<Key ID="STR_HG_ITEMS_SHOP">
 		    <Original>Items Shop</Original>
 			<Spanish>Tienda de Items</Spanish>
+			<French>Magasin d'items</French>
 		</Key>
 		<Key ID="STR_HG_VEHICLES_SHOP">
 		    <Original>Vehicles Shop</Original>
 			<Spanish>Tienda de Vehiculos</Spanish>
+			<French>Magasin de véhicules</French>
 		</Key>
 	    <Key ID="STR_HG_SHOP_UNIFORMS">
 		    <Original>Uniforms</Original>
 			<Spanish>Uniformes</Spanish>
+			<French>Uniformes</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_VESTS">
 		    <Original>Vests</Original>
 			<Spanish>Chalecos</Spanish>
+			<French>Vestes</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_BACKPACKS">
 		    <Original>Backpacks</Original>
 			<Spanish>Mochilas</Spanish>
+			<French>Sacs à dos</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_HEADGEAR">
 		    <Original>Headgear</Original>
 			<Spanish>Cascos</Spanish>
+			<French>Casques</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_FACEWEAR">
 		    <Original>Facewear</Original>
 			<Spanish>Accesorios</Spanish>
+			<French>Accessoires</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_MISSILE_LAUNCHER">
 		    <Original>Missile Launcher</Original>
@@ -454,54 +561,67 @@
 		<Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
 		    <Original>Rocket Launcher</Original>
 			<Spanish>Lanzacohetes</Spanish>
+			<French>Lance-missiles</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_HANDGUN">
 		    <Original>Handgun</Original>
 			<Spanish>Pistolas</Spanish>
+			<French>Pistolets</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_ASSAULT_RIFLE">
 		    <Original>Assault Rifle</Original>
 			<Spanish>Rifles de Asalto</Spanish>
+			<French>Fusils d'assaut</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_MACHINE_GUN">
 		    <Original>Machine Gun</Original>
 			<Spanish>Ametralladoras</Spanish>
+			<French>Mitrailleuses</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_SUB_MACHINE_GUN">
 		    <Original>Sub-Machine Gun</Original>
 			<Spanish>Sub ametralladoras</Spanish>
+			<French>Mitraillettes</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_SNIPER_RIFLE">
 		    <Original>Sniper Rifle</Original>
 			<Spanish>Rifles Sniper</Spanish>
+			<French>Fusils de précision</French>
 		</Key>
 	    <Key ID="STR_HG_SHOP_SCOPES">
 		    <Original>Scopes</Original>
 			<Spanish>Miras</Spanish>
+			<French>Lunettes</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_MAGAZINES">
 		    <Original>Magazines</Original>
 			<Spanish>Munición</Spanish>
+			<French>Chargeurs</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_ITEMS">
 		    <Original>Items</Original>
 			<Spanish>Items</Spanish>
+			<French>Items</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_CIVILIAN">
 		    <Original>Civilian</Original>
 			<Spanish>Civiles</Spanish>
+			<French>Civil</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_MILITARY">
 		    <Original>Military</Original>
 			<Spanish>Militares</Spanish>
+			<French>Militaire</French>
 		</Key>
 		<Key ID="STR_HG_MARKER_1">
 		    <Original>Civilian HQ</Original>
 			<Spanish>HQ Civiles</Spanish>
+			<French>QG Civil</French>
 		</Key>
 		<Key ID="STR_HG_MARKER_2">
 		    <Original>Military HQ</Original>
 			<Spanish>HQ Militares</Spanish>
+			<French>QG Militaire</French>
 		</Key>
 	</Package>
 </Project>

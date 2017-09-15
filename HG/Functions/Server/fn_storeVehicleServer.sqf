@@ -11,16 +11,16 @@ if(!HG_SAVING_EXTDB) then
 	
 	if(_mode isEqualTo 0) then
     {
-	    _garage pushBack [_vehicle,_plate,0,_color];
+	    _garage pushBack [_vehicle,_plate,_color,0];
     } else {
 	   private _index = [_plate,_garage] call HG_fnc_findIndex;
 		
 	    if(_index != -1) then
 	    {
-	        (_garage select _index) set [2,0];
+	        (_garage select _index) set [3,0];
 	    } else {
 		    private _color = (_vehicle getVariable "HG_Owner") select 2;
-	        _garage pushBack [(typeOf _vehicle),_plate,0,_color];
+	        _garage pushBack [(typeOf _vehicle),_plate,_color,0];
 	    };
 	};
 	

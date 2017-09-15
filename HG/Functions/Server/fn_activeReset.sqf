@@ -18,7 +18,7 @@ if(!HG_SAVING_EXTDB) then
 		        if((count _vehicles) != 0) then
 		        {
 			        {
-				        (_vehicles select _forEachIndex) set [2,0];
+				        (_vehicles select _forEachIndex) set [3,0];
 			        } forEach _vehicles;
 		        };
 		
