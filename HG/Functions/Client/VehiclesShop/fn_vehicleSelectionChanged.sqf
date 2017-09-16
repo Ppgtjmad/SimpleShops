@@ -52,6 +52,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 
     HG_VEHICLE_PREVIEW = _veh;
 	HG_VEHICLE_COLORS = [];
+	lbClear HG_VEHICLES_COLORS;
 	
 	_canColor = isClass(configFile >> "CfgVehicles" >> _vehicle >> "TextureSources");
 	
