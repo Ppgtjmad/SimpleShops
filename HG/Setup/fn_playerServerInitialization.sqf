@@ -123,7 +123,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEq
 
     if((count _gear) != 0) then
 	{
-		_gear remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
+		[_gear] remoteExecCall ["HG_fnc_parseGear",(owner _player),false];
 	};
 };
 

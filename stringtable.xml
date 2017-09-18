@@ -234,9 +234,9 @@
 	</Package>
 	<Package name="extDB">
 	    <Key ID="STR_HG_EXTDB_NOT_LOADED">
-		    <Original>[HG|extDB3|Code#1] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
-			<Spanish>[HG]extDB3|Code#1] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
-			<French>[HG|extDB3|Code#1] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
+		    <Original>[HG|extDB3] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
+			<Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
+			<French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
 		</Key>
 	</Package>
 	<Package name="Dialogs">

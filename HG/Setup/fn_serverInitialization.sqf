@@ -8,7 +8,12 @@ HG_SAVING_EXTDB = (getText(getMissionConfig "CfgClient" >> "savingMethod")) isEq
 
 if(HG_SAVING_EXTDB) then
 {
-    waitUntil {!isNil "extDB3_var_loaded"};
+	if(isNil "extDB3_var_loaded") exitWith 
+	{
+	    diag_log (localize "STR_HG_EXTDB_NOT_LOADED");
+		HG_SAVING_EXTDB = false;
+	};
+	
 	if(!extDB3_var_loaded) exitWith 
 	{
 	    diag_log (localize "STR_HG_EXTDB_NOT_LOADED");
