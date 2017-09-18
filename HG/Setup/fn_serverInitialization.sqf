@@ -14,7 +14,7 @@ if(HG_SAVING_EXTDB) then
 		HG_SAVING_EXTDB = false;
 	};
 	
-	if(!extDB3_var_loaded) exitWith 
+	if(!([] call extDB3_var_loaded)) exitWith
 	{
 	    diag_log (localize "STR_HG_EXTDB_NOT_LOADED");
 		HG_SAVING_EXTDB = false;
