@@ -482,7 +482,7 @@
 		    <Key ID="STR_HG_DLG_VS_FUEL_MAX">
 		        <Original>Max Fuel - %6 L</Original>
 			    <Spanish>Max combustible - %6 L</Spanish>
-				<French>Essence Max - %6 L
+				<French>Essence Max - %6 L</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_VS_PRICE_TAG">
 		        <Original>Price - %7</Original>
