@@ -8,7 +8,6 @@ if(!isNull objectParent player) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if(!(cursorObject isKindOf "Man") AND !(isPlayer cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((side cursorObject) != (side player)) exitWith {HG_TAGS_TEXT ctrlShow false;};
-if(visibleMap) exitWith {HG_TAGS_TEXT ctrlShow false;};
 
 _target = cursorObject;
 _pos = [(visiblePosition _target) select 0,(visiblePosition _target) select 1,((_target modelToWorld (_target selectionPosition "Head")) select 2)];

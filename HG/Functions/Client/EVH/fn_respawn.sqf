@@ -20,7 +20,7 @@ if(HG_GIVE_MONEY_ENABLED) then
 
 if(HG_TAGS_ENABLED) then
 {
-    ("HG_Tags" call BIS_fnc_rscLayer) cutRsc ["HG_Tags","PLAIN"];
+    ("HG_Tags" call BIS_fnc_rscLayer) cutRsc ["HG_Tags","PLAIN",-1,false];
     HG_DRAW_3D_MEVH = addMissionEventHandler ["Draw3D",{[] call HG_fnc_playerTags}];
 };
 
