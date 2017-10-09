@@ -13,7 +13,7 @@ switch(_mode) do
     // HUD On
     case 0: 
 	{
-	    ("HG_HUD" call BIS_fnc_rscLayer) cutRsc ["HG_HUD","PLAIN"-1,false];
+	    ("HG_HUD" call BIS_fnc_rscLayer) cutRsc ["HG_HUD","PLAIN",-1,false];
 		
 		if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 		{
