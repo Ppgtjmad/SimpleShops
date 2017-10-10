@@ -23,6 +23,7 @@ HG_XP_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualT
 HG_KILL_COUNT_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1;
 HG_TAGS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTags")) isEqualTo 1;
 HG_MARKERS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableMarkers")) isEqualTo 1;
+HG_ATM_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableATM")) isEqualTo 1;
 HG_ADMINS = getArray(getMissionConfig "CfgClient" >> "admins");
 
 /*

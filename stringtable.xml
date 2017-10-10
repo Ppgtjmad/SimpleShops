@@ -61,6 +61,11 @@
 			<Spanish>Acceso Denegado</Spanish>
 			<French>Accès refusé</French>
 		</Key>
+		<Key ID="STR_HG_VALUE_EMPTY">
+		    <Original>Value cannot be empty</Original>
+			<Spanish>El valor no se puede ser vacia</Spanish>
+			<French>La valeur ne peut être vide</French>
+		</Key>
 		<Key ID="STR_HG_NOT_A_NUMBER">
 		    <Original>Value entered is not a number</Original>
 			<Spanish>El valor usado sobrepasa el número máximo</Spanish>
@@ -115,6 +120,11 @@
 		    <Original>None</Original>
 			<Spanish>Ninguna</Spanish>
 			<French>Aucun(e)</French>
+		</Key>
+		<Key ID="STR_HG_DISABLED">
+		    <Original>Disabled</Original>
+			<Spanish>Inhabilitado</Spanish>
+			<French>Désactivé</French>
 		</Key>
 		<Key ID="STR_HG_DEFAULT">
 		    <Original>Default</Original>
@@ -228,7 +238,7 @@
 		</Key>
 		<Key ID="STR_HG_KILLED_BY_ADMIN">
 		    <Original>You've been killed by an ADMINISTRATOR</Original>
-			<Spanish>Has sido asesinado por un administrador</Spanish>
+			<Spanish>Has sido asesinado por un ADMINISTRADOR</Spanish>
 			<French>Vous avez été tué par un ADMINISTRATEUR</French>
 		</Key>
 	</Package>
@@ -313,6 +323,11 @@
 			    <Spanish>Darle dinero (maximo valor 999999)</Spanish>
 				<French>Donner argent (valeur max 999999)</French>
 		    </Key>
+			<Key ID="STR_HG_DLG_AM_BANK_TOOLTIP">
+			    <Original>Set bank (max value 999999)</Original>
+			    <Spanish>Darle banco (maximo valor 999999)</Spanish>
+				<French>Donner banque (valeur max 999999)</French>
+		    </Key>
 			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
 			    <Original>Tick this box to REMOVE</Original>
 			    <Spanish>Marca esta casilla para REMOVER</Spanish>
@@ -322,6 +337,14 @@
 			    <Original>Tick this box to ADD</Original>
 			    <Spanish>Marca esta casilla para AÑADIR</Spanish>
 				<French>Cocher cette case pour AJOUTER</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_XP_DISABLED">
+			    <Original>This feature is DISABLED (check enableXP in HG_Config.h)</Original>
+				<French>Cette action est DÉSACTIVÉE (vérifiez enableXP dans HG_Config.h)</French>
+			</Key>
+		    <Key ID="STR_HG_DLG_KILLS_DISABLED">
+		        <Original>This feature is DISABLED (check enableKillCount in HG_Config.h)</Original>
+				<French>Cette action est DÉSACTIVÉE (vérifiez enableKillCount dans HG_Config.h)</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_LIST">
 			    <Original>%1 - %2</Original>
@@ -344,20 +367,89 @@
 				<French>Grade - %3</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP">
-			    <Original>XP - %4/%5</Original>
-			    <Spanish>XP - %4/%5</Spanish>
-				<French>XP - %4/%5</French>
+			    <Original>XP - %4</Original>
+			    <Spanish>XP - %4</Spanish>
+				<French>XP - %4</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_CASH">
-			    <Original>Cash - %6</Original>
-			    <Spanish>Dinero - %6</Spanish>
-				<French>Argent - %6</French>
+			    <Original>Cash - %5</Original>
+			    <Spanish>Dinero - %5</Spanish>
+				<French>Argent - %5</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_AM_BANK">
+			    <Original>Bank - %6</Original>
+			    <Spanish>Banco - %6</Spanish>
+				<French>Banque - %6</French>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS">
 			    <Original>Kills - %7</Original>
 			    <Spanish>Muertes - %7</Spanish>
 				<French>Victimes - %7</French>
 		    </Key>
+		</Container>
+		<Container name="ATM">
+		    <Key ID="STR_HG_ATM_ACC_TITLE">
+		        <Original>Account</Original>
+				<Spanish>Cuenta</Spanish>
+				<French>Compte</French>
+			</Key>
+		    <Key ID="STR_HG_ATM_CASH_TITLE">
+		        <Original>Cash</Original>
+				<Spanish>Dinero</Spanish>
+				<French>Argent</French>
+			</Key>
+		    <Key ID="STR_HG_ATM_DEPOSIT_TOOLTIP">
+			    <Original>Deposit</Original>
+				<Spanish>Depósito</Spanish>
+				<French>Déposer</French>
+			</Key>
+		    <Key ID="STR_HG_ATM_WITHDRAW_TOOLTIP">
+			    <Original>Withdraw</Original>
+				<Spanish>Retirarse</Spanish>
+				<French>Retirer</French>
+			</Key>
+			<Key ID="STR_HG_ATM_TRANSFER_TOOLTIP">
+			    <Original>Transfer</Original>
+				<Spanish>Transferir</Spanish>
+				<French>Transférer</French>
+			</Key>
+			<Key ID="STR_HG_ATM_REFRESH_TOOLTIP">
+			    <Original>Refresh</Original>
+				<Spanish>Refrescar</Spanish>
+				<French>Rafraîchir</French>
+			</Key>
+			<Key ID="STR_HG_ATM_NO_PLAYERS">
+			    <Original>No online players</Original>
+				<Spanish>Ningún jugador</Spanish>
+				<French>Aucun joueur en ligne</French>
+			</Key>
+			<Key ID="STR_HG_ATM_DEPOSITED">
+			    <Original>You have deposited %1</Original>
+				<Spanish>Usted ha depositado %1</Spanish>
+				<French>Vous avez déposé %1</French>
+			</Key>
+			<Key ID="STR_HG_ATM_WITHDRAWN">
+			    <Original>You have withdrawn %1</Original>
+				<Spanish>Usted ha retirado %1</Spanish>
+				<French>Vous avez retiré %1</French>
+			</Key>
+			<Key ID="STR_HG_ATM_TRANSFERED">
+			    <Original>You have transfered %1 to %2</Original>
+				<Spanish>Usted ha transferido %1 a %2</Spanish>
+				<French>Vous avez transféré %1 à %2</French>
+			</Key>
+			<Key ID="STR_HG_ATM_TRANSFER_RECEIVED">
+			    <Original>You have received a bank transfer from %1 (%2)</Original>
+				<French>Vous avez reçu un transfer d'argent de %1 (%2)</French>
+			</Key>
+			<Key ID="STR_HG_ATM_CANNOT_DEPOSIT">
+			    <Original>You cannot deposit more than what you have</Original>
+				<French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
+			</Key>
+			<Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
+			    <Original>You cannot withdraw more than what you have</Original>
+				<French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
+			</Key>
 		</Container>
 	    <Container name="GearShop">
 			<Key ID="STR_HG_DLG_GS_TITLE_LIST">

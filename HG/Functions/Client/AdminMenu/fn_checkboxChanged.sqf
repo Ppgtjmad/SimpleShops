@@ -54,6 +54,20 @@ switch(_idc) do
 			HG_ADM_CASH_SUB cbSetChecked false;
 		};
 	};
+	case HG_ADM_BANK_SUB_IDC:
+	{
+	    if(_mode isEqualTo 1) then
+		{
+			HG_ADM_BANK_ADD cbSetChecked false;
+		};
+	};
+	case HG_ADM_BANK_ADD_IDC:
+	{
+	    if(_mode isEqualTo 1) then
+		{
+			HG_ADM_BANK_SUB cbSetChecked false;
+		};
+	};
 };
 
 true;

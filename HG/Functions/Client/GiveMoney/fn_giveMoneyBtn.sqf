@@ -5,9 +5,10 @@
     Website - http://www.sunrise-production.com
 */
 
-private _value = parseNumber(ctrlText HG_GM_EDIT);
-
+private _value = ctrlText HG_GM_EDIT;
+if(_value isEqualTo "") exitWith {hint (localize "STR_HG_VALUE_EMPTY");};
 if(!([_value] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
+_value = parseNumber _value;
 if(_value <= 0) exitWith {hint (localize "STR_HG_NEGATIVE_OR_ZERO");};
 if(_value > (player getVariable "HG_Cash")) exitWith {hint (localize "STR_HG_TOO_MUCH");};
 

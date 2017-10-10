@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_player","_jip","_uid","_result","_cash"];
+params["_player","_jip","_uid","_result","_cash","_bank"];
 _uid = getPlayerUID _player;
 
 if(HG_SAVING_EXTDB) then
@@ -22,7 +22,7 @@ if(HG_SAVING_EXTDB) then
 	{
 	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 		{
-		    format["SELECT Money, XP, Kills, Gear FROM HG_Players WHERE PID = '%1'",_uid];
+		    format["SELECT Money, Bank, XP, Kills, Gear FROM HG_Players WHERE PID = '%1'",_uid];
 		} else {
 		    format["HG_playerSelect:%1",_uid];
 		};
@@ -33,11 +33,19 @@ if(HG_SAVING_EXTDB) then
 		{
 		    format["INSERT INTO HG_Players (PID, XP, Gear) VALUES('%1','%2','%3')",_uid,[(rank _player),0],[]];
 		} else {
-		    format["HG_playerInsert:%1:%2:%3",_uid,[(rank _player),0],[]];
+		    format["HG_playerInsert:%1:%2:%3:%4:%5",_uid,[(rank _player),0],[],(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash")),(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank"))];
 		};
 		
 		[1,_query] call HG_fnc_asyncCall;
-		_result = [getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),[(rank _player),0],0,[]];
+		
+		_result = 
+		[
+		    getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash"),
+			getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank"),
+		    [(rank _player),0],
+			0,
+			[]
+		];
 	};
 };
 
@@ -46,25 +54,31 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableSave")) isEqualTo 1) then
 	if(HG_SAVING_EXTDB) then
 	{
 		_cash = _result select 0;
+		_bank = _result select 1;
 	} else {
 		_cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
+		_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
 	};
 	
-    if((isNil "_cash") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
+    if((isNil "_cash") OR (isNil "_bank") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
 	{
 		_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+		_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
 		
 		if(!HG_SAVING_EXTDB) then
 		{
 	        profileNamespace setVariable [format["HG_Cash_%1",_uid],_cash];
+			profileNamespace setVariable [format["HG_Bank_%1",_uid],_bank];
 		    saveProfileNamespace;
 		};
 	};
 } else {
     _cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+	_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
 };
-	
+
 _player setVariable ["HG_Cash",_cash,true];
+_player setVariable ["HG_Bank",_bank,true];
 
 if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 {
@@ -72,7 +86,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1) then
 	
     if(HG_SAVING_EXTDB) then
 	{
-	    _xp = _result select 1;
+	    _xp = _result select 2;
 	} else {
 	    _xp = profileNamespace getVariable format["HG_XP_%1",_uid];
 	};
@@ -95,7 +109,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) t
 	
     if(HG_SAVING_EXTDB) then
 	{
-	    _kc = _result select 2;
+	    _kc = _result select 3;
 	} else {
 	    _kc = profileNamespace getVariable format["HG_Kills_%1",_uid];
 	};
@@ -116,7 +130,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEq
 	
     if(HG_SAVING_EXTDB) then
 	{
-	    _gear = _result select 3;
+	    _gear = _result select 4;
 	} else {
 	    _gear = profileNamespace getVariable [format["HG_Gear_%1",_uid],[]];
 	};

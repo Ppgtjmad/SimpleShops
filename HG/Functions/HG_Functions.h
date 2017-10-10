@@ -16,6 +16,15 @@ class HG
 		class refreshPlayers {};
 	};
 	
+	class ATM
+	{
+		file = "HG\Functions\Client\ATM";
+		class atmBtns {};
+		class atmReceived {};
+		class atmRefresh {};
+		class dialogOnLoadATM {};
+	};
+	
 	class EVH
 	{
 		file = "HG\Functions\Client\EVH";
@@ -65,6 +74,7 @@ class HG
 		class isNumeric {};
 		class lockOrUnlock {};
 		class markers {};
+		class nearbyATM {};
 		class parseGear {};
 		class paycheck {};
 		class setOwner {};

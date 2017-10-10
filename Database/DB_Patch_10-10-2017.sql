@@ -1,0 +1,4 @@
+
+ALTER TABLE `HG_Players`
+ADD COLUMN `Bank` INT(100) NOT NULL DEFAULT '0'
+AFTER `Money`;

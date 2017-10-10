@@ -24,6 +24,8 @@
 	enableKillCount - BOOL - Enable kill count in HUD?
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable group units position markers on map?
+	enableATM - BOOL - Enable ability to use in game ATMs?
+	atmKey - INTEGER - Key to push when near to an ATM to open dialog, default is T (0x14 / 20)
 	lockUnlockKey - INTEGER - Key to push to lock/unlock owned vehicle, default is Y (0x15 / 44), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
 	
 	admins - ARRAY OF STRINGS - Admins PUIDs
@@ -41,6 +43,7 @@
 			paycheck - INTEGER - Paycheck amount
 			paycheckPeriod - INTEGER - Time (in minutes) between each paycheck iteration, only used if enablePaycheck is set to true
 			startCash - INTEGER - Obvious...
+			startBank - INTEGER - Obvious...
 			killedReward - INTEGER - Money earned by killer, only used if enableKillReward is set to true
 			tkPenaltyPlayer - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
 			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly (https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards)
@@ -77,6 +80,8 @@ enableXP = true;
 enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
+enableATM = true;
+atmKey = 0x14;
 lockUnlockKey = 0x15;
 
 /* ADMIN */
@@ -96,7 +101,8 @@ class HG_MasterCfg
 	{
 		paycheck = 2000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 500;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
@@ -112,7 +118,8 @@ class HG_MasterCfg
 	{
 		paycheck = 4000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 1000;
 		tkPenaltyPlayer = 1000;
 		tkPenaltyAI = 500;
@@ -128,7 +135,8 @@ class HG_MasterCfg
 	{
 		paycheck = 6000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 1500;
 		tkPenaltyPlayer = 1500;
 		tkPenaltyAI = 750;
@@ -144,7 +152,8 @@ class HG_MasterCfg
 	{
 		paycheck = 8000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 2000;
 		tkPenaltyPlayer = 2000;
 		tkPenaltyAI = 1000;
@@ -160,7 +169,8 @@ class HG_MasterCfg
 	{
 		paycheck = 10000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 2500;
 		tkPenaltyPlayer = 2500;
 		tkPenaltyAI = 1250;
@@ -176,7 +186,8 @@ class HG_MasterCfg
 	{
 		paycheck = 12000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 3000;
 		tkPenaltyPlayer = 3000;
 		tkPenaltyAI = 1500;
@@ -192,7 +203,8 @@ class HG_MasterCfg
 	{
 		paycheck = 14000;
 		paycheckPeriod = 30;
-		startCash = 50000;
+		startCash = 5000;
+		startBank = 50000;
 		killedReward = 3500;
 		tkPenaltyPlayer = 3500;
 		tkPenaltyAI = 1750;

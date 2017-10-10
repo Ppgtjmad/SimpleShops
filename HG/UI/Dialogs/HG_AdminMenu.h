@@ -30,7 +30,7 @@ class HG_AdminMenu
 			x = 0.314375 * safezoneW + safezoneX;
 		    y = 0.324 * safeZoneH + safeZoneY;
 		    w = 0.37125 * safeZoneW;
-		    h = 0.396 * safeZoneH;
+		    h = 0.429 * safeZoneH;
 		};
 		
 		class BackgroundFrame: HG_RscFrame
@@ -38,7 +38,7 @@ class HG_AdminMenu
 			x = 0.314375 * safezoneW + safezoneX;
 		    y = 0.28 * safeZoneH + safeZoneY;
 		    w = 0.37125 * safeZoneW;
-		    h = 0.44 * safeZoneH;
+		    h = 0.473 * safeZoneH;
 		};
 		
 		class WhiteLine: HG_RscPicture
@@ -70,58 +70,46 @@ class HG_AdminMenu
 			h = 0.044 * safeZoneH;
 		};
 		
-		class KillBtnPicture: HG_RscPicture
+		class KillBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\dead.paa";
-			x = 0.474219 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			x = 0.438124 * safezoneW + safezoneX;
 		};
 		
-		class SetRankBtnPicture: HG_RscPicture
+		class SetRankBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\medal.paa";
-			x = 0.510312 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			x = 0.474218 * safezoneW + safezoneX;
 		};
 		
-		class SetXPBtnPicture: HG_RscPicture
+		class SetXPBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\xp.paa";
-			x = 0.546406 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			x = 0.510312 * safezoneW + safezoneX;
 		};
 		
-		class SetKillsBtnPicture: HG_RscPicture
+		class SetKillsBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\gun.paa";
-			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			x = 0.546406 * safezoneW + safezoneX;
 		};
 		
-		class SetCashBtnPicture: HG_RscPicture
+		class SetCashBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\money.paa";
-			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			x = 0.5825 * safezoneW + safezoneX;
 		};
 		
-		class ExitBtnPicture: HG_RscPicture
+		class SetBankBtnPicture: RefreshBtnPicture
+		{
+			text = "HG\UI\Icons\bank.paa";
+			x = 0.618594 * safezoneW + safezoneX;
+		};
+		
+		class ExitBtnPicture: RefreshBtnPicture
 		{
 			text = "HG\UI\Icons\close.paa";
 			x = 0.654688 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
 		};
 		
 		class InfosText: HG_RscStructuredText
@@ -147,10 +135,11 @@ class HG_AdminMenu
 			idc = HG_ADM_COUNT_IDC;
 			style = "0x02";
 			shadow = 0;
-			x = 0.386562 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0721875 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			colorBackground[] = {0.4,0.4,0.4,1};
+			x = 0.319531 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.180469 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
 		
 		class RankIcon: HG_RscPicture
@@ -162,31 +151,28 @@ class HG_AdminMenu
 			h = 0.022 * safeZoneH;
 		};
 		
-		class XPIcon: HG_RscPicture
+		class XPIcon: RankIcon
 		{
 			text = "HG\UI\Icons\xp.paa";
-			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.621 * safeZoneH + safeZoneY;
-			w = 0.020625 * safeZoneW;
-			h = 0.022 * safeZoneH;
 		};
 		
-		class KillsIcon: HG_RscPicture
+		class KillsIcon: RankIcon
 		{
 			text = "HG\UI\Icons\gun.paa";
-			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.654 * safeZoneH + safeZoneY;
-			w = 0.020625 * safeZoneW;
-			h = 0.022 * safeZoneH;
 		};
 		
-		class CashIcon: HG_RscPicture
+		class CashIcon: RankIcon
 		{
 			text = "HG\UI\Icons\money.paa";
-			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.687 * safeZoneH + safeZoneY;
-			w = 0.020625 * safeZoneW;
-			h = 0.022 * safeZoneH;
+		};
+		
+		class BankIcon: RankIcon
+		{
+			text = "HG\UI\Icons\bank.paa";
+			y = 0.72 * safezoneH + safezoneY;
 		};
 	};
 	
@@ -199,9 +185,9 @@ class HG_AdminMenu
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			onLBSelChanged = "_this call HG_fnc_adminMenuListChanged";
 			x = 0.319531 * safeZoneW + safeZoneX;
-			y = 0.335 * safeZoneH + safeZoneY;
+			y = 0.357 * safeZoneH + safeZoneY;
 			w = 0.180469 * safeZoneW;
-			h = 0.374 * safeZoneH;
+			h = 0.385 * safeZoneH;
 		};
 		
 		class RankCombo: HG_RscCombo
@@ -225,59 +211,52 @@ class HG_AdminMenu
 			h = 0.044 * safeZoneH;
 		};
 		
-		class KillButton: HG_RscButtonInvisible
+		class KillButton: RefreshButton
 		{
 			idc = HG_ADM_KILL_IDC;
 			tooltip = "$STR_HG_DLG_AM_KILL_TOOLTIP";
-			onButtonClick = "[0] call HG_fnc_adminMenuBtns";
-			x = 0.474219 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			onButtonClick = "[4] call HG_fnc_adminMenuBtns";
+			x = 0.438124 * safezoneW + safezoneX;
 		};
 		
-		class SetRankButton: HG_RscButtonInvisible
+		class SetRankButton: RefreshButton
 		{
 			idc = HG_ADM_RANK_IDC;
 			tooltip = "$STR_HG_DLG_AM_RANK_TOOLTIP";
-			onButtonClick = "[1] call HG_fnc_adminMenuBtns";
-			x = 0.510312 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			onButtonClick = "[5] call HG_fnc_adminMenuBtns";
+			x = 0.474218 * safezoneW + safezoneX;
 		};
 		
-		class SetXPButton: HG_RscButtonInvisible
+		class SetXPButton: RefreshButton
 		{
 			idc = HG_ADM_XP_IDC;
 			tooltip = "$STR_HG_DLG_AM_XP_TOOLTIP";
-			onButtonClick = "[2] call HG_fnc_adminMenuBtns";
-			x = 0.546406 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			onButtonClick = "[0] call HG_fnc_adminMenuBtns";
+			x = 0.510312 * safezoneW + safezoneX;
 		};
 		
-		class SetKillsButton: HG_RscButtonInvisible
+		class SetKillsButton: RefreshButton
 		{
 			idc = HG_ADM_KILLS_IDC;
 			tooltip = "$STR_HG_DLG_AM_KILLS_TOOLTIP";
-			onButtonClick = "[3] call HG_fnc_adminMenuBtns";
-			x = 0.5825 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
+			onButtonClick = "[1] call HG_fnc_adminMenuBtns";
+			x = 0.546406 * safezoneW + safezoneX;
 		};
 		
-		class SetCashButton: HG_RscButtonInvisible
+		class SetCashButton: RefreshButton
 		{
 			idc = HG_ADM_CASH_IDC;
 			tooltip = "$STR_HG_DLG_AM_CASH_TOOLTIP";
-			onButtonClick = "[4] call HG_fnc_adminMenuBtns";
+			onButtonClick = "[2] call HG_fnc_adminMenuBtns";
+			x = 0.5825 * safezoneW + safezoneX;
+		};
+		
+		class SetBankButton: RefreshButton
+		{
+			idc = HG_ADM_BANK_IDC;
+			tooltip = "$STR_HG_DLG_AM_BANK_TOOLTIP";
+			onButtonClick = "[3] call HG_fnc_adminMenuBtns";
 			x = 0.618594 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
 		};
 		
 		class XPEdit: HG_RscEdit
@@ -303,6 +282,12 @@ class HG_AdminMenu
 			y = 0.687 * safeZoneH + safeZoneY;
 		};
 		
+		class BankEdit: XPEdit
+		{
+			idc = HG_ADM_BANK_EDIT_IDC;
+			y = 0.72 * safezoneH + safezoneY;
+		};
+		
 		class SubXPBox: HG_RscCheckbox
 		{
 			idc = HG_ADM_XP_SUB_IDC;
@@ -326,6 +311,12 @@ class HG_AdminMenu
 			y = 0.687 * safeZoneH + safeZoneY;
 		};
 		
+		class SubBankBox: SubXPBox
+		{
+			idc = HG_ADM_BANK_SUB_IDC;
+			y = 0.72 * safezoneH + safezoneY;
+		};
+		
 		class AddXPBox: SubXPBox
 		{
 			idc = HG_ADM_XP_ADD_IDC;
@@ -343,6 +334,12 @@ class HG_AdminMenu
 		{
 			idc = HG_ADM_CASH_ADD_IDC;
 			y = 0.687 * safeZoneH + safeZoneY;
+		};
+		
+		class AddBankBox: AddXPBox
+		{
+			idc = HG_ADM_BANK_ADD_IDC;
+			y = 0.72 * safezoneH + safezoneY;
 		};
 		
 		class ExitButton: HG_RscButtonInvisible

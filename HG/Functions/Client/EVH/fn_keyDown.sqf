@@ -3,7 +3,14 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_ctrl","_dikCode","_shift","_ctrlKey","_alt",["_handled",false],["_ulKey",getNumber(getMissionConfig "CfgClient" >> "lockUnlockKey")],["_admKey",getNumber(getMissionConfig "CfgClient" >> "adminKey")]];
+params
+[
+    "_ctrl","_dikCode","_shift","_ctrlKey","_alt",
+    ["_handled",false],
+    ["_ulKey",getNumber(getMissionConfig "CfgClient" >> "lockUnlockKey")],
+	["_admKey",getNumber(getMissionConfig "CfgClient" >> "adminKey")],
+	["_atmKey",getNumber(getMissionConfig "CfgClient" >> "atmKey")]
+];
 
 switch(_dikCode) do 
 {
@@ -36,6 +43,18 @@ switch(_dikCode) do
         {
 			[] call HG_fnc_dialogOnLoadAdminMenu;
 			_handled = true;
+		};
+	};
+	
+	// ATM key
+	case _atmKey:
+	{
+	    if(HG_ATM_ENABLED) then
+		{
+		    if([] call HG_fnc_nearbyATM) then
+			{
+			    [] call HG_fnc_dialogOnLoadATM;
+			};
 		};
 	};
 };

@@ -40,7 +40,7 @@ if(isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then
 else
 {
 	diag_log "extDB3: Already Setup";
-	extDB_SQL_CUSTOM_ID = compileFinal str(uiNamespace getVariable "extDB_SQL_CUSTOM_ID");
+	extDB_SQL_CUSTOM_ID = uiNamespace getVariable "extDB_SQL_CUSTOM_ID";
 };
 
 _return;

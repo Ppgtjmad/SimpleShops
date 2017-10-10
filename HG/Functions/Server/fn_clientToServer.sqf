@@ -15,7 +15,8 @@ if(!HG_SAVING_EXTDB) then
 	[
 	    [format["HG_Cash_%1",_uid],_val],
 		[format["HG_Kills_%1",_uid],_val],
-		[format["HG_XP_%1",_uid],_val]
+		[format["HG_XP_%1",_uid],_val],
+		[format["HG_Bank_%1",_uid],_val]
 	] select _mode;
     
 	profileNamespace setVariable _var;
@@ -26,13 +27,15 @@ if(!HG_SAVING_EXTDB) then
 		[
 		    format["UPDATE HG_Players SET Money = '%1' WHERE PID = '%2'",_val,_uid],
 			format["UPDATE HG_Players SET Kills = '%1' WHERE PID = '%2'",_val,_uid],
-			format["UPDATE HG_Players SET XP = '%1' WHERE PID = '%2'",_val,_uid]
+			format["UPDATE HG_Players SET XP = '%1' WHERE PID = '%2'",_val,_uid],
+			format["UPDATE HG_Players SET Bank = '%1' WHERE PID = '%2'",_val,_uid]
 		] select _mode;
 	} else {
 	    [
 		    format["HG_updateMoney:%1:%2",_val,_uid],
 			format["HG_updateKills:%1:%2",_val,_uid],
-			format["HG_updateXP:%1:%2",_val,_uid]
+			format["HG_updateXP:%1:%2",_val,_uid],
+			format["HG_updateBank:%1:%2",_val,_uid]
 		] select _mode;
 	};
 	
