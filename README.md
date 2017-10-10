@@ -13,7 +13,6 @@
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Useful-Functions">Useful Functions</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Variables">Variables</a></b><br/>
 <b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Database">Database</a></b><br/>
-<b><a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Updates">Updates</a></b><br/>
 == Support ==<br/>
 <b><a href="http://forums.sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a></b><br/>
 == Issues ==<br/>
