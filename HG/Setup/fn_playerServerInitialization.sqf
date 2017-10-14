@@ -31,7 +31,7 @@ if(HG_SAVING_EXTDB) then
 	} else {
 	    _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 		{
-		    format["INSERT INTO HG_Players (PID, XP, Gear) VALUES('%1','%2','%3')",_uid,[(rank _player),0],[]];
+		    format["INSERT INTO HG_Players (PID, XP, Gear, Money, Bank) VALUES('%1','%2','%3','%4','%5')",_uid,[(rank _player),0],[],(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash")),(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank"))];
 		} else {
 		    format["HG_playerInsert:%1:%2:%3:%4:%5",_uid,[(rank _player),0],[],(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash")),(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank"))];
 		};
