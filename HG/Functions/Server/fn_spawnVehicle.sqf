@@ -41,7 +41,7 @@ if(!HG_SAVING_EXTDB) then
 
 if((typeName _sp) isEqualTo "ARRAY") then
 {
-	_vehicle = _classname createVehicle _sp;
+	_vehicle = createVehicle [_classname,_sp,[],0,"NONE"];
 } else {
 	_vehicle = _classname createVehicle (markerPos _sp);
 	_vehicle setVectorUp (surfaceNormal (markerPos _sp));
