@@ -5,7 +5,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_spawnPoints",["_sp",""],["_pos",[]],["_isBusy",[],[[]]]];
+params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_isBusy",[],[[]]]];
 
 {
     _pos = switch(typeName _x) do
@@ -23,7 +23,7 @@ params["_spawnPoints",["_sp",""],["_pos",[]],["_isBusy",[],[[]]]];
     _isBusy = nearestObjects [_pos,["Car","Truck","Air","Tank","Ship","Submarine"],5];
 	if((count _isBusy) isEqualTo 0) exitWith
 	{
-	    _sp = _x;
+	    _sp = [true,_x];
 	};
 } forEach _spawnPoints;  
 

@@ -26,7 +26,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 	_spawnPoints = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> (_shopType select 0) >> (_shopType select 1) >> "spawnPoints");
     _spawnPoint = [((_spawnPoints select (HG_VEHICLES_SP lbValue (lbCurSel HG_VEHICLES_SP))) select 1)] call HG_fnc_isItBusy;
 	
-	if(_spawnPoint != "") then
+	if(_spawnPoint select 0) then
 	{
 	    private["_classname","_color"];
 		
@@ -36,7 +36,7 @@ if([_price] call HG_fnc_hasEnoughMoney) then
 		
 		closeDialog 0;
 		hint format[(localize "STR_HG_VEHICLE_BOUGHT"),(getText(configFile >> "CfgVehicles" >> _classname >> "displayName")),if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
-		[0,player,_classname,_spawnPoint,nil,_color] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
+		[0,player,_classname,(_spawnPoint select 1),nil,_color] remoteExecCall ["HG_fnc_spawnVehicle",2,false];
 	} else {
 	    titleText [(localize "STR_HG_SPAWN_POINTS_BUSY"),"PLAIN DOWN",1];
 	};
