@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_unit","_plate"];
+params["_unit","_plate","_grg"];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -30,6 +30,10 @@ if(!HG_SAVING_EXTDB) then
 	};
 	
 	[1,_query] call HG_fnc_asyncCall;
+	
+	sleep 1;
+
+    [_unit,_grg] call HG_fnc_requestGarage;
 };
 
 (localize "STR_HG_GRG_VEHICLE_DELETED") remoteExecCall ["hint",(owner _unit),false];

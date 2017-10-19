@@ -1,11 +1,11 @@
 /*
     Author - HoverGuy
     Description - Called when you click "Buy" button in dialog
-    Returns - Empty string if all spawn points are busy else first empty spawn point
+    Returns - Empty array if all spawn positions are busy else first empty position
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_isBusy",[],[[]]]];
+params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_near",[]]];
 
 {
     _pos = switch(typeName _x) do
@@ -20,8 +20,8 @@ params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_isBusy",[],[[]]]];
 		};
 	};
 	
-    _isBusy = nearestObjects [_pos,["Car","Truck","Air","Tank","Ship","Submarine"],5];
-	if((count _isBusy) isEqualTo 0) exitWith
+    _near = nearestObjects [_pos,["Car","Truck","Air","Tank","Ship","Submarine"],5];
+	if((count _near) isEqualTo 0) exitWith
 	{
 	    _sp = [true,_x];
 	};

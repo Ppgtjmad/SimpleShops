@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_unit","_types","_garage",["_toSend",[],[[]]]];
+params["_unit","_grg","_garage",["_toSend",[],[[]]]];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -22,6 +22,8 @@ if(!HG_SAVING_EXTDB) then
 	
 if((count _garage) != 0) then
 {
+    private _types = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _grg >> "allowedTypes");
+	
 	{
 		_type = [_x select 0] call HG_fnc_getType;
 		if(_type in _types) then

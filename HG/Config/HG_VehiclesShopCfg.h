@@ -16,7 +16,7 @@
 			|- 0 - STRING - Classname
 			|- 1 - INTEGER - Price
 			|- 2 - STRING - Condition that must return either true or false, if true the vehicle appears in the list else no
-			spawnPoints - ARRAY OF ARRAYS - Spawn pos (markers/positions)
+			spawnPoints - ARRAY OF ARRAYS - Spawn positions (markers/positions)
 			|- 0 - STRING - Display name in the dialog
 			|- 1 - ARRAY OF MIXED - Markers/positions
 		};

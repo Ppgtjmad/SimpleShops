@@ -28,7 +28,7 @@
 #define HG_VEHICLES_MC_IDC            6008
 
 #define HG_GARAGE_IDD                 6100
-#define HG_GARAGE_BACK_IDC            6101
+#define HG_GARAGE_INFO_IDC            6101
 #define HG_GARAGE_LIST_IDC            6102
 #define HG_GARAGE_SP_IDC              6103
 #define HG_GARAGE_REFRESH_BTN_IDC     6104

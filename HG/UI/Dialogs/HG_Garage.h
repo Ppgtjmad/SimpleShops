@@ -26,8 +26,6 @@ class HG_Garage
 		
 		class Background: HG_RscText
 		{
-			idc = HG_GARAGE_BACK_IDC;
-			style = "0x02";
 			colorBackground[] = {0,0,0,0.5};
 			x = 0.386562 * safeZoneW + safeZoneX;
 			y = 0.335 * safeZoneH + safeZoneY;
@@ -98,6 +96,17 @@ class HG_Garage
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
+	    
+		class GarageInfo: HG_RscText
+		{
+			idc = HG_GARAGE_INFO_IDC;
+			style = "0x02";
+			shadow = 0;
+			x = 0.391719 * safeZoneW + safeZoneX;
+			y = 0.346 * safeZoneH + safeZoneY;
+			w = 0.216563 * safeZoneW;
+			h = 0.319 * safezoneH;
+		};
 	};
 	
 	class Controls
@@ -126,7 +135,7 @@ class HG_Garage
 		{
 			idc = HG_GARAGE_REFRESH_BTN_IDC;
 			tooltip = "$STR_HG_GRG_REFRESH_TOOLTIP";
-			onButtonClick = "[0] call HG_fnc_garageBtns";
+			onButtonClick = "[] call HG_fnc_refreshGarage";
 			x = 0.474219 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -137,7 +146,7 @@ class HG_Garage
 		{
 			idc = HG_GARAGE_SPAWN_BTN_IDC;
 			tooltip = "$STR_HG_GRG_SPAWN_TOOLTIP";
-			onButtonClick = "[1] call HG_fnc_garageBtns";
+			onButtonClick = "[] call HG_fnc_garageSpawn";
 			x = 0.510312 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
@@ -148,7 +157,7 @@ class HG_Garage
 		{
 			idc = HG_GARAGE_DELETE_BTN_IDC;
 			tooltip = "$STR_HG_GRG_DELETE_TOOLTIP";
-			onButtonClick = "[2] call HG_fnc_garageBtns";
+			onButtonClick = "[] spawn HG_fnc_delVehicle";
 			x = 0.546406 * safeZoneW + safeZoneX;
 			y = 0.291 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;

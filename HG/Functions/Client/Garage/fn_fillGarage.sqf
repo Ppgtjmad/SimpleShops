@@ -8,10 +8,11 @@ private "_ind";
 
 disableSerialization;
 
-HG_GARAGE_BACK ctrlSetText "";
+HG_GARAGE_INFO ctrlShow false;
+lbClear HG_GARAGE_LIST;
 
 {
-    _x ctrlShow true;
+    _x ctrlEnable true;
 } forEach [HG_GARAGE_LIST,HG_GARAGE_REFRESH_BTN,HG_GARAGE_SPAWN_BTN,HG_GARAGE_DELETE_BTN];
 
 if((count _this) != 0) then
@@ -21,7 +22,7 @@ if((count _this) != 0) then
     {
 	    _color = if((_x select 2) != (localize "STR_HG_DEFAULT")) then {(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "TextureSources" >> (_x select 2) >> "displayName"))} else {(_x select 2)};
         _ind = HG_GARAGE_LIST lbAdd format[(localize "STR_HG_GRG_LIST"),(getText(configFile >> "CfgVehicles" >> (_x select 0) >> "displayName")),_color];
-		HG_GARAGE_LIST lbSetData[_ind,(_x select 0)];
+		HG_GARAGE_LIST lbSetData[_ind,format["%1/%2",(_x select 0),(_x select 2)]];
 		HG_GARAGE_LIST lbSetValue[_ind,(_x select 1)];
     } forEach _this;
 	

@@ -6,7 +6,7 @@
 */
 
 #define HG_GARAGE_DISP            findDisplay HG_GARAGE_IDD
-#define HG_GARAGE_BACK            (HG_GARAGE_DISP displayCtrl HG_GARAGE_BACK_IDC)
+#define HG_GARAGE_INFO            (HG_GARAGE_DISP displayCtrl HG_GARAGE_INFO_IDC)
 #define HG_GARAGE_LIST            (HG_GARAGE_DISP displayCtrl HG_GARAGE_LIST_IDC)
 #define HG_GARAGE_SP              (HG_GARAGE_DISP displayCtrl HG_GARAGE_SP_IDC)
 #define HG_GARAGE_REFRESH_BTN     (HG_GARAGE_DISP displayCtrl HG_GARAGE_REFRESH_BTN_IDC)

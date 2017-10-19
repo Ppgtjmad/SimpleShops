@@ -42,7 +42,7 @@ class HG
 		class delVehicle {};
 		class dialogOnLoadGarage {};
 		class fillGarage {};
-	    class garageBtns {};
+	    class garageSpawn {};
 		class refreshGarage {};
 		class storeVehicleClient {};
 	};

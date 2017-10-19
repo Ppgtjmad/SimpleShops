@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=14;
+		nextID=15;
 	};
 	class MarkerIDProvider
 	{
@@ -110,7 +110,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			dataType="Group";
@@ -235,6 +235,17 @@ class Mission
 			type="mil_warning";
 			colorName="ColorCIV";
 			id=13;
+			atlOffset=-5;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={3769.554,0,3723.1831};
+			name="garage_spawn_3";
+			text=" Garage Spawn Point 3";
+			type="mil_warning";
+			colorName="ColorCIV";
+			id=14;
 			atlOffset=-5;
 		};
 	};
