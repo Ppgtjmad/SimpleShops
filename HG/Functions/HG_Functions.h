@@ -28,6 +28,7 @@ class HG
 	class EVH
 	{
 		file = "HG\Functions\Client\EVH";
+		class aiUnitSetup {};
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};

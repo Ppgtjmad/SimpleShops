@@ -90,7 +90,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 	
 	HG_VEHICLES_COLORS lbSetCurSel 0;
 } else {
-    HG_VEHICLES_TEXT ctrlSetStructuredText parseText "<t align='center' size='1'>"+(localize "STR_HG_NOTHING_TO_DISPLAY")+"</t>";
+    HG_VEHICLES_TEXT ctrlSetStructuredText parseText format["<t align='center' size='1'>%1</t>",(localize "STR_HG_NOTHING_TO_DISPLAY")];
     
 	{
 	    _x ctrlEnable false;

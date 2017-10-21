@@ -56,6 +56,11 @@
 			<Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
 			<French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
 		</Key>
+		<Key ID="STR_HG_SHOP_EMPTY">
+		    <Original>Looks like this shop is empty...</Original>
+			<Spanish>Parece que esta tienda está vacía...</Spanish>
+			<French>Il semblerait que ce magasin soit vide...</French>
+		</Key>
 		<Key ID="STR_HG_ACCESS_DENIED">
 		    <Original>Access denied</Original>
 			<Spanish>Acceso Denegado</Spanish>

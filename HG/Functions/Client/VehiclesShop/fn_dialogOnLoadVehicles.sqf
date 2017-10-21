@@ -9,6 +9,9 @@ params["_target","_caller","_id","_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
+private _shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
+if((count _shopList) isEqualTo 0) exitWith {hint (localize "STR_HG_SHOP_EMPTY");};
+
 private["_whitelist","_isOk"];
 _whitelist = getArray(getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop >> "whitelistRanks");
 _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
@@ -23,16 +26,14 @@ HG_VEHICLE_PREVIEW = objNull;
 HG_VEHICLE_LIGHTS = [];
 HG_VEHICLE_COLORS = [];
 
-private["_shopList","_ind","_h"];
-
 if(!HG_BUY_TO_GARAGE_ENABLED) then
 {
     HG_VEHICLES_TG ctrlEnable false;
 };
 
-_shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_VehiclesShopCfg" >> _whatShop);
-
 lbClear HG_VEHICLES_SWITCH;
+
+private["_ind","_h"];
 
 {
 	_ind = HG_VEHICLES_SWITCH lbAdd (getText(_x >> "displayName"));

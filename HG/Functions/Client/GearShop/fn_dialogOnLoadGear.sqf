@@ -9,6 +9,9 @@ params["_target","_caller","_id","_whatShop"];
 if((typeName _whatShop) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_whatShop isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
+private _shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_GearShopCfg" >> _whatShop);
+if((count _shopList) isEqualTo 0) exitWith {hint (localize "STR_HG_SHOP_EMPTY");};
+
 private["_whitelist","_isOk"];
 _whitelist = getArray(getMissionConfig "CfgClient" >> "HG_GearShopCfg" >> _whatShop >> "whitelistRanks");
 _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
@@ -17,15 +20,13 @@ if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 disableSerialization;
 
 createDialog "HG_GearShop";
-
-private["_shopList","_cat","_ind"];
-
-_shopList = "true" configClasses (getMissionConfig "CfgClient" >> "HG_GearShopCfg" >> _whatShop);
 	
 lbClear HG_GEAR_SWITCH;
 HG_GEAR_SLIDER sliderSetRange [0,360];
 HG_GEAR_TOTAL ctrlSetText format[(localize "STR_HG_DLG_GS_TOTAL_TEXT"),([0,true] call HG_fnc_currencyToText)];
 HG_STRING_HANDLER = _whatShop;
+
+private "_ind";
 
 {
 	_ind = HG_GEAR_SWITCH lbAdd (getText(_x >> "displayName"));
