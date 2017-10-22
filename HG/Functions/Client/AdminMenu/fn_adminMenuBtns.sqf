@@ -22,7 +22,7 @@ switch(_mode) do
 	// Set XP
 	case 0:
 	{
-	    if(HG_XP_ENABLED) exitWith {hint (localize "STR_HG_DLG_XP_DISABLED");};
+	    if(!HG_XP_ENABLED) exitWith {hint (localize "STR_HG_DLG_XP_DISABLED");};
 		
 		if(cbChecked HG_ADM_XP_SUB) then
 		{
@@ -36,7 +36,7 @@ switch(_mode) do
 	// Set kills
 	case 1:
 	{
-	    if(HG_KILL_COUNT_ENABLED) exitWith {hint (localize "STR_HG_DLG_KILLS_DISABLED");};
+	    if(!HG_KILL_COUNT_ENABLED) exitWith {hint (localize "STR_HG_DLG_KILLS_DISABLED");};
 	   
 		if(cbChecked HG_ADM_KILLS_SUB) then
 		{
