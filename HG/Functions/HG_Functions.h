@@ -16,6 +16,12 @@ class HG
 		class refreshPlayers {};
 	};
 	
+	class AI
+	{
+		file = "HG\Functions\Client\AI";
+	    class aiUnitSetup {};	
+	};
+	
 	class ATM
 	{
 		file = "HG\Functions\Client\ATM";
@@ -28,7 +34,6 @@ class HG
 	class EVH
 	{
 		file = "HG\Functions\Client\EVH";
-		class aiUnitSetup {};
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};

@@ -56,6 +56,11 @@
 			<Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
 			<French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
 		</Key>
+		<Key ID="STR_HG_ERR_PLAYER">
+		    <Original>::ERROR:: AI Setup (%1) - Passed object is a player</Original>
+			<Spanish>::ERROR:: Menu IA - Objeto pasado es un jugador (%1) - </Spanish>
+			<French>::ERREUR:: Configuration IA (%1) - L'objet passé est un joueur</French>
+		</Key>
 		<Key ID="STR_HG_SHOP_EMPTY">
 		    <Original>Looks like this shop is empty...</Original>
 			<Spanish>Parece que esta tienda está vacía...</Spanish>
