@@ -33,7 +33,7 @@
   <b>
     <a href="https://bitbucket.org/torndeco/extdb3/wiki/Home" target="_blank">Torndeco</a> - extDB3<br/>
     <a href="http://flaticons.net/" target="_blank">FlatIcons</a> - Icons<br/>
-    <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation
+    <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation<br/>
     <a href="http://steamcommunity.com/profiles/76561198030800949/" target="_blank">N3V3RD134l0N3</a> - Logo
   </b>
 </p>
