@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://www.dropbox.com/s/7c108klxo44ysac/Simple-Shops.png?raw=1"></h1>
+<img align="center" src="https://www.dropbox.com/s/7c108klxo44ysac/Simple-Shops.png?raw=1">
 
 <h2 align="center">Wiki</h2>
 <p align="center">
