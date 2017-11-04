@@ -4,7 +4,7 @@
 <p align="center">
   <b>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-try-it">How to try it</a><br/>
-    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-use-it-in-your-custom-mission">How to use it in your custom mission</a<br/>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-use-it-in-your-custom-mission">How to use it in your custom mission</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-configure">How to configure</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards">How to setup kill reward</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Usage">Usage</a><br/>
