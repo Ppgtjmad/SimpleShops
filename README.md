@@ -1,4 +1,4 @@
-<h1 align="center">[HG] Simple Shops<br/>by HoverGuy<br/>v 2.3</h1>
+<h1 align="center"><img src="https://www.dropbox.com/s/7c108klxo44ysac/Simple-Shops.png?raw=1"></h1>
 
 <h2 align="center">Wiki</h2>
 <p align="center">
