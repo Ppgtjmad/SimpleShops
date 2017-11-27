@@ -9,7 +9,8 @@ params
     ["_handled",false],
     ["_ulKey",getNumber(getMissionConfig "CfgClient" >> "lockUnlockKey")],
 	["_admKey",getNumber(getMissionConfig "CfgClient" >> "adminKey")],
-	["_atmKey",getNumber(getMissionConfig "CfgClient" >> "atmKey")]
+	["_atmKey",getNumber(getMissionConfig "CfgClient" >> "atmKey")],
+	["_giveMKey",getNumber(getMissionConfig "CfgClient" >> "giveMoneyKey")]
 ];
 
 switch(_dikCode) do 
@@ -54,7 +55,19 @@ switch(_dikCode) do
 		    if([] call HG_fnc_nearbyATM) then
 			{
 			    [] call HG_fnc_dialogOnLoadATM;
+				_handled = true;
 			};
+		};
+	};
+	
+	// Give money key
+	case _giveMKey:
+	{
+	    if(!HG_GIVE_MONEY_ENABLED) exitWith {};
+		if((alive player) AND (cursorObject isKindOf "Man") AND (isPlayer cursorObject) AND (alive cursorObject) AND ((player distance cursorObject) < 2) AND !dialog) then
+		{
+		    [cursorObject] call HG_fnc_dialogOnLoadGiveMoney;
+			_handled = true;
 		};
 	};
 };

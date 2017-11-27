@@ -7,7 +7,7 @@
 	
 	class YourShopClass - Used as a param for the call, basically the shop you want to display
 	{
-		whitelistRanks - ARRAY OF STRINGS - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL or mixed
+		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
 		
 		class YourShopCategory - Shop category, can be whatever you want
 		{

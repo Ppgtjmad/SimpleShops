@@ -104,6 +104,7 @@ class HG
 	{
 		file = "HG\Functions\Client\ItemsShop";
 		class dialogOnLoadItems {};
+		class dialogOnUnloadItems {};
 		class handleItems {};
 		class itemBtns {};
 		class itemSelectionChanged {};
@@ -119,6 +120,13 @@ class HG
 	class Trader
 	{
 		file = "HG\Functions\Client\Trader";
+		class dialogOnLoadTrader {};
+		class dialogOnUnloadTrader {};
+		class gearHandler {};
+		class gearItem {};
+		class refreshTrader {};
+		class traderBtns {};
+		class traderTreeChanged {};
 	};
 	
 	class VehiclesShop

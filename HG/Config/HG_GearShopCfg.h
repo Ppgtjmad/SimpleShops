@@ -7,7 +7,7 @@
 	
 	class YourShopClass - Used as a param for the call, basically the shop you want to display
 	{
-		whitelistRanks - ARRAY OF STRINGS - Can be PRIVATE/CORPORAL/SERGEANT/LIEUTENANT/CAPTAIN/MAJOR/COLONEL or mixed
+		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
 		
 		class ShopCategory - Shop category, can only be Glasses/Headgear/Uniform/Vest/Backpack/MissileLauncher/RocketLauncher/Handgun/AssaultRifle/MachineGun/SubmachineGun/SniperRifle
 		{
@@ -25,7 +25,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	
 	class Glasses
 	{
-		displayName = "$STR_HG_SHOP_FACEWEAR";
+		displayName = "$STR_HG_SHOP_FACEWEARS";
 		content[] =
 		{
 			{"G_Balaclava_blk",50,"true"},
@@ -35,7 +35,7 @@ class HG_DefaultShop // HG_DefaultShop is just a placeholder for testing purpose
 	
 	class Headgear
 	{
-		displayName = "$STR_HG_SHOP_HEADGEAR";
+		displayName = "$STR_HG_SHOP_HEADGEARS";
 		content[] =
 		{
 			{"H_HelmetB_light_grass",1500,"true"}

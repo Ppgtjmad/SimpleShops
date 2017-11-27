@@ -92,3 +92,13 @@
 #define HG_ATM_PLAYERS_COMBO_IDC      9105
 #define HG_ATM_TRANSFER_BTN_IDC       9106
 #define HG_ATM_REFRESH_BTN_IDC        9107
+
+#define HG_TRADER_IDD                 9200
+#define HG_TRADER_QTY_IDC             9201
+#define HG_TRADER_PRICE_IDC           9202
+#define HG_TRADER_TOTAL_IDC           9203
+#define HG_TRADER_TREE_IDC            9204
+#define HG_TRADER_LIST_IDC            9205
+#define HG_TRADER_SUB_BTN_IDC         9206
+#define HG_TRADER_ADD_BTN_IDC         9207
+#define HG_TRADER_SELL_BTN_IDC        9208

@@ -317,3 +317,44 @@ class HG_RscCheckbox
 	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
 	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
 };
+
+class HG_RscTree
+{
+	idc = -1;
+	style = 0;
+	type = 12;
+	rowHeight = 0.05;
+	colorBackground[] = {0,0,0,0.5};
+	colorSelect[] = {1,0.5,0,1};
+	colorSelectText[] = {1,1,1,1};
+	tooltipColorShade[] = {0,0,0,0};
+	tooltipColorText[] = {1,1,1,1};
+	tooltipColorBox[] = {1,1,1,1};
+	colorPicture[] = {};
+	colorPictureSelected[] = {};
+	colorPictureDisabled[] = {};
+	colorPictureRight[] = {};
+	colorPictureRightSelected[] = {};
+	colorPictureRightDisabled[] = {};
+	colorDisabled[] = {0,0,0,0};
+	blinkingPeriod = 0;
+	colorMarked[] = {1,0.5,0,0.5};
+	colorMarkedSelected[] = {1,0.5,0,1};
+	shadow = 1;
+	colorMarkedText[] = {1,1,1,1};
+	multiselectEnabled = 0;
+	maxHistoryDelay = 1;
+	colorArrow[] = {0,0,0,0};
+	colorBorder[] = {0,0,0,1};
+	sizeEx = "(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	font = "RobotoCondensed";
+	colorText[] = {1,1,1,1};
+	expandOnDoubleclick = 1;
+	hiddenTexture = "A3\ui_f\data\gui\rsccommon\rsctree\hiddenTexture_ca.paa";
+	expandedTexture = "A3\ui_f\data\gui\rsccommon\rsctree\expandedTexture_ca.paa";
+	class ScrollBar: HG_ScrollBar
+	{
+		scrollSpeed = 0.01;
+		color[] = {1,1,1,1};
+	};
+};

@@ -11,7 +11,7 @@ class HG_ItemsShop
 	enableSimulation = true;
 	movingEnable = true;
 	name = "HG_ItemsShop";
-	onUnload = "[player] remoteExecCall ['HG_fnc_getGear',2,false]";
+	onUnload = "[] call HG_fnc_dialogOnUnloadItems";
 	
 	class ControlsBackground
 	{
@@ -199,7 +199,7 @@ class HG_ItemsShop
 		class AddButton: HG_RscButtonInvisible
 		{
 			idc = HG_ITEMS_ADD_IDC;
-			tooltip = "$STR_HG_DLG_IS_ADD_TOOLTIP";
+			tooltip = "+1";
 			onButtonClick = "[0] call HG_fnc_itemBtns";
 			x = 0.443281 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;
@@ -210,7 +210,7 @@ class HG_ItemsShop
 		class SubButton: HG_RscButtonInvisible
 		{
 			idc = HG_ITEMS_SUB_IDC;
-			tooltip = "$STR_HG_DLG_IS_SUB_TOOLTIP";
+			tooltip = "-1";
 			onButtonClick = "[1] call HG_fnc_itemBtns";
 			x = 0.365937 * safeZoneW + safeZoneX;
 			y = 0.28 * safeZoneH + safeZoneY;

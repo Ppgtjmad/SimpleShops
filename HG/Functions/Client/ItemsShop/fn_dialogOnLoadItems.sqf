@@ -23,6 +23,8 @@ createDialog "HG_ItemsShop";
 
 lbClear HG_ITEMS_ITEM_SWITCH;
 
+HG_ITEMS_BOUGHT = false;
+
 private "_ind";
 
 {

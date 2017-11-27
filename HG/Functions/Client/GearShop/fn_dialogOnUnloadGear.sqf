@@ -1,4 +1,3 @@
-#include "HG_Macros.h"
 /*
     Author - HoverGuy
     Description - Called by the player when the dialog is closed (with the dialog close button or by pressing escape)

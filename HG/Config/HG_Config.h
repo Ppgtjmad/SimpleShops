@@ -25,8 +25,9 @@
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable group units position markers on map?
 	enableATM - BOOL - Enable ability to use in game ATMs?
-	atmKey - INTEGER - Key to push when near to an ATM to open dialog, default is T (0x14 / 20)
-	lockUnlockKey - INTEGER - Key to push to lock/unlock owned vehicle, default is Y (0x15 / 44), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
+	atmKey - INTEGER - Key to push when near to an ATM to open dialog, default is T (0x14 / 20), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
+	lockUnlockKey - INTEGER - Key to push to lock/unlock owned vehicle, default is Y (0x15 / 44), see links above
+	giveMoneyKey - INTEGER - Key to push to open give money dialog, default is H (0x23 / 35), see links above
 	
 	admins - ARRAY OF STRINGS - Admins PUIDs
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
@@ -218,22 +219,29 @@ class HG_MasterCfg
 	};
 };
 
-class HG_GaragesCfg // Has to be left untouched
+////////// DO NOT MODIFY //////////
+class HG_GaragesCfg
 {
     #include "HG_GaragesCfg.h"
 };
 
-class HG_GearShopCfg // Has to be left untouched
+class HG_GearShopCfg
 {
     #include "HG_GearShopCfg.h"
 };
 
-class HG_ItemsShopCfg // Has to be left untouched
+class HG_ItemsShopCfg
 {
     #include "HG_ItemsShopCfg.h"
 };
 
-class HG_VehiclesShopCfg // Has to be left untouched
+class HG_TradersCfg
+{
+	#include "HG_TradersCfg.h"
+};
+
+class HG_VehiclesShopCfg
 {
     #include "HG_VehiclesShopCfg.h"
 };
+//////////

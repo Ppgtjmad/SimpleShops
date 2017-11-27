@@ -8,7 +8,10 @@ params["_target","_caller","_id","_garage"];
 if((typeName _garage) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
-disableSerialization;
+private["_whitelist","_isOk"];
+_whitelist = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "whitelistRanks");
+_isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
+if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 private["_allowedTypes","_storePoint","_pos","_near"];
 _allowedTypes = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");

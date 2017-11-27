@@ -58,6 +58,8 @@ switch(_mode) do
 			} else {
 			    hint (localize "STR_HG_INVENTORY_FULL");
 			};
+			
+			HG_ITEMS_BOUGHT = true;
 		} else {
 		    hint format[(localize "STR_HG_NOT_ENOUGH_MONEY"),([_price,true] call HG_fnc_currencyToText)];
 		};

@@ -43,7 +43,6 @@ private "_compile";
     missionNamespace setVariable[(_x select 0),_compile];
 } forEach 
 [
-    ["HG_fnc_aiUnitSetup","HG\Functions\Server\AI\fn_aiUnitSetup.sqf"],
 	["HG_fnc_activeReset","HG\Functions\Server\fn_activeReset.sqf"],
 	["HG_fnc_deleteVehicle","HG\Functions\Server\fn_deleteVehicle.sqf"],
 	["HG_fnc_disconnect","HG\Functions\Server\fn_disconnect.sqf"],
