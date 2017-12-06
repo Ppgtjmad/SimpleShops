@@ -7,7 +7,6 @@
 /*
     Init constants
 */
-HG_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableSave")) isEqualTo 1;
 HG_HUD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1;
 HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;

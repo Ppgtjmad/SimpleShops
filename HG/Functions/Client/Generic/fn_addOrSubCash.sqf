@@ -14,19 +14,16 @@ _oldVal = if(_where isEqualTo 0) then {(player getVariable "HG_Cash")} else {(pl
 _newVal = if(_mode isEqualTo 0) then {(_oldVal + _amount)} else {(_oldVal - _amount)};
 if(_newVal < 0) then {_newVal = 0};
 
-if(HG_SAVE_ENABLED) then
+HG_CLIENT = [[0,(getPlayerUID player),_newVal],[3,(getPlayerUID player),_newVal]] select _where;
+	
+if(isServer) then
 {
-    HG_CLIENT = [[0,(getPlayerUID player),_newVal],[3,(getPlayerUID player),_newVal]] select _where;
-	
-	if(isServer) then
-	{
-	    [HG_CLIENT] call HG_fnc_clientToServer;
-	} else {
-        publicVariableServer "HG_CLIENT";
-	};
-	
-	HG_CLIENT = nil;
+	[HG_CLIENT] call HG_fnc_clientToServer;
+} else {
+    publicVariableServer "HG_CLIENT";
 };
+	
+HG_CLIENT = nil;
 
 if(_where isEqualTo 0) then
 {

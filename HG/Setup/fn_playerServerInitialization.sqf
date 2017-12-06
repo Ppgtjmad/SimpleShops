@@ -75,32 +75,26 @@ if(HG_SAVING_EXTDB) then
 	};
 };
 
-if((getNumber(getMissionConfig "CfgClient" >> "enableSave")) isEqualTo 1) then
+if(HG_SAVING_EXTDB) then
 {
-	if(HG_SAVING_EXTDB) then
-	{
-		_cash = _result select 0;
-		_bank = _result select 1;
-	} else {
-		_cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
-		_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
-	};
-	
-    if((isNil "_cash") OR (isNil "_bank") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
-	{
-		_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
-		_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
-		
-		if(!HG_SAVING_EXTDB) then
-		{
-	        profileNamespace setVariable [format["HG_Cash_%1",_uid],_cash];
-			profileNamespace setVariable [format["HG_Bank_%1",_uid],_bank];
-		    saveProfileNamespace;
-		};
-	};
+	_cash = _result select 0;
+	_bank = _result select 1;
 } else {
-    _cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
+	_cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
+	_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
+};
+
+if((isNil "_cash") OR (isNil "_bank") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
+{
+	_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
 	_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
+	
+	if(!HG_SAVING_EXTDB) then
+	{
+	    profileNamespace setVariable [format["HG_Cash_%1",_uid],_cash];
+		profileNamespace setVariable [format["HG_Bank_%1",_uid],_bank];
+		saveProfileNamespace;
+	};
 };
 
 _player setVariable ["HG_Cash",_cash,true];

@@ -6,8 +6,7 @@
 	
 	currencyType - STRING - Currency you want to use (ISO format)
 	
-	enableSave - BOOL - Save money?
-	resetSavedMoney - BOOL - Reset saved money? Useful if you enable persistence then disable it and re-enable it, if it's set to true old saved money will be reset to startCash value, only used if enableSave is set to true
+	resetSavedMoney - BOOL - Useful for mission rotation, if it's set to true old saved money will be reset to startCash/startBank values whenever the server is restarted or mission changes
 	enableHUD - BOOL - Enable money display in HUD?
 	enablePaycheck - BOOL - Enable paycheck?
 	enableKillReward - BOOL - Enable kill reward?
@@ -69,7 +68,6 @@
 currencyType = "USD";
 
 /* SYSTEMS */
-enableSave = true;
 resetSavedMoney = false;
 enableHUD = true;
 enablePaycheck = true;
