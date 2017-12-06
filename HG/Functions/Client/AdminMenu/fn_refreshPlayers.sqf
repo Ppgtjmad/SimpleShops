@@ -23,7 +23,7 @@ if((count _all) != 0) then
 	
 	{
 		_ind = HG_ADM_LIST lbAdd format[(localize "STR_HG_DLG_AM_LIST"),(name _x),(getPlayerUID _x)];
-		HG_ADM_LIST lbSetData [_ind,(typeOf _x)];
+		HG_ADM_LIST lbSetData [_ind,(getPlayerUID _x)];
 		HG_ADM_LIST lbSetValue [_ind,_forEachIndex];
 	} forEach _all;
 	

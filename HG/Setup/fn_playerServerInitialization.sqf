@@ -1,10 +1,36 @@
+#define ADMINS getArray(getMissionConfig "CfgClient" >> "admins")
+#define WHITELIST getNumber(getMissionConfig "CfgClient" >> "enableWhitelist") isEqualTo 1
+#define WHITELIST_SIDES getArray(getMissionConfig "CfgClient" >> "whitelistSides")
 /*
     Author - HoverGuy
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
 params["_player","_jip","_uid","_result","_cash","_bank"];
+
 _uid = getPlayerUID _player;
+
+if(WHITELIST) then
+{
+    if(!(_uid in ADMINS)) then
+    {
+	    private "_isWhitelisted";
+		
+		if(!(toLower(str(side _player)) in WHITELIST_SIDES)) exitWith {_isWhitelisted = true;};
+		
+		private _whitelist = HG_WHITELIST select (WHITELIST_SIDES find toLower(str(side _player)));
+		_isWhitelisted = _uid in _whitelist;
+	
+	    if(!_isWhitelisted) exitWith 
+	    {
+	        ["NotWhitelisted",false,false,false,true] remoteExecCall ["BIS_fnc_endMission",(owner _player),false];
+	    };
+    } else {
+	    if(isNil "HG_ADMINS") then {HG_ADMINS = [];};
+		HG_ADMINS pushBack _player;
+		(owner _player) publicVariableClient "HG_WHITELIST";
+	};
+};
 
 if(HG_SAVING_EXTDB) then
 {

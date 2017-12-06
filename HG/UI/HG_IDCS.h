@@ -84,6 +84,20 @@
 #define HG_ADM_CASH_ADD_IDC           9022
 #define HG_ADM_BANK_ADD_IDC           9023
 
+#define HG_WL_HEADER_IDC              9024
+#define HG_WL_HEADER_TEXT_IDC         9025
+#define HG_WL_BACK_IDC                9026
+#define HG_WL_BACK_FRAME_IDC          9027
+#define HG_WL_LINE_IDC                9028
+#define HG_WL_UID_ADD_PIC_IDC         9029
+#define HG_WL_UID_REMOVE_PIC_IDC      9030
+#define HG_WL_INFO_TEXT_IDC           9031
+#define HG_WL_SIDE_COMBO_IDC          9032
+#define HG_WL_UID_LIST_IDC            9033
+#define HG_WL_UID_EDIT_IDC            9034
+#define HG_WL_UID_ADD_IDC             9035
+#define HG_WL_UID_REMOVE_IDC          9036
+
 #define HG_ATM_IDD                    9100
 #define HG_ATM_ACC_TEXT_IDC           9101
 #define HG_ATM_CASH_TEXT_IDC          9102
@@ -102,3 +116,17 @@
 #define HG_TRADER_SUB_BTN_IDC         9206
 #define HG_TRADER_ADD_BTN_IDC         9207
 #define HG_TRADER_SELL_BTN_IDC        9208
+
+#define HG_DEALER_IDD                 9300
+#define HG_DEALER_PRICE_IDC           9301
+#define HG_DEALER_V_LIST_IDC          9302
+#define HG_DEALER_D_LIST_IDC          9303
+#define HG_DEALER_REFRESH_BTN_IDC     9304
+#define HG_DEALER_SELL_BTN_IDC        9305
+
+#define HG_GK_IDD                     9400
+#define HG_GK_OWNERS_LIST_IDC         9401
+#define HG_GK_PLAYERS_COMBO_IDC       9402
+#define HG_GK_REMOVE_BTN_IDC          9403
+#define HG_GK_REFRESH_BTN_IDC         9404
+#define HG_GK_GIVE_BTN_IDC            9405

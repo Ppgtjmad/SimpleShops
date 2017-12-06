@@ -19,3 +19,5 @@ if(_spawnPoint select 0) then
 } else {
 	hint (localize "STR_HG_SPAWN_POINT_BUSY");
 };
+
+true;

@@ -33,3 +33,8 @@ class CfgFunctions
 {
 	#include "HG\Functions\HG_Functions.h"
 };
+
+class CfgDebriefing
+{
+    #include "HG\Config\HG_Debriefing.h"
+};

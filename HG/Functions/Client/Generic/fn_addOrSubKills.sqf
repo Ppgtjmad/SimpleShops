@@ -6,22 +6,8 @@
 params[["_mode",0,[0]],["_amount",1,[0]],"_oldVal","_newVal"];
 
 _oldVal = player getVariable "HG_Kills";
-_newVal = switch(_mode) do
-{
-    case 0: 
-	{
-		_oldVal + _amount;
-	};
-	case 1:
-	{
-		_oldVal - _amount;
-	};
-};
-
-if(_newVal < 0) then 
-{
-    _newVal = 0
-};
+_newVal = if(_mode isEqualTo 0) then {(_oldVal + _amount)} else {(_oldVal - _amount)};
+if(_newVal < 0) then {_newVal = 0};
 
 HG_CLIENT = [1,(getPlayerUID player),_newVal];
 if(isServer) then

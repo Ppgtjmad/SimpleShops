@@ -17,6 +17,7 @@
 	enableBuyToGarage - BOOL - Enable ability to automatically store vehicle in garage when bought? Set it to false if you don't use garage
 	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
+	deleteBodyOnDisconnect - BOOL - Delete player body when player disconnects?
 	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
 	enablePlayerInventorySave - BOOL - Enable player gear saving? Disable this if you have a custom saving system
 	enableVehicleInventorySave - BOOL - Enable vehicle gear saving? Disable this if you have a custom saving system
@@ -25,11 +26,16 @@
 	enableTags - BOOL - Enable player tags?
 	enableMarkers - BOOL - Enable group units position markers on map?
 	enableATM - BOOL - Enable ability to use in game ATMs?
+	enableWhitelist - BOOL - Enable or disable whitelisting, even if enabled admins can bypass it *ONLY WORKS WHEN SAVING METHOD IS SET TO EXTDB*
+	
+	whitelistSides - ARRAY OF STRINGS - If enableWhitelist is set to true, defines whitelisted sides, can only be "civilian"/"west"/"resistance"/"east" or mixed *HAS TO BE LOWERCASE*
+	
+	admins - ARRAY OF STRINGS - Admins PUIDs
+	
 	atmKey - INTEGER - Key to push when near to an ATM to open dialog, default is T (0x14 / 20), see https://community.bistudio.com/wiki/DIK_KeyCodes OR https://forums.bistudio.com/forums/topic/111590-keyboard-ui-number-codes/?do=findComment&comment=1848755
 	lockUnlockKey - INTEGER - Key to push to lock/unlock owned vehicle, default is Y (0x15 / 44), see links above
 	giveMoneyKey - INTEGER - Key to push to open give money dialog, default is H (0x23 / 35), see links above
-	
-	admins - ARRAY OF STRINGS - Admins PUIDs
+	giveKeyKey - INTEGER - Key to push to open keys menu dialog, default is F (0x21 / 33), see links above
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	
 	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/Database)
@@ -74,6 +80,7 @@ enableGiveMoney = true;
 enableBuyToGarage = true;
 clearInventory = true;
 storeVehiclesOnDisconnect = true;
+deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;
 enableVehicleInventorySave = true;
@@ -82,11 +89,19 @@ enableKillCount = true;
 enableTags = true;
 enableMarkers = true;
 enableATM = true;
+enableWhitelist = false;
+
+/* WHITELIST */
+whitelistSides[] = {"west"};
+
+/* ADMINS */
+admins[] = {"_SP_PLAYER_"};
+
+/* KEYS */
 atmKey = 0x14;
 lockUnlockKey = 0x15;
-
-/* ADMIN */
-admins[] = {"_SP_PLAYER_"};
+giveMoneyKey = 0x23;
+giveKeyKey = 0x21;
 adminKey = 0xDB;
 
 /* SAVING */
@@ -220,6 +235,11 @@ class HG_MasterCfg
 };
 
 ////////// DO NOT MODIFY //////////
+class HG_DealersCfg
+{
+	#include "HG_DealersCfg.h"
+};
+
 class HG_GaragesCfg
 {
     #include "HG_GaragesCfg.h"

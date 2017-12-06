@@ -8,7 +8,6 @@
     Init constants
 */
 HG_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableSave")) isEqualTo 1;
-HG_RESET_SAVED_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1;
 HG_HUD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1;
 HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
@@ -16,15 +15,13 @@ HG_BUY_TO_GARAGE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableBuy
 HG_KILL_REWARD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1;
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
 HG_CRATE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableCrate")) isEqualTo 1;
-HG_CLEAR_INVENTORY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1;
-HG_STORE_VEHICLES_ON_DC = (getNumber(getMissionConfig "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1;
 HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
 HG_XP_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1;
 HG_KILL_COUNT_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1;
 HG_TAGS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTags")) isEqualTo 1;
 HG_MARKERS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableMarkers")) isEqualTo 1;
 HG_ATM_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableATM")) isEqualTo 1;
-HG_ADMINS = getArray(getMissionConfig "CfgClient" >> "admins");
+HG_WHITELISTED_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1;
 
 /*
     Init EVHs
@@ -34,6 +31,11 @@ HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];
 HG_INVENTORY_OPENED_EVH = player addEventHandler["InventoryOpened",{_this call HG_fnc_inventoryOpened}];
 HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call HG_fnc_inventoryClosed}];
+
+if(HG_WHITELISTED_ENABLED AND ((getPlayerUID player) in (getArray(getMissionConfig "CfgClient" >> "admins"))) AND !isServer) then
+{
+    "HG_WHITELIST" addPublicVariableEventHandler {if(!isNull (findDisplay (getNumber(getMissionConfig "HG_AdminMenu" >> "idd")))) then {[] call HG_fnc_refreshWhitelist};};
+};
 
 waitUntil {!isNull (findDisplay 46)};
 HG_KEY_DOWN_EVH = (findDisplay 46) displayAddEventHandler["KeyDown",{_this call HG_fnc_keyDown}];

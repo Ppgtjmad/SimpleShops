@@ -174,6 +174,89 @@ class HG_AdminMenu
 			text = "HG\UI\Icons\bank.paa";
 			y = 0.72 * safezoneH + safezoneY;
 		};
+		
+		class WhitelistHeader: HG_RscText
+		{
+			show = 0;
+			idc = HG_WL_HEADER_IDC;
+			colorBackground[] = {0.4,0.4,0.4,1};
+			x = 0.113281 * safezoneW + safezoneX;
+			y = 0.28 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.044 * safezoneH;
+		};
+		
+		class WhitelistHeaderText: HG_RscText
+		{
+			show = 0;
+			idc = HG_WL_HEADER_TEXT_IDC;
+			text = "$STR_HG_DLG_WL_TEXT";
+			x = 0.113281 * safezoneW + safezoneX;
+			y = 0.28 * safezoneH + safezoneY;
+			w = 0.0670312 * safezoneW;
+			h = 0.044 * safezoneH;
+		};
+		
+		class WhitelistBackground: HG_RscText
+		{
+			show = 0;
+			idc = HG_WL_BACK_IDC;
+			colorBackground[] = {0,0,0,0.5};
+			x = 0.113281 * safezoneW + safezoneX;
+		    y = 0.324 * safezoneH + safezoneY;
+		    w = 0.195937 * safezoneW;
+		    h = 0.429 * safezoneH;
+		};
+		
+		class WhitelistBackgroundFrame: HG_RscFrame
+		{
+			show = 0;
+			idc = HG_WL_BACK_FRAME_IDC;
+			x = 0.113281 * safezoneW + safezoneX;
+		    y = 0.28 * safezoneH + safezoneY;
+		    w = 0.195937 * safezoneW;
+		    h = 0.473 * safeZoneH;
+		};
+		
+		class WhitelistWhiteLine: HG_RscPicture
+		{
+			show = 0;
+			idc = HG_WL_LINE_IDC;
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.113281 * safezoneW + safezoneX;
+			y = 0.324 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.0022 * safezoneH;
+		};
+		
+		class AddUIDBtnPicture: RefreshBtnPicture
+		{
+			show = 0;
+			idc = HG_WL_UID_ADD_PIC_IDC;
+			text = "HG\UI\Icons\add_bis.paa";
+			x = 0.242187 * safezoneW + safezoneX;
+		};
+		
+		class RemoveBtnPicture: RefreshBtnPicture
+		{
+			show = 0;
+			idc = HG_WL_UID_REMOVE_PIC_IDC;
+			text = "HG\UI\Icons\sub_bis.paa";
+			x = 0.278281 * safezoneW + safezoneX;
+		};
+		
+		class WhitelistInfo: HG_RscText
+		{
+			show = 0;
+			idc = HG_WL_INFO_TEXT_IDC;
+			text = "$STR_HG_DLG_WL_INFO_TEXT";
+			style = "0x02";
+			shadow = 0;
+			x = 0.118437 * safezoneW + safezoneX;
+			y = 0.368 * safezoneH + safezoneY;
+			w = 0.185625 * safezoneW;
+			h = 0.341 * safezoneH;
+		};
 	};
 	
 	class Controls
@@ -350,6 +433,57 @@ class HG_AdminMenu
 			y = 0.28 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
+		};
+		
+		class WhitelistSide: HG_RscCombo
+		{
+			show = 0;
+			idc = HG_WL_SIDE_COMBO_IDC;
+			onLBSelChanged = "[] call HG_fnc_refreshWhitelist";
+			x = 0.118437 * safezoneW + safezoneX;
+			y = 0.335 * safezoneH + safezoneY;
+			w = 0.185625 * safezoneW;
+			h = 0.022 * safezoneH;
+		};
+		
+		class WhitelistList: HG_RscListBox
+		{
+			show = 0;
+			idc = HG_WL_UID_LIST_IDC;
+			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+			x = 0.118437 * safezoneW + safezoneX;
+			y = 0.368 * safezoneH + safezoneY;
+			w = 0.185625 * safezoneW;
+			h = 0.341 * safezoneH;
+		};
+		
+		class WhitelistUID: HG_RscEdit
+		{
+			show = 0;
+			idc = HG_WL_UID_EDIT_IDC;
+			maxChars = 17;
+			x = 0.118437 * safezoneW + safezoneX;
+			y = 0.72 * safezoneH + safezoneY;
+			w = 0.185625 * safezoneW;
+			h = 0.022 * safezoneH;
+		};
+		
+		class AddUIDButton: RefreshButton
+		{
+			show = 0;
+			idc = HG_WL_UID_ADD_IDC;
+			tooltip = "$STR_HG_DLG_WL_ADD_UID_TOOLTIP";
+			onButtonClick = "[6] call HG_fnc_adminMenuBtns";
+			x = 0.242187 * safezoneW + safezoneX;
+		};
+		
+		class RemoveButton: RefreshButton
+		{
+			show = 0;
+			idc = HG_WL_UID_REMOVE_IDC;
+			tooltip = "$STR_HG_DLG_WL_REMOVE_TOOLTIP";
+			onButtonClick = "[7] call HG_fnc_adminMenuBtns";
+			x = 0.278281 * safezoneW + safezoneX;
 		};
 	};
 };

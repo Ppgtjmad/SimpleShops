@@ -14,7 +14,7 @@ _isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 private _interestedIn = getArray(getMissionConfig "CfgClient" >> "HG_TradersCfg" >> _trader >> "interestedIn");
-if((count _interestedIn) isEqualTo 0) exitWith {hint (localize "STR_HG_TRADER_EMPTY");};
+if((count _interestedIn) isEqualTo 0) exitWith {hint (localize "STR_HG_SHOP_EMPTY_BIS");};
 
 disableSerialization;
 

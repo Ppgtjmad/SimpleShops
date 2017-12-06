@@ -49,7 +49,7 @@ if((typeName _sp) isEqualTo "ARRAY") then
 };
 
 _vehicle allowDamage false;
-_vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate,_color],true];
+_vehicle setVariable["HG_Owner",[(getPlayerUID _unit),_plate,_color,[]],true];
 [_vehicle,2] call HG_fnc_lock;
 
 if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) then

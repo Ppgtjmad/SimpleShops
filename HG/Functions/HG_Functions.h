@@ -14,6 +14,7 @@ class HG
 		class checkboxChanged {};
 		class dialogOnLoadAdminMenu {};
 		class refreshPlayers {};
+		class refreshWhitelist {};
 	};
 	
 	class AI
@@ -29,6 +30,15 @@ class HG
 		class atmReceived {};
 		class atmRefresh {};
 		class dialogOnLoadATM {};
+	};
+	
+	class Dealer
+	{
+		file = "HG\Functions\Client\Dealer";
+		class dealerListChanged {};
+		class dealerSell {};
+		class dialogOnLoadDealer {};
+		class refreshDealer {};
 	};
 	
 	class EVH
@@ -85,6 +95,15 @@ class HG
 		class paycheck {};
 		class setOwner {};
 		class setRank {};
+	};
+	
+	class GiveKey
+	{
+		file = "HG\Functions\Client\GiveKey";
+		class dialogOnLoadGiveKey {};
+		class giveKeyBtns {};
+		class refreshKeyCombo {};
+		class refreshKeyList {};
 	};
 	
 	class GiveMoney

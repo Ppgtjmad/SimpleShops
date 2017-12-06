@@ -66,8 +66,8 @@
 			<Spanish>Parece que esta tienda está vacía...</Spanish>
 			<French>Il semblerait que ce magasin soit vide...</French>
 		</Key>
-		<Key ID="STR_HG_TRADER_EMPTY">
-		    <Original>This trader is not interested in anything...</Original>
+		<Key ID="STR_HG_SHOP_EMPTY_BIS">
+		    <Original>This trader/dealer is not interested in anything...</Original>
 			<Spanish>Este comerciante está interesado en nada...</Spanish>
 			<French>Ce commerçant n'est intéressé en rien...</French>
 		</Key>
@@ -145,6 +145,11 @@
 		    <Original>Nothing to display</Original>
 			<Spanish>Nada para mostrar</Spanish>
 			<French>Rien à afficher</French>
+		</Key>
+		<Key ID="STR_HG_NO_ONLINE_PLAYERS">
+			<Original>No online players</Original>
+			<Spanish>Ningún jugador</Spanish>
+			<French>Aucun joueur en ligne</French>
 		</Key>
 		<Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
 		    <Original>You can't open inventory when it's locked</Original>
@@ -255,8 +260,18 @@
 	<Package name="extDB">
 	    <Key ID="STR_HG_EXTDB_NOT_LOADED">
 		    <Original>[HG|extDB3] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
-			<Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa </Spanish>
+			<Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa</Spanish>
 			<French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
+		</Key>
+	</Package>
+	<Package name="Debriefing">
+	    <Key ID="STR_HG_DEBRIEF_NL_TITLE">
+	        <Original>NOT WHITELISTED</Original>
+		    <French>PAS WHITELISTÉ</French>
+	    </Key>
+		<Key ID="STR_HG_DEBRIEF_NL_DESC">
+		    <Original>You have to be whitelisted to use this slot, please contact an admin for more infos</Original>
+		    <French>Vous devez être whitelisé pour choisir ce slot, contactez un admin pour plus d'infos</French>
 		</Key>
 	</Package>
 	<Package name="Dialogs">
@@ -300,6 +315,11 @@
 		        <Original>Online - %1</Original>
 			    <Spanish>En linea - %1</Spanish>
 				<French>En ligne - %1</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_GIVE">
+		        <Original>Give</Original>
+			    <Spanish>Dar</Spanish>
+				<French>Donner</French>
 		    </Key>
 		</Container>
 		<Container name="AdminMenu">
@@ -396,6 +416,63 @@
 			    <Spanish>Muertes - %7</Spanish>
 				<French>Victimes - %7</French>
 		    </Key>
+			<Key ID="STR_HG_DLG_WL_TEXT">
+			    <Original>Whitelist</Original>
+			    <Spanish>Whitelist</Spanish>
+				<French>Whitelist</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_WL_ADD_UID_TOOLTIP">
+			    <Original>Add selected UID to selected side</Original>
+				<French>Ajouter l'UID sélectionnée au camp sélectionné</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_WL_REMOVE_TOOLTIP">
+			    <Original>Remove selected UID from selected side</Original>
+				<French>Supprimer l'UID sélectionnée du camp sélectionné</French>
+		    </Key>
+			<Key ID="STR_HG_DLG_WL_UID_EMPTY">
+			    <Original>UID field is empty</Original>
+				<French>L'UID est vide</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_UID_NOT_NUMBER">
+			    <Original>UID field is not a number</Original>
+				<French>L'UID n'est pas un nombre</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_UID_NOT_VALID">
+			    <Original>UID field length is not valid, should be 17 characters (%1)</Original>
+				<French>L'UID n'est pas valide, il doit y avoir 17 caractères (%1)</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_UID_ALREADY">
+			    <Original>This UID is already whitelisted on selected side</Original>
+				<French>Cette UID est déjà whitelisté au camp sélectionné</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_ADDED">
+			    <Original>You have added %1 to the %2 side whitelist</Original>
+				<French>Vous avez ajouté %1 à la whitelist du camp %2</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_REMOVED">
+			    <Original>You have removed %1 from the %2 side whitelist</Original>
+				<French>Vous avez supprimé %1 de la whitelist du camp %2</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_INFO_TEXT">
+			    <Original>Waiting for server...</Original>
+				<French>Attente du serveur...</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_SIDE_CIV">
+			    <Original>Civilian</Original>
+				<French>Civils</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_SIDE_WEST">
+			    <Original>West</Original>
+				<French>Ouest</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_SIDE_GUER">
+			    <Original>Resistance</Original>
+				<French>Résistance</French>
+			</Key>
+			<Key ID="STR_HG_DLG_WL_SIDE_EAST">
+			    <Original>East</Original>
+				<French>Est</French>
+			</Key>
 		</Container>
 		<Container name="ATM">
 		    <Key ID="STR_HG_ATM_ACC_TITLE">
@@ -427,11 +504,6 @@
 			    <Original>Refresh</Original>
 				<Spanish>Refrescar</Spanish>
 				<French>Rafraîchir</French>
-			</Key>
-			<Key ID="STR_HG_ATM_NO_PLAYERS">
-			    <Original>No online players</Original>
-				<Spanish>Ningún jugador</Spanish>
-				<French>Aucun joueur en ligne</French>
 			</Key>
 			<Key ID="STR_HG_ATM_DEPOSITED">
 			    <Original>You have deposited %1</Original>
@@ -636,6 +708,50 @@
 			    <French>Vous avez vendu %1x %2 pour %3</French>
 			</Key>
 		</Container>
+		<Container name="Dealer">
+		    <Key ID="STR_HG_DLG_DE_SELL_TOOLTIP">
+			    <Original>Sell selected vehicle</Original>
+				<Spanish>Vender vehiculo</Spanish>
+				<French>Vendre le véhicule sélectionné</French>
+			</Key>
+			<Key ID="STR_HG_DLG_DE_REFRESH_TOOLTIP">
+			    <Original>Refresh vehicle list</Original>
+				<Spanish>Refrescar vehiculos lista</Spanish>
+				<French>Rafraîchir la liste des véhicules</French>
+			</Key>
+			<Key ID="STR_HG_DLG_DE_PRICE">
+			    <Original>Price - %1</Original>
+				<Spanish>Precio - %1</Spanish>
+				<French>Prix - %1</French>
+			</Key>
+			<Key ID="STR_HG_DLG_DE_SOLD">
+			    <Original>You have sold your %1 for %2</Original>
+				<Spanish>Usted ha vendido %1 por %2</Spanish>
+			    <French>Vous avez vendu votre %1 pour %2</French>
+			</Key>
+		</Container>
+		<Container name="GiveKey">
+		    <Key ID="STR_HG_DLG_GK_REMOVE_TOOLTIP">
+			    <Original>Remove selected co-owner</Original>
+				<French>Supprimer le co-propriétaire sélectionné</French>
+			</Key>
+			<Key ID="STR_HG_DLG_GK_REFRESH_TOOLTIP">
+			    <Original>Refresh player list</Original>
+				<French>Rafraîchir la liste des joueurs</French>
+			</Key>
+			<Key ID="STR_HG_DLG_GK_GIVE_TOOLTIP">
+			    <Original>Give key to selected player</Original>
+				<French>Donner la clé au joueur sélectionné</French>
+			</Key>
+			<Key ID="STR_HG_DLG_GK_GIVE">
+			    <Original>You have given the %1 key to %2</Original>
+				<French>Vous avez donné la clé de votre %1 à %2</French>
+			</Key>
+			<Key ID="STR_HG_DLG_GK_GIVEN">
+			    <Original>%1 gave you the key of his %2</Original>
+				<French>%1 vous avez donné la clé de son %2</French>
+			</Key>
+		</Container>
 	</Package>
 	<Package name="Shops">
 	    <Key ID="STR_HG_GEAR_SHOP">
@@ -657,6 +773,11 @@
 		    <Original>Trader</Original>
 			<Spanish>Comerciante</Spanish>
 			<French>Commerçant</French>
+		</Key>
+		<Key ID="STR_HG_DEALER">
+		    <Original>Car Dealer</Original>
+			<Spanish>Vehiculos Comerciante</Spanish>
+			<French>Commerçant de véhicules</French>
 		</Key>
 		<Key ID="STR_HG_SHOP_ASSIGNED">
 		    <Original>Assigned Items</Original>

@@ -8,7 +8,7 @@
 	class YourGarageClass - Used as a param for the call
 	{
 		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
-		allowedTypes - ARRAY OF STRINGS - Allowed vehicle types to be retrieved from the garage, can be Car/Truck/Tank/Air/Ship/Submarine or mixed
+		allowedTypes - ARRAY OF STRINGS - Allowed vehicle types to be retrieved from the garage, can be "Car"/"Truck"/"Tank"/"Air"/"Ship"/"Submarine" or mixed
 		spawnPoints - ARRAY OF ARRAYS - Spawn positions (markers/positions)
 		|- 0 - STRING - Display name in the dialog
 		|- 1 - ARRAY OF MIXED - Markers/positions

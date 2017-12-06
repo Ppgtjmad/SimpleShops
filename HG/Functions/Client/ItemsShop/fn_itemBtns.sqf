@@ -55,11 +55,10 @@ switch(_mode) do
 				    [_price,1] call HG_fnc_addOrSubCash;
 				};
 				hint format[(localize "STR_HG_ITEM_BOUGHT"),_qty,_displayName,if(_price <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_price,true] call HG_fnc_currencyToText)}];
+			    HG_ITEMS_BOUGHT = true;
 			} else {
 			    hint (localize "STR_HG_INVENTORY_FULL");
 			};
-			
-			HG_ITEMS_BOUGHT = true;
 		} else {
 		    hint format[(localize "STR_HG_NOT_ENOUGH_MONEY"),([_price,true] call HG_fnc_currencyToText)];
 		};

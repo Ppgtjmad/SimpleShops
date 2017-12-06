@@ -49,7 +49,7 @@ class HG_GiveMoney
 			h = 0.0022 * safeZoneH;
 		};
 		
-		class ShopPicture: HG_RscPicture
+		class Picture: HG_RscPicture
 		{
 			moving = true;
 			text = "HG\UI\Icons\money.paa";
@@ -85,7 +85,7 @@ class HG_GiveMoney
 		
 		class GiveBtn: HG_RscButton
 		{
-			text = "Give";
+			text = "$STR_HG_DLG_GIVE";
 			x = 0.427812 * safeZoneW + safeZoneX;
 			y = 0.489 * safeZoneH + safeZoneY;
 			w = 0.144375 * safeZoneW;
@@ -97,7 +97,7 @@ class HG_GiveMoney
 		{
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
-			x = 0.448438 * safeZoneW + safeZoneX;
+			x = 0.546406 * safezoneW + safezoneX;
 			y = 0.401 * safeZoneH + safeZoneY;
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;

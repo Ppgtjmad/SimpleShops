@@ -13,6 +13,7 @@ if(_mode in [0,1,2,3]) then
     _value = [(ctrlText HG_ADM_XP_EDIT),(ctrlText HG_ADM_KILLS_EDIT),(ctrlText HG_ADM_CASH_EDIT),(ctrlText HG_ADM_BANK_EDIT)] select _mode;
 	if(_value isEqualTo "") exitWith {hint (localize "STR_HG_VALUE_EMPTY");};
 	if(!([_value] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
+	
 	_value = parseNumber _value;
 	if(_value <= 0) exitWith {hint (localize "STR_HG_NEGATIVE_OR_ZERO");};
 };
@@ -86,8 +87,47 @@ switch(_mode) do
 	    private _rank = HG_ADM_COMBO lbData (lbCurSel HG_ADM_COMBO);
 		[HG_OBJECT,_rank] remoteExecCall ["HG_fnc_setRank",HG_OBJECT,false];
 	};
+	// Add UID to whitelist
+	case 6:
+	{
+	    private _uid = ctrlText HG_WL_UID_EDIT;
+		if(_uid isEqualTo "") exitWith {hint (localize "STR_HG_DLG_WL_UID_EMPTY");};
+		if(!([_uid] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_DLG_WL_UID_NOT_NUMBER");};
+		
+		private _length = count(_uid splitString "");
+		if(_length != 17) exitWith {hint format[(localize "STR_HG_DLG_WL_UID_NOT_VALID"),_length];};
+		
+		private["_val","_sel"];
+		_val = HG_WL_SIDE_COMBO lbValue (lbCurSel HG_WL_SIDE_COMBO);
+		_sel = HG_WHITELIST select _val;
+		if(_uid in _sel) exitWith {hint (localize "STR_HG_DLG_WL_UID_ALREADY");};
+		
+		HG_WL_UID_LIST ctrlEnable false;
+		HG_WL_SIDE_COMBO ctrlEnable false;
+		HG_WL_INFO_TEXT ctrlShow true;
+		HG_WL_UID_ADD ctrlEnable false; 
+		HG_WL_UID_REMOVE ctrlEnable false;
+		
+		hint format[(localize "STR_HG_DLG_WL_ADDED"),_uid,(HG_WL_SIDE_COMBO lbText (lbCurSel HG_WL_SIDE_COMBO))];
+		[(HG_WL_SIDE_COMBO lbData (lbCurSel HG_WL_SIDE_COMBO)),(HG_WL_SIDE_COMBO lbValue (lbCurSel HG_WL_SIDE_COMBO)),_uid] remoteExecCall ["HG_fnc_updateWhitelist",2,false];
+	};
+	// Remove UID from whitelist
+	case 7:
+	{
+	    HG_WL_UID_LIST ctrlEnable false;
+		HG_WL_SIDE_COMBO ctrlEnable false;
+	    HG_WL_INFO_TEXT ctrlShow true;
+		HG_WL_UID_ADD ctrlEnable false; 
+		HG_WL_UID_REMOVE ctrlEnable false;
+		
+		hint format[(localize "STR_HG_DLG_WL_REMOVED"),(HG_WL_UID_LIST lbData (lbCurSel HG_WL_UID_LIST)),(HG_WL_SIDE_COMBO lbText (lbCurSel HG_WL_SIDE_COMBO))];
+		[(HG_WL_SIDE_COMBO lbData (lbCurSel HG_WL_SIDE_COMBO)),(HG_WL_SIDE_COMBO lbValue (lbCurSel HG_WL_SIDE_COMBO)),(HG_WL_UID_LIST lbData (lbCurSel HG_WL_UID_LIST))] remoteExecCall ["HG_fnc_updateWhitelist",2,false];
+	};
 };
 
-[] call HG_fnc_refreshPlayers;
+if(!(_mode in [6,7])) then
+{
+    [] call HG_fnc_refreshPlayers;
+};
 
 true;

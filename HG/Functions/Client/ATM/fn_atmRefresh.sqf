@@ -30,7 +30,7 @@ if((count HG_TEMP_ARRAY) != 0) then
 	
 	HG_ATM_TRANSFER_BTN ctrlEnable true;
 } else {
-    HG_ATM_PLAYERS_COMBO lbAdd (localize "STR_HG_ATM_NO_PLAYERS");
+    HG_ATM_PLAYERS_COMBO lbAdd (localize "STR_HG_NO_ONLINE_PLAYERS");
 	
 	HG_ATM_TRANSFER_BTN ctrlEnable false;
 };

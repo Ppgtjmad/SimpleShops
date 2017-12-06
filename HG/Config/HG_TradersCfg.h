@@ -8,7 +8,7 @@
 	class YourTraderClass - Used as a param for the call, basically the trader you want to display
 	{
 		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
-		interestedIn - ARRAY OF ARRAYS - Stuff that the trader is interested in
+		interestedIn - ARRAY OF ARRAYS - Stuff that the trader is interested in buying
 		|- 0 - STRING - Item classname
 		|- 1 - INTEGER - Item sell price
 	};
