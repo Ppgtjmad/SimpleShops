@@ -17,7 +17,7 @@ if(!HG_SAVING_EXTDB) then
 				
                 if(_value != 0) then
                 {
-                    profileNamespace setVariable [_x,0];
+                    profileNamespace setVariable [_x,nil];
                     saveProfileNamespace;
                 };
             };

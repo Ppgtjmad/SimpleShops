@@ -84,7 +84,7 @@ if(HG_SAVING_EXTDB) then
 	_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
 };
 
-if((isNil "_cash") OR (isNil "_bank") OR ((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1)) then
+if((isNil "_cash") OR (isNil "_bank")) then
 {
 	_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
 	_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
