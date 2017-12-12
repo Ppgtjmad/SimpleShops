@@ -94,7 +94,7 @@ switch(_mode) do
 		if(_uid isEqualTo "") exitWith {hint (localize "STR_HG_DLG_WL_UID_EMPTY");};
 		if(!([_uid] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_DLG_WL_UID_NOT_NUMBER");};
 		
-		private _length = count(_uid splitString "");
+		private _length = count _uid;
 		if(_length != 17) exitWith {hint format[(localize "STR_HG_DLG_WL_UID_NOT_VALID"),_length];};
 		
 		private["_val","_sel"];

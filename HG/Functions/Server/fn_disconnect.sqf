@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_unit","_id","_uid","_name","_all","_saveInv","_garage"];
+params["_unit","_id","_uid","_name"];
 
 if((getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1) then
 {
@@ -12,6 +12,8 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1) t
 
 if((getNumber(getMissionConfig "CfgClient" >> "storeVehiclesOnDisconnect")) isEqualTo 1) then
 {
+    private["_all","_saveInv","_garage"];
+	
     _all = (allMissionObjects "LandVehicle") + (allMissionObjects "Air") + (allMissionObjects "Ship") + (allMissionObjects "Submarine");
     _saveInv = (getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1;
 
