@@ -7,7 +7,8 @@
 	
 	class YourTraderClass - Used as a param for the call, basically the trader you want to display
 	{
-		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
+		conditionToAccess - STRING - Condition that must return either true or false, if true the player will have access to the trader
+		
 		interestedIn - ARRAY OF ARRAYS - Stuff that the trader is interested in buying
 		|- 0 - STRING - Item classname
 		|- 1 - INTEGER - Item sell price
@@ -16,7 +17,8 @@
 
 class HG_DefaultTrader // HG_DefaultTrader is just a placeholder for testing purposes, you can delete it completely and make your own
 {
-	whitelistRanks[] = {};
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
 	interestedIn[] = 
 	{
 		{"ItemMap",50},

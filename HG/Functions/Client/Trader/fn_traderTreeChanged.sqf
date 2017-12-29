@@ -23,7 +23,7 @@ if(_find != -1) then
 	HG_PRICE_HANDLER = 0;
 	HG_TOTAL_HANDLER = 0;
 	HG_TRADER_PRICE ctrlSetText (localize "STR_HG_DLG_TR_NOT_INTERESTED");
-	HG_TRADER_TOTAL ctrlSetText ([0,true] call HG_fnc_currencyToText);
+	HG_TRADER_TOTAL ctrlSetText format[(localize "STR_HG_DLG_TR_TOTAL"),[0,true] call HG_fnc_currencyToText];
 };
 
 if(_val isEqualTo 0) then

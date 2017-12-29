@@ -8,9 +8,9 @@ params["_target","_caller","_id","_dealer"];
 if((typeName _dealer) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_dealer isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
-private["_whitelist","_isOk"];
-_whitelist = getArray(getMissionConfig "CfgClient" >> "HG_DealersCfg" >> _dealer >> "whitelistRanks");
-_isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
+private["_condition","_isOk"];
+_condition = getText(getMissionConfig "CfgClient" >> "HG_DealersCfg" >> _dealer >> "conditionToAccess");
+_isOk = (_condition isEqualTo "") OR (call compile _condition);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 private _interestedIn = getArray(getMissionConfig "CfgClient" >> "HG_DealersCfg" >> _dealer >> "interestedIn");

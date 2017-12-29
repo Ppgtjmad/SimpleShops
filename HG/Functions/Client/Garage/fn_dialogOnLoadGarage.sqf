@@ -8,9 +8,9 @@ params["_target","_caller","_id","_garage"];
 if((typeName _garage) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};
 if(_garage isEqualTo "") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_2");};
 
-private["_whitelist","_isOk"];
-_whitelist = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "whitelistRanks");
-_isOk = ((count _whitelist) isEqualTo 0) OR ((rank player) in _whitelist);
+private["_condition","_isOk"];
+_condition = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "conditionToAccess");
+_isOk = (_condition isEqualTo "") OR (call compile _condition);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
 disableSerialization;

@@ -7,7 +7,8 @@
 	
 	class YourDealerClass - Used as a param for the call, basically the dealer you want to display
 	{
-		whitelistRanks - ARRAY OF STRINGS - Can be "PRIVATE"/"CORPORAL"/"SERGEANT"/"LIEUTENANT"/"CAPTAIN"/"MAJOR"/"COLONEL" or mixed
+		conditionToAccess - STRING - Condition that must return either true or false, if true the player will have access to the dealer
+		
 		interestedIn - ARRAY OF ARRAYS - Vehicles that the dealer is interested in buying
 		|- 0 - STRING - Vehicle classname
 		|- 1 - INTEGER - Vehicle sell price
@@ -16,7 +17,8 @@
 
 class HG_DefaultDealer  // HG_DefaultDealer is just a placeholder for testing purposes, you can delete it completely and make your own
 {
-	whitelistRanks[] = {};
+	conditionToAccess = "true"; // Example: "(playerSide in [west,independent]) AND ((rank player) isEqualTo 'COLONEL')"
+	
 	interestedIn[] = 
 	{
 		{"C_SUV_01_F",2500},
