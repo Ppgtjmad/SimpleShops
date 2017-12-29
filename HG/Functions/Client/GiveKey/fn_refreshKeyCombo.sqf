@@ -28,7 +28,7 @@ if((count _all) != 0) then
 	
 	HG_GK_GIVE_BTN ctrlEnable true;
 } else {
-    HG_GK_PLAYERS_COMBO lbAdd (localize "STR_HG_NOTHING_TO_SHOW");
+    HG_GK_PLAYERS_COMBO lbAdd (localize "STR_HG_NOTHING_TO_DISPLAY");
 	HG_GK_GIVE_BTN ctrlEnable false;
 };
 
