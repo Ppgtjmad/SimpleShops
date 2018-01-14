@@ -14,7 +14,7 @@
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	enableBuyToGarage - BOOL - Enable ability to automatically store vehicle in garage when bought? Set it to false if you don't use garage
-	clearInventory - BOOL - Clear vehicle inventory when spawning (retrieving vehicle from garage and buying)?
+	clearInventory - BOOL - Clear vehicle default inventory (FAKs etc...) when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
 	deleteBodyOnDisconnect - BOOL - Delete player body when player disconnects?
 	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
@@ -38,7 +38,7 @@
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	
 	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/Database)
-	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
+	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB config to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
 	extDBProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
 	extDBCustomFile - STRING - If "extDB" is used as savingMethod & extDBProtocol is "SQL_CUSTOM", set the custom file to use (located in @extDB3\sql_custom folder)
 	

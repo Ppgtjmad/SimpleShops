@@ -84,7 +84,7 @@ if(HG_SAVING_EXTDB) then
 	_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
 };
 
-if((isNil "_cash") OR (isNil "_bank")) then
+if((isNil "_cash") OR (isNil "_bank") OR {_cash isEqualTo -1} OR {_bank isEqualTo -1}) then
 {
 	_cash = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startCash");
 	_bank = getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank _player) >> "startBank");
@@ -94,6 +94,18 @@ if((isNil "_cash") OR (isNil "_bank")) then
 	    profileNamespace setVariable [format["HG_Cash_%1",_uid],_cash];
 		profileNamespace setVariable [format["HG_Bank_%1",_uid],_bank];
 		saveProfileNamespace;
+	} else {
+	    if((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1) then
+	    {
+	        private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
+	        {
+	            format["UPDATE HG_Players SET Money = '%1', Bank = '%2' WHERE PID = '%3'",_cash,_bank,_uid];
+	        } else {
+	            format["HG_updateMoneyBank:%1:%2:%3",_cash,_bank,_uid];
+	        };
+	
+	        [1,_query] call HG_fnc_asyncCall;
+	    };
 	};
 };
 

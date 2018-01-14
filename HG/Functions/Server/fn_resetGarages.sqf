@@ -6,7 +6,7 @@
 
 if(!HG_SAVING_EXTDB) then
 {
-    if(!isNil "HG_Profile") then
+    if(!isNil {parsingNamespace getVariable "HG_Profile"}) then
 	{
 	    private _vars = parsingNamespace getVariable "HG_Profile";
 	
