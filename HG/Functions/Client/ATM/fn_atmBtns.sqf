@@ -19,7 +19,7 @@ switch(_mode) do
     // Deposit
     case 0:
 	{
-	    if(_amount > (player getVariable "HG_Cash")) exitWith {hint (localize "STR_HG_ATM_CANNOT_DEPOSIT");};
+	    if(_amount > (player getVariable HG_CASH_VAR)) exitWith {hint (localize "STR_HG_ATM_CANNOT_DEPOSIT");};
 		
 	    [_amount,1] call HG_fnc_addOrSubCash;
 		[_amount,0,1] call HG_fnc_addOrSubCash;
@@ -29,7 +29,7 @@ switch(_mode) do
 	// Withdraw
 	case 1:
 	{
-	    if(_amount > (player getVariable "HG_Bank")) exitWith {hint (localize "STR_HG_ATM_CANNOT_WITHDRAW");};
+	    if(_amount > (player getVariable HG_BANK_VAR)) exitWith {hint (localize "STR_HG_ATM_CANNOT_WITHDRAW");};
 		
 	    [_amount,0] call HG_fnc_addOrSubCash;
 		[_amount,1,1] call HG_fnc_addOrSubCash;

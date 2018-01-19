@@ -36,7 +36,7 @@ switch(_mode) do
 	// HUD Cash Update
 	case 1:
 	{
-		HG_HUD_MONEY_TEXT ctrlSetText format["%1",([(player getVariable "HG_Cash")] call BIS_fnc_numberText)];
+		HG_HUD_MONEY_TEXT ctrlSetText format["%1",([(player getVariable HG_CASH_VAR)] call BIS_fnc_numberText)];
 	};
 	// HUD XP Update
 	case 2:

@@ -18,7 +18,7 @@ switch(_mode) do
 		HG_TOTAL_HANDLER = _qty * HG_PRICE_HANDLER;
 		
 		HG_TRADER_QTY ctrlSetText str _qty;
-		HG_TRADER_TOTAL ctrlSetText ([HG_TOTAL_HANDLER,true] call HG_fnc_currencyToText);
+		HG_TRADER_TOTAL ctrlSetText format[(localize "STR_HG_DLG_TR_TOTAL"),([HG_TOTAL_HANDLER,true] call HG_fnc_currencyToText)];
 	};
 	// Add
 	case 1:
@@ -31,12 +31,14 @@ switch(_mode) do
 		if(_qty > _max) then {_qty = _max;};
 		
 		HG_TOTAL_HANDLER = _qty * HG_PRICE_HANDLER;
-		HG_TRADER_TOTAL ctrlSetText ([HG_TOTAL_HANDLER,true] call HG_fnc_currencyToText);
+		
+		HG_TRADER_QTY ctrlSetText str _qty;
+		HG_TRADER_TOTAL ctrlSetText format[(localize "STR_HG_DLG_TR_TOTAL"),([HG_TOTAL_HANDLER,true] call HG_fnc_currencyToText)];
 	};
 	// Sell
 	case 2:
 	{
-		if(HG_TOTAL_HANDLER isEqualTo 0) exitWith {hint (localize "STR_HG_DLG_TR_NOT_INTERESTED_BIS");};
+		//if(HG_TOTAL_HANDLER isEqualTo 0) exitWith {hint (localize "STR_HG_DLG_TR_NOT_INTERESTED_BIS");};
 	
 	    private["_path","_item","_qty"];
 		

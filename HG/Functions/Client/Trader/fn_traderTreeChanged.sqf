@@ -34,18 +34,20 @@ if(_val isEqualTo 0) then
 	
     HG_TRADER_SELL_BTN ctrlEnable false;
 } else {
-	if(_val isEqualTo 1) then
+	if((_val isEqualTo 1) OR (_find isEqualTo -1)) then
 	{
 	    {
 		    _x ctrlEnable false;
 		} forEach [HG_TRADER_SUB_BTN,HG_TRADER_ADD_BTN];
+		
+		HG_TRADER_SELL_BTN ctrlEnable false;
 	} else {
 	    {
 		    _x ctrlEnable true;
 		} forEach [HG_TRADER_SUB_BTN,HG_TRADER_ADD_BTN];
+		
+		HG_TRADER_SELL_BTN ctrlEnable true;
 	};
-	
-	HG_TRADER_SELL_BTN ctrlEnable true;
 };
 
 true;

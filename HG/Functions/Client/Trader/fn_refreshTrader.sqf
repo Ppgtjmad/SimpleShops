@@ -98,6 +98,11 @@ _gear = getUnitLoadout player;
 					    HG_TRADER_TREE tvSetValue [[_path,_subPath],1];
 					};
 				} forEach _gearSelection;
+				
+				if((HG_TRADER_TREE tvCount [_path]) isEqualTo 0) then
+				{
+				    HG_TRADER_TREE tvDelete [_path];
+				};
 			};
 		};
 	} else {

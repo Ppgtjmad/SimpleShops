@@ -10,7 +10,7 @@ if(_value isEqualTo "") exitWith {hint (localize "STR_HG_VALUE_EMPTY");};
 if(!([_value] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
 _value = parseNumber _value;
 if(_value <= 0) exitWith {hint (localize "STR_HG_NEGATIVE_OR_ZERO");};
-if(_value > (player getVariable "HG_Cash")) exitWith {hint (localize "STR_HG_TOO_MUCH");};
+if(_value > (player getVariable HG_CASH_VAR)) exitWith {hint (localize "STR_HG_TOO_MUCH");};
 
 [_value,0] remoteExecCall ["HG_fnc_addOrSubCash",HG_CURSOR_OBJECT,false];
 hint format[(localize "STR_HG_SENT_MONEY"),([_value,true] call HG_fnc_currencyToText),(name HG_CURSOR_OBJECT)];

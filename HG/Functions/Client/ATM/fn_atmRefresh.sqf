@@ -10,8 +10,8 @@ disableSerialization;
 HG_ATM_REFRESH_BTN ctrlEnable false;
 lbClear HG_ATM_PLAYERS_COMBO;
 
-HG_ATM_ACC_TEXT ctrlSetText ([(player getVariable "HG_Bank"),true] call HG_fnc_currencyToText);
-HG_ATM_CASH_TEXT ctrlSetText ([(player getVariable "HG_Cash"),true] call HG_fnc_currencyToText);
+HG_ATM_ACC_TEXT ctrlSetText ([(player getVariable HG_BANK_VAR),true] call HG_fnc_currencyToText);
+HG_ATM_CASH_TEXT ctrlSetText ([(player getVariable HG_CASH_VAR),true] call HG_fnc_currencyToText);
 
 {
     _x ctrlSetText "0";

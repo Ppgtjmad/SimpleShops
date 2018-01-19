@@ -5,6 +5,8 @@
     Website - http://www.sunrise-production.com
 	
 	currencyType - STRING - Currency you want to use (ISO format)
+	cashVariable - STRING - Custom cash variable you want to use instead of default one (setVariable'd on player and broadcasted)
+	bankVariable - STRING - Custom bank variable you want to use instead of default one (setVariable'd on player and broadcasted)
 	
 	resetSavedMoney - BOOL - Useful for mission rotation, if it's set to true old saved money will be reset to startCash/startBank values whenever the server is restarted or mission changes
 	enableHUD - BOOL - Enable money display in HUD?
@@ -66,6 +68,8 @@
 
 /* MONEY */
 currencyType = "USD";
+cashVariable = "HG_Cash";
+bankVariable = "HG_Bank";
 
 /* SYSTEMS */
 resetSavedMoney = false;

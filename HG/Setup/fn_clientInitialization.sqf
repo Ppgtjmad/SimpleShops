@@ -21,6 +21,8 @@ HG_TAGS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTags")) isEq
 HG_MARKERS_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableMarkers")) isEqualTo 1;
 HG_ATM_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableATM")) isEqualTo 1;
 HG_WHITELISTED_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1;
+HG_CASH_VAR = getText(getMissionConfig "CfgClient" >> "cashVariable");
+HG_BANK_VAR = getText(getMissionConfig "CfgClient" >> "bankVariable");
 
 /*
     Init EVHs

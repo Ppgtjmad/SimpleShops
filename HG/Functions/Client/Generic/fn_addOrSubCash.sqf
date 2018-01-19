@@ -10,7 +10,7 @@ params[["_amount",1,[0]],["_mode",0,[0]],["_where",0,[0]],"_oldVal","_newVal"];
 if(!([_amount] call HG_fnc_isNumeric)) exitWith {hint (localize "STR_HG_NOT_A_NUMBER");};
 if(_amount isEqualTo 0) exitWith {true;};
 
-_oldVal = if(_where isEqualTo 0) then {(player getVariable "HG_Cash")} else {(player getVariable "HG_Bank")};
+_oldVal = if(_where isEqualTo 0) then {(player getVariable HG_CASH_VAR)} else {(player getVariable HG_BANK_VAR)};
 _newVal = if(_mode isEqualTo 0) then {(_oldVal + _amount)} else {(_oldVal - _amount)};
 if(_newVal < 0) then {_newVal = 0};
 
@@ -27,14 +27,14 @@ HG_CLIENT = nil;
 
 if(_where isEqualTo 0) then
 {
-    player setVariable ["HG_Cash",_newVal,true];
+    player setVariable [HG_CASH_VAR,_newVal,true];
 	
 	if(HG_HUD_ENABLED) then
     {
         [1] call HG_fnc_HUD;
     };
 } else {
-    player setVariable ["HG_Bank",_newVal,true];
+    player setVariable [HG_BANK_VAR,_newVal,true];
 };
 
 if(!isNull (findDisplay ATM_DISPLAY)) then

@@ -46,8 +46,8 @@ if(_sel != (localize "STR_HG_NONE")) then
 		(side HG_OBJECT),
 		(rank HG_OBJECT),
 		_xpText,
-	    ([(HG_OBJECT getVariable "HG_Cash"),true] call HG_fnc_currencyToText),
-		([(HG_OBJECT getVariable "HG_Bank"),true] call HG_fnc_currencyToText),
+	    ([(HG_OBJECT getVariable HG_CASH_VAR),true] call HG_fnc_currencyToText),
+		([(HG_OBJECT getVariable HG_BANK_VAR),true] call HG_fnc_currencyToText),
 		_kcText
 	];
 	
