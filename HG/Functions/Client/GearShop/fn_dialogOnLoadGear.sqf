@@ -91,9 +91,9 @@ HG_GEAR_SAVED =
     [(backpack player),(backpackItems player)],
     (goggles player),
     (headgear player),
-    [(primaryWeapon player),(primaryWeaponMagazine player),(primaryWeaponItems player)],
-    [(secondaryWeapon player),(secondaryWeaponMagazine player),(secondaryWeaponItems player)],
-    [(handgunWeapon player),(handgunMagazine player),(handgunItems player)]
+    [(primaryWeapon player),(primaryWeaponMagazine player),(primaryWeaponItems player),(player ammo primaryWeapon player)],
+    [(secondaryWeapon player),(secondaryWeaponMagazine player),(secondaryWeaponItems player),(player ammo secondaryWeapon player)],
+    [(handgunWeapon player),(handgunMagazine player),(handgunItems player),(player ammo handgunWeapon player)]
 ];
 HG_GEAR_BOUGHT = false;
 

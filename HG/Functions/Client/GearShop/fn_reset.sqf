@@ -70,7 +70,7 @@ if(((HG_GEAR_SAVED select 5) select 0) != "") then
 {
     if(count ((HG_GEAR_SAVED select 5) select 1) != 0) then
 	{
-	    player addMagazine (((HG_GEAR_SAVED select 5) select 1) select 0);
+	    player addMagazine [(((HG_GEAR_SAVED select 5) select 1) select 0),((HG_GEAR_SAVED select 5) select 3)];
 	};
 	
     player addWeaponGlobal ((HG_GEAR_SAVED select 5) select 0);
@@ -88,7 +88,7 @@ if(((HG_GEAR_SAVED select 6) select 0) != "") then
 {
     if(count ((HG_GEAR_SAVED select 6) select 1) != 0) then
 	{
-	    player addMagazine (((HG_GEAR_SAVED select 6) select 1) select 0);
+	    player addMagazine [(((HG_GEAR_SAVED select 6) select 1) select 0),((HG_GEAR_SAVED select 6) select 3)];
 	};
 	
     player addWeaponGlobal ((HG_GEAR_SAVED select 6) select 0);
@@ -106,7 +106,7 @@ if(((HG_GEAR_SAVED select 7) select 0) != "") then
 {
     if(count ((HG_GEAR_SAVED select 7) select 1) != 0) then
 	{
-	    player addMagazine (((HG_GEAR_SAVED select 7) select 1) select 0);
+	    player addMagazine [(((HG_GEAR_SAVED select 7) select 1) select 0),((HG_GEAR_SAVED select 7) select 3)];
 	};
 	
     player addWeaponGlobal ((HG_GEAR_SAVED select 7) select 0);
