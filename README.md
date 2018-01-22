@@ -14,13 +14,6 @@
   </b>
 </p>
 
-<h2 align="center">Support</h2>
-<p align="center">
-  <b>
-    <a href="http://forums.sunrise-production.com/index.php?/forum/58-scripting/">Support forum</a>
-  </b>
-</p>
-
 <h2 align="center">Issues</h2>
 <p align="center">
   <b>
