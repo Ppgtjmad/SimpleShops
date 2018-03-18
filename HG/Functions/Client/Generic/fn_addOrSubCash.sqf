@@ -1,4 +1,3 @@
-#define ATM_DISPLAY getNumber(getMissionConfig "HG_ATM" >> "idd")
 /*
     Author - HoverGuy
     Description - Used to add or subtract money from the money variable
@@ -37,9 +36,9 @@ if(_where isEqualTo 0) then
     player setVariable [HG_BANK_VAR,_newVal,true];
 };
 
-if(!isNull (findDisplay ATM_DISPLAY)) then
+if(HG_ATM_ENABLED) then
 {
-    [] call HG_fnc_atmRefresh;
+	[] call HG_fnc_atmRefresh;
 };
 
 true;

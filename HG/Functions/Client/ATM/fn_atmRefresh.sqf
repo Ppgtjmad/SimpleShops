@@ -4,6 +4,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
+if(isNull HG_ATM_DISP) exitWith {true};
 
 disableSerialization;
 

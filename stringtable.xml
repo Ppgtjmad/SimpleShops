@@ -748,6 +748,10 @@
 			    <Chinese>你不能提取多於餘額的現金</Chinese>
 			    <Chinesesimp>你不能提取多于余额的现金</Chinesesimp>
 			</Key>
+			<Key ID="STR_HG_ATM_CANNOT_TRANSFER">
+			    <Original>You cannot transfer more than what's in the bank</Original>
+				<French>Vous ne pouvez pas faire un virement supérieur à votre compte bancaire</French>
+			</Key>
 		</Container>
 	    <Container name="GearShop">
 			<Key ID="STR_HG_DLG_GS_TITLE_LIST">

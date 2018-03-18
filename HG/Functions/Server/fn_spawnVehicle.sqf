@@ -3,7 +3,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_mode","_unit","_classname","_sp",["_plate",round(random(100000))],["_color",(localize "STR_HG_DEFAULT")],"_vehicle"];
+params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")],"_vehicle"];
 
 if(!HG_SAVING_EXTDB) then
 {

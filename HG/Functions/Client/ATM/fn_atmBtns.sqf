@@ -39,6 +39,8 @@ switch(_mode) do
 	// Transfer
 	case 2:
 	{
+	    if(_amount > (player getVariable HG_BANK_VAR)) exitWith {hint (localize "STR_HG_ATM_CANNOT_TRANSFER");};
+		
 	    private _unit = HG_TEMP_ARRAY select (HG_ATM_PLAYERS_COMBO lbValue (lbCurSel HG_ATM_PLAYERS_COMBO));
 		
 	    [_amount,1,1] call HG_fnc_addOrSubCash;
