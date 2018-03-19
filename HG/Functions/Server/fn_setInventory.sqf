@@ -14,7 +14,7 @@ if(!HG_SAVING_EXTDB) then
 } else {
     private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{
-		format["SELECT Inventory FROM HG_Vehicles WHERE WHERE PID = '%1' AND Plate = '%2'",_uid,_plate];
+		format["SELECT Inventory FROM HG_Vehicles WHERE PID = '%1' AND Plate = '%2'",_uid,_plate];
 	} else {
 		format["HG_vehicleGetInventory:%1:%2",_uid,_plate];
 	};
