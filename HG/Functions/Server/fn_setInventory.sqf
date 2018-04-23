@@ -19,7 +19,7 @@ if(!HG_SAVING_EXTDB) then
 		format["HG_vehicleGetInventory:%1:%2",_uid,_plate];
 	};
 	
-	_inventory = [2,_query] call HG_fnc_asyncCall;
+	_inventory = [2,_query,false] call HG_fnc_asyncCall;
 };
 	
 if((count _inventory) != 0) then
