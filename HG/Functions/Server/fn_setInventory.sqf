@@ -20,6 +20,7 @@ if(!HG_SAVING_EXTDB) then
 	};
 	
 	_inventory = [2,_query,false] call HG_fnc_asyncCall;
+	_inventory = _inventory select 0;
 };
 	
 if((count _inventory) != 0) then
