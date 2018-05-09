@@ -30,19 +30,19 @@ _gear = getUnitLoadout player;
 			{
 				_weapon = _gearSelection select 0;
 				_items = [(_gearSelection select 1),(_gearSelection select 2),(_gearSelection select 3),(_gearSelection select 6)];
-				_mags = [(_gearSelection select 4) select 0,(_gearSelection select 5) select 0];
+				_mags = [(_gearSelection select 4),(_gearSelection select 5)];
 				
 				_config = [_weapon] call HG_fnc_getConfig;
 				_subPath = HG_TRADER_TREE tvAdd [[_path],(getText(configFile >> _config >> _weapon >> "displayName"))];
 				HG_TRADER_TREE tvSetData [[_path,_subPath],_weapon];
 				HG_TRADER_TREE tvSetValue [[_path,_subPath],1];
-				
+
 				{
-				    if(_x != "") then
+				    if((count _x) != 0) then
 				    {
-					    _config = [_x] call HG_fnc_getConfig;
-					    _subSubPath = HG_TRADER_TREE tvAdd [[_path,_subPath],(getText(configFile >> _config >> _x >> "displayName"))];
-					    HG_TRADER_TREE tvSetData [[_path,_subPath,_subSubPath],_x];
+					    _config = [_x select 0] call HG_fnc_getConfig;
+					    _subSubPath = HG_TRADER_TREE tvAdd [[_path,_subPath],(getText(configFile >> _config >> _x select 0 >> "displayName"))];
+					    HG_TRADER_TREE tvSetData [[_path,_subPath,_subSubPath],_x select 0];
 					    HG_TRADER_TREE tvSetValue [[_path,_subPath,_subSubPath],1];
 				    };
 				} forEach _mags;

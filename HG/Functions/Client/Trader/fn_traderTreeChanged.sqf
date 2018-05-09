@@ -40,7 +40,12 @@ if(_val isEqualTo 0) then
 		    _x ctrlEnable false;
 		} forEach [HG_TRADER_SUB_BTN,HG_TRADER_ADD_BTN];
 		
-		HG_TRADER_SELL_BTN ctrlEnable false;
+		if(_find isEqualTo -1) then
+		{
+		    HG_TRADER_SELL_BTN ctrlEnable false;
+		} else {
+		    HG_TRADER_SELL_BTN ctrlEnable true;
+		};
 	} else {
 	    {
 		    _x ctrlEnable true;
