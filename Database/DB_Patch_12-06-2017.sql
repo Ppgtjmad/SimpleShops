@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `HG_Whitelist` (
   `West` TEXT NOT NULL,
   `Resistance` TEXT NOT NULL,
   `East` TEXT NOT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 INSERT INTO `HG_Whitelist` (
   `Civilian`,
