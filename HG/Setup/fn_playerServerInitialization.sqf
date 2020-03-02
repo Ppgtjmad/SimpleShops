@@ -6,7 +6,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_player","_jip","_uid","_result","_cash","_bank"];
+params["_player","_uid","_result","_cash","_bank"];
 
 _uid = getPlayerUID _player;
 
@@ -73,14 +73,11 @@ if(HG_SAVING_EXTDB) then
 			(getUnitLoadout _player)
 		];
 	};
-};
-
-if(HG_SAVING_EXTDB) then
-{
+	
 	_cash = _result select 0;
 	_bank = _result select 1;
 } else {
-	_cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
+    _cash = profileNamespace getVariable format["HG_Cash_%1",_uid];
 	_bank = profileNamespace getVariable format["HG_Bank_%1",_uid];
 };
 

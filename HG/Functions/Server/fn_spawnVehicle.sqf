@@ -41,9 +41,9 @@ if(!HG_SAVING_EXTDB) then
 
 if((typeName _sp) isEqualTo "ARRAY") then
 {
-	_vehicle = createVehicle [_classname,_sp,[],0,"NONE"];
+	_vehicle = createVehicle [_classname,_sp,[],0,"CAN_COLLIDE"];
 } else {
-	_vehicle = _classname createVehicle (markerPos _sp);
+	_vehicle = createVehicle [_classname,(markerPos _sp),[],0,"CAN_COLLIDE"];
 	_vehicle setVectorUp (surfaceNormal (markerPos _sp));
 	_vehicle setDir (markerDir _sp);
 };
