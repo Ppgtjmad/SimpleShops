@@ -3,10 +3,10 @@
 <h2 align="center">Wiki</h2>
 <p align="center">
   <b>
-    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-try-it">How to try it</a><br/>
-    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-use-it-in-your-custom-mission">How to use it in your custom mission</a><br/>
-    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-configure">How to configure</a><br/>
-    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards">How to setup kill reward</a><br/>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Try-It">Try It</a><br/>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Implementation">Implementation</a><br/>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Configuration">Configuration</a><br/>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Kill-Rewards">Kill Rewards</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Usage">Usage</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Useful-Functions">Useful Functions</a><br/>
     <a href="https://github.com/Ppgtjmad/SimpleShops/wiki/Variables">Variables</a><br/>
