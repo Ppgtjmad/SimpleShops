@@ -4,7 +4,7 @@
     © All Fucks Reserved
     Website - http://www.sunrise-production.com
 */
-params["_mode","_gear","_index","_gearSelection","_path","_config","_subPath","_weapon","_items","_mags","_stuff","_class","_qty"];
+params["_mode","_gear","_index","_gearSelection","_path","_config","_subPath","_weapon","_items","_mags","_stuff","_item","_qty"];
 
 disableSerialization;
 
@@ -75,13 +75,19 @@ _gear = getUnitLoadout player;
 				    if((count _items) != 0) then
 				    {
 					    {
-						    _class = _x select 0;
-						    _qty = _x select 1;
-						    _config = [_class] call HG_fnc_getConfig;
-						    _subSubPath = HG_TRADER_TREE tvAdd [[_path,_subPath],format["%1x %2",_qty,(getText(configFile >> _config >> _class >> "displayName"))]];
-						    HG_TRADER_TREE tvSetData [[_path,_subPath,_subSubPath],_class];
+						    _item = _x select 0;
+							
+							if((typeName _item) isEqualTo "ARRAY") then
+							{
+							    _item = _item select 0;
+							};
+							
+							_qty = _x select 1;
+						    _config = [_item] call HG_fnc_getConfig;
+						    _subSubPath = HG_TRADER_TREE tvAdd [[_path,_subPath],format["%1x %2",_qty,(getText(configFile >> _config >> _item >> "displayName"))]];
+						    HG_TRADER_TREE tvSetData [[_path,_subPath,_subSubPath],_item];
 						    HG_TRADER_TREE tvSetValue [[_path,_subPath,_subSubPath],_qty];
-					    } forEach _items;
+						} forEach _items;
 				    };
 				};
 			};
