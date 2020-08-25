@@ -82,6 +82,7 @@ class HG
 		class addOrSubCash {};
 		class addOrSubKills {};
 		class addOrSubXP {};
+		class arrayCount {};
 	    class currencyToText {};
 		class emptyVehicle {};
 		class getConfig {};
@@ -146,6 +147,16 @@ class HG
 		class refreshTrader {};
 		class traderBtns {};
 		class traderTreeChanged {};
+	};
+	
+	class Units
+	{
+		file = "HG\Functions\Client\Units";
+		class dialogOnLoadUnits {};
+		class unitsBtns {};
+		class unitsComboChanged {};
+		class unitsRefresh {};
+		class unitsTreeChanged {};
 	};
 	
 	class VehiclesShop

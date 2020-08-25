@@ -262,6 +262,11 @@ class HG_TradersCfg
 	#include "HG_TradersCfg.h"
 };
 
+class HG_UnitsShopCfg
+{
+	#include "HG_UnitsShopCfg.h"
+};
+
 class HG_VehiclesShopCfg
 {
     #include "HG_VehiclesShopCfg.h"

@@ -15,6 +15,10 @@
 			<Chinese>你買了%1 x %2,花費%3</Chinese>
 			<Chinesesimp>你买了%1 x %2,花费%3</Chinesesimp>
 		</Key>
+		<Key ID="STR_HG_UNIT_BOUGHT">
+		    <Original>You have recruited a %1 for %2</Original>
+			<French>Vous avez recruté un(e) %1 pour %2</French>
+		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT">
 		    <Original>You have bought a %1 for %2</Original>
 			<Spanish>Tu has comprado un %1 por %2</Spanish>
@@ -950,6 +954,12 @@
 			    <Chinesesimp>共计- %1</Chinesesimp>
 		    </Key>
 		</Container>
+		<Container name="UnitsShop">
+		    <Key ID="STR_HG_DLG_US_BUY_BTN">
+			    <Original>Buy selected unit</Original>
+			    <French>Acheter l'unité selectionnée</French>
+			</Key>
+		</Container>
 		<Container name="Trader">
 		    <Key ID="STR_HG_DLG_TR_SELL_TOOLTIP">
 			    <Original>Sell selected item(s)</Original>
@@ -1078,6 +1088,10 @@
 			<French>Magasin de véhicules</French>
 			<Chinese>載具商店</Chinese>
 			<Chinesesimp>载具商店</Chinesesimp>
+		</Key>
+		<Key ID="STR_HG_UNITS_SHOP">
+		    <Original>Units Shop</Original>
+			<French>Magasin de troupes</French>
 		</Key>
 		<Key ID="STR_HG_TRADER">
 		    <Original>Trader</Original>

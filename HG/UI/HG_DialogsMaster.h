@@ -14,4 +14,5 @@
 #include "Dialogs\HG_GiveMoney.h"
 #include "Dialogs\HG_ItemsShop.h"
 #include "Dialogs\HG_Trader.h"
+#include "Dialogs\HG_UnitsShop.h"
 #include "Dialogs\HG_VehiclesShop.h"

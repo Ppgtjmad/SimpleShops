@@ -130,3 +130,11 @@
 #define HG_GK_REMOVE_BTN_IDC          9403
 #define HG_GK_REFRESH_BTN_IDC         9404
 #define HG_GK_GIVE_BTN_IDC            9405
+
+#define HG_UNITS_SHOP_IDD             9500
+#define HG_UNITS_PRICE_IDC            9501
+#define HG_UNITS_ITEM_PIC_IDC         9502
+#define HG_UNITS_ITEM_TEXT_IDC        9503
+#define HG_UNITS_TREE_IDC             9504
+#define HG_UNITS_UNIT_SWITCH_IDC      9505
+#define HG_UNITS_BUY_BTN_IDC          9506
