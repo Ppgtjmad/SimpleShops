@@ -18,6 +18,7 @@
 	enableBuyToGarage - BOOL - Enable ability to automatically store vehicle in garage when bought? Set it to false if you don't use garage
 	clearInventory - BOOL - Clear vehicle default inventory (FAKs etc...) when spawning (retrieving vehicle from garage and buying)?
 	storeVehiclesOnDisconnect - BOOL - Store player vehicles when player disconnects?
+	vehiclesCleanupPeriod - INTEGER - Time (in minutes) between each cleanup iteration, recommended is 1
 	deleteBodyOnDisconnect - BOOL - Delete player body when player disconnects?
 	resetGaragesOnServerStart - BOOL - Reset player garages when server starts?
 	enablePlayerInventorySave - BOOL - Enable player gear saving? Disable this if you have a custom saving system
@@ -82,6 +83,7 @@ enableGiveMoney = true;
 enableBuyToGarage = true;
 clearInventory = true;
 storeVehiclesOnDisconnect = true;
+vehiclesCleanupPeriod = 1;
 deleteBodyOnDisconnect = false;
 resetGaragesOnServerStart = false;
 enablePlayerInventorySave = true;

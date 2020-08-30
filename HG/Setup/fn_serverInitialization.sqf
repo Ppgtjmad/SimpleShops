@@ -44,6 +44,7 @@ private "_compile";
 } forEach 
 [
 	["HG_fnc_activeReset","HG\Functions\Server\fn_activeReset.sqf"],
+	["HG_fnc_cleanup","HG\Functions\Server\fn_cleanup.sqf"],
 	["HG_fnc_clientToServer","HG\Functions\Server\fn_clientToServer.sqf"],
 	["HG_fnc_deleteVehicle","HG\Functions\Server\fn_deleteVehicle.sqf"],
 	["HG_fnc_disconnect","HG\Functions\Server\fn_disconnect.sqf"],
@@ -82,6 +83,12 @@ if((getNumber(getMissionConfig "CfgClient" >> "resetSavedMoney")) isEqualTo 1) t
 if((getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1 AND HG_SAVING_EXTDB) then
 {
     [] call HG_fnc_getWhitelist;
+};
+
+HG_CLEANUP_THREAD = [] spawn 
+{
+    sleep getNumber(getMissionConfig "CfgClient" >> "vehiclesCleanupPeriod") * 60;
+	[] call HG_fnc_cleanup;
 };
 
 "HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_clientToServer;};
