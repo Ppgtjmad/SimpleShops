@@ -85,10 +85,6 @@ if((getNumber(getMissionConfig "CfgClient" >> "enableWhitelist")) isEqualTo 1 AN
     [] call HG_fnc_getWhitelist;
 };
 
-HG_CLEANUP_THREAD = [] spawn 
-{
-    sleep getNumber(getMissionConfig "CfgClient" >> "vehiclesCleanupPeriod") * 60;
-	[] call HG_fnc_cleanup;
-};
+HG_CLEANUP_THREAD = [] spawn HG_fnc_cleanup;
 
 "HG_CLIENT" addPublicVariableEventHandler {[(_this select 1)] call HG_fnc_clientToServer;};
