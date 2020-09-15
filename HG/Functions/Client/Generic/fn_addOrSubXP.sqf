@@ -51,8 +51,11 @@ player setVariable ["HG_XP",[(rank player),_newXp],true];
 
 if(HG_HUD_ENABLED) then
 {
-    [2] call HG_fnc_HUD;
-	[3] call HG_fnc_HUD;
+    if(HG_HUD_TOGGLED) then
+	{
+        [2] call HG_fnc_HUD;
+	    [3] call HG_fnc_HUD;
+	};
 };
 
 true;

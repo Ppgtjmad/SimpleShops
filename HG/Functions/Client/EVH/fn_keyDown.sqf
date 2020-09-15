@@ -12,11 +12,29 @@ params
 	["_admKey",getNumber(getMissionConfig "CfgClient" >> "adminKey")],
 	["_atmKey",getNumber(getMissionConfig "CfgClient" >> "atmKey")],
 	["_giveMKey",getNumber(getMissionConfig "CfgClient" >> "giveMoneyKey")],
-	["_giveKKey",getNumber(getMissionConfig "CfgClient" >> "giveKeyKey")]
+	["_giveKKey",getNumber(getMissionConfig "CfgClient" >> "giveKeyKey")],
+	["_hudKey",getNumber(getMissionConfig "CfgClient" >> "hudKey")]
 ];
 
 switch(_dikCode) do 
 {
+    // HUD toggle
+	case _hudKey:
+	{
+	    if(HG_HUD_ENABLED) then
+		{
+		    if(HG_HUD_TOGGLED) then
+			{
+			    [5] call HG_fnc_HUD;
+				HG_HUD_TOGGLED = false;
+			} else {
+			    [0] call HG_fnc_HUD;
+				HG_HUD_TOGGLED = true;
+			};
+		};
+	    _handled = true;
+	};
+	
     // Lock/Unlock vehicle
 	case _ulKey:
 	{

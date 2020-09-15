@@ -19,6 +19,12 @@ if(isServer) then
 HG_CLIENT = nil;
 player setVariable ["HG_Kills",_newVal,true];
 
-[4] call HG_fnc_HUD;
+if(HG_HUD_ENABLED) then
+{
+    if(HG_HUD_TOGGLED) then
+	{
+	    [4] call HG_fnc_HUD;
+	};
+};
 
 true;

@@ -8,6 +8,10 @@
     Init constants
 */
 HG_HUD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqualTo 1;
+if(HG_HUD_ENABLED) then
+{
+    HG_HUD_TOGGLED = true;
+};
 HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
 HG_BUY_TO_GARAGE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableBuyToGarage")) isEqualTo 1;

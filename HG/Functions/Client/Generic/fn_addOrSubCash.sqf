@@ -30,7 +30,10 @@ if(_where isEqualTo 0) then
 	
 	if(HG_HUD_ENABLED) then
     {
-        [1] call HG_fnc_HUD;
+	    if(HG_HUD_TOGGLED) then
+		{
+            [1] call HG_fnc_HUD;
+		};
     };
 } else {
     player setVariable [HG_BANK_VAR,_newVal,true];

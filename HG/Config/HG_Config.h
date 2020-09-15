@@ -39,6 +39,7 @@
 	giveMoneyKey - INTEGER - Key to push to open give money dialog, default is H (0x23 / 35), see links above
 	giveKeyKey - INTEGER - Key to push to open keys menu dialog, default is F (0x21 / 33), see links above
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
+	hudKey - INTEGER - Key to push to toggle hud on/off, default is * (0x37 / 55), see links above
 	
 	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/Database)
 	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB config to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
@@ -107,6 +108,7 @@ lockUnlockKey = 0x15;
 giveMoneyKey = 0x23;
 giveKeyKey = 0x21;
 adminKey = 0xDB;
+hudKey = 0x37;
 
 /* SAVING */
 savingMethod = "Profile";
