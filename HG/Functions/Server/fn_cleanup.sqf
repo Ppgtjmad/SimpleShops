@@ -41,12 +41,12 @@ private _cleanup =
 		    deleteVehicle _x;
 	    };
     } forEach _all;
+	
+	true;
 };
 
 while{true} do
 {
-    sleep getNumber(getMissionConfig "CfgClient" >> "vehiclesCleanupPeriod") * 60;
-    [] call _cleanup;
+    uiSleep (getNumber(getMissionConfig "CfgClient" >> "vehiclesCleanupPeriod") * 60);
+    [] spawn _cleanup;
 };
-
-true;
