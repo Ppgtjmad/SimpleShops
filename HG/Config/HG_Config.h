@@ -10,6 +10,7 @@
 	
 	resetSavedMoney - BOOL - Useful for mission rotation, if it's set to true old saved money will be reset to startCash/startBank values whenever the server is restarted or mission changes
 	enableHUD - BOOL - Enable money display in HUD?
+	hudType - INTEGER - HUD design, 0 for default, 1 for alternative
 	enablePaycheck - BOOL - Enable paycheck?
 	enableKillReward - BOOL - Enable kill reward?
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
@@ -76,6 +77,7 @@ bankVariable = "HG_Bank";
 /* SYSTEMS */
 resetSavedMoney = false;
 enableHUD = true;
+hudType = 0;
 enablePaycheck = true;
 enableKillReward = true;
 enableTeamKillPenalty = true;

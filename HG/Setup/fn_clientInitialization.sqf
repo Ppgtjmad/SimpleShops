@@ -11,6 +11,7 @@ HG_HUD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableHUD")) isEqua
 if(HG_HUD_ENABLED) then
 {
     HG_HUD_TOGGLED = true;
+	HG_HUD_TYPE = ["HG_HUD","HG_HUD_ALT"] select getNumber(getMissionConfig "CfgClient" >> "hudType");
 };
 HG_PAYCHECK_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePaycheck")) isEqualTo 1;
 HG_GIVE_MONEY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableGiveMoney")) isEqualTo 1;
@@ -36,6 +37,10 @@ HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];
 HG_INVENTORY_OPENED_EVH = player addEventHandler["InventoryOpened",{_this call HG_fnc_inventoryOpened}];
 HG_INVENTORY_CLOSED_EVH = player addEventHandler["InventoryClosed",{_this call HG_fnc_inventoryClosed}];
+if(395180 in (getDLCs 1)) then
+{
+    HG_TAKE_EVH = player addEventHandler["Take",{_this call HG_fnc_take}];
+};
 
 if(HG_WHITELISTED_ENABLED AND ((getPlayerUID player) in (getArray(getMissionConfig "CfgClient" >> "admins"))) AND !isServer) then
 {

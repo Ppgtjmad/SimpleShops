@@ -50,6 +50,7 @@ class HG
 		class keyDown {};
 		class killed {};
 		class respawn {};
+		class take {};
 	};
 	
 	class Garage
@@ -91,6 +92,7 @@ class HG
 		class isNumeric {};
 		class lockOrUnlock {};
 		class markers {};
+		class moneyItem {};
 		class nearbyATM {};
 		class parseGear {};
 		class paycheck {};

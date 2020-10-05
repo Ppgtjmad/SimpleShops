@@ -20,7 +20,12 @@ if(HG_KILL_REWARD_ENABLED) then
 			};
 		};
 	} else {
-		[(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+	    if(395180 in (getDLCs 1)) then
+		{
+		    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "killedReward")),player] call HG_fnc_moneyItem;
+		} else {
+		    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "killedReward")),0] remoteExecCall ["HG_fnc_addOrSubCash",_instigator,false];
+		};
 		if(HG_XP_ENABLED) then
 		{
 			[(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpReward")),0] remoteExecCall ["HG_fnc_addOrSubXP",_instigator,false];

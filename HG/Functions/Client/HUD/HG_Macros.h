@@ -5,7 +5,7 @@
     Website - http://www.sunrise-production.com
 */
 
-#define HG_HUD_DISP               (uiNamespace getVariable ["HG_HUD",displayNull])
+#define HG_HUD_DISP               (uiNamespace getVariable [HG_HUD_TYPE,displayNull])
 #define HG_HUD_XP_BACK            (HG_HUD_DISP displayCtrl HG_HUD_XP_BACK_IDC)
 #define HG_HUD_XP_PIC             (HG_HUD_DISP displayCtrl HG_HUD_XP_PIC_IDC)
 #define HG_HUD_XP_TEXT            (HG_HUD_DISP displayCtrl HG_HUD_XP_TEXT_IDC)
