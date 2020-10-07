@@ -176,7 +176,7 @@ class HG_HUD_ALT: HG_HUD
 		
 		class KillCountBack: KillCountBack 
 		{
-			text = "HG\UI\Textures\back_alt1.paa";
+			text = "HG\UI\Textures\back_alt.paa";
 		};
 		
 		class KillCountPicture: KillCountPicture
