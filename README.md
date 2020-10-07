@@ -28,6 +28,7 @@
     <a href="http://flaticons.net/" target="_blank">FlatIcons</a> - Icons<br/>
     <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation<br/>
     <a href="http://steamcommunity.com/profiles/76561198112435564/" target="_blank">Atlas1205</a> - Chinese translation<br/>
+    <a href="https://forums.bohemia.net/profile/1166121-vitalyturbovaz/" target="_blank">VitalyTurboVaz</a> - Russian translation<br/>
     <a href="http://steamcommunity.com/profiles/76561198030800949/" target="_blank">N3V3RD134l0N3</a> - Logo
   </b>
 </p>
