@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")]];
 

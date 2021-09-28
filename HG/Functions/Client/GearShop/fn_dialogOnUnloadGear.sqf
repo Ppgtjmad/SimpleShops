@@ -1,8 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Called by the player when the dialog is closed (with the dialog close button or by pressing escape)
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 
 if(!HG_GEAR_BOUGHT) then

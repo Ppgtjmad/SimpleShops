@@ -1,8 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Called to return the config where the passed item belongs to
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_item"];
 	

@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 	
 	currencyType - STRING - Currency you want to use (ISO format)
 	cashVariable - STRING - Custom cash variable you want to use instead of default one (setVariable'd on player and broadcasted), data held by the variable must be INTEGER

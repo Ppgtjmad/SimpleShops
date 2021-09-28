@@ -1,9 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Called when you click "Buy" button in dialog
-    Returns - Empty array if all spawn positions are busy else first empty position
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_spawnPoints",["_sp",[false,""]],["_pos",[]],["_near",[]]];
 

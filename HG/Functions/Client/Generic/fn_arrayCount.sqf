@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_arr",["_temp",[]],["_ret",[]]];
 

@@ -1,9 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called when you click "Buy" button in dialog
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params[["_price",0],"_discount"];
 

@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 if(!isNull objectParent player) exitWith {HG_TAGS_TEXT ctrlShow false;};
 if((isNull cursorObject) OR !(alive cursorObject)) exitWith {HG_TAGS_TEXT ctrlShow false;};

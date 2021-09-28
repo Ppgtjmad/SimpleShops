@@ -1,8 +1,6 @@
 /*
     Author - HoverGuy
-    Description - Called when you click "Buy" button in dialog
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_item",["_mode",false],["_qty",1],"_itemType","_cat",["_handled",true]];
 _itemType = [_item] call BIS_fnc_itemType;

@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_item",["_qty",1],"_itemType","_cat",["_handled",true]];
 _itemType = [_item] call BIS_fnc_itemType;

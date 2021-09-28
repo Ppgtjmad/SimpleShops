@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_ctrl","_mode","_idc"];
 

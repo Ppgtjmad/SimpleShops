@@ -1,8 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_mode","_gear","_index","_gearSelection","_path","_config","_subPath","_weapon","_items","_mags","_stuff","_item","_qty"];
 

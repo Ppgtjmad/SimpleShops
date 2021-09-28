@@ -3,8 +3,7 @@
 #define WHITELIST_SIDES getArray(getMissionConfig "CfgClient" >> "whitelistSides")
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_player","_uid","_result","_cash","_bank"];
 

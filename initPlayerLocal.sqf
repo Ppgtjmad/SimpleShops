@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
     Player initialization
 */
 if(!hasInterface) exitWith {}; // If headless then exit

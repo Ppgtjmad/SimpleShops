@@ -1,8 +1,7 @@
 #include "..\..\..\UI\HG_IDCS.h"
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-	Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 
 #define HG_GARAGE_DISP            findDisplay HG_GARAGE_IDD

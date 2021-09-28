@@ -1,7 +1,6 @@
 /*
     Author - HoverGuy
-    © All Fucks Reserved
-	Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 
 class HG
@@ -131,6 +130,28 @@ class HG
 		class itemBtns {};
 		class itemSelectionChanged {};
 		class xItemSelectionChanged {};
+	};
+	
+	class Server
+	{
+		class activeReset {};
+		class cleanup {};
+		class clientToServer {};
+		class deleteVehicle {};
+		class disconnect {};
+		class findIndex {};
+		class getGear {};
+		class getInventory {};
+		class getType {};
+		class getWhitelist {};
+		class lock {};
+		class requestGarage {};
+		class resetGarages {};
+		class resetMoney {};
+		class setInventory {};
+		class spawnVehicle {};
+		class storeVehicleServer {};
+		class updateWhitelist {};
 	};
 	
 	class Tags

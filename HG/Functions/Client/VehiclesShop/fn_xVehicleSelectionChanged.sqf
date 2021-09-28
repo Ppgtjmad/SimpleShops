@@ -1,9 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Description - Called when selection in xListbox has changed
-    © All Fucks Reserved
-    Website - http://www.sunrise-production.com
+    Website - http://northernimpulse.com
 */
 params["_ctrl","_index","_shopType","_shopContent","_spawnPoints","_exists","_condition","_vName","_ind"];
 
