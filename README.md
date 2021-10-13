@@ -17,7 +17,7 @@
 <h2 align="center">Credits</h2>
 <p align="center">
   <b>
-    <a href="https://bitbucket.org/torndeco/extdb3/wiki/Home" target="_blank">Torndeco</a> - extDB3<br/>
+    Torndeco - extDB3<br/>
     <a href="http://flaticons.net/" target="_blank">FlatIcons</a> - Icons<br/>
     <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation<br/>
     <a href="http://steamcommunity.com/profiles/76561198112435564/" target="_blank">Atlas1205</a> - Chinese translation<br/>
