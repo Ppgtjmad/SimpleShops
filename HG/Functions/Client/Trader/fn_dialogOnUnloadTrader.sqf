@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 
 if(HG_GEAR_SOLD) then

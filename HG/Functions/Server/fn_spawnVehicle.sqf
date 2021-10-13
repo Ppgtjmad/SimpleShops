@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")],"_vehicle"];
 

@@ -1,7 +1,7 @@
 #include "..\..\..\UI\HG_IDCS.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 
 #define HG_TRADER_DISP          findDisplay HG_TRADER_IDD

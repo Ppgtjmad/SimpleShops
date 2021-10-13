@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_vehicle","_lock","_sound","_icon","_msg"];
 

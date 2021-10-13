@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 #define HG_NO_IDC                     -1
 

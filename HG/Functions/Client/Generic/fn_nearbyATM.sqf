@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_objs",["_return",false]];
 _objs = nearestObjects [player,[],3];

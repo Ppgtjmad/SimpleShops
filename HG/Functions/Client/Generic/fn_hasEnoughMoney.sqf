@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_value",["_mode",0,[0]],"_balance",["_hasEnough",false]];
 

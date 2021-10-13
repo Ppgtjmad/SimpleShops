@@ -1,7 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 private["_owners","_all"];
 

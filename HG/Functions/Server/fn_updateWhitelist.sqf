@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_side","_index","_uid","_whitelist","_mode","_query"];
 	

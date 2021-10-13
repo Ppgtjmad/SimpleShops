@@ -1,7 +1,7 @@
 #include "..\..\..\UI\HG_IDCS.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 
 #define HG_HUD_DISP               (uiNamespace getVariable [HG_HUD_TYPE,displayNull])

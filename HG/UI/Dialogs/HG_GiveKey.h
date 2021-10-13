@@ -1,7 +1,7 @@
 #include "..\HG_IDCS.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 
 class HG_GiveKey

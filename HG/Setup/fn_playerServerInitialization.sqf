@@ -3,7 +3,7 @@
 #define WHITELIST_SIDES getArray(getMissionConfig "CfgClient" >> "whitelistSides")
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_player","_uid","_result","_cash","_bank"];
 

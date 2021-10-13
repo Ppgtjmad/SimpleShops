@@ -1,7 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_ctrl","_index","_shopType","_shopContent","_spawnPoints","_exists","_condition","_vName","_ind"];
 

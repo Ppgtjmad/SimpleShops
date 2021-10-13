@@ -1,7 +1,7 @@
 #define ADMINS getArray(getMissionConfig "CfgClient" >> "admins")
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params
 [

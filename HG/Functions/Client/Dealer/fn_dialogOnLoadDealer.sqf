@@ -1,7 +1,7 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_target","_caller","_id","_dealer"];
 if((typeName _dealer) != "STRING") exitWith {hint (localize "STR_HG_ERR_ON_LOAD_1");};

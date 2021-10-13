@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
 */
 params["_item",["_qty",1],"_itemType","_cat",["_handled",true]];
 _itemType = [_item] call BIS_fnc_itemType;
