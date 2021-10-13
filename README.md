@@ -3,7 +3,7 @@
 <h2 align="center">Wiki</h2>
 <p align="center">
   <b>
-    <a href="http://northernimpulse.com/wiki.php#simple-shops">Click here</a>
+    <a href="https://northernimpulse.com/wiki.php#simple-shops">Click here</a>
   </b>
 </p>
 
