@@ -168,7 +168,6 @@ class HG_HUD_ALT: HG_HUD
 		
 		class XPText: XPText
 		{
-			style = "0x01";
 			x = 0.876406 * safezoneW + safezoneX;
 			w = 0.12375 * safezoneW;
 		};

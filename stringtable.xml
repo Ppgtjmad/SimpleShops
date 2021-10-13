@@ -1099,6 +1099,18 @@
 			</Key>
 		</Container>
 		<Container name="Trader">
+		    <Key ID="STR_HG_DLG_TR_INVENTORY_TITLE">
+			    <Original>Your inventory</Original>
+				<Spanish>Tu inventario</Spanish>
+				<French>Votre inventaire</French>
+				<Russian>Ваш инвентарь</Russian>
+			</Key>
+			<Key ID="STR_HG_DLG_TR_TRADER_TITLE">
+			    <Original>Trader's interest</Original>
+				<Spanish>Interés del comerciante</Spanish>
+				<French>Intérêt du commerçant</French>
+				<Russian>Интерес трейдера</Russian>
+			</Key>
 		    <Key ID="STR_HG_DLG_TR_SELL_TOOLTIP">
 			    <Original>Sell selected item(s)</Original>
 				<Spanish>Vender item(s)</Spanish>
@@ -1149,6 +1161,18 @@
 			</Key>
 		</Container>
 		<Container name="Dealer">
+		    <Key ID="STR_HG_DLG_DE_VEHICLES_TITLE">
+			    <Original>Your vehicles</Original>
+				<Spanish>Tus vehiculos</Spanish>
+				<French>Vos véhicules</French>
+				<Russian>Ваши автомобили</Russian>
+			</Key>
+			<Key ID="STR_HG_DLG_DE_DEALER_TITLE">
+			    <Original>Dealer's interest</Original>
+				<Spanish>Interés del distribuidor</Spanish>
+				<French>Intérêt du concessionnaire</French>
+				<Russian>Интерес дилера</Russian>
+			</Key>
 		    <Key ID="STR_HG_DLG_DE_SELL_TOOLTIP">
 			    <Original>Sell selected vehicle</Original>
 				<Spanish>Vender vehiculo</Spanish>
@@ -1249,6 +1273,11 @@
 		    <Original>Units Shop</Original>
 			<French>Magasin de troupes</French>
 			<Russian>Магазин наёмников</Russian>
+		</Key>
+		<Key ID="STR_HG_ATM">
+		    <Original>ATM</Original>
+			<French>DAB</French>
+			<Russian>Банкомат</Russian>
 		</Key>
 		<Key ID="STR_HG_TRADER">
 		    <Original>Trader</Original>

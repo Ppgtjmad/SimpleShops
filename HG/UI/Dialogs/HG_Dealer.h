@@ -97,6 +97,44 @@ class HG_Dealer
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
+		
+		class VehicleTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_DE_VEHICLES_TITLE";
+			shadow = 0;
+			x = 0.298906 * safezoneW + safezoneX;
+			y = 0.28371 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class VehicleTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.298906 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.0022 * safeZoneH;
+		};
+		
+		class DealerTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_DE_DEALER_TITLE";
+			shadow = 0;
+			x = 0.5 * safezoneW + safezoneX;
+			y = 0.28371 * safezoneH + safezoneY;
+			w = 0.201094 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class DealerTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.5 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.201094 * safezoneW;
+			h = 0.0022 * safeZoneH;
+		};
 	};
 	
 	class Controls
@@ -107,9 +145,9 @@ class HG_Dealer
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			onLBSelChanged = "_this call HG_fnc_dealerListChanged";
 			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.28 * safezoneH + safezoneY;
+			y = 0.311922 * safezoneH + safezoneY;
 			w = 0.195937 * safezoneW;
-			h = 0.484 * safezoneH;
+			h = 0.451388 * safezoneH;
 		};
 		
 		class DealerList: HG_RscListBox
@@ -117,9 +155,9 @@ class HG_Dealer
 			idc = HG_DEALER_D_LIST_IDC;
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			x = 0.5 * safezoneW + safezoneX;
-			y = 0.28 * safezoneH + safezoneY;
+			y = 0.311922 * safezoneH + safezoneY;
 			w = 0.201094 * safezoneW;
-			h = 0.484 * safezoneH;
+			h = 0.451388 * safezoneH;
 		};
 		
 		class RefreshButton: HG_RscButtonInvisible

@@ -127,6 +127,44 @@ class HG_Trader
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
+		
+		class InventoryTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_TR_INVENTORY_TITLE";
+			shadow = 0;
+			x = 0.298906 * safezoneW + safezoneX;
+			y = 0.28371 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class InventoryTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.298906 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.195937 * safezoneW;
+			h = 0.0022 * safeZoneH;
+		};
+		
+		class TraderTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_TR_TRADER_TITLE";
+			shadow = 0;
+			x = 0.5 * safezoneW + safezoneX;
+			y = 0.28371 * safezoneH + safezoneY;
+			w = 0.201094 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class TraderTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.5 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.201094 * safezoneW;
+			h = 0.0022 * safeZoneH;
+		};
 	};
 	
 	class Controls
@@ -136,9 +174,9 @@ class HG_Trader
 			idc = HG_TRADER_TREE_IDC;
 			onTreeSelChanged = "_this call HG_fnc_traderTreeChanged";
 			x = 0.298906 * safezoneW + safezoneX;
-			y = 0.28 * safezoneH + safezoneY;
+			y = 0.312486 * safezoneH + safezoneY;
 			w = 0.195937 * safezoneW;
-			h = 0.484 * safezoneH;
+			h = 0.451388 * safezoneH;
 		};
 		
 		class TraderList: HG_RscListBox
@@ -146,9 +184,9 @@ class HG_Trader
 			idc = HG_TRADER_LIST_IDC;
 			rowHeight = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			x = 0.5 * safezoneW + safezoneX;
-			y = 0.28 * safezoneH + safezoneY;
+			y = 0.312486 * safezoneH + safezoneY;
 			w = 0.201094 * safezoneW;
-			h = 0.484 * safezoneH;
+			h = 0.451388 * safezoneH;
 		};
 		
 		class SubButton: HG_RscButtonInvisible

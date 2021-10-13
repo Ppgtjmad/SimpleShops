@@ -78,7 +78,7 @@ bankVariable = "HG_Bank";
 /* SYSTEMS */
 resetSavedMoney = false;
 enableHUD = true;
-hudType = 0;
+hudType = 1;
 enablePaycheck = true;
 enableKillReward = true;
 enableDeathPenalty = true;
