@@ -34,6 +34,11 @@ if(HG_KILL_REWARD_ENABLED) then
 			[0] remoteExecCall ["HG_fnc_addOrSubKills",_instigator,false];
 		};
 	};
+	
+	if(HG_DEATH_PENALTY_ENABLED) then
+	{
+	    [(getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpPenaltyDeath")),1] call HG_fnc_addOrSubXP;
+	};
 };
 
 if(HG_TAGS_ENABLED) then

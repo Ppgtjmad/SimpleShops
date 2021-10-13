@@ -134,6 +134,7 @@ class HG
 	
 	class Server
 	{
+		file = "HG\Functions\Server";
 		class activeReset {};
 		class cleanup {};
 		class clientToServer {};

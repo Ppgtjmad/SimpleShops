@@ -12,6 +12,7 @@
 	hudType - INTEGER - HUD design, 0 for default, 1 for alternative
 	enablePaycheck - BOOL - Enable paycheck?
 	enableKillReward - BOOL - Enable kill reward?
+	enableDeathPenalty - BOOL - Enable death penalty?
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
 	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
@@ -41,7 +42,7 @@
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	hudKey - INTEGER - Key to push to toggle hud on/off, default is * (0x37 / 55), see links above
 	
-	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/Database)
+	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://northernimpulse.com/wiki#simple-shops)
 	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB config to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
 	extDBProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
 	extDBCustomFile - STRING - If "extDB" is used as savingMethod & extDBProtocol is "SQL_CUSTOM", set the custom file to use (located in @extDB3\sql_custom folder)
@@ -55,10 +56,11 @@
 			startCash - INTEGER - Obvious...
 			startBank - INTEGER - Obvious...
 			killedReward - INTEGER - Money earned by killer, only used if enableKillReward is set to true
+			xpPenaltyDeath - INTEGER - XP taken when you've been killed, only used if enableDeathPenalty is set to true
 			tkPenaltyPlayer - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
-			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly (https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards)
-			xpPenaltyPlayer - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true
-			xpPenaltyAI - INTEGER - XP taken when AI of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty is set to true & AI is setup correctly (https://github.com/Ppgtjmad/SimpleShops/wiki/How-to-setup-kill-rewards)
+			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly (https://northernimpulse.com/wiki#simple-shops)
+			xpPenaltyPlayer - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty are set to true
+			xpPenaltyAI - INTEGER - XP taken when AI of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty are set to true & AI is setup correctly (https://northernimpulse.com/wiki#simple-shops)
 			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
 			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
 			iShopDiscount - INTEGER/FLOAT - Items shop discount in %, based on total price, 0 means no discount
@@ -79,6 +81,7 @@ enableHUD = true;
 hudType = 0;
 enablePaycheck = true;
 enableKillReward = true;
+enableDeathPenalty = true;
 enableTeamKillPenalty = true;
 enableCrate = true;
 enableGiveMoney = true;
@@ -127,6 +130,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 500;
+		xpPenaltyDeath = 25;
 		tkPenaltyPlayer = 500;
 		tkPenaltyAI = 250;
 		xpPenaltyPlayer = 10;
@@ -144,6 +148,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 1000;
+		xpPenaltyDeath = 50;
 		tkPenaltyPlayer = 1000;
 		tkPenaltyAI = 500;
 		xpPenaltyPlayer = 20;
@@ -161,6 +166,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 1500;
+		xpPenaltyDeath = 75;
 		tkPenaltyPlayer = 1500;
 		tkPenaltyAI = 750;
 		xpPenaltyPlayer = 30;
@@ -178,6 +184,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 2000;
+		xpPenaltyDeath = 100;
 		tkPenaltyPlayer = 2000;
 		tkPenaltyAI = 1000;
 		xpPenaltyPlayer = 40;
@@ -195,6 +202,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 2500;
+		xpPenaltyDeath = 125;
 		tkPenaltyPlayer = 2500;
 		tkPenaltyAI = 1250;
 		xpPenaltyPlayer = 50;
@@ -212,6 +220,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 3000;
+		xpPenaltyDeath = 150;
 		tkPenaltyPlayer = 3000;
 		tkPenaltyAI = 1500;
 		xpPenaltyPlayer = 60;
@@ -229,6 +238,7 @@ class HG_MasterCfg
 		startCash = 5000;
 		startBank = 50000;
 		killedReward = 3500;
+		xpPenaltyDeath = 175;
 		tkPenaltyPlayer = 3500;
 		tkPenaltyAI = 1750;
 		xpPenaltyPlayer = 70;
