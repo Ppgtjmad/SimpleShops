@@ -42,6 +42,7 @@
 #define HG_GEAR_BUY_IDC               7005
 #define HG_GEAR_MC_IDC                7006
 #define HG_GEAR_SLIDER_IDC            7007
+#define HG_GEAR_SLIDER_DIST_IDC       7008
 
 #define HG_GM_IDD                     7100
 #define HG_GM_EDIT_IDC                7101

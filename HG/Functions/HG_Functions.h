@@ -73,6 +73,7 @@ class HG
 		class gearSelectionChanged {};
 		class handleGear {};
 		class reset {};
+		class viewControl {};
 		class xGearSelectionChanged {};
 	};
 	

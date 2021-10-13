@@ -50,6 +50,81 @@ class HG_GearShop
 			h = 0.0022 * safeZoneH;
 		};
 		
+		class ControlsHeader: HG_RscText
+		{
+			style = "0x02";
+			text = "$STR_HG_DLG_GS_TITLE_CONTROLS";
+			colorBackground[] = {0.4,0.4,0.4,1};
+			x = 0.790868 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.202726 * safezoneW;
+			h = 0.0376157 * safezoneH;
+		};
+		
+		class ControlsBackground: HG_RscText
+		{
+			colorBackground[] = {0,0,0,0.5};
+			x = 0.790868 * safezoneW + safezoneX;
+			y = 0.339381 * safezoneH + safezoneY;
+			w = 0.202726 * safezoneW;
+			h = 0.131655 * safezoneH;
+		};
+
+		class ControlsBackgroundFrame: HG_RscFrame
+		{
+			x = 0.790868 * safezoneW + safezoneX;
+			y = 0.302518 * safezoneH + safezoneY;
+			w = 0.202726 * safezoneW;
+			h = 0.169271 * safezoneH;
+		};
+		
+		class ControlsWhiteLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.790868 * safezoneW + safezoneX;
+			y = 0.340133 * safezoneH + safezoneY;
+			w = 0.202726 * safezoneW;
+			h = 0.00188079 * safezoneH;
+		};
+		
+		class ViewSliderTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_GS_TITLE_VIEW";
+			shadow = 0;
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.358941 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class ViewTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.377749 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.00188079 * safezoneH;
+		};
+		
+		class DistanceSliderTitle: HG_RscText
+		{
+			text = "$STR_HG_DLG_GS_TITLE_DIST";
+			shadow = 0;
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.415365 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class DistanceTitleLine: HG_RscPicture
+		{
+			text = "#(argb,8,8,3)color(1,1,1,1)";
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.434173 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.00188079 * safezoneH;
+		};
+		
 		class ActionBarBackground: HG_RscText
 		{
 			colorBackground[] = {0.4,0.4,0.4,1};
@@ -175,12 +250,23 @@ class HG_GearShop
 		class ViewSlider: HG_RscXSliderH
 		{
 			idc = HG_GEAR_SLIDER_IDC;
-		    onSliderPosChanged = "player setDir (360 - (_this select 1))";
+		    onSliderPosChanged = "_this call HG_fnc_viewControl";
 			tooltip = "$STR_HG_DLG_GS_SLIDER_TOOLTIP";
-			x = 0.329844 * safeZoneW + safeZoneX;
-			y = 0.016 * safeZoneH + safeZoneY;
-			w = 0.165 * safeZoneW;
-			h = 0.022 * safeZoneH;
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.387153 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.0188079 * safezoneH;
+		};
+		
+		class DistanceSlider: HG_RscXSliderH
+		{
+			idc = HG_GEAR_SLIDER_DIST_IDC;
+		    onSliderPosChanged = "_this call HG_fnc_viewControl";
+			tooltip = "$STR_HG_DLG_GS_SLIDER_DIST_TOOLTIP";
+			x = 0.795275 * safezoneW + safezoneX;
+			y = 0.443576 * safezoneH + safezoneY;
+			w = 0.193912 * safezoneW;
+			h = 0.0188079 * safezoneH;
 		};
 		
 		class ExitButton: HG_RscButtonInvisible

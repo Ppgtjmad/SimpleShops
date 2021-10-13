@@ -21,6 +21,8 @@ createDialog "HG_GearShop";
 	
 lbClear HG_GEAR_SWITCH;
 HG_GEAR_SLIDER sliderSetRange [0,360];
+HG_GEAR_SLIDER_DIST sliderSetRange [2,6];
+HG_GEAR_SLIDER_DIST sliderSetPosition 4;
 HG_GEAR_TOTAL ctrlSetText format[(localize "STR_HG_DLG_GS_TOTAL_TEXT"),([0,true] call HG_fnc_currencyToText)];
 HG_STRING_HANDLER = _whatShop;
 
@@ -40,8 +42,8 @@ if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
 	    HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
 		HG_PLAYER_BOX allowDamage false;
 		HG_PLAYER_BOX setPosATL (getPosATL player);
-        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_DELETE_CRATE")+"</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog AND ((player distance _target) < 2)'];
-	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='2' shadow='0'/><t color='#FF0000' font='RobotoCondensedBold'>"+(localize "STR_HG_EMPTY_CRATE")+"</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) AND !dialog && ((player distance _target) < 2)'];
+        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_DELETE_CRATE")+"</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog AND ((player distance _target) < 2)'];
+	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_EMPTY_CRATE")+"</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) AND !dialog && ((player distance _target) < 2)'];
 	};
 	
     HG_PLAYER_BOX setPosATL [(getPosATL player select 0)+1,(getPosATL player select 1),(getPosATL player select 2)];

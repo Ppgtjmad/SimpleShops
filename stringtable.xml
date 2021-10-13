@@ -876,6 +876,24 @@
 			    <Chinesesimp>可用装备</Chinesesimp>
 				<Russian>Доступное снаряжение</Russian>
 		    </Key>
+			<Key ID="STR_HG_DLG_GS_TITLE_CONTROLS">
+		        <Original>Camera Controls</Original>
+			    <Spanish>Controles de la cámara</Spanish>
+				<French>Commandes de la caméra</French>
+				<Russian>Управление камерой</Russian>
+		    </Key>
+			<Key ID="STR_HG_DLG_GS_TITLE_VIEW">
+		        <Original>Direction</Original>
+			    <Spanish>Dirección</Spanish>
+				<French>Direction</French>
+				<Russian>Направление</Russian>
+		    </Key>
+			<Key ID="STR_HG_DLG_GS_TITLE_DIST">
+		        <Original>Distance</Original>
+			    <Spanish>Distancia</Spanish>
+				<French>Distance</French>
+				<Russian>Расстояние</Russian>
+		    </Key>
 			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
 			    <Original>Total - %1</Original>
 			    <Spanish>Total - %1</Spanish>
@@ -915,6 +933,12 @@
 			    <Chinese>左右旋轉玩家</Chinese>
 			    <Chinesesimp>左右旋转玩家</Chinesesimp>
 				<Russian>Поверните игрока влево или вправо</Russian>
+		    </Key>
+			<Key ID="STR_HG_DLG_GS_SLIDER_DIST_TOOLTIP">
+		        <Original>Zoom in or out</Original>
+			    <Spanish>Acercar o alejar</Spanish>
+				<French>Zoom avant ou arrière</French>
+				<Russian>Увеличить или уменьшить масштаб</Russian>
 		    </Key>
 		</Container>
 		<Container name="Garage">
