@@ -1,6 +1,6 @@
 /*
     Author - HoverGuy
-    Website - http://northernimpulse.com
+    Website - https://northernimpulse.com
     Player initialization
 */
 if(!hasInterface) exitWith {}; // If headless then exit
