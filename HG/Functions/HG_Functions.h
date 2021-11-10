@@ -46,6 +46,10 @@ class HG
 		class handleRating {};
 		class inventoryClosed {};
 		class inventoryOpened {};
+		class loaded 
+		{
+			preInit = 1;
+		};
 		class keyDown {};
 		class killed {};
 		class respawn {};

@@ -32,6 +32,7 @@ HG_BANK_VAR = getText(getMissionConfig "CfgClient" >> "bankVariable");
 /*
     Init EVHs
 */
+HG_LOADED_MEVH = addMissionEventHandler ["Loaded", {_this spawn HG_fnc_loaded}];
 HG_RESPAWN_EVH = player addEventHandler["Respawn",{_this call HG_fnc_respawn}];
 HG_KILLED_EVH = player addEventHandler["Killed",{_this call HG_fnc_killed}];
 HG_RATING_EVH = player addEventHandler["HandleRating",{_this call HG_fnc_handleRating}];

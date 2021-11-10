@@ -8,7 +8,7 @@ class HG_HUD
 {
 	idd = HG_NO_IDC;
 	duration = HG_INFINITE;
-	fadeIn = 0;
+	fadeIn = 2;
 	fadeOut = 0;
 	name = "HG_HUD";
 	onLoad = "uiNamespace setVariable ['HG_HUD',_this select 0]";
