@@ -26,6 +26,15 @@
   </b>
 </p>
 
+<h2 align="center">Donate</h2>
+<p align="center">
+  <b>
+    Liking my work? Please consider donating some Smart Chain BNB crypto, even little helps a ton!<br/>
+	  <a href="https://link.trustwallet.com/send?coin=20000714&address=0xF1E4BbD02607273AAF401A8D541884b6DC4c6990" target="_blank">Trust Wallet</a><br/>
+	  <a href="https://bscscan.com/address/0xF1E4BbD02607273AAF401A8D541884b6DC4c6990" target="_blank">0xF1E....4c6990</a>
+  </b>
+</p>
+
 <h2 align="center">License</h2>
 <p align="center">
   <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
