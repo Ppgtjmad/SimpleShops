@@ -21,6 +21,8 @@
 		    <Original>You have recruited a %1 for %2</Original>
 			<French>Vous avez recruté un(e) %1 pour %2</French>
 			<Russian>Вы наняли %1 за %2</Russian>
+			<Chinese>你已為%2招募了一個%1</Chinese>
+			<Chinesesimp>你已为%2招募了一个%1</Chinesesimp>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_BOUGHT">
 		    <Original>You have bought a %1 for %2</Original>
@@ -122,8 +124,8 @@
 		    <Original>Access denied</Original>
 			<Spanish>Acceso Denegado</Spanish>
 			<French>Accès refusé</French>
-			<Chinese>訪問被拒絕</Chinese>
-			<Chinesesimp>访问被拒绝</Chinesesimp>
+			<Chinese>拒絕訪問</Chinese>
+			<Chinesesimp>拒绝访问</Chinesesimp>
 			<Russian>Доступ закрыт</Russian>
 		</Key>
 		<Key ID="STR_HG_VALUE_EMPTY">
@@ -154,8 +156,8 @@
 		    <Original>You can't give more than what you have</Original>
 			<Spanish>No puedes dar más dinero del que tienes</Spanish>
 			<French>Vous ne pouvez pas donner plus que ce que vous avez</French>
-			<Chinese>你不能給予別人多於你所有的金錢</Chinese>
-			<Chinesesimp>你不能给予别人多于你所有的金钱</Chinesesimp>
+			<Chinese>你不能給予別人超過你所擁有的</Chinese>
+			<Chinesesimp>你不能给予别人超过你所拥有的</Chinesesimp>
 			<Russian>Вы не можете дать больше,чем имеете</Russian>
 		</Key>
 		<Key ID="STR_HG_SENT_MONEY">
@@ -178,8 +180,8 @@
 		    <Original>You will receive your next paycheck in %1 minute(s)</Original>
 			<Spanish>Recibiras tu siguiente pago en %1 minuto(s)</Spanish>
 			<French>Vous recevrez votre prochain salaire dans %1 minute(s)</French>
-			<Chinese>你將會在%1后收到下一筆收入</Chinese>
-			<Chinesesimp>你将会在%1后收到下一笔收入</Chinesesimp>
+			<Chinese>你將會在%1分鐘后收到下一筆收入</Chinese>
+			<Chinesesimp>你将会在%1分钟后收到下一笔收入</Chinesesimp>
 			<Russian>Следующее зачисление зарплаты через %1 мин.</Russian>
 		</Key>
 		<Key ID="STR_HG_TIME_TO_PAY">
@@ -420,8 +422,8 @@
 		    <Original>[HG|extDB3] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
 			<Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa</Spanish>
 			<French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
-			<Chinese></Chinese>
-			<Chinesesimp></Chinesesimp>
+			<Chinese>[HG|extDB3] 保存方法被設置為"extDB"，但似乎未加載extDB3...服務器配置文件被用作備用</Chinese>
+			<Chinesesimp>[HG|extDB3] 保存方法被设置为"extDB"，但似乎未加载extDB3...服务器配置文件被用作备用</Chinesesimp>
 			<Russian>Метод сохранения установлен на "extDB",но похоже extDB3 не загружен ... профиль сервера используется как резервный</Russian>
 		</Key>
 	</Package>
@@ -436,8 +438,8 @@
 		<Key ID="STR_HG_DEBRIEF_NL_DESC">
 		    <Original>You have to be whitelisted to use this slot, please contact an admin for more infos</Original>
 		    <French>Vous devez être whitelisé pour choisir ce slot, contactez un admin pour plus d'infos</French>
-			<Chinese>你不在使用此角色的白名單上，請聯繫管理員</Chinese>
-			<Chinesesimp>你不在使用此角色的白名单上，请联系管理员</Chinesesimp>
+			<Chinese>你必須被列入白名單才能使用此角色，請聯繫管理員了解更多信息。</Chinese>
+			<Chinesesimp>你必须被列入白名单才能使用此角色，请联系管理员了解更多信息。</Chinesesimp>
 			<Russian>Чтобы использовать этот слот, вы должны быть внесены в белый список. Для получения дополнительной информации обратитесь к администратору.</Russian>
 		</Key>
 	</Package>
@@ -546,7 +548,7 @@
 			    <Spanish>Dar XP (experiencia)</Spanish>
 				<French>Mettre XP</French>
 			    <Chinese>設置XP</Chinese>
-			    <Chinesesimp>设置XP</Chinesesimp>
+			    <Chinesesimp>设置经验</Chinesesimp>
 				<Russian>Установить XP</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
@@ -592,15 +594,15 @@
 			<Key ID="STR_HG_DLG_XP_DISABLED">
 			    <Original>This feature is DISABLED (check enableXP in HG_Config.h)</Original>
 				<French>Cette action est DÉSACTIVÉE (vérifiez enableXP dans HG_Config.h)</French>
-			    <Chinese>這個特性被關閉了(查看enableXP,位於HG_Config.h)</Chinese>
-			    <Chinesesimp>这个特性被关闭了(查看enableXP,位于HG_Config.h)</Chinesesimp>
+			    <Chinese>這個功能被關閉了(查看enableXP,位於HG_Config.h)</Chinese>
+			    <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableXP行)</Chinesesimp>
 				<Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableXP в HG_Config.h)</Russian>
 			</Key>
 		    <Key ID="STR_HG_DLG_KILLS_DISABLED">
 		        <Original>This feature is DISABLED (check enableKillCount in HG_Config.h)</Original>
 				<French>Cette action est DÉSACTIVÉE (vérifiez enableKillCount dans HG_Config.h)</French>
-			    <Chinese>這個特性被關閉了(查看enableKillCount,位於HG_Config.h)</Chinese>
-			    <Chinesesimp>这个特性被关闭了(查看enableKillCount,位于HG_Config.h)</Chinesesimp>
+			    <Chinese>這個功能被關閉了(查看enableKillCount,位於HG_Config.h)</Chinese>
+			    <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableKillCount)</Chinesesimp>
 				<Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableKillCount в HG_Config.h)</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_LIST">
@@ -686,7 +688,7 @@
 			    <Original>Remove selected UID from selected side</Original>
 				<French>Supprimer l'UID sélectionnée du camp sélectionné</French>
 			    <Chinese>把選中的UID移除于選中的陣營</Chinese>
-			    <Chinesesimp>把选中的UID移除于选中的阵营</Chinesesimp>
+			    <Chinesesimp>把选中的UID从选中的阵营中移除</Chinesesimp>
 				<Russian>Удалить выбранный UID с выбранной стороны</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_WL_UID_EMPTY">
@@ -706,36 +708,36 @@
 			<Key ID="STR_HG_DLG_WL_UID_NOT_VALID">
 			    <Original>UID field length is not valid, should be 17 characters (%1)</Original>
 				<French>L'UID n'est pas valide, il doit y avoir 17 caractères (%1)</French>
-			    <Chinese></Chinese>
-			    <Chinesesimp></Chinesesimp>
+			    <Chinese>UID字段長度無效，應該是17個數字(%1)</Chinese>
+			    <Chinesesimp>UID字段长度无效，应该是17个数字(%1)</Chinesesimp>
 				<Russian>Недопустимая длина поля UID, должна составлять 17 символов (%1)</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_UID_ALREADY">
 			    <Original>This UID is already whitelisted on selected side</Original>
 				<French>Cette UID est déjà whitelisté dans le camp sélectionné</French>
-			    <Chinese></Chinese>
-			    <Chinesesimp></Chinesesimp>
+			    <Chinese>此UID已在選定陣營的白名單中</Chinese>
+			    <Chinesesimp>此UID已在选定阵营的白名单中</Chinesesimp>
 				<Russian>Этот UID уже внесен в белый список на выбранной стороне</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_ADDED">
 			    <Original>You have added %1 to the %2 side whitelist</Original>
 				<French>Vous avez ajouté %1 à la whitelist du camp %2</French>
-			    <Chinese>這個UID已經被白名單於選中的陣營了</Chinese>
-			    <Chinesesimp>这个UID已经被白名单于选中的阵营了</Chinesesimp>
+			    <Chinese>您已將%1添加到%2陣營的白名單中</Chinese>
+			    <Chinesesimp>您已将%1添加到%2阵营的白名单中</Chinesesimp>
 				<Russian>Вы добавили %1 в белый список %2</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_REMOVED">
 			    <Original>You have removed %1 from the %2 side whitelist</Original>
 				<French>Vous avez supprimé %1 de la whitelist du camp %2</French>
-			    <Chinese>你把%1移除於%2陣營的白名單</Chinese>
-			    <Chinesesimp>你把%1移除于%2阵营的白名单</Chinesesimp>
+			    <Chinese>您已將%1從%2陣營的白名單中移除</Chinese>
+			    <Chinesesimp>您已将%1从%2阵营的白名单中移除</Chinesesimp>
 				<Russian>Вы удалили %1 из белого списка %2</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_INFO_TEXT">
 			    <Original>Waiting for server...</Original>
 				<French>Attente du serveur...</French>
-			    <Chinese>等待服務器...</Chinese>
-			    <Chinesesimp>等待服务器</Chinesesimp>
+			    <Chinese>等待服務器中...</Chinese>
+			    <Chinesesimp>等待服务器中...</Chinesesimp>
 				<Russian>Ожидание сервера...</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_SIDE_CIV">
@@ -749,7 +751,7 @@
 			    <Original>West</Original>
 				<French>Ouest</French>
 			    <Chinese>西方</Chinese>
-			    <Chinesesimp>西方</Chinesesimp>
+			    <Chinesesimp>北约</Chinesesimp>
 				<Russian>Запад</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_SIDE_GUER">
@@ -763,7 +765,7 @@
 			    <Original>East</Original>
 				<French>Est</French>
 			    <Chinese>東方</Chinese>
-			    <Chinesesimp>东方</Chinesesimp>
+			    <Chinesesimp>广协</Chinesesimp>
 				<Russian>Восток</Russian>
 			</Key>
 		</Container>
@@ -820,16 +822,16 @@
 			    <Original>You have deposited %1</Original>
 				<Spanish>Usted ha depositado %1</Spanish>
 				<French>Vous avez déposé %1</French>
-			    <Chinese>你存儲了%1</Chinese>
-			    <Chinesesimp>你存储了%1</Chinesesimp>
+			    <Chinese>你已存入%1</Chinese>
+			    <Chinesesimp>你已存入%1</Chinesesimp>
 				<Russian>Вы внесли %1</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_WITHDRAWN">
 			    <Original>You have withdrawn %1</Original>
 				<Spanish>Usted ha retirado %1</Spanish>
 				<French>Vous avez retiré %1</French>
-			    <Chinese>你提取了%1</Chinese>
-			    <Chinesesimp>你提取了%1</Chinesesimp>
+			    <Chinese>你已提取了%1</Chinese>
+			    <Chinesesimp>你已提取了%1</Chinesesimp>
 				<Russian>Вы сняли %1</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_TRANSFERED">
@@ -850,21 +852,23 @@
 			<Key ID="STR_HG_ATM_CANNOT_DEPOSIT">
 			    <Original>You cannot deposit more than what you have</Original>
 				<French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
-			    <Chinese>你不能儲存多於現金的數額</Chinese>
-			    <Chinesesimp>你不能储存多于现金的数额</Chinesesimp>
+			    <Chinese>你不能儲存多於當前現金的數額</Chinese>
+			    <Chinesesimp>你不能储存多于当前现金的数额</Chinesesimp>
 				<Russian>Вы не можете внести больше,чем имеете</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
 			    <Original>You cannot withdraw more than what you have</Original>
 				<French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
-			    <Chinese>你不能提取多於餘額的現金</Chinese>
-			    <Chinesesimp>你不能提取多于余额的现金</Chinesesimp>
+			    <Chinese>你不能提取多於賬戶餘額的現金</Chinese>
+			    <Chinesesimp>你不能提取多于账户余额的现金</Chinesesimp>
 				<Russian>Вы не можете снять больше,чем имеете</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_TRANSFER">
 			    <Original>You cannot transfer more than what's in the bank</Original>
 				<French>Vous ne pouvez pas faire un virement supérieur à votre compte bancaire</French>
 				<Russian>Вы не можете перевести больше,чем есть в банке</Russian>
+				<Chinese>你轉賬的金額不能超過賬戶餘額</Chinese>
+				<Chinesesimp>你转账的金额不能超过账户余额</Chinesesimp>
 			</Key>
 		</Container>
 	    <Container name="GearShop">
@@ -881,18 +885,24 @@
 			    <Spanish>Controles de la cámara</Spanish>
 				<French>Commandes de la caméra</French>
 				<Russian>Управление камерой</Russian>
+				<Chinese>相機控制</Chinese>
+				<Chinesesimp>摄像机控制</Chinesesimp>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_TITLE_VIEW">
 		        <Original>Direction</Original>
 			    <Spanish>Dirección</Spanish>
 				<French>Direction</French>
 				<Russian>Направление</Russian>
+				<Chinese>方向</Chinese>
+				<Chinesesimp>方向</Chinesesimp>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_TITLE_DIST">
 		        <Original>Distance</Original>
 			    <Spanish>Distancia</Spanish>
 				<French>Distance</French>
 				<Russian>Расстояние</Russian>
+				<Chinese>距離</Chinese>
+				<Chinesesimp>距离</Chinesesimp>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
 			    <Original>Total - %1</Original>
@@ -922,8 +932,8 @@
 		        <Original>Buy selected gear</Original>
 			    <Spanish>Comprar el equipo seleccionado</Spanish>
 				<French>Acheter l'équipement sélectionné</French>
-			    <Chinese></Chinese>
-			    <Chinesesimp></Chinesesimp>
+			    <Chinese>購買選定的裝備</Chinese>
+			    <Chinesesimp>购买选定的装备</Chinesesimp>
 				<Russian>Купить выбранное снаряжение</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
@@ -939,6 +949,8 @@
 			    <Spanish>Acercar o alejar</Spanish>
 				<French>Zoom avant ou arrière</French>
 				<Russian>Увеличить или уменьшить масштаб</Russian>
+				<Chinese>放大/縮小</Chinese>
+				<Chinesesimp>放大/缩小</Chinesesimp>
 		    </Key>
 		</Container>
 		<Container name="Garage">
@@ -1120,6 +1132,8 @@
 			    <Original>Buy selected unit</Original>
 			    <French>Acheter l'unité selectionnée</French>
 				<Russian>Нанять выбранного наёмника</Russian>
+				<Chinese>購買所選單位</Chinese>
+				<Chinesesimp>购买所选单位</Chinesesimp>
 			</Key>
 		</Container>
 		<Container name="Trader">
@@ -1128,12 +1142,16 @@
 				<Spanish>Tu inventario</Spanish>
 				<French>Votre inventaire</French>
 				<Russian>Ваш инвентарь</Russian>
+				<Chinese>您的庫存</Chinese>
+				<Chinesesimp>您的库存</Chinesesimp>
 			</Key>
 			<Key ID="STR_HG_DLG_TR_TRADER_TITLE">
 			    <Original>Trader's interest</Original>
 				<Spanish>Interés del comerciante</Spanish>
 				<French>Intérêt du commerçant</French>
 				<Russian>Интерес трейдера</Russian>
+				<Chinese>商人的興趣</Chinese>
+				<Chinesesimp>商人的兴趣</Chinesesimp>
 			</Key>
 		    <Key ID="STR_HG_DLG_TR_SELL_TOOLTIP">
 			    <Original>Sell selected item(s)</Original>
@@ -1190,12 +1208,16 @@
 				<Spanish>Tus vehiculos</Spanish>
 				<French>Vos véhicules</French>
 				<Russian>Ваши автомобили</Russian>
+				<Chinese>您的車輛</Chinese>
+				<Chinesesimp>您的车辆</Chinesesimp>
 			</Key>
 			<Key ID="STR_HG_DLG_DE_DEALER_TITLE">
 			    <Original>Dealer's interest</Original>
 				<Spanish>Interés del distribuidor</Spanish>
 				<French>Intérêt du concessionnaire</French>
 				<Russian>Интерес дилера</Russian>
+				<Chinese>商人的興趣</Chinese>
+				<Chinesesimp>商人的兴趣</Chinesesimp>
 			</Key>
 		    <Key ID="STR_HG_DLG_DE_SELL_TOOLTIP">
 			    <Original>Sell selected vehicle</Original>
@@ -1297,26 +1319,30 @@
 		    <Original>Units Shop</Original>
 			<French>Magasin de troupes</French>
 			<Russian>Магазин наёмников</Russian>
+			<Chinese>傭兵商店</Chinese>
+			<Chinesesimp>佣兵商店</Chinesesimp>
 		</Key>
 		<Key ID="STR_HG_ATM">
 		    <Original>ATM</Original>
 			<French>DAB</French>
 			<Russian>Банкомат</Russian>
+			<Chinese>ATM</Chinese>
+			<Chinesesimp>ATM</Chinesesimp>
 		</Key>
 		<Key ID="STR_HG_TRADER">
 		    <Original>Trader</Original>
 			<Spanish>Comerciante</Spanish>
 			<French>Commerçant</French>
-			<Chinese>商人</Chinese>
-			<Chinesesimp>商人</Chinesesimp>
+			<Chinese>二手收購商</Chinese>
+			<Chinesesimp>二手收购商</Chinesesimp>
 			<Russian>Торговец</Russian>
 		</Key>
 		<Key ID="STR_HG_DEALER">
 		    <Original>Car Dealer</Original>
 			<Spanish>Vehiculos Comerciante</Spanish>
 			<French>Commerçant de véhicules</French>
-			<Chinese>車輛商人</Chinese>
-			<Chinesesimp>车辆商人</Chinesesimp>
+			<Chinese>載具二手收購商</Chinese>
+			<Chinesesimp>载具二手收购商</Chinesesimp>
 			<Russian>Продавец техники</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_ASSIGNED">
@@ -1395,16 +1421,16 @@
 		    <Original>Headgear</Original>
 			<Spanish>Casco</Spanish>
 			<French>Casque</French>
-			<Chinese>頭戴</Chinese>
-			<Chinesesimp>头戴</Chinesesimp>
+			<Chinese>頭盔</Chinese>
+			<Chinesesimp>头盔</Chinesesimp>
 			<Russian>Головные уборы</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_HEADGEARS">
 		    <Original>Headgear</Original>
 			<Spanish>Cascos</Spanish>
 			<French>Casques</French>
-			<Chinese>頭戴</Chinese>
-			<Chinesesimp>头戴</Chinesesimp>
+			<Chinese>頭盔</Chinese>
+			<Chinesesimp>头盔</Chinesesimp>
 			<Russian>Защита головы</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_FACEWEAR">
