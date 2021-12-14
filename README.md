@@ -17,12 +17,16 @@
 <h2 align="center">Credits</h2>
 <p align="center">
   <b>
-    Torndeco - extDB3<br/>
-    <a href="http://flaticons.net/" target="_blank">FlatIcons</a> - Icons<br/>
-    <a href="https://github.com/TteMerino" target="_blank">TteMerino</a> - Spanish translation<br/>
-    <a href="http://steamcommunity.com/profiles/76561198112435564/" target="_blank">Atlas1205</a> - Chinese translation<br/>
-    <a href="https://forums.bohemia.net/profile/1166121-vitalyturbovaz/" target="_blank">VitalyTurboVaz</a> - Russian translation<br/>
-    <a href="http://steamcommunity.com/profiles/76561198030800949/" target="_blank">N3V3RD134l0N3</a> - Logo
+    Icons<br/>
+    <a href="http://flaticons.net/" target="_blank">FlatIcons</a><br/>
+    Spanish translation<br/>
+    <a href="https://github.com/TteMerino" target="_blank">TteMerino</a><br/>
+    Chinese translation<br/>
+    <a href="http://steamcommunity.com/profiles/76561198112435564/" target="_blank">Atlas1205</a> | <a href="https://steamcommunity.com/id/1625592417/" target="_blank">strayer-迷幻</a><br/>
+    Russian translation<br/>
+    <a href="https://forums.bohemia.net/profile/1166121-vitalyturbovaz/" target="_blank">VitalyTurboVaz</a><br/>
+    Logo<br/>
+    <a href="http://steamcommunity.com/profiles/76561198030800949/" target="_blank">N3V3RD134l0N3</a>
   </b>
 </p>
 
