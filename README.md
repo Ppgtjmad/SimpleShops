@@ -1,9 +1,9 @@
 <img align="center" src="https://www.dropbox.com/s/7c108klxo44ysac/Simple-Shops.png?raw=1">
 
-<h2 align="center">Wiki</h2>
+<h2 align="center">Documentation</h2>
 <p align="center">
   <b>
-    <a href="https://northernimpulse.com/wiki#simple-shops">Click here</a>
+    <a href="https://github.com/Ppgtjmad/SimpleShops/wiki">Wiki</a>
   </b>
 </p>
 
@@ -33,7 +33,7 @@
 <h2 align="center">Donate</h2>
 <p align="center">
   <b>
-    Liking my work? Please consider donating some Smart Chain BNB crypto, even little helps a ton!<br/>
+    Liking my work? Please consider donating some BEP20 crypto, even little helps a ton!<br/>
 	  <a href="https://link.trustwallet.com/send?coin=20000714&address=0xF1E4BbD02607273AAF401A8D541884b6DC4c6990" target="_blank">Trust Wallet</a><br/>
 	  <a href="https://bscscan.com/address/0xF1E4BbD02607273AAF401A8D541884b6DC4c6990" target="_blank">0xF1E....4c6990</a>
   </b>
