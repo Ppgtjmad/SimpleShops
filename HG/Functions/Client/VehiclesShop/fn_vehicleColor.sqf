@@ -9,7 +9,7 @@ disableSerialization;
 
 _data = _ctrl lbData _index;
 
-if(_data != (localize "STR_HG_DEFAULT")) then
+if(_data != "") then
 {
     private["_val","_textures"];
 	

@@ -2,7 +2,7 @@
     Author - HoverGuy
     Website - https://northernimpulse.com
 */
-params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")]];
+params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",""]];
 
 if(!HG_SAVING_EXTDB) then
 {

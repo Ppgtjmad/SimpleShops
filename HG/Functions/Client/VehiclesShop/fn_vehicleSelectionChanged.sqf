@@ -70,7 +70,7 @@ if(_vehicle != (localize "STR_HG_NONE")) then
 		} forEach _colors;
 	} else {
 	    _ind = HG_VEHICLES_COLORS lbAdd (localize "STR_HG_DEFAULT");
-	    HG_VEHICLES_COLORS lbSetData[_ind,(localize "STR_HG_DEFAULT")];
+	    HG_VEHICLES_COLORS lbSetData[_ind,""];
 	};
 
     HG_CAMERA_PREVIEW camSetTarget (_veh modelToWorld [0,0,0.5]);

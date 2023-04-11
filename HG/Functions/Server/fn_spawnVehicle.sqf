@@ -2,7 +2,7 @@
     Author - HoverGuy
     Website - https://northernimpulse.com
 */
-params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",(localize "STR_HG_DEFAULT")],"_vehicle"];
+params["_mode","_unit","_classname","_sp",["_plate",round(random(9999))],["_color",""],"_vehicle"];
 
 if(!HG_SAVING_EXTDB) then
 {
@@ -59,7 +59,7 @@ if((getNumber(getMissionConfig "CfgClient" >> "clearInventory")) isEqualTo 1) th
 	clearBackpackCargoGlobal _vehicle;
 };
 
-if(_color != (localize "STR_HG_DEFAULT")) then
+if(_color != "") then
 {
     private _textures = getArray(configFile >> "CfgVehicles" >> _classname >> "TextureSources" >> _color >> "textures");
 	
