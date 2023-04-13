@@ -150,6 +150,7 @@ class HG
 		class getInventory {};
 		class getType {};
 		class getWhitelist {};
+		class killedVehicle {};
 		class lock {};
 		class requestGarage {};
 		class resetGarages {};

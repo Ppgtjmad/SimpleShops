@@ -70,6 +70,7 @@ if(_color != "") then
 };
 
 _vehicle allowDamage true;
+_vehicle addEventHandler["Killed",{_this call HG_fnc_killedVehicle}];
 [_vehicle] remoteExecCall ["HG_fnc_addActions",(owner _unit),false];
 
 if(((getNumber(getMissionConfig "CfgClient" >> "enableVehicleInventorySave")) isEqualTo 1) AND (_mode isEqualTo 1)) then

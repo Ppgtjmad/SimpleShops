@@ -23,7 +23,7 @@ if(!HG_SAVING_EXTDB) then
 } else {
     private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{
-	    format["DELETE FROM HG_Vehicles WHERE PID = '%1' AND PLATE = '%2'",(getPlayerUID _unit),_plate]
+	    format["DELETE FROM HG_Vehicles WHERE PID = '%1' AND Plate = '%2'",(getPlayerUID _unit),_plate]
 	} else {
 	    format["HG_vehicleDelete:%1:%2",(getPlayerUID _unit),_plate];
 	};
