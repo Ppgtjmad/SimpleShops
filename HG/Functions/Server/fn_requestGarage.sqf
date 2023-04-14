@@ -11,7 +11,7 @@ if(!HG_SAVING_EXTDB) then
 } else {
     private _query = if(HG_SAVING_PROTOCOL isEqualTo "SQL") then
 	{
-	    format["SELECT Classname, Plate, Color FROM HG_Vehicles WHERE PID = '%1' AND Active = 0 AND Alive = 0",(getPlayerUID _unit)];
+	    format["SELECT Classname, Plate, Color FROM HG_Vehicles WHERE PID = '%1' AND Active = 0 AND Alive = 1",(getPlayerUID _unit)];
 	} else {
 	    format["HG_vehicleSelect:%1",(getPlayerUID _unit)];
 	};
