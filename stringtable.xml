@@ -1,1564 +1,1759 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project name="HG">
     <Package name="General">
-	    <Key ID="STR_HG_GEAR_BOUGHT">
-		    <Original>You have bought stuff for a total of %1</Original>
-			<Spanish>Tu has comprado con un descuento por un total de %1</Spanish>
-			<French>Vous avez acheté du matériel pour un total de %1</French>
-			<Chinese>你購買了總價值為%1的物品</Chinese>
-			<Chinesesimp>你购买了总价值为%1的物品</Chinesesimp>
-			<Russian>Вы купили вещи на сумму %1</Russian>
-		</Key>
-	    <Key ID="STR_HG_ITEM_BOUGHT">
-		    <Original>You have bought %1x %2 for %3</Original>
-			<Spanish>Tu has comprado %1x %2 por %3</Spanish>
-			<French>Vous avez acheté %1x %2 pour %3</French>
-			<Chinese>你買了%1 x %2,花費%3</Chinese>
-			<Chinesesimp>你买了%1 x %2,花费%3</Chinesesimp>
-			<Russian>Вы купили %1x %2 за %3</Russian>
-		</Key>
-		<Key ID="STR_HG_UNIT_BOUGHT">
-		    <Original>You have recruited a %1 for %2</Original>
-			<French>Vous avez recruté un(e) %1 pour %2</French>
-			<Russian>Вы наняли %1 за %2</Russian>
-			<Chinese>你已為%2招募了一個%1</Chinese>
-			<Chinesesimp>你已为%2招募了一个%1</Chinesesimp>
-		</Key>
-		<Key ID="STR_HG_VEHICLE_BOUGHT">
-		    <Original>You have bought a %1 for %2</Original>
-			<Spanish>Tu has comprado un %1 por %2</Spanish>
-			<French>Vous avez acheté un(e) %1 pour %2</French>
-			<Chinese>你買了一部%1,花費%2</Chinese>
-			<Chinesesimp>你买了一部%1,花费%2</Chinesesimp>
-			<Russian>Вы купили %1 за %2</Russian>
-		</Key>
-		<Key ID="STR_HG_VEHICLE_BOUGHT_TO_GARAGE">
-		    <Original>You have bought a %1 for %2, it has been stored in your garage</Original>
-			<Spanish>Usted a comprado un %1 por %2, se a almacenado en su garage</Spanish>
-			<French>Vous avez acheté un(e) %1 pour %2, il a été stocké dans votre garage</French>
-			<Chinese>你買了一部%1,花費%2,它被存到了你的車庫</Chinese>
-			<Chinesesimp>你买了一部%1,花费%2, 它被存到了你的车库</Chinesesimp>
-			<Russian>Вы купили %1 за %2,помещён в гараж</Russian>
-		</Key>
-		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
-		    <Original>You don't have enough money, requires %1</Original>
-			<Spanish>No tienes dinero, necesitas %1</Spanish>
-			<French>Vous n'avez pas assez d'argent, il vous faut %1</French>
-			<Chinese>你的金錢不足,需要%1</Chinese>
-			<Chinesesimp>你的金钱不足,需要%1</Chinesesimp>
-			<Russian>У вас недостаточно денег, требуется %1</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_ON_LOAD_1">
-		    <Original>::ERROR:: Dialog Loading - Passed param type is not a STRING</Original>
-			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parámetro no es una cadena</Spanish>
-			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un STRING</French>
-			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是String(字符)</Chinese>
-			<Chinesesimp>::错误:: 对话读取 - 传递的参数不是String(字符)</Chinesesimp>
-			<Russian>:: ОШИБКА:: Загрузка диалога - Переданный тип параметра не является STRING</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_ON_LOAD_2">
-		    <Original>::ERROR:: Dialog Loading - Passed param is an empty STRING</Original>
-			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro es una cadena vacia</Spanish>
-			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un STRING vide</French>
-			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數是空的String (字符)</Chinese>
-			<Chinesesimp>::错误:: 对话读取 - 传递的参数是空的String(字符)</Chinesesimp>
-			<Russian>ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустая строка.</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_ON_LOAD_3">
-		    <Original>::ERROR:: Dialog Loading - Passed param type is not an ARRAY</Original>
-			<Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro no es un orden</Spanish>
-			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un ARRAY</French>			
-			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是一個Array (序列)</Chinese>
-			<Chinesesimp>::错误:: 对话读取 - 传递的参数不是一个Array (序列)</Chinesesimp>
-			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный тип параметра не является массивом</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_ON_LOAD_4">
-		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
-			<Spanish>::ERROR:: Cargando Dialogo - El parametro es una orden vacia</Spanish>
-			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un ARRAY vide</French>
-			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數是一個空的Array (序列)</Chinese>
-			<Chinesesimp>::错误:: 对话读取 - 传递的参数是一个空的Array (序列)</Chinesesimp>
-			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустой массив</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_NOT_OBJECT">
-		    <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
-			<Spanish>::ERROR:: Menu IA (%1) - Parámetro no es un objeto</Spanish>
-			<French>::ERREUR:: Configuration IA (%1) - Le paramètre passé n'est pas un OBJET</French>
-			<Chinese>::錯誤:: AI設定 -  傳遞的參數不是一個Object (物件)</Chinese>
-			<Chinesesimp>::错误:: AI设定 -  传递的参数不是一个Object (物件)</Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный параметр не является ОБЪЕКТОМ</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_NOT_MAN">
-		    <Original>::ERROR:: AI Setup (%1) - Passed object is not kind of "Man"</Original>
-			<Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
-			<French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
-			<Chinese>::錯誤:: AI設定 -  參數的物件不是一個"人類" </Chinese>
-			<Chinesesimp>::错误:: AI设定 -  参数的物件不是一个"人类" </Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Пройденный объект не является "Man"</Russian>
-		</Key>
-		<Key ID="STR_HG_ERR_PLAYER">
-		    <Original>::ERROR:: AI Setup (%1) - Passed object is a player</Original>
-			<Spanish>::ERROR:: Menu IA - Objeto pasado es un jugador (%1) - </Spanish>
-			<French>::ERREUR:: Configuration IA (%1) - L'objet passé est un joueur</French>
-			<Chinese>::錯誤:: AI設定 -  參數的物件是一個玩家</Chinese>
-			<Chinesesimp>::错误:: AI设定 -  参数的物件是一个玩家</Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный объект - игрок</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_EMPTY">
-		    <Original>Looks like this shop is empty...</Original>
-			<Spanish>Parece que esta tienda está vacía...</Spanish>
-			<French>Il semblerait que ce magasin soit vide...</French>
-			<Chinese>看來商店無物可售...</Chinese>
-			<Chinesesimp>看来商店无物可售...</Chinesesimp>
-			<Russian>Похоже,в этом магазине пусто...</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_EMPTY_BIS">
-		    <Original>This trader/dealer is not interested in anything...</Original>
-			<Spanish>Este comerciante está interesado en nada...</Spanish>
-			<French>Ce commerçant n'est intéressé en rien...</French>
-			<Chinese>這個商人對什麽都不感興趣...</Chinese>
-			<Chinesesimp>这个商人对什么都不感兴趣...</Chinesesimp>
-			<Russian>Этого трейдера/дилера ничего не интересует ...</Russian>
-		</Key>
-		<Key ID="STR_HG_ACCESS_DENIED">
-		    <Original>Access denied</Original>
-			<Spanish>Acceso Denegado</Spanish>
-			<French>Accès refusé</French>
-			<Chinese>拒絕訪問</Chinese>
-			<Chinesesimp>拒绝访问</Chinesesimp>
-			<Russian>Доступ закрыт</Russian>
-		</Key>
-		<Key ID="STR_HG_VALUE_EMPTY">
-		    <Original>Value cannot be empty</Original>
-			<Spanish>El valor no se puede ser vacia</Spanish>
-			<French>La valeur ne peut être vide</French>
-			<Chinese>數值不能為空</Chinese>
-			<Chinesesimp>数值不能为空</Chinesesimp>
-			<Russian>Значение не может быть пустым</Russian>
-		</Key>
-		<Key ID="STR_HG_NOT_A_NUMBER">
-		    <Original>Value entered is not a number</Original>
-			<Spanish>El valor usado sobrepasa el número máximo</Spanish>
-			<French>La valeur entrée n'est pas un nombre</French>
-			<Chinese>輸入的數值不是一個數字</Chinese>
-			<Chinesesimp>输入的数值不是一个数字</Chinesesimp>
-			<Russian>Введенное значение не является числом</Russian>
-		</Key>
-		<Key ID="STR_HG_NEGATIVE_OR_ZERO">
-		    <Original>Value can't be negative or equal to zero</Original>
-			<Spanish>El valor no debe ser negativo o igual a cero</Spanish>
-			<French>La valeur ne peut ni être négative ni être égale à zéro</French>
-			<Chinese>數值不能等於或小於0</Chinese>
-			<Chinesesimp>数值不能等于或小于0</Chinesesimp>
-			<Russian>Значение не может быть отрицательным или равным нулю</Russian>
-		</Key>
-		<Key ID="STR_HG_TOO_MUCH">
-		    <Original>You can't give more than what you have</Original>
-			<Spanish>No puedes dar más dinero del que tienes</Spanish>
-			<French>Vous ne pouvez pas donner plus que ce que vous avez</French>
-			<Chinese>你不能給予別人超過你所擁有的</Chinese>
-			<Chinesesimp>你不能给予别人超过你所拥有的</Chinesesimp>
-			<Russian>Вы не можете дать больше,чем имеете</Russian>
-		</Key>
-		<Key ID="STR_HG_SENT_MONEY">
-		    <Original>You have sent %1 to %2</Original>
-			<Spanish>has enviado %1 a %2</Spanish>
-			<French>Vous avez envoyé %1 à %2</French>
-			<Chinese>你送出了%1給%2</Chinese>
-			<Chinesesimp>你送出了%1给%2</Chinesesimp>
-			<Russian>Вы перевели %1 %2</Russian>
-		</Key>
-		<Key ID="STR_HG_RECEIVED_MONEY">
-		    <Original>You have received %1 from %2</Original>
-			<Spanish>has recibido %1 de %2</Spanish>
-			<French>Vous avez reçu %1 de la part de %2</French>
-			<Chinese>你收到了%1,來自於%2</Chinese>
-			<Chinesesimp>你收到了%1,来自于%2</Chinesesimp>
-			<Russian>Вы получили %1 от %2</Russian>
-		</Key>
-		<Key ID="STR_HG_PAYCHECK_NOTF">
-		    <Original>You will receive your next paycheck in %1 minute(s)</Original>
-			<Spanish>Recibiras tu siguiente pago en %1 minuto(s)</Spanish>
-			<French>Vous recevrez votre prochain salaire dans %1 minute(s)</French>
-			<Chinese>你將會在%1分鐘后收到下一筆收入</Chinese>
-			<Chinesesimp>你将会在%1分钟后收到下一笔收入</Chinesesimp>
-			<Russian>Следующее зачисление зарплаты через %1 мин.</Russian>
-		</Key>
-		<Key ID="STR_HG_TIME_TO_PAY">
-		    <Original>You have received a paycheck of %1</Original>
-			<Spanish>has recibido un pago de %1</Spanish>
-			<French>Vous avez reçu un salaire de %1</French>
-			<Chinese>你獲得了一筆%1的收入</Chinese>
-			<Chinesesimp>你获得了一笔%1的收入</Chinesesimp>
-			<Russian>Вы получили зарплату в размере %1</Russian>
-		</Key>
-		<Key ID="STR_HG_YES">
-		    <Original>Yes</Original>
-			<Spanish>Si</Spanish>
-			<French>Oui</French>
-			<Chinese>是</Chinese>
-			<Chinesesimp>是</Chinesesimp>
-			<Russian>Да</Russian>
-		</Key>
-		<Key ID="STR_HG_NO">
-		    <Original>No</Original>
-			<Spanish>No</Spanish>
-			<French>Non</French>
-			<Chinese>否</Chinese>
-			<Chinesesimp>否</Chinesesimp>
-			<Russian>Нет</Russian>
-		</Key>
-		<Key ID="STR_HG_NONE">
-		    <Original>None</Original>
-			<Spanish>Ninguna</Spanish>
-			<French>Aucun(e)</French>
-			<Chinese>无</Chinese>
-			<Chinesesimp>无</Chinesesimp>
-			<Russian>Никто</Russian>
-		</Key>
-		<Key ID="STR_HG_DISABLED">
-		    <Original>Disabled</Original>
-			<Spanish>Inhabilitado</Spanish>
-			<French>Désactivé</French>
-			<Chinese>關閉</Chinese>
-			<Chinesesimp>关闭</Chinesesimp>
-			<Russian>Отключён</Russian>
-		</Key>
-		<Key ID="STR_HG_DEFAULT">
-		    <Original>Default</Original>
-			<Spanish>Defecto</Spanish>
-			<French>Défaut</French>
-			<Chinese>默認</Chinese>
-			<Chinesesimp>默认</Chinesesimp>
-			<Russian>По умолчанию</Russian>
-		</Key>
-		<Key ID="STR_HG_NOTHING_TO_DISPLAY">
-		    <Original>Nothing to display</Original>
-			<Spanish>Nada para mostrar</Spanish>
-			<French>Rien à afficher</French>
-			<Chinese>沒東西可顯示</Chinese>
-			<Chinesesimp>没东西可显示</Chinesesimp>
-			<Russian>Пока тут пусто</Russian>
-		</Key>
-		<Key ID="STR_HG_NO_ONLINE_PLAYERS">
-			<Original>No online players</Original>
-			<Spanish>Ningún jugador</Spanish>
-			<French>Aucun joueur en ligne</French>
-			<Chinese>沒有在線玩家</Chinese>
-			<Chinesesimp>没有在线玩家</Chinesesimp>
-			<Russian>Нет онлайн-игроков</Russian>
-		</Key>
-		<Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
-		    <Original>You can't open inventory when it's locked</Original>
-			<Spanish>No puedes abrir el inventario cuando esta bloqueado</Spanish>
-			<French>Vous ne pouvez pas ouvrir l'inventaire quand c'est verrouillé</French>
-			<Chinese>它上鎖了，你打不開物品欄</Chinese>
-			<Chinesesimp>它上锁了，你打不开物品栏</Chinesesimp>
-			<Russian>Вы не можете открыть инвентарь,когда он заблокирован</Russian>
-		</Key>
-		<Key ID="STR_HG_VEHICLE_LOCKED">
-		    <Original>Vehicle is now LOCKED</Original>
-			<Spanish>El vehiculo esta ahora bloqueado</Spanish>
-			<French>Le véhicule est maintenant verrouillé</French>
-			<Chinese>載具現在被鎖定了</Chinese>
-			<Chinesesimp>载具现在被锁定了</Chinesesimp>
-			<Russian>Транспортное средство заблокировано</Russian>
-		</Key>
-		<Key ID="STR_HG_VEHICLE_UNLOCKED">
-		    <Original>Vehicle is now UNLOCKED</Original>
-			<Spanish>El vehiculo está desbloqueado</Spanish>
-			<French>Le véhicule est maintenant déverrouillé</French>
-			<Chinese>載具現在被解鎖了</Chinese>
-			<Chinesesimp>载具现在被解锁了</Chinesesimp>
-			<Russian>Транспортное средство разблокировано</Russian>
-		</Key>
-		<Key ID="STR_HG_CRATE_EMPTIED">
-		    <Original>Crate has been EMPTIED</Original>
-			<Spanish>La caja esta vacía</Spanish>
-			<French>La caisse a été vidé</French>
-			<Chinese>箱子被清空了</Chinese>
-			<Chinesesimp>箱子被清空了</Chinesesimp>
-			<Russian>Опустошить ящик</Russian>
-		</Key>
-		<Key ID="STR_HG_DELETE_CRATE">
-		    <Original>Delete Crate</Original>
-			<Spanish>Eliminar Caja</Spanish>
-			<French>Supprimer Caisse</French>
-			<Chinese>刪除箱子</Chinese>
-			<Chinesesimp>删除箱子</Chinesesimp>
-			<Russian>Удалить ящик</Russian>
-		</Key>
-		<Key ID="STR_HG_EMPTY_CRATE">
-		    <Original>Empty Crate</Original>
-			<Spanish>Vaciar Caja</Spanish>
-			<French>Vider Caisse</French>
-			<Chinese>清空箱子</Chinese>
-			<Chinesesimp>清空箱子</Chinesesimp>
-			<Russian>Ящик пустой</Russian>
-		</Key>
-		<Key ID="STR_HG_GARAGE">
-		    <Original>Garage</Original>
-			<Spanish>Garage</Spanish>
-			<French>Garage</French>
-			<Chinese>車庫</Chinese>
-			<Chinesesimp>车库</Chinesesimp>
-			<Russian>Гараж</Russian>
-		</Key>
-		<Key ID="STR_HG_GARAGE_PARK">
-		    <Original>Park Vehicle</Original>
-			<Spanish>Almacenar Vehiculo</Spanish>
-			<French>Stocker Véhicule</French>
-			<Chinese>停泊載具</Chinese>
-			<Chinesesimp>停泊载具</Chinesesimp>
-			<Russian>Сдать технику в гараж</Russian>
-		</Key>
-		<Key ID="STR_HG_EMPTY_QUESTION">
-		    <Original>Are you sure you want to empty the vehicle inventory?</Original>
-			<Spanish>¿Estás seguro de vaciar el inventario del vehículo?</Spanish>
-			<French>Êtes-vous sur de vouloir vider l'inventaire du véhicule ?</French>
-			<Chinese>你確定要清空車輛的物品欄嗎?</Chinese>
-			<Chinesesimp>你确定要清空车辆的物品栏吗?</Chinesesimp>
-			<Russian>Вы уверены, что хотите очистить инвентарь техники?</Russian>
-		</Key>
-		<Key ID="STR_HG_EMPTY_VEHICLE">
-		    <Original>Empty Vehicle</Original>
-			<Spanish>Vaciar Vehiculo</Spanish>
-			<French>Vider Véhicule</French>
-			<Chinese>清空車輛</Chinese>
-			<Chinesesimp>清空车辆</Chinesesimp>
-			<Russian>Опустошить инвентарь техники</Russian>
-		</Key>
-		<Key ID="STR_HG_VEHICLE_EMPTIED">
-		    <Original>Vehicle has been EMPTIED</Original>
-			<Spanish>El Vehiculo esta vacio</Spanish>
-			<French>Le véhicule a été vidé</French>
-			<Chinese>車輛已經被清空</Chinese>
-			<Chinesesimp>车辆已经被清空</Chinesesimp>
-			<Russian>Инвентарь техники теперь пустой</Russian>
-		</Key>
-		<Key ID="STR_HG_SPAWN_POINT_BUSY">
-		    <Original>This spawn point is busy</Original>
-			<Spanish>Eso punto de reaparición es ocupado</Spanish>
-			<French>Ce point d'apparition est déjà occupé</French>
-			<Chinese>這個出生點已經被佔用</Chinese>
-			<Chinesesimp>这个出生点已经被占用</Chinesesimp>
-			<Russian>Эта точка возрождения занята</Russian>
-		</Key>
-		<Key ID="STR_HG_SPAWN_POINTS_BUSY">
-		    <Original>All the available spawn points are busy</Original>
-			<Spanish>Todo los puntos de reaparición estan ocupados</Spanish>
-			<French>Tous les points d'apparition sont déjà occupés</French>
-			<Chinese>所有可用的出生點都被占用了</Chinese>
-			<Chinesesimp>所有可用的出生点都被占用了</Chinesesimp>
-			<Russian>Все доступные точки возрождения заняты</Russian>
-		</Key>
-		<Key ID="STR_HG_NO_VEHICLES">
-		    <Original>There are no vehicles on the store point</Original>
-			<Spanish>No está el vehiculo en el punto de guardado</Spanish>
-			<French>Il n'y a aucun véhicule sur le point de stockage</French>
-			<Chinese>儲存點上沒有載具</Chinese>
-			<Chinesesimp>储存点上没有载具</Chinesesimp>
-			<Russian>Транспортные средства отсутствуют</Russian>
-		</Key>
-		<Key ID="STR_HG_NO_OWNED_VEHICLES">
-		    <Original>There are no owned vehicles on the store point</Original>
-			<Spanish>No hay vehiculos propios en el punto de la tienda</Spanish>
-			<French>Il n'y a aucun véhicule vous appartenant sur le point de stockage</French>
-			<Chinese>儲存點沒有自己擁有的載具</Chinese>
-			<Chinesesimp>储存点没有自己拥有的载具</Chinesesimp>
-			<Russian>У вас нет собственной техники</Russian>
-		</Key>
-		<Key ID="STR_HG_XP_MAXED">
-		    <Original>Maxed</Original>
-			<Spanish>Agotado</Spanish>
-			<French>Maximum</French>
-			<Chinese>最大值</Chinese>
-			<Chinesesimp>最大值</Chinesesimp>
-			<Russian>Максимальный</Russian>
-		</Key>
-		<Key ID="STR_HG_PROMOTED">
-		    <Original>Congratulations! You have been promoted to %1 from %2</Original>
-			<Spanish>Felicitaciones! Has sido promocionado de %1 a %2</Spanish>
-			<French>Félicitations ! Vous êtes passé de %2 à %1</French>
-			<Chinese>恭喜！你由%1晉升至%2</Chinese>
-			<Chinesesimp>恭喜！你由%1晋升至%2</Chinesesimp>
-			<Russian>Поздравляем! Вас повысили до %1 с %2</Russian>
-		</Key>
-		<Key ID="STR_HG_DEMOTED">
-		    <Original>You have been demoted to %1 from %2</Original>
-			<Spanish>Has sido degradado de %1 a %2 </Spanish>
-			<French>Vous avez été dégradé de %2 à %1</French>
-			<Chinese>你從%1被降級到了%2</Chinese>
-			<Chinesesimp>你从%1被降级到了%2</Chinesesimp>
-			<Russian>Вас понизили до %1 с %2</Russian>
-		</Key>
-		<Key ID="STR_HG_NOW_OWNER">
-		    <Original>You are now owner of a new vehicle (%1)</Original>
-			<Spanish>Ahora eres propietario de un nuevo vehiculo (%1)</Spanish>
-			<French>Vous êtes maintenant le propriétaire d'un nouveau véhicule (%1)</French>
-			<Chinese>你現在是一部新載具的主人(%1)</Chinese>
-			<Chinesesimp>你现在是一部新载具的主人(%1)</Chinesesimp>
-			<Russian>Техника ваша (%1)</Russian>
-		</Key>
-		<Key ID="STR_HG_INVENTORY_FULL">
-		    <Original>It seems like your inventory is either full or it can't hold that many items</Original>
-			<Spanish>Al parecer su inventario esta lleno o tienes muchos objetos en la mano</Spanish>
-			<French>Il semblerait que votre inventaire soit plein ou qu'il ne puisse pas contenir autant d'items</French>
-			<Chinese>你的物品欄可能滿了,或者裝不下這麼多物品</Chinese>
-			<Chinesesimp>你的物品栏可能满了,或者装不下这么多物品</Chinesesimp>
-			<Russian>Похоже,ваш инвентарь либо полон,либо не может вместить столько предметов</Russian>
-		</Key>
-		<Key ID="STR_HG_KILLED_BY_ADMIN">
-		    <Original>You've been killed by an ADMINISTRATOR</Original>
-			<Spanish>Has sido asesinado por un ADMINISTRADOR</Spanish>
-			<French>Vous avez été tué par un ADMINISTRATEUR</French>
-			<Chinese>你被管理員殺死</Chinese>
-			<Chinesesimp>你被管理员杀死</Chinesesimp>
-			<Russian>Вас убил АДМИНИСТРАТОР</Russian>
-		</Key>
-	</Package>
-	<Package name="extDB">
-	    <Key ID="STR_HG_EXTDB_NOT_LOADED">
-		    <Original>[HG|extDB3] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
-			<Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa</Spanish>
-			<French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
-			<Chinese>[HG|extDB3] 保存方法被設置為"extDB"，但似乎未加載extDB3...服務器配置文件被用作備用</Chinese>
-			<Chinesesimp>[HG|extDB3] 保存方法被设置为"extDB"，但似乎未加载extDB3...服务器配置文件被用作备用</Chinesesimp>
-			<Russian>Метод сохранения установлен на "extDB",но похоже extDB3 не загружен ... профиль сервера используется как резервный</Russian>
-		</Key>
-	</Package>
-	<Package name="Debriefing">
-	    <Key ID="STR_HG_DEBRIEF_NL_TITLE">
-	        <Original>NOT WHITELISTED</Original>
-		    <French>PAS WHITELISTÉ</French>
-			<Chinese>不在白名單上</Chinese>
-			<Chinesesimp>不在白名单上</Chinesesimp>
-			<Russian>НЕ В БЕЛОМ СПИСКЕ</Russian>
-	    </Key>
-		<Key ID="STR_HG_DEBRIEF_NL_DESC">
-		    <Original>You have to be whitelisted to use this slot, please contact an admin for more infos</Original>
-		    <French>Vous devez être whitelisé pour choisir ce slot, contactez un admin pour plus d'infos</French>
-			<Chinese>你必須被列入白名單才能使用此角色，請聯繫管理員了解更多信息。</Chinese>
-			<Chinesesimp>你必须被列入白名单才能使用此角色，请联系管理员了解更多信息。</Chinesesimp>
-			<Russian>Чтобы использовать этот слот, вы должны быть внесены в белый список. Для получения дополнительной информации обратитесь к администратору.</Russian>
-		</Key>
-	</Package>
-	<Package name="Dialogs">
-	    <Container name="General">
-		    <Key ID="STR_HG_DLG_TOOLTIP">
-		        <Original>[HG] Simple Shops</Original>
-			    <Spanish>[HG] Simple Shops</Spanish>
-				<French>[HG] Simple Shops</French>
-			    <Chinese>[HG]便捷商店</Chinese>
-			    <Chinesesimp>[HG]便捷商店</Chinesesimp>
-				<Russian>[HG] Простые магазины</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
-		        <Original>Close current dialog</Original>
-			    <Spanish>Cerrar dialogo actual</Spanish>
-				<French>Fermer le dialogue</French>
-			    <Chinese>關閉當前對話框</Chinese>
-			    <Chinesesimp>关闭当前对话框</Chinesesimp>
-				<Russian>Закрыть текущий диалог</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_MC">
-		        <Original>You have %1</Original>
-			    <Spanish>Tienes %1</Spanish>
-				<French>Vous avez %1</French>
-			    <Chinese>你有%1</Chinese>
-			    <Chinesesimp>你有%1</Chinesesimp>
-				<Russian>У вас %1</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_MC_TOOLTIP">
-		        <Original>Hint your current cash</Original>
-			    <Spanish>Indicio de su efectivo actual</Spanish>
-				<French>Affiche votre argent</French>
-			    <Chinese>提示你目前的現金</Chinese>
-			    <Chinesesimp>提示你目前的现金</Chinesesimp>
-				<Russian>Показать сколько у вас денег</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_FREE">
-		        <Original>Free</Original>
-			    <Spanish>Gratis</Spanish>
-				<French>Gratuit</French>
-			    <Chinese>免費</Chinese>
-			    <Chinesesimp>免费</Chinesesimp>
-				<Russian>Бесплатно</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_PRICE_TAG">
-		        <Original>Price: %1</Original>
-			    <Spanish>Precio: %1</Spanish>
-				<French>Prix: %1</French>
-			    <Chinese>價格: %1</Chinese>
-			    <Chinesesimp>价格: %1</Chinesesimp>
-				<Russian>Цена: %1</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_QUERYING_SERVER">
-		        <Original>Querying server...</Original>
-			    <Spanish>Consultando Servidor</Spanish>
-				<French>Interrogation du serveur...</French>
-			    <Chinese>查詢服務器中...</Chinese>
-			    <Chinesesimp>查询服务器中...</Chinesesimp>
-				<Russian>Запрос сервера ...</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_PLAYER_COUNT">
-		        <Original>Online - %1</Original>
-			    <Spanish>En linea - %1</Spanish>
-				<French>En ligne - %1</French>
-			    <Chinese>在線 - %1</Chinese>
-			    <Chinesesimp>在线 - %1</Chinesesimp>
-				<Russian>В сети - %1</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_GIVE">
-		        <Original>Give</Original>
-			    <Spanish>Dar</Spanish>
-				<French>Donner</French>
-			    <Chinese>給予</Chinese>
-			    <Chinesesimp>给予</Chinesesimp>
-				<Russian>Выдать</Russian>
-		    </Key>
-		</Container>
-		<Container name="AdminMenu">
-		    <Key ID="STR_HG_DLG_AM_REFRESH_TOOLTIP">
-			    <Original>Refresh player list</Original>
-			    <Spanish>Refrescar lista de jugadores</Spanish>
-				<French>Rafraîchir la liste des joueurs</French>
-			    <Chinese>刷新玩家列表</Chinese>
-			    <Chinesesimp>刷新玩家列表</Chinesesimp>
-				<Russian>Обновить список игроков</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_KILL_TOOLTIP">
-			    <Original>Kill selected player</Original>
-			    <Spanish>Matar al jugador seleccionado</Spanish>
-				<French>Tuer le joueur sélectionné</French>
-			    <Chinese>殺死選中的玩家</Chinese>
-			    <Chinesesimp>杀死选中的玩家</Chinesesimp>
-				<Russian>Убить выбранного игрока</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_RANK_TOOLTIP">
-			    <Original>Set rank</Original>
-			    <Spanish>Dar Rango</Spanish>
-				<French>Mettre grade</French>
-			    <Chinese>設置軍銜</Chinese>
-			    <Chinesesimp>设置军衔</Chinesesimp>
-				<Russian>Установить ранг</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
-			    <Original>Set XP</Original>
-			    <Spanish>Dar XP (experiencia)</Spanish>
-				<French>Mettre XP</French>
-			    <Chinese>設置XP</Chinese>
-			    <Chinesesimp>设置经验</Chinesesimp>
-				<Russian>Установить XP</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
-			    <Original>Set kills</Original>
-			    <Spanish>Darle muertes</Spanish>
-				<French>Mettre victimes</French>
-			    <Chinese>設置擊殺數</Chinese>
-			    <Chinesesimp>设置击杀数</Chinesesimp>
-				<Russian>Установить убийства</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_CASH_TOOLTIP">
-			    <Original>Set cash (max value 999999)</Original>
-			    <Spanish>Darle dinero (maximo valor 999999)</Spanish>
-				<French>Donner argent (valeur max 999999)</French>
-			    <Chinese>設置金錢(最大值 999999)</Chinese>
-			    <Chinesesimp>设置金钱(最大值 999999)</Chinesesimp>
-				<Russian>Установить наличные (максимальное значение 999999)</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_BANK_TOOLTIP">
-			    <Original>Set bank (max value 999999)</Original>
-			    <Spanish>Darle banco (maximo valor 999999)</Spanish>
-				<French>Donner banque (valeur max 999999)</French>
-			    <Chinese>設置銀行餘額(最大值 999999)</Chinese>
-			    <Chinesesimp>设置银行余额(最大值 999999)</Chinesesimp>
-				<Russian>Установить банк (максимальное значение 999999)</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
-			    <Original>Tick this box to REMOVE</Original>
-			    <Spanish>Marca esta casilla para REMOVER</Spanish>
-				<French>Cocher cette case pour SUPPRIMER</French>
-			    <Chinese>勾選這個框來移除</Chinese>
-			    <Chinesesimp>勾选这个框来移除</Chinesesimp>
-				<Russian>Установите этот флажок, чтобы УДАЛИТЬ</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
-			    <Original>Tick this box to ADD</Original>
-			    <Spanish>Marca esta casilla para AÑADIR</Spanish>
-				<French>Cocher cette case pour AJOUTER</French>
-			    <Chinese>勾選這個框來增加</Chinese>
-			    <Chinesesimp>勾选这个框来增加</Chinesesimp>
-				<Russian>Отметьте это поле, чтобы ДОБАВИТЬ</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_XP_DISABLED">
-			    <Original>This feature is DISABLED (check enableXP in HG_Config.h)</Original>
-				<French>Cette action est DÉSACTIVÉE (vérifiez enableXP dans HG_Config.h)</French>
-			    <Chinese>這個功能被關閉了(查看enableXP,位於HG_Config.h)</Chinese>
-			    <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableXP行)</Chinesesimp>
-				<Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableXP в HG_Config.h)</Russian>
-			</Key>
-		    <Key ID="STR_HG_DLG_KILLS_DISABLED">
-		        <Original>This feature is DISABLED (check enableKillCount in HG_Config.h)</Original>
-				<French>Cette action est DÉSACTIVÉE (vérifiez enableKillCount dans HG_Config.h)</French>
-			    <Chinese>這個功能被關閉了(查看enableKillCount,位於HG_Config.h)</Chinese>
-			    <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableKillCount)</Chinesesimp>
-				<Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableKillCount в HG_Config.h)</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_LIST">
-			    <Original>%1 - %2</Original>
-			    <Spanish>%1 - %2</Spanish>
-				<French>%1 - %2</French>
-			    <Chinese>%1 - %2</Chinese>
-			    <Chinesesimp>%1 - %2</Chinesesimp>
-				<Russian>%1 - %2</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_UID">
-			    <Original>UID - %1</Original>
-			    <Spanish>UID - %1</Spanish>
-				<French>UID - %1</French>
-			    <Chinese>UID - %1</Chinese>
-			    <Chinesesimp>UID - %1</Chinesesimp>
-				<Russian>UID - %1</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_SIDE">
-			    <Original>Side - %2</Original>
-			    <Spanish>Facción - %2</Spanish>
-				<French>Faction - %2</French>
-			    <Chinese>陣營 - %2</Chinese>
-			    <Chinesesimp>阵营 - %2</Chinesesimp>
-				<Russian>Сторона - %2</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_RANK">
-			    <Original>Rank - %3</Original>
-			    <Spanish>Rango - %3</Spanish>
-				<French>Grade - %3</French>
-			    <Chinese>軍銜 - %3</Chinese>
-			    <Chinesesimp>军衔 - %3</Chinesesimp>
-				<Russian>Ранг - %3</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_XP">
-			    <Original>XP - %4</Original>
-			    <Spanish>XP - %4</Spanish>
-				<French>XP - %4</French>
-			    <Chinese>XP - %4</Chinese>
-			    <Chinesesimp>XP - %4</Chinesesimp>
-				<Russian>XP - %4</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_CASH">
-			    <Original>Cash - %5</Original>
-			    <Spanish>Dinero - %5</Spanish>
-				<French>Argent - %5</French>
-			    <Chinese>現金 - %5</Chinese>
-			    <Chinesesimp>现金 - %5</Chinesesimp>
-				<Russian>Наличные - %5</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_BANK">
-			    <Original>Bank - %6</Original>
-			    <Spanish>Banco - %6</Spanish>
-				<French>Banque - %6</French>
-			    <Chinese>銀行 - %6</Chinese>
-			    <Chinesesimp>银行 - %6</Chinesesimp>
-				<Russian>Банк - %6</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_AM_KILLS">
-			    <Original>Kills - %7</Original>
-			    <Spanish>Muertes - %7</Spanish>
-				<French>Victimes - %7</French>
-			    <Chinese>擊殺 - %7</Chinese>
-			    <Chinesesimp>击杀 - %7</Chinesesimp>
-				<Russian>Убийств - %7</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_WL_TEXT">
-			    <Original>Whitelist</Original>
-			    <Spanish>Whitelist</Spanish>
-				<French>Whitelist</French>
-			    <Chinese>白名單</Chinese>
-			    <Chinesesimp>白名单</Chinesesimp>
-				<Russian>Белый список</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_WL_ADD_UID_TOOLTIP">
-			    <Original>Add selected UID to selected side</Original>
-				<French>Ajouter l'UID sélectionnée au camp sélectionné</French>
-			    <Chinese>把選中的UID增加到選中的陣營</Chinese>
-			    <Chinesesimp>把选中的UID增加到选中的阵营</Chinesesimp>
-				<Russian>Добавить выбранный UID на выбранную сторону</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_WL_REMOVE_TOOLTIP">
-			    <Original>Remove selected UID from selected side</Original>
-				<French>Supprimer l'UID sélectionnée du camp sélectionné</French>
-			    <Chinese>把選中的UID移除于選中的陣營</Chinese>
-			    <Chinesesimp>把选中的UID从选中的阵营中移除</Chinesesimp>
-				<Russian>Удалить выбранный UID с выбранной стороны</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_WL_UID_EMPTY">
-			    <Original>UID field is empty</Original>
-				<French>L'UID est vide</French>
-			    <Chinese>UID欄是空的</Chinese>
-			    <Chinesesimp>UID栏是空的</Chinesesimp>
-				<Russian>Поле UID пусто</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_UID_NOT_NUMBER">
-			    <Original>UID field is not a number</Original>
-				<French>L'UID n'est pas un nombre</French>
-			    <Chinese>UID欄不是數字</Chinese>
-			    <Chinesesimp>UID栏不是数字</Chinesesimp>
-				<Russian>Поле UID не является числом</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_UID_NOT_VALID">
-			    <Original>UID field length is not valid, should be 17 characters (%1)</Original>
-				<French>L'UID n'est pas valide, il doit y avoir 17 caractères (%1)</French>
-			    <Chinese>UID字段長度無效，應該是17個數字(%1)</Chinese>
-			    <Chinesesimp>UID字段长度无效，应该是17个数字(%1)</Chinesesimp>
-				<Russian>Недопустимая длина поля UID, должна составлять 17 символов (%1)</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_UID_ALREADY">
-			    <Original>This UID is already whitelisted on selected side</Original>
-				<French>Cette UID est déjà whitelisté dans le camp sélectionné</French>
-			    <Chinese>此UID已在選定陣營的白名單中</Chinese>
-			    <Chinesesimp>此UID已在选定阵营的白名单中</Chinesesimp>
-				<Russian>Этот UID уже внесен в белый список на выбранной стороне</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_ADDED">
-			    <Original>You have added %1 to the %2 side whitelist</Original>
-				<French>Vous avez ajouté %1 à la whitelist du camp %2</French>
-			    <Chinese>您已將%1添加到%2陣營的白名單中</Chinese>
-			    <Chinesesimp>您已将%1添加到%2阵营的白名单中</Chinesesimp>
-				<Russian>Вы добавили %1 в белый список %2</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_REMOVED">
-			    <Original>You have removed %1 from the %2 side whitelist</Original>
-				<French>Vous avez supprimé %1 de la whitelist du camp %2</French>
-			    <Chinese>您已將%1從%2陣營的白名單中移除</Chinese>
-			    <Chinesesimp>您已将%1从%2阵营的白名单中移除</Chinesesimp>
-				<Russian>Вы удалили %1 из белого списка %2</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_INFO_TEXT">
-			    <Original>Waiting for server...</Original>
-				<French>Attente du serveur...</French>
-			    <Chinese>等待服務器中...</Chinese>
-			    <Chinesesimp>等待服务器中...</Chinesesimp>
-				<Russian>Ожидание сервера...</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_SIDE_CIV">
-			    <Original>Civilian</Original>
-				<French>Civils</French>
-			    <Chinese>平民</Chinese>
-			    <Chinesesimp>平民</Chinesesimp>
-				<Russian>Гражданские</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_SIDE_WEST">
-			    <Original>West</Original>
-				<French>Ouest</French>
-			    <Chinese>西方</Chinese>
-			    <Chinesesimp>北约</Chinesesimp>
-				<Russian>Запад</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_SIDE_GUER">
-			    <Original>Resistance</Original>
-				<French>Résistance</French>			
-				<Chinese>中立方</Chinese>
-			    <Chinesesimp>中立方</Chinesesimp>
-				<Russian>Сопротивление</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_WL_SIDE_EAST">
-			    <Original>East</Original>
-				<French>Est</French>
-			    <Chinese>東方</Chinese>
-			    <Chinesesimp>广协</Chinesesimp>
-				<Russian>Восток</Russian>
-			</Key>
-		</Container>
-		<Container name="ATM">
-		    <Key ID="STR_HG_ATM_ACC_TITLE">
-		        <Original>Account</Original>
-				<Spanish>Cuenta</Spanish>
-				<French>Compte</French>
-			    <Chinese>賬戶</Chinese>
-			    <Chinesesimp>账户</Chinesesimp>
-				<Russian>Счёт</Russian>
-			</Key>
-		    <Key ID="STR_HG_ATM_CASH_TITLE">
-		        <Original>Cash</Original>
-				<Spanish>Dinero</Spanish>
-				<French>Argent</French>
-			    <Chinese>現金</Chinese>
-			    <Chinesesimp>现金</Chinesesimp>
-				<Russian>Наличные</Russian>
-			</Key>
-		    <Key ID="STR_HG_ATM_DEPOSIT_TOOLTIP">
-			    <Original>Deposit</Original>
-				<Spanish>Depósito</Spanish>
-				<French>Déposer</French>
-			    <Chinese>存款</Chinese>
-			    <Chinesesimp>存款</Chinesesimp>
-				<Russian>Депозит</Russian>
-			</Key>
-		    <Key ID="STR_HG_ATM_WITHDRAW_TOOLTIP">
-			    <Original>Withdraw</Original>
-				<Spanish>Retirarse</Spanish>
-				<French>Retirer</French>
-			    <Chinese>取款</Chinese>
-			    <Chinesesimp>取款</Chinesesimp>
-				<Russian>Изымать</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_TRANSFER_TOOLTIP">
-			    <Original>Transfer</Original>
-				<Spanish>Transferir</Spanish>
-				<French>Transférer</French>
-			    <Chinese>轉賬</Chinese>
-			    <Chinesesimp>转账</Chinesesimp>
-				<Russian>Перевод</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_REFRESH_TOOLTIP">
-			    <Original>Refresh</Original>
-				<Spanish>Refrescar</Spanish>
-				<French>Rafraîchir</French>
-			    <Chinese>刷新</Chinese>
-			    <Chinesesimp>刷新</Chinesesimp>
-				<Russian>Обновить</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_DEPOSITED">
-			    <Original>You have deposited %1</Original>
-				<Spanish>Usted ha depositado %1</Spanish>
-				<French>Vous avez déposé %1</French>
-			    <Chinese>你已存入%1</Chinese>
-			    <Chinesesimp>你已存入%1</Chinesesimp>
-				<Russian>Вы внесли %1</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_WITHDRAWN">
-			    <Original>You have withdrawn %1</Original>
-				<Spanish>Usted ha retirado %1</Spanish>
-				<French>Vous avez retiré %1</French>
-			    <Chinese>你已提取了%1</Chinese>
-			    <Chinesesimp>你已提取了%1</Chinesesimp>
-				<Russian>Вы сняли %1</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_TRANSFERED">
-			    <Original>You have transfered %1 to %2</Original>
-				<Spanish>Usted ha transferido %1 a %2</Spanish>
-				<French>Vous avez transféré %1 à %2</French>
-			    <Chinese>你轉賬了%1給%2</Chinese>
-			    <Chinesesimp>你转账了%1给%2</Chinesesimp>
-				<Russian>Вы перевели %1 в %2</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_TRANSFER_RECEIVED">
-			    <Original>You have received a bank transfer from %1 (%2)</Original>
-				<French>Vous avez reçu un transfer d'argent de %1 (%2)</French>
-			    <Chinese>你從%1收到了一筆轉賬(%2)</Chinese>
-			    <Chinesesimp>你从%1收到了一笔转账(%2)</Chinesesimp>
-				<Russian>Вы получили банковский перевод от %1 (%2)</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_CANNOT_DEPOSIT">
-			    <Original>You cannot deposit more than what you have</Original>
-				<French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
-			    <Chinese>你不能儲存多於當前現金的數額</Chinese>
-			    <Chinesesimp>你不能储存多于当前现金的数额</Chinesesimp>
-				<Russian>Вы не можете внести больше,чем имеете</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
-			    <Original>You cannot withdraw more than what you have</Original>
-				<French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
-			    <Chinese>你不能提取多於賬戶餘額的現金</Chinese>
-			    <Chinesesimp>你不能提取多于账户余额的现金</Chinesesimp>
-				<Russian>Вы не можете снять больше,чем имеете</Russian>
-			</Key>
-			<Key ID="STR_HG_ATM_CANNOT_TRANSFER">
-			    <Original>You cannot transfer more than what's in the bank</Original>
-				<French>Vous ne pouvez pas faire un virement supérieur à votre compte bancaire</French>
-				<Russian>Вы не можете перевести больше,чем есть в банке</Russian>
-				<Chinese>你轉賬的金額不能超過賬戶餘額</Chinese>
-				<Chinesesimp>你转账的金额不能超过账户余额</Chinesesimp>
-			</Key>
-		</Container>
-	    <Container name="GearShop">
-			<Key ID="STR_HG_DLG_GS_TITLE_LIST">
-		        <Original>Available Gear</Original>
-			    <Spanish>Equipo disponible</Spanish>
-				<French>Équipement disponible</French>
-			    <Chinese>可用裝備</Chinese>
-			    <Chinesesimp>可用装备</Chinesesimp>
-				<Russian>Доступное снаряжение</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_TITLE_CONTROLS">
-		        <Original>Camera Controls</Original>
-			    <Spanish>Controles de la cámara</Spanish>
-				<French>Commandes de la caméra</French>
-				<Russian>Управление камерой</Russian>
-				<Chinese>相機控制</Chinese>
-				<Chinesesimp>摄像机控制</Chinesesimp>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_TITLE_VIEW">
-		        <Original>Direction</Original>
-			    <Spanish>Dirección</Spanish>
-				<French>Direction</French>
-				<Russian>Направление</Russian>
-				<Chinese>方向</Chinese>
-				<Chinesesimp>方向</Chinesesimp>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_TITLE_DIST">
-		        <Original>Distance</Original>
-			    <Spanish>Distancia</Spanish>
-				<French>Distance</French>
-				<Russian>Расстояние</Russian>
-				<Chinese>距離</Chinese>
-				<Chinesesimp>距离</Chinesesimp>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
-			    <Original>Total - %1</Original>
-			    <Spanish>Total - %1</Spanish>
-				<French>Total - %1</French>
-			    <Chinese>共計 - %1</Chinese>
-			    <Chinesesimp>共计 - %1</Chinesesimp>
-				<Russian>Итого - %1</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GS_REMOVE">
-			    <Original>Remove Current</Original>
-			    <Spanish>Remover Efetivo</Spanish>
-				<French>Supprimer Actuel</French>
-			    <Chinese>移除當前</Chinese>
-			    <Chinesesimp>移除当前</Chinesesimp>
-				<Russian>Удалить текущий</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
-		        <Original>Reset gear</Original>
-			    <Spanish>Resetear Equipo</Spanish>
-				<French>Repartir de zéro</French>
-			    <Chinese>重置裝備</Chinese>
-			    <Chinesesimp>重置装备</Chinesesimp>
-				<Russian>Сбросить изменения</Russian>
-		    </Key>    
-		    <Key ID="STR_HG_DLG_GS_BUY_TOOLTIP">
-		        <Original>Buy selected gear</Original>
-			    <Spanish>Comprar el equipo seleccionado</Spanish>
-				<French>Acheter l'équipement sélectionné</French>
-			    <Chinese>購買選定的裝備</Chinese>
-			    <Chinesesimp>购买选定的装备</Chinesesimp>
-				<Russian>Купить выбранное снаряжение</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
-		        <Original>Turn player left or right</Original>
-			    <Spanish>Girar a la izquierda o a la derecha</Spanish>
-				<French>Tourne le joueur sur la gauche ou la droite</French>
-			    <Chinese>左右旋轉玩家</Chinese>
-			    <Chinesesimp>左右旋转玩家</Chinesesimp>
-				<Russian>Поверните игрока влево или вправо</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_GS_SLIDER_DIST_TOOLTIP">
-		        <Original>Zoom in or out</Original>
-			    <Spanish>Acercar o alejar</Spanish>
-				<French>Zoom avant ou arrière</French>
-				<Russian>Увеличить или уменьшить масштаб</Russian>
-				<Chinese>放大/縮小</Chinese>
-				<Chinesesimp>放大/缩小</Chinesesimp>
-		    </Key>
-		</Container>
-		<Container name="Garage">
-		    <Key ID="STR_HG_GRG_LIST">
-		        <Original>%1 (%2)</Original>
-			    <Spanish>%1 (%2)</Spanish>
-				<French>%1 (%2)</French>
-			    <Chinese>%1 (%2)</Chinese>
-			    <Chinesesimp>%1 (%2)</Chinesesimp>
-				<Russian>%1 (%2)</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_REFRESH_TOOLTIP">
-		        <Original>Refresh garage</Original>
-			    <Spanish>Actualizar Garage</Spanish>
-				<French>Rafraîchir garage</French>
-			    <Chinese>刷新車庫</Chinese>
-			    <Chinesesimp>刷新车库</Chinesesimp>
-				<Russian>Обновить гараж</Russian>
-		    </Key>
-			<Key ID="STR_HG_GRG_SPAWN_TOOLTIP">
-		        <Original>Spawn selected vehicle</Original>
-			    <Spanish>Spawnear vehiculo seleccionado </Spanish>
-				<French>Faire appaître le véhicule sélectionné</French>
-			    <Chinese>調出選中的載具</Chinese>
-			    <Chinesesimp>调出选中的載具</Chinesesimp>
-				<Russian>Выдать выбранную технику</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
-		        <Original>Delete selected vehicle *WILL BE LOST FOREVER*</Original>
-			    <Spanish>Eliminar vehiculo seleccionado *LO PIERDES PARA SIEMPRE*</Spanish>
-				<French>Supprimer le véhicule sélectionné *IL SERA PERDU POUR TOUJOURS*</French>
-			    <Chinese>刪除選中的載具（將永遠丟失）</Chinese>
-			    <Chinesesimp>删除选中的载具（将永远丢失）</Chinesesimp>
-				<Russian>Удалить выбранную технику *БУДЕТ УТЕРЯН НАВСЕГДА*</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
-		        <Original>Requested vehicle is being spawned...</Original>
-			    <Spanish>Se está requiriendo el vehiculo en el spawn</Spanish>
-				<French>Le véhicule sélectionné va apparaître...</French>
-			    <Chinese>請求的載具正被調出...</Chinese>
-			    <Chinesesimp>请求的载具正被调出...</Chinesesimp>
-				<Russian>Запрошенная техника выдаётся...</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
-		        <Original>Requested vehicle has been spawned</Original>
-			    <Spanish>El Vehiculo requerido a sido spawneado</Spanish>
-				<French>Le véhicule sélectionné est apparu</French>
-			    <Chinese>請求的載具已被調出</Chinese>
-			    <Chinesesimp>请求的载具已被调出</Chinesesimp>
-				<Russian>Запрошенная техника выдана</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_VEHICLE_DELETING">
-		        <Original>Selected vehicle is being deleted...</Original>
-			    <Spanish>Vehiculo seleccionado está siendo borrado</Spanish>
-				<French>Le véhicule sélectionné va être supprimé...</French>
-			    <Chinese>選中的載具正被刪除...</Chinese>
-			    <Chinesesimp>选中的载具正被删除...</Chinesesimp>
-				<Russian>Выбранная техника удаляется...</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_VEHICLE_DELETED">
-		        <Original>Selected vehicle has been deleted</Original>
-			    <Spanish>Vehiculo seleccionado a sido borrado</Spanish>
-				<French>Le véhicule sélectionné a été supprimé</French>
-			    <Chinese>選中的載具已被刪除</Chinese>
-			    <Chinesesimp>选中的载具已被删除</Chinesesimp>
-				<Russian>Выбранная техника удалена</Russian>
-		    </Key>
-		    <Key ID="STR_HG_GRG_VEHICLE_STORED">
-		        <Original>Vehicle has been stored</Original>
-			    <Spanish>Vehiculo almacenado</Spanish>
-				<French>Le véhicule a été stocké</French>
-			    <Chinese>載具被儲存</Chinese>
-			    <Chinesesimp>载具被储存</Chinesesimp>
-				<Russian>Техника в гараже</Russian>
-		    </Key>
-		</Container>
-		<Container name="VehiclesShop">
-		    <Key ID="STR_HG_DLG_VS_TITLE_LIST">
-		        <Original>Available Vehicles</Original>
-			    <Spanish>Vehiculos disponibles</Spanish>
-				<French>Véhicules disponibles</French>
-			    <Chinese>可用載具</Chinese>
-			    <Chinesesimp>可用载具</Chinesesimp>
-				<Russian>Доступная техника</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
-		        <Original>Vehicle Infos</Original>
-			    <Spanish>Informacion del Vehiculo</Spanish>
-				<French>Infos du véhicule</French>
-			    <Chinese>载具信息</Chinese>
-			    <Chinesesimp>载具信息</Chinesesimp>
-				<Russian>Информация о технике</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_VS_TG_TOOLTIP">
-		        <Original>Buy selected vehicle and store it to garage</Original>
-			    <Spanish>Comprar el vehiculo seleccionado y guardarlo en el garage</Spanish>
-				<French>Acheter le véhicule sélectionné et le stocker dans le garage</French>
-			    <Chinese>購買選中的載具并存到車庫</Chinese>
-			    <Chinesesimp>购买选中的载具并存到车库</Chinesesimp>
-				<Russian>Купить выбранную технику и сохранить в гараже</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_VS_BUY_TOOLTIP">
-		        <Original>Buy selected vehicle</Original>
-			    <Spanish>Comprar el vehiculo seleccionado</Spanish>
-				<French>Acheter le véhicule sélectionné</French>
-			    <Chinese>購買選中的載具</Chinese>
-			    <Chinesesimp>购买选中的载具</Chinesesimp>
-				<Russian>Купить выбранную технику</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_VS_SPEED">
-		        <Original>Max Speed - %2 Mph</Original>
-			    <Spanish>Máxima Velocidad - %2 Kph</Spanish>
-				<French>Vitesse Max - %2 Kph</French>
-			    <Chinese>最大時速 - %2 里</Chinese>
-			    <Chinesesimp>最大时速 - %2 里</Chinesesimp>
-				<Russian>Максимальная скорость - %2 миль/ч</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_VS_ARMOR">
-		        <Original>Armor - %3 AP</Original>
-			    <Spanish>Blindaje - %3 AP</Spanish>
-				<French>Blindage - %3 PA</French>
-			    <Chinese>裝甲 - %3 AP</Chinese>
-			    <Chinesesimp>装甲 - %3 AP</Chinesesimp>
-				<Russian>Броня - %3 AP</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_VS_SEATS">
-		        <Original>Seats - %4</Original>
-			    <Spanish>Asientos - %4</Spanish>
-				<French>Siège(s) - %4</French>
-			    <Chinese>座位 - %4</Chinese>
-			    <Chinesesimp>座位 - %4</Chinesesimp>
-				<Russian>Количество мест - %4</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_VS_ENGINE">
-		        <Original>Engine - %5 HP</Original>
-			    <Spanish>Potencia Motor - %5 HP</Spanish>
-				<French>Moteur - %5 CV</French>
-			    <Chinese>引擎 - %5 HP</Chinese>
-			    <Chinesesimp>引擎 - %5 HP</Chinesesimp>
-				<Russian>Двигатель - %5 HP</Russian>
-		    </Key>
-		    <Key ID="STR_HG_DLG_VS_FUEL_MAX">
-		        <Original>Max Fuel - %6 L</Original>
-			    <Spanish>Max combustible - %6 L</Spanish>
-				<French>Essence Max - %6 L</French>
-			    <Chinese>最大燃料 - %6 L</Chinese>
-			    <Chinesesimp>最大燃料 - %6 L</Chinesesimp>
-				<Russian>Бак - %6 л</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_VS_PRICE_TAG">
-		        <Original>Price - %7</Original>
-			    <Spanish>Precio - %7</Spanish>
-				<French>Prix - %7</French>
-			    <Chinese>價格 - %7</Chinese>
-			    <Chinesesimp>价格 - %7</Chinesesimp>
-				<Russian>Цена - %7</Russian>
-		    </Key>
-		</Container>
+        <Key ID="STR_HG_GEAR_BOUGHT">
+            <Original>You have bought stuff for a total of %1</Original>
+            <Spanish>Tu has comprado con un descuento por un total de %1</Spanish>
+            <French>Vous avez acheté du matériel pour un total de %1</French>
+            <Chinese>你購買了總價值為%1的物品</Chinese>
+            <Chinesesimp>你购买了总价值为%1的物品</Chinesesimp>
+            <Russian>Вы купили вещи на сумму %1</Russian>
+            <German>Du hast für insgesamt %1 eingekauft.</German>
+        </Key>
+        <Key ID="STR_HG_ITEM_BOUGHT">
+            <Original>You have bought %1x %2 for %3</Original>
+            <Spanish>Tu has comprado %1x %2 por %3</Spanish>
+            <French>Vous avez acheté %1x %2 pour %3</French>
+            <Chinese>你買了%1 x %2,花費%3</Chinese>
+            <Chinesesimp>你买了%1 x %2,花费%3</Chinesesimp>
+            <Russian>Вы купили %1x %2 за %3</Russian>
+            <German>Du hast %1x %2 für %3 eingekauft.</German>
+        </Key>
+        <Key ID="STR_HG_UNIT_BOUGHT">
+            <Original>You have recruited a %1 for %2</Original>
+            <French>Vous avez recruté un(e) %1 pour %2</French>
+            <Russian>Вы наняли %1 за %2</Russian>
+            <Chinese>你已為%2招募了一個%1</Chinese>
+            <Chinesesimp>你已为%2招募了一个%1</Chinesesimp>
+            <German>Du hast ein %1 für %2 rekrutiert.</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLE_BOUGHT">
+            <Original>You have bought a %1 for %2</Original>
+            <Spanish>Tu has comprado un %1 por %2</Spanish>
+            <French>Vous avez acheté un(e) %1 pour %2</French>
+            <Chinese>你買了一部%1,花費%2</Chinese>
+            <Chinesesimp>你买了一部%1,花费%2</Chinesesimp>
+            <Russian>Вы купили %1 за %2</Russian>
+            <German>Du hast ein %1 für %2 gekauft.</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLE_BOUGHT_TO_GARAGE">
+            <Original>You have bought a %1 for %2, it has been stored in your garage</Original>
+            <Spanish>Usted a comprado un %1 por %2, se a almacenado en su garage</Spanish>
+            <French>Vous avez acheté un(e) %1 pour %2, il a été stocké dans votre garage</French>
+            <Chinese>你買了一部%1,花費%2,它被存到了你的車庫</Chinese>
+            <Chinesesimp>你买了一部%1,花费%2, 它被存到了你的车库</Chinesesimp>
+            <Russian>Вы купили %1 за %2,помещён в гараж</Russian>
+            <German>Du hast ein %1 für %2 gekauft, es wurde in deiner Garage geparkt.</German>
+        </Key>
+        <Key ID="STR_HG_NOT_ENOUGH_MONEY">
+            <Original>You don't have enough money, requires %1</Original>
+            <Spanish>No tienes dinero, necesitas %1</Spanish>
+            <French>Vous n'avez pas assez d'argent, il vous faut %1</French>
+            <Chinese>你的金錢不足,需要%1</Chinese>
+            <Chinesesimp>你的金钱不足,需要%1</Chinesesimp>
+            <Russian>У вас недостаточно денег, требуется %1</Russian>
+            <German>Du hast nicht genug Geld. Benötigt: %1.</German>
+        </Key>
+        <Key ID="STR_HG_ERR_ON_LOAD_1">
+            <Original>::ERROR:: Dialog Loading - Passed param type is not a STRING</Original>
+            <Spanish>::ERROR:: Cargando Dialogo - El tipo de parámetro no es una cadena</Spanish>
+            <French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un STRING</French>
+            <Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是String(字符)</Chinese>
+            <Chinesesimp>::错误:: 对话读取 - 传递的参数不是String(字符)</Chinesesimp>
+            <Russian>:: ОШИБКА:: Загрузка диалога - Переданный тип параметра не является STRING</Russian>
+            <German>::ERROR:: Dialog lädt - Übergebener Parameter Datentyp ist kein STRING</German>
+        </Key>
+        <Key ID="STR_HG_ERR_ON_LOAD_2">
+            <Original>::ERROR:: Dialog Loading - Passed param is an empty STRING</Original>
+            <Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro es una cadena vacia</Spanish>
+            <French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un STRING vide</French>
+            <Chinese>::錯誤:: 對話讀取 - 傳遞的參數是空的String (字符)</Chinese>
+            <Chinesesimp>::错误:: 对话读取 - 传递的参数是空的String(字符)</Chinesesimp>
+            <Russian>ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустая строка.</Russian>
+            <German>::ERROR:: Dialog lädt - Übergebener Parameter Datentyp ist ein leerer STRING</German>
+        </Key>
+        <Key ID="STR_HG_ERR_ON_LOAD_3">
+            <Original>::ERROR:: Dialog Loading - Passed param type is not an ARRAY</Original>
+            <Spanish>::ERROR:: Cargando Dialogo - El tipo de parametro no es un orden</Spanish>
+            <French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un ARRAY</French>
+            <Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是一個Array (序列)</Chinese>
+            <Chinesesimp>::错误:: 对话读取 - 传递的参数不是一个Array (序列)</Chinesesimp>
+            <Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный тип параметра не является массивом</Russian>
+            <German>::ERROR:: Dialog lädt - Übergebener Parameter Datentyp ist klein ARRAY</German>
+        </Key>
+        <Key ID="STR_HG_ERR_ON_LOAD_4">
+            <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
+            <Spanish>::ERROR:: Cargando Dialogo - El parametro es una orden vacia</Spanish>
+            <French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un ARRAY vide</French>
+            <Chinese>::錯誤:: 對話讀取 - 傳遞的參數是一個空的Array (序列)</Chinese>
+            <Chinesesimp>::错误:: 对话读取 - 传递的参数是一个空的Array (序列)</Chinesesimp>
+            <Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустой массив</Russian>
+            <German>::ERROR:: Dialog lädt - Übergebener Parameter Datentyp ist ein leeres ARRAY</German>
+        </Key>
+        <Key ID="STR_HG_ERR_NOT_OBJECT">
+            <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
+            <Spanish>::ERROR:: Menu IA (%1) - Parámetro no es un objeto</Spanish>
+            <French>::ERREUR:: Configuration IA (%1) - Le paramètre passé n'est pas un OBJET</French>
+            <Chinese>::錯誤:: AI設定 -  傳遞的參數不是一個Object (物件)</Chinese>
+            <Chinesesimp>::错误:: AI设定 -  传递的参数不是一个Object (物件)</Chinesesimp>
+            <Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный параметр не является ОБЪЕКТОМ</Russian>
+            <German>::ERROR::AI Einstellung (%1) - Übergebener Parameter ist kein OBJEKT</German>
+        </Key>
+        <Key ID="STR_HG_ERR_NOT_MAN">
+            <Original>::ERROR:: AI Setup (%1) - Passed object is not kind of "Man"</Original>
+            <Spanish>::ERROR:: Menu IA - Objeto pasado no es un "hombre" (%1) - </Spanish>
+            <French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
+            <Chinese>::錯誤:: AI設定 -  參數的物件不是一個"人類" </Chinese>
+            <Chinesesimp>::错误:: AI设定 -  参数的物件不是一个"人类" </Chinesesimp>
+            <Russian>:: ОШИБКА :: AI Setup (% 1) - Пройденный объект не является "Man"</Russian>
+            <German>::ERROR::AI Einstellung (%1) - Übergebenes Parameter Objekt stammt nicht von "Man" ab.</German>
+        </Key>
+        <Key ID="STR_HG_ERR_PLAYER">
+            <Original>::ERROR:: AI Setup (%1) - Passed object is a player</Original>
+            <Spanish>::ERROR:: Menu IA - Objeto pasado es un jugador (%1) - </Spanish>
+            <French>::ERREUR:: Configuration IA (%1) - L'objet passé est un joueur</French>
+            <Chinese>::錯誤:: AI設定 -  參數的物件是一個玩家</Chinese>
+            <Chinesesimp>::错误:: AI设定 -  参数的物件是一个玩家</Chinesesimp>
+            <Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный объект - игрок</Russian>
+            <German>::ERROR::AI Einstellung (%1) - Übergebenes Parameter Objekt ist ein Spieler.</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_EMPTY">
+            <Original>Looks like this shop is empty...</Original>
+            <Spanish>Parece que esta tienda está vacía...</Spanish>
+            <French>Il semblerait que ce magasin soit vide...</French>
+            <Chinese>看來商店無物可售...</Chinese>
+            <Chinesesimp>看来商店无物可售...</Chinesesimp>
+            <Russian>Похоже,в этом магазине пусто...</Russian>
+            <German>Sieht so aus, dass der Laden leer ist...</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_EMPTY_BIS">
+            <Original>This trader/dealer is not interested in anything...</Original>
+            <Spanish>Este comerciante está interesado en nada...</Spanish>
+            <French>Ce commerçant n'est intéressé en rien...</French>
+            <Chinese>這個商人對什麽都不感興趣...</Chinese>
+            <Chinesesimp>这个商人对什么都不感兴趣...</Chinesesimp>
+            <Russian>Этого трейдера/дилера ничего не интересует ...</Russian>
+            <German>Dieser Händler hat keinen Bedarf.</German>
+        </Key>
+        <Key ID="STR_HG_ACCESS_DENIED">
+            <Original>Access denied</Original>
+            <Spanish>Acceso Denegado</Spanish>
+            <French>Accès refusé</French>
+            <Chinese>拒絕訪問</Chinese>
+            <Chinesesimp>拒绝访问</Chinesesimp>
+            <Russian>Доступ закрыт</Russian>
+            <German>Zugang verweigert.</German>
+        </Key>
+        <Key ID="STR_HG_VALUE_EMPTY">
+            <Original>Value cannot be empty</Original>
+            <Spanish>El valor no se puede ser vacia</Spanish>
+            <French>La valeur ne peut être vide</French>
+            <Chinese>數值不能為空</Chinese>
+            <Chinesesimp>数值不能为空</Chinesesimp>
+            <Russian>Значение не может быть пустым</Russian>
+            <German>Wert kann nicht leer sein.</German>
+        </Key>
+        <Key ID="STR_HG_NOT_A_NUMBER">
+            <Original>Value entered is not a number</Original>
+            <Spanish>El valor usado sobrepasa el número máximo</Spanish>
+            <French>La valeur entrée n'est pas un nombre</French>
+            <Chinese>輸入的數值不是一個數字</Chinese>
+            <Chinesesimp>输入的数值不是一个数字</Chinesesimp>
+            <Russian>Введенное значение не является числом</Russian>
+            <German>Eingegebener Wert ist keine Zahl.</German>
+        </Key>
+        <Key ID="STR_HG_NEGATIVE_OR_ZERO">
+            <Original>Value can't be negative or equal to zero</Original>
+            <Spanish>El valor no debe ser negativo o igual a cero</Spanish>
+            <French>La valeur ne peut ni être négative ni être égale à zéro</French>
+            <Chinese>數值不能等於或小於0</Chinese>
+            <Chinesesimp>数值不能等于或小于0</Chinesesimp>
+            <Russian>Значение не может быть отрицательным или равным нулю</Russian>
+            <German>Eingegebener Wert kann nicht negativ oder Null sein.</German>
+        </Key>
+        <Key ID="STR_HG_TOO_MUCH">
+            <Original>You can't give more than what you have</Original>
+            <Spanish>No puedes dar más dinero del que tienes</Spanish>
+            <French>Vous ne pouvez pas donner plus que ce que vous avez</French>
+            <Chinese>你不能給予別人超過你所擁有的</Chinese>
+            <Chinesesimp>你不能给予别人超过你所拥有的</Chinesesimp>
+            <Russian>Вы не можете дать больше,чем имеете</Russian>
+            <German>Du kannst nicht mehr Geld geben als du hast.</German>
+        </Key>
+        <Key ID="STR_HG_SENT_MONEY">
+            <Original>You have sent %1 to %2</Original>
+            <Spanish>has enviado %1 a %2</Spanish>
+            <French>Vous avez envoyé %1 à %2</French>
+            <Chinese>你送出了%1給%2</Chinese>
+            <Chinesesimp>你送出了%1给%2</Chinesesimp>
+            <Russian>Вы перевели %1 %2</Russian>
+            <German>Du hast %1 an %2 geschickt.</German>
+        </Key>
+        <Key ID="STR_HG_RECEIVED_MONEY">
+            <Original>You have received %1 from %2</Original>
+            <Spanish>has recibido %1 de %2</Spanish>
+            <French>Vous avez reçu %1 de la part de %2</French>
+            <Chinese>你收到了%1,來自於%2</Chinese>
+            <Chinesesimp>你收到了%1,来自于%2</Chinesesimp>
+            <Russian>Вы получили %1 от %2</Russian>
+            <German>Du hast %1 von %2 erhalten.</German>
+        </Key>
+        <Key ID="STR_HG_PAYCHECK_NOTF">
+            <Original>You will receive your next paycheck in %1 minute(s)</Original>
+            <Spanish>Recibiras tu siguiente pago en %1 minuto(s)</Spanish>
+            <French>Vous recevrez votre prochain salaire dans %1 minute(s)</French>
+            <Chinese>你將會在%1分鐘后收到下一筆收入</Chinese>
+            <Chinesesimp>你将会在%1分钟后收到下一笔收入</Chinesesimp>
+            <Russian>Следующее зачисление зарплаты через %1 мин.</Russian>
+            <German>Du erhälst dein nächstes Gehalt in %1 Minuten</German>
+        </Key>
+        <Key ID="STR_HG_TIME_TO_PAY">
+            <Original>You have received a paycheck of %1</Original>
+            <Spanish>has recibido un pago de %1</Spanish>
+            <French>Vous avez reçu un salaire de %1</French>
+            <Chinese>你獲得了一筆%1的收入</Chinese>
+            <Chinesesimp>你获得了一笔%1的收入</Chinesesimp>
+            <Russian>Вы получили зарплату в размере %1</Russian>
+            <German>Du hast dein Gehalt in Höhe von %1 erhalten.</German>
+        </Key>
+        <Key ID="STR_HG_YES">
+            <Original>Yes</Original>
+            <Spanish>Si</Spanish>
+            <French>Oui</French>
+            <Chinese>是</Chinese>
+            <Chinesesimp>是</Chinesesimp>
+            <Russian>Да</Russian>
+            <German>Ja</German>
+        </Key>
+        <Key ID="STR_HG_NO">
+            <Original>No</Original>
+            <Spanish>No</Spanish>
+            <French>Non</French>
+            <Chinese>否</Chinese>
+            <Chinesesimp>否</Chinesesimp>
+            <Russian>Нет</Russian>
+            <German>Nein</German>
+        </Key>
+        <Key ID="STR_HG_NONE">
+            <Original>None</Original>
+            <Spanish>Ninguna</Spanish>
+            <French>Aucun(e)</French>
+            <Chinese>无</Chinese>
+            <Chinesesimp>无</Chinesesimp>
+            <Russian>Никто</Russian>
+            <German>Kein</German>
+        </Key>
+        <Key ID="STR_HG_DISABLED">
+            <Original>Disabled</Original>
+            <Spanish>Inhabilitado</Spanish>
+            <French>Désactivé</French>
+            <Chinese>關閉</Chinese>
+            <Chinesesimp>关闭</Chinesesimp>
+            <Russian>Отключён</Russian>
+            <German>Deaktiviert</German>
+        </Key>
+        <Key ID="STR_HG_DEFAULT">
+            <Original>Default</Original>
+            <Spanish>Defecto</Spanish>
+            <French>Défaut</French>
+            <Chinese>默認</Chinese>
+            <Chinesesimp>默认</Chinesesimp>
+            <Russian>По умолчанию</Russian>
+            <German>Standard</German>
+        </Key>
+        <Key ID="STR_HG_NOTHING_TO_DISPLAY">
+            <Original>Nothing to display</Original>
+            <Spanish>Nada para mostrar</Spanish>
+            <French>Rien à afficher</French>
+            <Chinese>沒東西可顯示</Chinese>
+            <Chinesesimp>没东西可显示</Chinesesimp>
+            <Russian>Пока тут пусто</Russian>
+            <German>Nichts zum Anzeigen</German>
+        </Key>
+        <Key ID="STR_HG_NO_ONLINE_PLAYERS">
+            <Original>No online players</Original>
+            <Spanish>Ningún jugador</Spanish>
+            <French>Aucun joueur en ligne</French>
+            <Chinese>沒有在線玩家</Chinese>
+            <Chinesesimp>没有在线玩家</Chinesesimp>
+            <Russian>Нет онлайн-игроков</Russian>
+            <German>Keine Spieler Online</German>
+        </Key>
+        <Key ID="STR_HG_CANNOT_OPEN_INVENTORY">
+            <Original>You can't open inventory when it's locked</Original>
+            <Spanish>No puedes abrir el inventario cuando esta bloqueado</Spanish>
+            <French>Vous ne pouvez pas ouvrir l'inventaire quand c'est verrouillé</French>
+            <Chinese>它上鎖了，你打不開物品欄</Chinese>
+            <Chinesesimp>它上锁了，你打不开物品栏</Chinesesimp>
+            <Russian>Вы не можете открыть инвентарь,когда он заблокирован</Russian>
+            <German>Du kannst das Inventar nicht öffnen, wenn es abgeschlossen ist.</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLE_LOCKED">
+            <Original>Vehicle is now LOCKED</Original>
+            <Spanish>El vehiculo esta ahora bloqueado</Spanish>
+            <French>Le véhicule est maintenant verrouillé</French>
+            <Chinese>載具現在被鎖定了</Chinese>
+            <Chinesesimp>载具现在被锁定了</Chinesesimp>
+            <Russian>Транспортное средство заблокировано</Russian>
+            <German>Das Fahrzeug ist nun abgeschlossen.</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLE_UNLOCKED">
+            <Original>Vehicle is now UNLOCKED</Original>
+            <Spanish>El vehiculo está desbloqueado</Spanish>
+            <French>Le véhicule est maintenant déverrouillé</French>
+            <Chinese>載具現在被解鎖了</Chinese>
+            <Chinesesimp>载具现在被解锁了</Chinesesimp>
+            <Russian>Транспортное средство разблокировано</Russian>
+            <German>Das Fahrzeug is nun aufgespertt.</German>
+        </Key>
+        <Key ID="STR_HG_CRATE_EMPTIED">
+            <Original>Crate has been EMPTIED</Original>
+            <Spanish>La caja esta vacía</Spanish>
+            <French>La caisse a été vidé</French>
+            <Chinese>箱子被清空了</Chinese>
+            <Chinesesimp>箱子被清空了</Chinesesimp>
+            <Russian>Опустошить ящик</Russian>
+            <German>Die Kiste wurde geleert.</German>
+        </Key>
+        <Key ID="STR_HG_DELETE_CRATE">
+            <Original>Delete Crate</Original>
+            <Spanish>Eliminar Caja</Spanish>
+            <French>Supprimer Caisse</French>
+            <Chinese>刪除箱子</Chinese>
+            <Chinesesimp>删除箱子</Chinesesimp>
+            <Russian>Удалить ящик</Russian>
+            <German>Kiste löschen.</German>
+        </Key>
+        <Key ID="STR_HG_EMPTY_CRATE">
+            <Original>Empty Crate</Original>
+            <Spanish>Vaciar Caja</Spanish>
+            <French>Vider Caisse</French>
+            <Chinese>清空箱子</Chinese>
+            <Chinesesimp>清空箱子</Chinesesimp>
+            <Russian>Ящик пустой</Russian>
+            <German>Leere Kiste</German>
+        </Key>
+        <Key ID="STR_HG_GARAGE">
+            <Original>Garage</Original>
+            <Spanish>Garage</Spanish>
+            <French>Garage</French>
+            <Chinese>車庫</Chinese>
+            <Chinesesimp>车库</Chinesesimp>
+            <Russian>Гараж</Russian>
+            <German>Garage</German>
+        </Key>
+        <Key ID="STR_HG_GARAGE_PARK">
+            <Original>Park Vehicle</Original>
+            <Spanish>Almacenar Vehiculo</Spanish>
+            <French>Stocker Véhicule</French>
+            <Chinese>停泊載具</Chinese>
+            <Chinesesimp>停泊载具</Chinesesimp>
+            <Russian>Сдать технику в гараж</Russian>
+            <German>Fahrzeug parken.</German>
+        </Key>
+        <Key ID="STR_HG_EMPTY_QUESTION">
+            <Original>Are you sure you want to empty the vehicle inventory?</Original>
+            <Spanish>¿Estás seguro de vaciar el inventario del vehículo?</Spanish>
+            <French>Êtes-vous sur de vouloir vider l'inventaire du véhicule ?</French>
+            <Chinese>你確定要清空車輛的物品欄嗎?</Chinese>
+            <Chinesesimp>你确定要清空车辆的物品栏吗?</Chinesesimp>
+            <Russian>Вы уверены, что хотите очистить инвентарь техники?</Russian>
+            <German>Bist du dir sicher, dass du das Inventar des Fahrzeuges leeren möchtest?</German>
+        </Key>
+        <Key ID="STR_HG_EMPTY_VEHICLE">
+            <Original>Empty Vehicle</Original>
+            <Spanish>Vaciar Vehiculo</Spanish>
+            <French>Vider Véhicule</French>
+            <Chinese>清空車輛</Chinese>
+            <Chinesesimp>清空车辆</Chinesesimp>
+            <Russian>Опустошить инвентарь техники</Russian>
+            <German>Leeres Fahrzeug</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLE_EMPTIED">
+            <Original>Vehicle has been EMPTIED</Original>
+            <Spanish>El Vehiculo esta vacio</Spanish>
+            <French>Le véhicule a été vidé</French>
+            <Chinese>車輛已經被清空</Chinese>
+            <Chinesesimp>车辆已经被清空</Chinesesimp>
+            <Russian>Инвентарь техники теперь пустой</Russian>
+            <German>Das Fahrzeug wurde geleert.</German>
+        </Key>
+        <Key ID="STR_HG_SPAWN_POINT_BUSY">
+            <Original>This spawn point is busy</Original>
+            <Spanish>Eso punto de reaparición es ocupado</Spanish>
+            <French>Ce point d'apparition est déjà occupé</French>
+            <Chinese>這個出生點已經被佔用</Chinese>
+            <Chinesesimp>这个出生点已经被占用</Chinesesimp>
+            <Russian>Эта точка возрождения занята</Russian>
+            <German>Dieser Spawnpunkt ist besetzt.</German>
+        </Key>
+        <Key ID="STR_HG_SPAWN_POINTS_BUSY">
+            <Original>All the available spawn points are busy</Original>
+            <Spanish>Todo los puntos de reaparición estan ocupados</Spanish>
+            <French>Tous les points d'apparition sont déjà occupés</French>
+            <Chinese>所有可用的出生點都被占用了</Chinese>
+            <Chinesesimp>所有可用的出生点都被占用了</Chinesesimp>
+            <Russian>Все доступные точки возрождения заняты</Russian>
+            <German>Alle Spawnpunkte sind momentan besetzt.</German>
+        </Key>
+        <Key ID="STR_HG_NO_VEHICLES">
+            <Original>There are no vehicles on the store point</Original>
+            <Spanish>No está el vehiculo en el punto de guardado</Spanish>
+            <French>Il n'y a aucun véhicule sur le point de stockage</French>
+            <Chinese>儲存點上沒有載具</Chinese>
+            <Chinesesimp>储存点上没有载具</Chinesesimp>
+            <Russian>Транспортные средства отсутствуют</Russian>
+            <German>Es sind keine Fahrzeuge am Speicherpunkt vorhanden.</German>
+        </Key>
+        <Key ID="STR_HG_NO_OWNED_VEHICLES">
+            <Original>There are no owned vehicles on the store point</Original>
+            <Spanish>No hay vehiculos propios en el punto de la tienda</Spanish>
+            <French>Il n'y a aucun véhicule vous appartenant sur le point de stockage</French>
+            <Chinese>儲存點沒有自己擁有的載具</Chinese>
+            <Chinesesimp>储存点没有自己拥有的载具</Chinesesimp>
+            <Russian>У вас нет собственной техники</Russian>
+            <German>Es sind keine besessenen Fahrzeuge am Speicherpunkt vorhanden.</German>
+        </Key>
+        <Key ID="STR_HG_XP_MAXED">
+            <Original>Maxed</Original>
+            <Spanish>Agotado</Spanish>
+            <French>Maximum</French>
+            <Chinese>最大值</Chinese>
+            <Chinesesimp>最大值</Chinesesimp>
+            <Russian>Максимальный</Russian>
+            <German>Maximum</German>
+        </Key>
+        <Key ID="STR_HG_PROMOTED">
+            <Original>Congratulations! You have been promoted to %1 from %2</Original>
+            <Spanish>Felicitaciones! Has sido promocionado de %1 a %2</Spanish>
+            <French>Félicitations ! Vous êtes passé de %2 à %1</French>
+            <Chinese>恭喜！你由%1晉升至%2</Chinese>
+            <Chinesesimp>恭喜！你由%1晋升至%2</Chinesesimp>
+            <Russian>Поздравляем! Вас повысили до %1 с %2</Russian>
+            <German>Glückwunsch! Du wurdest von %1 zum %2 befördert.</German>
+        </Key>
+        <Key ID="STR_HG_DEMOTED">
+            <Original>You have been demoted to %1 from %2</Original>
+            <Spanish>Has sido degradado de %1 a %2 </Spanish>
+            <French>Vous avez été dégradé de %2 à %1</French>
+            <Chinese>你從%1被降級到了%2</Chinese>
+            <Chinesesimp>你从%1被降级到了%2</Chinesesimp>
+            <Russian>Вас понизили до %1 с %2</Russian>
+            <German>Du wurdest von %1 zum %2 degradiert.</German>
+        </Key>
+        <Key ID="STR_HG_NOW_OWNER">
+            <Original>You are now owner of a new vehicle (%1)</Original>
+            <Spanish>Ahora eres propietario de un nuevo vehiculo (%1)</Spanish>
+            <French>Vous êtes maintenant le propriétaire d'un nouveau véhicule (%1)</French>
+            <Chinese>你現在是一部新載具的主人(%1)</Chinese>
+            <Chinesesimp>你现在是一部新载具的主人(%1)</Chinesesimp>
+            <Russian>Техника ваша (%1)</Russian>
+            <German>Du bist nun der Besitzer eines neuen Fahrzeuges (%1)!</German>
+        </Key>
+        <Key ID="STR_HG_INVENTORY_FULL">
+            <Original>It seems like your inventory is either full or it can't hold that many items</Original>
+            <Spanish>Al parecer su inventario esta lleno o tienes muchos objetos en la mano</Spanish>
+            <French>Il semblerait que votre inventaire soit plein ou qu'il ne puisse pas contenir autant d'items</French>
+            <Chinese>你的物品欄可能滿了,或者裝不下這麼多物品</Chinese>
+            <Chinesesimp>你的物品栏可能满了,或者装不下这么多物品</Chinesesimp>
+            <Russian>Похоже,ваш инвентарь либо полон,либо не может вместить столько предметов</Russian>
+            <German>Es sieht danach aus, dass dein Inventar entweder voll ist oder nicht soviele Gegenstände halten kann.</German>
+        </Key>
+        <Key ID="STR_HG_KILLED_BY_ADMIN">
+            <Original>You've been killed by an ADMINISTRATOR</Original>
+            <Spanish>Has sido asesinado por un ADMINISTRADOR</Spanish>
+            <French>Vous avez été tué par un ADMINISTRATEUR</French>
+            <Chinese>你被管理員殺死</Chinese>
+            <Chinesesimp>你被管理员杀死</Chinesesimp>
+            <Russian>Вас убил АДМИНИСТРАТОР</Russian>
+            <German>Du wurdest von einem Administrator getötet.</German>
+        </Key>
+    </Package>
+    <Package name="extDB">
+        <Key ID="STR_HG_EXTDB_NOT_LOADED">
+            <Original>[HG|extDB3] Saving method is set to "extDB" but it seems like extDB3 isn't loaded... server profile is being used as a fallback</Original>
+            <Spanish>[HG]extDB3] El metodo de guardado es en "extDB" pero al parecer este no carga...usando perfil de servidor como alternativa</Spanish>
+            <French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
+            <Chinese>[HG|extDB3] 保存方法被設置為"extDB"，但似乎未加載extDB3...服務器配置文件被用作備用</Chinese>
+            <Chinesesimp>[HG|extDB3] 保存方法被设置为"extDB"，但似乎未加载extDB3...服务器配置文件被用作备用</Chinesesimp>
+            <Russian>Метод сохранения установлен на "extDB",но похоже extDB3 не загружен ... профиль сервера используется как резервный</Russian>
+            <German>[HG|extDB3] Speichermethode ist auf "extDB" gestellt, aber "extDB3" ist nicht geladen - Server Profil wird als Rückfalllösung verwendet.</German>
+        </Key>
+    </Package>
+    <Package name="Debriefing">
+        <Key ID="STR_HG_DEBRIEF_NL_TITLE">
+            <Original>NOT WHITELISTED</Original>
+            <French>PAS WHITELISTÉ</French>
+            <Chinese>不在白名單上</Chinese>
+            <Chinesesimp>不在白名单上</Chinesesimp>
+            <Russian>НЕ В БЕЛОМ СПИСКЕ</Russian>
+            <German>Nicht auf der WHITELIST</German>
+        </Key>
+        <Key ID="STR_HG_DEBRIEF_NL_DESC">
+            <Original>You have to be whitelisted to use this slot, please contact an admin for more infos</Original>
+            <French>Vous devez être whitelisé pour choisir ce slot, contactez un admin pour plus d'infos</French>
+            <Chinese>你必須被列入白名單才能使用此角色，請聯繫管理員了解更多信息。</Chinese>
+            <Chinesesimp>你必须被列入白名单才能使用此角色，请联系管理员了解更多信息。</Chinesesimp>
+            <Russian>Чтобы использовать этот слот, вы должны быть внесены в белый список. Для получения дополнительной информации обратитесь к администратору.</Russian>
+            <German>Du wurdest für diesen Slot auf die WHITELIST gesetzt. Kontaktiere einen Admin für weitere Informationen.</German>
+        </Key>
+    </Package>
+    <Package name="Dialogs">
+        <Container name="General">
+            <Key ID="STR_HG_DLG_TOOLTIP">
+                <Original>[HG] Simple Shops</Original>
+                <Spanish>[HG] Simple Shops</Spanish>
+                <French>[HG] Simple Shops</French>
+                <Chinese>[HG]便捷商店</Chinese>
+                <Chinesesimp>[HG]便捷商店</Chinesesimp>
+                <Russian>[HG] Простые магазины</Russian>
+                <German>[HG] Simple Shops</German>
+            </Key>
+            <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
+                <Original>Close current dialog</Original>
+                <Spanish>Cerrar dialogo actual</Spanish>
+                <French>Fermer le dialogue</French>
+                <Chinese>關閉當前對話框</Chinese>
+                <Chinesesimp>关闭当前对话框</Chinesesimp>
+                <Russian>Закрыть текущий диалог</Russian>
+                <German>Dialog schließen.</German>
+            </Key>
+            <Key ID="STR_HG_DLG_MC">
+                <Original>You have %1</Original>
+                <Spanish>Tienes %1</Spanish>
+                <French>Vous avez %1</French>
+                <Chinese>你有%1</Chinese>
+                <Chinesesimp>你有%1</Chinesesimp>
+                <Russian>У вас %1</Russian>
+                <German>Du hast %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_MC_TOOLTIP">
+                <Original>Hint your current cash</Original>
+                <Spanish>Indicio de su efectivo actual</Spanish>
+                <French>Affiche votre argent</French>
+                <Chinese>提示你目前的現金</Chinese>
+                <Chinesesimp>提示你目前的现金</Chinesesimp>
+                <Russian>Показать сколько у вас денег</Russian>
+                <German>Zeige dein momentanes Vermögen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_FREE">
+                <Original>Free</Original>
+                <Spanish>Gratis</Spanish>
+                <French>Gratuit</French>
+                <Chinese>免費</Chinese>
+                <Chinesesimp>免费</Chinesesimp>
+                <Russian>Бесплатно</Russian>
+                <German>Frei</German>
+            </Key>
+            <Key ID="STR_HG_DLG_PRICE_TAG">
+                <Original>Price: %1</Original>
+                <Spanish>Precio: %1</Spanish>
+                <French>Prix: %1</French>
+                <Chinese>價格: %1</Chinese>
+                <Chinesesimp>价格: %1</Chinesesimp>
+                <Russian>Цена: %1</Russian>
+                <German>Preis:%1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_QUERYING_SERVER">
+                <Original>Querying server...</Original>
+                <Spanish>Consultando Servidor</Spanish>
+                <French>Interrogation du serveur...</French>
+                <Chinese>查詢服務器中...</Chinese>
+                <Chinesesimp>查询服务器中...</Chinesesimp>
+                <Russian>Запрос сервера ...</Russian>
+                <German>Serverabfrage...</German>
+            </Key>
+            <Key ID="STR_HG_DLG_PLAYER_COUNT">
+                <Original>Online - %1</Original>
+                <Spanish>En linea - %1</Spanish>
+                <French>En ligne - %1</French>
+                <Chinese>在線 - %1</Chinese>
+                <Chinesesimp>在线 - %1</Chinesesimp>
+                <Russian>В сети - %1</Russian>
+                <German>Online - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GIVE">
+                <Original>Give</Original>
+                <Spanish>Dar</Spanish>
+                <French>Donner</French>
+                <Chinese>給予</Chinese>
+                <Chinesesimp>给予</Chinesesimp>
+                <Russian>Выдать</Russian>
+                <German>Geben</German>
+            </Key>
+        </Container>
+        <Container name="AdminMenu">
+            <Key ID="STR_HG_DLG_AM_REFRESH_TOOLTIP">
+                <Original>Refresh player list</Original>
+                <Spanish>Refrescar lista de jugadores</Spanish>
+                <French>Rafraîchir la liste des joueurs</French>
+                <Chinese>刷新玩家列表</Chinese>
+                <Chinesesimp>刷新玩家列表</Chinesesimp>
+                <Russian>Обновить список игроков</Russian>
+                <German>Spielerliste aktualisieren</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_KILL_TOOLTIP">
+                <Original>Kill selected player</Original>
+                <Spanish>Matar al jugador seleccionado</Spanish>
+                <French>Tuer le joueur sélectionné</French>
+                <Chinese>殺死選中的玩家</Chinese>
+                <Chinesesimp>杀死选中的玩家</Chinesesimp>
+                <Russian>Убить выбранного игрока</Russian>
+                <German>Ausgewählten Spieler töten</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_RANK_TOOLTIP">
+                <Original>Set rank</Original>
+                <Spanish>Dar Rango</Spanish>
+                <French>Mettre grade</French>
+                <Chinese>設置軍銜</Chinese>
+                <Chinesesimp>设置军衔</Chinesesimp>
+                <Russian>Установить ранг</Russian>
+                <German>Rang setzen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
+                <Original>Set XP</Original>
+                <Spanish>Dar XP (experiencia)</Spanish>
+                <French>Mettre XP</French>
+                <Chinese>設置XP</Chinese>
+                <Chinesesimp>设置经验</Chinesesimp>
+                <Russian>Установить XP</Russian>
+                <German>XP setzen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_KILLS_TOOLTIP">
+                <Original>Set kills</Original>
+                <Spanish>Darle muertes</Spanish>
+                <French>Mettre victimes</French>
+                <Chinese>設置擊殺數</Chinese>
+                <Chinesesimp>设置击杀数</Chinesesimp>
+                <Russian>Установить убийства</Russian>
+                <German>Abschüsse setzen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_CASH_TOOLTIP">
+                <Original>Set cash (max value 999999)</Original>
+                <Spanish>Darle dinero (maximo valor 999999)</Spanish>
+                <French>Donner argent (valeur max 999999)</French>
+                <Chinese>設置金錢(最大值 999999)</Chinese>
+                <Chinesesimp>设置金钱(最大值 999999)</Chinesesimp>
+                <Russian>Установить наличные (максимальное значение 999999)</Russian>
+                <German>Bargeld setzen (max: 999999)</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_BANK_TOOLTIP">
+                <Original>Set bank (max value 999999)</Original>
+                <Spanish>Darle banco (maximo valor 999999)</Spanish>
+                <French>Donner banque (valeur max 999999)</French>
+                <Chinese>設置銀行餘額(最大值 999999)</Chinese>
+                <Chinesesimp>设置银行余额(最大值 999999)</Chinesesimp>
+                <Russian>Установить банк (максимальное значение 999999)</Russian>
+                <German>Bankvermögen setzen (max: 999999)</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
+                <Original>Tick this box to REMOVE</Original>
+                <Spanish>Marca esta casilla para REMOVER</Spanish>
+                <French>Cocher cette case pour SUPPRIMER</French>
+                <Chinese>勾選這個框來移除</Chinese>
+                <Chinesesimp>勾选这个框来移除</Chinesesimp>
+                <Russian>Установите этот флажок, чтобы УДАЛИТЬ</Russian>
+                <German>Auswählen zum ENTFERNEN</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
+                <Original>Tick this box to ADD</Original>
+                <Spanish>Marca esta casilla para AÑADIR</Spanish>
+                <French>Cocher cette case pour AJOUTER</French>
+                <Chinese>勾選這個框來增加</Chinese>
+                <Chinesesimp>勾选这个框来增加</Chinesesimp>
+                <Russian>Отметьте это поле, чтобы ДОБАВИТЬ</Russian>
+                <German>Auswählen zum HINZUFÜGEN</German>
+            </Key>
+            <Key ID="STR_HG_DLG_XP_DISABLED">
+                <Original>This feature is DISABLED (check enableXP in HG_Config.h)</Original>
+                <French>Cette action est DÉSACTIVÉE (vérifiez enableXP dans HG_Config.h)</French>
+                <Chinese>這個功能被關閉了(查看enableXP,位於HG_Config.h)</Chinese>
+                <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableXP行)</Chinesesimp>
+                <Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableXP в HG_Config.h)</Russian>
+                <German>Diese Funktion ist deaktiviert ( Überprüfe "enableXP" in HG_Config.h )</German>
+            </Key>
+            <Key ID="STR_HG_DLG_KILLS_DISABLED">
+                <Original>This feature is DISABLED (check enableKillCount in HG_Config.h)</Original>
+                <French>Cette action est DÉSACTIVÉE (vérifiez enableKillCount dans HG_Config.h)</French>
+                <Chinese>這個功能被關閉了(查看enableKillCount,位於HG_Config.h)</Chinese>
+                <Chinesesimp>此功能被禁用了(查看位于HG_Config.h文件内的enableKillCount)</Chinesesimp>
+                <Russian>Эта функция ОТКЛЮЧЕНА (проверьте enableKillCount в HG_Config.h)</Russian>
+                <German>Diese Funktion ist deaktiviert ( Überprüfe "enableKillCount" in HG_Config.h )</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_LIST">
+                <Original>%1 - %2</Original>
+                <Spanish>%1 - %2</Spanish>
+                <French>%1 - %2</French>
+                <Chinese>%1 - %2</Chinese>
+                <Chinesesimp>%1 - %2</Chinesesimp>
+                <Russian>%1 - %2</Russian>
+                <German>%1 - %2</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_UID">
+                <Original>UID - %1</Original>
+                <Spanish>UID - %1</Spanish>
+                <French>UID - %1</French>
+                <Chinese>UID - %1</Chinese>
+                <Chinesesimp>UID - %1</Chinesesimp>
+                <Russian>UID - %1</Russian>
+                <German>UID - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_SIDE">
+                <Original>Side - %2</Original>
+                <Spanish>Facción - %2</Spanish>
+                <French>Faction - %2</French>
+                <Chinese>陣營 - %2</Chinese>
+                <Chinesesimp>阵营 - %2</Chinesesimp>
+                <Russian>Сторона - %2</Russian>
+                <German>Seite - %2</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_RANK">
+                <Original>Rank - %3</Original>
+                <Spanish>Rango - %3</Spanish>
+                <French>Grade - %3</French>
+                <Chinese>軍銜 - %3</Chinese>
+                <Chinesesimp>军衔 - %3</Chinesesimp>
+                <Russian>Ранг - %3</Russian>
+                <German>Rang - %3</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_XP">
+                <Original>XP - %4</Original>
+                <Spanish>XP - %4</Spanish>
+                <French>XP - %4</French>
+                <Chinese>XP - %4</Chinese>
+                <Chinesesimp>XP - %4</Chinesesimp>
+                <Russian>XP - %4</Russian>
+                <German>XP - %4</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_CASH">
+                <Original>Cash - %5</Original>
+                <Spanish>Dinero - %5</Spanish>
+                <French>Argent - %5</French>
+                <Chinese>現金 - %5</Chinese>
+                <Chinesesimp>现金 - %5</Chinesesimp>
+                <Russian>Наличные - %5</Russian>
+                <German>Bargeld - %5</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_BANK">
+                <Original>Bank - %6</Original>
+                <Spanish>Banco - %6</Spanish>
+                <French>Banque - %6</French>
+                <Chinese>銀行 - %6</Chinese>
+                <Chinesesimp>银行 - %6</Chinesesimp>
+                <Russian>Банк - %6</Russian>
+                <German>Bankvermögen - %6</German>
+            </Key>
+            <Key ID="STR_HG_DLG_AM_KILLS">
+                <Original>Kills - %7</Original>
+                <Spanish>Muertes - %7</Spanish>
+                <French>Victimes - %7</French>
+                <Chinese>擊殺 - %7</Chinese>
+                <Chinesesimp>击杀 - %7</Chinesesimp>
+                <Russian>Убийств - %7</Russian>
+                <German>Abschüsse - %7</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_TEXT">
+                <Original>Whitelist</Original>
+                <Spanish>Whitelist</Spanish>
+                <French>Whitelist</French>
+                <Chinese>白名單</Chinese>
+                <Chinesesimp>白名单</Chinesesimp>
+                <Russian>Белый список</Russian>
+                <German>Whitelist</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_ADD_UID_TOOLTIP">
+                <Original>Add selected UID to selected side</Original>
+                <French>Ajouter l'UID sélectionnée au camp sélectionné</French>
+                <Chinese>把選中的UID增加到選中的陣營</Chinese>
+                <Chinesesimp>把选中的UID增加到选中的阵营</Chinesesimp>
+                <Russian>Добавить выбранный UID на выбранную сторону</Russian>
+                <German>Gewählte UID zu der gewählten Seite hinzufügen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_REMOVE_TOOLTIP">
+                <Original>Remove selected UID from selected side</Original>
+                <French>Supprimer l'UID sélectionnée du camp sélectionné</French>
+                <Chinese>把選中的UID移除于選中的陣營</Chinese>
+                <Chinesesimp>把选中的UID从选中的阵营中移除</Chinesesimp>
+                <Russian>Удалить выбранный UID с выбранной стороны</Russian>
+                <German>Gewählte UID von der gewählten Seite entfernen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_UID_EMPTY">
+                <Original>UID field is empty</Original>
+                <French>L'UID est vide</French>
+                <Chinese>UID欄是空的</Chinese>
+                <Chinesesimp>UID栏是空的</Chinesesimp>
+                <Russian>Поле UID пусто</Russian>
+                <German>UID Feld ist leer</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_UID_NOT_NUMBER">
+                <Original>UID field is not a number</Original>
+                <French>L'UID n'est pas un nombre</French>
+                <Chinese>UID欄不是數字</Chinese>
+                <Chinesesimp>UID栏不是数字</Chinesesimp>
+                <Russian>Поле UID не является числом</Russian>
+                <German>UID Feld ist keine Nummer</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_UID_NOT_VALID">
+                <Original>UID field length is not valid, should be 17 characters (%1)</Original>
+                <French>L'UID n'est pas valide, il doit y avoir 17 caractères (%1)</French>
+                <Chinese>UID字段長度無效，應該是17個數字(%1)</Chinese>
+                <Chinesesimp>UID字段长度无效，应该是17个数字(%1)</Chinesesimp>
+                <Russian>Недопустимая длина поля UID, должна составлять 17 символов (%1)</Russian>
+                <German>UID Eingabe ist nicht gültig, es müssen 17 Zeichen sein (%1)</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_UID_ALREADY">
+                <Original>This UID is already whitelisted on selected side</Original>
+                <French>Cette UID est déjà whitelisté dans le camp sélectionné</French>
+                <Chinese>此UID已在選定陣營的白名單中</Chinese>
+                <Chinesesimp>此UID已在选定阵营的白名单中</Chinesesimp>
+                <Russian>Этот UID уже внесен в белый список на выбранной стороне</Russian>
+                <German>Diese UID wurde bereits auf der ausgewählten Seite gewhitelisted.</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_ADDED">
+                <Original>You have added %1 to the %2 side whitelist</Original>
+                <French>Vous avez ajouté %1 à la whitelist du camp %2</French>
+                <Chinese>您已將%1添加到%2陣營的白名單中</Chinese>
+                <Chinesesimp>您已将%1添加到%2阵营的白名单中</Chinesesimp>
+                <Russian>Вы добавили %1 в белый список %2</Russian>
+                <German>%1 wurde zur Whitelist der Seite %2 hinzugefügt</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_REMOVED">
+                <Original>You have removed %1 from the %2 side whitelist</Original>
+                <French>Vous avez supprimé %1 de la whitelist du camp %2</French>
+                <Chinese>您已將%1從%2陣營的白名單中移除</Chinese>
+                <Chinesesimp>您已将%1从%2阵营的白名单中移除</Chinesesimp>
+                <Russian>Вы удалили %1 из белого списка %2</Russian>
+                <German>%1 wurde von der Whitelist der Seite %2 entfernt</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_INFO_TEXT">
+                <Original>Waiting for server...</Original>
+                <French>Attente du serveur...</French>
+                <Chinese>等待服務器中...</Chinese>
+                <Chinesesimp>等待服务器中...</Chinesesimp>
+                <Russian>Ожидание сервера...</Russian>
+                <German>Warte auf Server...</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_SIDE_CIV">
+                <Original>Civilian</Original>
+                <French>Civils</French>
+                <Chinese>平民</Chinese>
+                <Chinesesimp>平民</Chinesesimp>
+                <Russian>Гражданские</Russian>
+                <German>Zivilisten</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_SIDE_WEST">
+                <Original>West</Original>
+                <French>Ouest</French>
+                <Chinese>西方</Chinese>
+                <Chinesesimp>北约</Chinesesimp>
+                <Russian>Запад</Russian>
+                <German>Westen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_SIDE_GUER">
+                <Original>Resistance</Original>
+                <French>Résistance</French>
+                <Chinese>中立方</Chinese>
+                <Chinesesimp>中立方</Chinesesimp>
+                <Russian>Сопротивление</Russian>
+                <German>Wiederstand</German>
+            </Key>
+            <Key ID="STR_HG_DLG_WL_SIDE_EAST">
+                <Original>East</Original>
+                <French>Est</French>
+                <Chinese>東方</Chinese>
+                <Chinesesimp>广协</Chinesesimp>
+                <Russian>Восток</Russian>
+                <German>Osten</German>
+            </Key>
+        </Container>
+        <Container name="ATM">
+            <Key ID="STR_HG_ATM_ACC_TITLE">
+                <Original>Account</Original>
+                <Spanish>Cuenta</Spanish>
+                <French>Compte</French>
+                <Chinese>賬戶</Chinese>
+                <Chinesesimp>账户</Chinesesimp>
+                <Russian>Счёт</Russian>
+                <German>Konto</German>
+            </Key>
+            <Key ID="STR_HG_ATM_CASH_TITLE">
+                <Original>Cash</Original>
+                <Spanish>Dinero</Spanish>
+                <French>Argent</French>
+                <Chinese>現金</Chinese>
+                <Chinesesimp>现金</Chinesesimp>
+                <Russian>Наличные</Russian>
+                <German>Bargeld</German>
+            </Key>
+            <Key ID="STR_HG_ATM_DEPOSIT_TOOLTIP">
+                <Original>Deposit</Original>
+                <Spanish>Depósito</Spanish>
+                <French>Déposer</French>
+                <Chinese>存款</Chinese>
+                <Chinesesimp>存款</Chinesesimp>
+                <Russian>Депозит</Russian>
+                <German>Einzahlen</German>
+            </Key>
+            <Key ID="STR_HG_ATM_WITHDRAW_TOOLTIP">
+                <Original>Withdraw</Original>
+                <Spanish>Retirarse</Spanish>
+                <French>Retirer</French>
+                <Chinese>取款</Chinese>
+                <Chinesesimp>取款</Chinesesimp>
+                <Russian>Изымать</Russian>
+                <German>Abheben</German>
+            </Key>
+            <Key ID="STR_HG_ATM_TRANSFER_TOOLTIP">
+                <Original>Transfer</Original>
+                <Spanish>Transferir</Spanish>
+                <French>Transférer</French>
+                <Chinese>轉賬</Chinese>
+                <Chinesesimp>转账</Chinesesimp>
+                <Russian>Перевод</Russian>
+                <German>Versenden</German>
+            </Key>
+            <Key ID="STR_HG_ATM_REFRESH_TOOLTIP">
+                <Original>Refresh</Original>
+                <Spanish>Refrescar</Spanish>
+                <French>Rafraîchir</French>
+                <Chinese>刷新</Chinese>
+                <Chinesesimp>刷新</Chinesesimp>
+                <Russian>Обновить</Russian>
+                <German>Aktualisieren</German>
+            </Key>
+            <Key ID="STR_HG_ATM_DEPOSITED">
+                <Original>You have deposited %1</Original>
+                <Spanish>Usted ha depositado %1</Spanish>
+                <French>Vous avez déposé %1</French>
+                <Chinese>你已存入%1</Chinese>
+                <Chinesesimp>你已存入%1</Chinesesimp>
+                <Russian>Вы внесли %1</Russian>
+                <German>Du hast %1 eingezahlt.</German>
+            </Key>
+            <Key ID="STR_HG_ATM_WITHDRAWN">
+                <Original>You have withdrawn %1</Original>
+                <Spanish>Usted ha retirado %1</Spanish>
+                <French>Vous avez retiré %1</French>
+                <Chinese>你已提取了%1</Chinese>
+                <Chinesesimp>你已提取了%1</Chinesesimp>
+                <Russian>Вы сняли %1</Russian>
+                <German>Du hast %1 abgehoben.</German>
+            </Key>
+            <Key ID="STR_HG_ATM_TRANSFERED">
+                <Original>You have transfered %1 to %2</Original>
+                <Spanish>Usted ha transferido %1 a %2</Spanish>
+                <French>Vous avez transféré %1 à %2</French>
+                <Chinese>你轉賬了%1給%2</Chinese>
+                <Chinesesimp>你转账了%1给%2</Chinesesimp>
+                <Russian>Вы перевели %1 в %2</Russian>
+                <German>Du hast %1 an %2 überwiesen.</German>
+            </Key>
+            <Key ID="STR_HG_ATM_TRANSFER_RECEIVED">
+                <Original>You have received a bank transfer from %1 (%2)</Original>
+                <French>Vous avez reçu un transfer d'argent de %1 (%2)</French>
+                <Chinese>你從%1收到了一筆轉賬(%2)</Chinese>
+                <Chinesesimp>你从%1收到了一笔转账(%2)</Chinesesimp>
+                <Russian>Вы получили банковский перевод от %1 (%2)</Russian>
+                <German>Du hast eine Überweisung von %1 erhalten (%2).</German>
+            </Key>
+            <Key ID="STR_HG_ATM_CANNOT_DEPOSIT">
+                <Original>You cannot deposit more than what you have</Original>
+                <French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
+                <Chinese>你不能儲存多於當前現金的數額</Chinese>
+                <Chinesesimp>你不能储存多于当前现金的数额</Chinesesimp>
+                <Russian>Вы не можете внести больше,чем имеете</Russian>
+                <German>Du kannst nicht mehr Bargeld einzahlen als du mitführst.</German>
+            </Key>
+            <Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
+                <Original>You cannot withdraw more than what you have</Original>
+                <French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
+                <Chinese>你不能提取多於賬戶餘額的現金</Chinese>
+                <Chinesesimp>你不能提取多于账户余额的现金</Chinesesimp>
+                <Russian>Вы не можете снять больше,чем имеете</Russian>
+                <German>Du kannst nicht mehr Bargeld abholen als du auf dem Konto hast.</German>
+            </Key>
+            <Key ID="STR_HG_ATM_CANNOT_TRANSFER">
+                <Original>You cannot transfer more than what's in the bank</Original>
+                <French>Vous ne pouvez pas faire un virement supérieur à votre compte bancaire</French>
+                <Russian>Вы не можете перевести больше,чем есть в банке</Russian>
+                <Chinese>你轉賬的金額不能超過賬戶餘額</Chinese>
+                <Chinesesimp>你转账的金额不能超过账户余额</Chinesesimp>
+                <German>Du kannst nicht mehr Überweisen als du auf dem Konto hast.</German>
+            </Key>
+        </Container>
+        <Container name="GearShop">
+            <Key ID="STR_HG_DLG_GS_TITLE_LIST">
+                <Original>Available Gear</Original>
+                <Spanish>Equipo disponible</Spanish>
+                <French>Équipement disponible</French>
+                <Chinese>可用裝備</Chinese>
+                <Chinesesimp>可用装备</Chinesesimp>
+                <Russian>Доступное снаряжение</Russian>
+                <German>Verfügbare Ausrüstung</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_TITLE_CONTROLS">
+                <Original>Camera Controls</Original>
+                <Spanish>Controles de la cámara</Spanish>
+                <French>Commandes de la caméra</French>
+                <Russian>Управление камерой</Russian>
+                <Chinese>相機控制</Chinese>
+                <Chinesesimp>摄像机控制</Chinesesimp>
+                <German>Kamera Steuerung</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_TITLE_VIEW">
+                <Original>Direction</Original>
+                <Spanish>Dirección</Spanish>
+                <French>Direction</French>
+                <Russian>Направление</Russian>
+                <Chinese>方向</Chinese>
+                <Chinesesimp>方向</Chinesesimp>
+                <German>Richtung</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_TITLE_DIST">
+                <Original>Distance</Original>
+                <Spanish>Distancia</Spanish>
+                <French>Distance</French>
+                <Russian>Расстояние</Russian>
+                <Chinese>距離</Chinese>
+                <Chinesesimp>距离</Chinesesimp>
+                <German>Entfernung</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_TOTAL_TEXT">
+                <Original>Total - %1</Original>
+                <Spanish>Total - %1</Spanish>
+                <French>Total - %1</French>
+                <Chinese>共計 - %1</Chinese>
+                <Chinesesimp>共计 - %1</Chinesesimp>
+                <Russian>Итого - %1</Russian>
+                <German>Summe - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_REMOVE">
+                <Original>Remove Current</Original>
+                <Spanish>Remover Efetivo</Spanish>
+                <French>Supprimer Actuel</French>
+                <Chinese>移除當前</Chinese>
+                <Chinesesimp>移除当前</Chinesesimp>
+                <Russian>Удалить текущий</Russian>
+                <German>Entferne aktuelles</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
+                <Original>Reset gear</Original>
+                <Spanish>Resetear Equipo</Spanish>
+                <French>Repartir de zéro</French>
+                <Chinese>重置裝備</Chinese>
+                <Chinesesimp>重置装备</Chinesesimp>
+                <Russian>Сбросить изменения</Russian>
+                <German>Ausrüstung Wiederherstellen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_BUY_TOOLTIP">
+                <Original>Buy selected gear</Original>
+                <Spanish>Comprar el equipo seleccionado</Spanish>
+                <French>Acheter l'équipement sélectionné</French>
+                <Chinese>購買選定的裝備</Chinese>
+                <Chinesesimp>购买选定的装备</Chinesesimp>
+                <Russian>Купить выбранное снаряжение</Russian>
+                <German>Ausgewählte Ausrüstung kaufen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_SLIDER_TOOLTIP">
+                <Original>Turn player left or right</Original>
+                <Spanish>Girar a la izquierda o a la derecha</Spanish>
+                <French>Tourne le joueur sur la gauche ou la droite</French>
+                <Chinese>左右旋轉玩家</Chinese>
+                <Chinesesimp>左右旋转玩家</Chinesesimp>
+                <Russian>Поверните игрока влево или вправо</Russian>
+                <German>Spieler links oder rechts drehen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GS_SLIDER_DIST_TOOLTIP">
+                <Original>Zoom in or out</Original>
+                <Spanish>Acercar o alejar</Spanish>
+                <French>Zoom avant ou arrière</French>
+                <Russian>Увеличить или уменьшить масштаб</Russian>
+                <Chinese>放大/縮小</Chinese>
+                <Chinesesimp>放大/缩小</Chinesesimp>
+                <German>Rein oder Raus zoomen</German>
+            </Key>
+        </Container>
+        <Container name="Garage">
+            <Key ID="STR_HG_GRG_LIST">
+                <Original>%1 (%2)</Original>
+                <Spanish>%1 (%2)</Spanish>
+                <French>%1 (%2)</French>
+                <Chinese>%1 (%2)</Chinese>
+                <Chinesesimp>%1 (%2)</Chinesesimp>
+                <Russian>%1 (%2)</Russian>
+                <German>%1 (%2)</German>
+            </Key>
+            <Key ID="STR_HG_GRG_REFRESH_TOOLTIP">
+                <Original>Refresh garage</Original>
+                <Spanish>Actualizar Garage</Spanish>
+                <French>Rafraîchir garage</French>
+                <Chinese>刷新車庫</Chinese>
+                <Chinesesimp>刷新车库</Chinesesimp>
+                <Russian>Обновить гараж</Russian>
+                <German>Garage neu laden</German>
+            </Key>
+            <Key ID="STR_HG_GRG_SPAWN_TOOLTIP">
+                <Original>Spawn selected vehicle</Original>
+                <Spanish>Spawnear vehiculo seleccionado </Spanish>
+                <French>Faire appaître le véhicule sélectionné</French>
+                <Chinese>調出選中的載具</Chinese>
+                <Chinesesimp>调出选中的載具</Chinesesimp>
+                <Russian>Выдать выбранную технику</Russian>
+                <German>Ausgewähltes Fahrzeug spawnen</German>
+            </Key>
+            <Key ID="STR_HG_GRG_DELETE_TOOLTIP">
+                <Original>Delete selected vehicle *WILL BE LOST FOREVER*</Original>
+                <Spanish>Eliminar vehiculo seleccionado *LO PIERDES PARA SIEMPRE*</Spanish>
+                <French>Supprimer le véhicule sélectionné *IL SERA PERDU POUR TOUJOURS*</French>
+                <Chinese>刪除選中的載具（將永遠丟失）</Chinese>
+                <Chinesesimp>删除选中的载具（将永远丢失）</Chinesesimp>
+                <Russian>Удалить выбранную технику *БУДЕТ УТЕРЯН НАВСЕГДА*</Russian>
+                <German>Ausgewähltes Fahrzeug löschen "PERMANENT"</German>
+            </Key>
+            <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
+                <Original>Requested vehicle is being spawned...</Original>
+                <Spanish>Se está requiriendo el vehiculo en el spawn</Spanish>
+                <French>Le véhicule sélectionné va apparaître...</French>
+                <Chinese>請求的載具正被調出...</Chinese>
+                <Chinesesimp>请求的载具正被调出...</Chinesesimp>
+                <Russian>Запрошенная техника выдаётся...</Russian>
+                <German>Angefragtes Fahrzeug wird gespawnt</German>
+            </Key>
+            <Key ID="STR_HG_GRG_VEHICLE_SPAWNED">
+                <Original>Requested vehicle has been spawned</Original>
+                <Spanish>El Vehiculo requerido a sido spawneado</Spanish>
+                <French>Le véhicule sélectionné est apparu</French>
+                <Chinese>請求的載具已被調出</Chinese>
+                <Chinesesimp>请求的载具已被调出</Chinesesimp>
+                <Russian>Запрошенная техника выдана</Russian>
+                <German>Angefragtes Fahrzeug wurde gespawnt</German>
+            </Key>
+            <Key ID="STR_HG_GRG_VEHICLE_DELETING">
+                <Original>Selected vehicle is being deleted...</Original>
+                <Spanish>Vehiculo seleccionado está siendo borrado</Spanish>
+                <French>Le véhicule sélectionné va être supprimé...</French>
+                <Chinese>選中的載具正被刪除...</Chinese>
+                <Chinesesimp>选中的载具正被删除...</Chinesesimp>
+                <Russian>Выбранная техника удаляется...</Russian>
+                <German>Ausgewähltes Fahrzeug wird gelöscht...</German>
+            </Key>
+            <Key ID="STR_HG_GRG_VEHICLE_DELETED">
+                <Original>Selected vehicle has been deleted</Original>
+                <Spanish>Vehiculo seleccionado a sido borrado</Spanish>
+                <French>Le véhicule sélectionné a été supprimé</French>
+                <Chinese>選中的載具已被刪除</Chinese>
+                <Chinesesimp>选中的载具已被删除</Chinesesimp>
+                <Russian>Выбранная техника удалена</Russian>
+                <German>Ausgewähltes Fahrzeug wurde gelöscht.</German>
+            </Key>
+            <Key ID="STR_HG_GRG_VEHICLE_STORED">
+                <Original>Vehicle has been stored</Original>
+                <Spanish>Vehiculo almacenado</Spanish>
+                <French>Le véhicule a été stocké</French>
+                <Chinese>載具被儲存</Chinese>
+                <Chinesesimp>载具被储存</Chinesesimp>
+                <Russian>Техника в гараже</Russian>
+                <German>Fahrzeug wurde geparkt.</German>
+            </Key>
+        </Container>
+        <Container name="VehiclesShop">
+            <Key ID="STR_HG_DLG_VS_TITLE_LIST">
+                <Original>Available Vehicles</Original>
+                <Spanish>Vehiculos disponibles</Spanish>
+                <French>Véhicules disponibles</French>
+                <Chinese>可用載具</Chinese>
+                <Chinesesimp>可用载具</Chinesesimp>
+                <Russian>Доступная техника</Russian>
+                <German>Verfügbare Fahrzeuge</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_TITLE_TEXT">
+                <Original>Vehicle Infos</Original>
+                <Spanish>Informacion del Vehiculo</Spanish>
+                <French>Infos du véhicule</French>
+                <Chinese>载具信息</Chinese>
+                <Chinesesimp>载具信息</Chinesesimp>
+                <Russian>Информация о технике</Russian>
+                <German>Fahrzeuginformationen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_TG_TOOLTIP">
+                <Original>Buy selected vehicle and store it to garage</Original>
+                <Spanish>Comprar el vehiculo seleccionado y guardarlo en el garage</Spanish>
+                <French>Acheter le véhicule sélectionné et le stocker dans le garage</French>
+                <Chinese>購買選中的載具并存到車庫</Chinese>
+                <Chinesesimp>购买选中的载具并存到车库</Chinesesimp>
+                <Russian>Купить выбранную технику и сохранить в гараже</Russian>
+                <German>Kaufe ausgewähltes Fahrzeug und parke es in der Garage</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_BUY_TOOLTIP">
+                <Original>Buy selected vehicle</Original>
+                <Spanish>Comprar el vehiculo seleccionado</Spanish>
+                <French>Acheter le véhicule sélectionné</French>
+                <Chinese>購買選中的載具</Chinese>
+                <Chinesesimp>购买选中的载具</Chinesesimp>
+                <Russian>Купить выбранную технику</Russian>
+                <German>Kaufe ausgewähltes Fahrzeug</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_SPEED">
+                <Original>Max Speed - %2 Mph</Original>
+                <Spanish>Máxima Velocidad - %2 Kph</Spanish>
+                <French>Vitesse Max - %2 Kph</French>
+                <Chinese>最大時速 - %2 里</Chinese>
+                <Chinesesimp>最大时速 - %2 里</Chinesesimp>
+                <Russian>Максимальная скорость - %2 миль/ч</Russian>
+                <German>Höchstgeschwindigkeit - %2 KM/H</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_ARMOR">
+                <Original>Armor - %3 AP</Original>
+                <Spanish>Blindaje - %3 AP</Spanish>
+                <French>Blindage - %3 PA</French>
+                <Chinese>裝甲 - %3 AP</Chinese>
+                <Chinesesimp>装甲 - %3 AP</Chinesesimp>
+                <Russian>Броня - %3 AP</Russian>
+                <German>Panzerung - %3 AP</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_SEATS">
+                <Original>Seats - %4</Original>
+                <Spanish>Asientos - %4</Spanish>
+                <French>Siège(s) - %4</French>
+                <Chinese>座位 - %4</Chinese>
+                <Chinesesimp>座位 - %4</Chinesesimp>
+                <Russian>Количество мест - %4</Russian>
+                <German>Sitze - %4</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_ENGINE">
+                <Original>Engine - %5 HP</Original>
+                <Spanish>Potencia Motor - %5 HP</Spanish>
+                <French>Moteur - %5 CV</French>
+                <Chinese>引擎 - %5 HP</Chinese>
+                <Chinesesimp>引擎 - %5 HP</Chinesesimp>
+                <Russian>Двигатель - %5 HP</Russian>
+                <German>Motor - %5 PS</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_FUEL_MAX">
+                <Original>Max Fuel - %6 L</Original>
+                <Spanish>Max combustible - %6 L</Spanish>
+                <French>Essence Max - %6 L</French>
+                <Chinese>最大燃料 - %6 L</Chinese>
+                <Chinesesimp>最大燃料 - %6 L</Chinesesimp>
+                <Russian>Бак - %6 л</Russian>
+                <German>Tankkapazität - %6 L</German>
+            </Key>
+            <Key ID="STR_HG_DLG_VS_PRICE_TAG">
+                <Original>Price - %7</Original>
+                <Spanish>Precio - %7</Spanish>
+                <French>Prix - %7</French>
+                <Chinese>價格 - %7</Chinese>
+                <Chinesesimp>价格 - %7</Chinesesimp>
+                <Russian>Цена - %7</Russian>
+                <German>Preis - %7</German>
+            </Key>
+        </Container>
         <Container name="ItemsShop">
-			<Key ID="STR_HG_DLG_IS_BUY_TOOLTIP">
-		        <Original>Buy selected item(s)</Original>
-			    <Spanish>Comprar item(s)</Spanish>
-				<French>Acheter le/les item(s) sélectionné(s)</French>
-			    <Chinese>購買選中物品</Chinese>
-			    <Chinesesimp>购买选中物品</Chinesesimp>
-				<Russian>Купить выбранные предметы</Russian>
-		    </Key>
-			<Key ID="STR_HG_DLG_IS_TOTAL">
-		        <Original>Total - %1</Original>
-			    <Spanish>Total - %1</Spanish>
-				<French>Total - %1</French>
-			    <Chinese>共計- %1</Chinese>
-			    <Chinesesimp>共计- %1</Chinesesimp>
-				<Russian>Итого - %1</Russian>
-		    </Key>
-		</Container>
-		<Container name="UnitsShop">
-		    <Key ID="STR_HG_DLG_US_BUY_BTN">
-			    <Original>Buy selected unit</Original>
-			    <French>Acheter l'unité selectionnée</French>
-				<Russian>Нанять выбранного наёмника</Russian>
-				<Chinese>購買所選單位</Chinese>
-				<Chinesesimp>购买所选单位</Chinesesimp>
-			</Key>
-		</Container>
-		<Container name="Trader">
-		    <Key ID="STR_HG_DLG_TR_INVENTORY_TITLE">
-			    <Original>Your inventory</Original>
-				<Spanish>Tu inventario</Spanish>
-				<French>Votre inventaire</French>
-				<Russian>Ваш инвентарь</Russian>
-				<Chinese>您的庫存</Chinese>
-				<Chinesesimp>您的库存</Chinesesimp>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_TRADER_TITLE">
-			    <Original>Trader's interest</Original>
-				<Spanish>Interés del comerciante</Spanish>
-				<French>Intérêt du commerçant</French>
-				<Russian>Интерес трейдера</Russian>
-				<Chinese>商人的興趣</Chinese>
-				<Chinesesimp>商人的兴趣</Chinesesimp>
-			</Key>
-		    <Key ID="STR_HG_DLG_TR_SELL_TOOLTIP">
-			    <Original>Sell selected item(s)</Original>
-				<Spanish>Vender item(s)</Spanish>
-				<French>Vendre le/les item(s) sélectionné(s)</French>
-			    <Chinese>賣出選中物品</Chinese>
-			    <Chinesesimp>卖出选中物品</Chinesesimp>
-				<Russian>Продать выбранные предметы</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_PRICE">
-			    <Original>Price - %1</Original>
-				<Spanish>Precio - %1</Spanish>
-				<French>Prix - %1</French>
-			    <Chinese>價格 - %1</Chinese>
-			    <Chinesesimp>价格 - %1</Chinesesimp>
-				<Russian>Цена - %1</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_TOTAL">
-			    <Original>Total - %1</Original>
-				<Spanish>Total - %1</Spanish>
-				<French>Total - %1</French>
-			    <Chinese>共計 - %1</Chinese>
-			    <Chinesesimp>共计 - %1</Chinesesimp>
-				<Russian>Итого - %1</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_NOT_INTERESTED">
-			    <Original>Not interested</Original>
-				<Spanish>No interesado</Spanish>
-			    <French>Pas intéressé</French>
-			    <Chinese>不感興趣</Chinese>
-			    <Chinesesimp>不感兴趣</Chinesesimp>
-				<Russian>Не интересно</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_NOT_INTERESTED_BIS">
-			    <Original>This trader is not interested...</Original>
-				<Spanish>El comerciante no está interesado...</Spanish>
-			    <French>Le commerçant n'est pas intéressé...</French>
-			    <Chinese>這個商人不感興趣...</Chinese>
-			    <Chinesesimp>这个商人不感兴趣...</Chinesesimp>
-				<Russian>Этому трейдеру не интересно</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_TR_SOLD">
-			    <Original>You have sold %1x %2 for %3</Original>
-				<Spanish>Usted ha vendido %1x %2 por %3</Spanish>
-			    <French>Vous avez vendu %1x %2 pour %3</French>
-			    <Chinese>你賣出了%1x %2, 價值%3</Chinese>
-			    <Chinesesimp>你卖出了%1x %2, 价值%3</Chinesesimp>
-				<Russian>Вы продали %1x %2 за %3</Russian>
-			</Key>
-		</Container>
-		<Container name="Dealer">
-		    <Key ID="STR_HG_DLG_DE_VEHICLES_TITLE">
-			    <Original>Your vehicles</Original>
-				<Spanish>Tus vehiculos</Spanish>
-				<French>Vos véhicules</French>
-				<Russian>Ваши автомобили</Russian>
-				<Chinese>您的車輛</Chinese>
-				<Chinesesimp>您的车辆</Chinesesimp>
-			</Key>
-			<Key ID="STR_HG_DLG_DE_DEALER_TITLE">
-			    <Original>Dealer's interest</Original>
-				<Spanish>Interés del distribuidor</Spanish>
-				<French>Intérêt du concessionnaire</French>
-				<Russian>Интерес дилера</Russian>
-				<Chinese>商人的興趣</Chinese>
-				<Chinesesimp>商人的兴趣</Chinesesimp>
-			</Key>
-		    <Key ID="STR_HG_DLG_DE_SELL_TOOLTIP">
-			    <Original>Sell selected vehicle</Original>
-				<Spanish>Vender vehiculo</Spanish>
-				<French>Vendre le véhicule sélectionné</French>
-			    <Chinese>賣出選中載具</Chinese>
-			    <Chinesesimp>卖出选中载具</Chinesesimp>
-				<Russian>Продать выбранную технику</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_DE_REFRESH_TOOLTIP">
-			    <Original>Refresh vehicle list</Original>
-				<Spanish>Refrescar vehiculos lista</Spanish>
-				<French>Rafraîchir la liste des véhicules</French>
-			    <Chinese>刷新車庫列表</Chinese>
-			    <Chinesesimp>刷新车库列表</Chinesesimp>
-				<Russian>Обновить список техники</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_DE_PRICE">
-			    <Original>Price - %1</Original>
-				<Spanish>Precio - %1</Spanish>
-				<French>Prix - %1</French>
-			    <Chinese>價格 - %1</Chinese>
-			    <Chinesesimp>价格 - %1</Chinesesimp>
-				<Russian>Цена - %1</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_DE_SOLD">
-			    <Original>You have sold your %1 for %2</Original>
-				<Spanish>Usted ha vendido %1 por %2</Spanish>
-			    <French>Vous avez vendu votre %1 pour %2</French>
-			    <Chinese>你賣出了你的%1, 獲得%2</Chinese>
-			    <Chinesesimp>你卖出了你的%1, 获得%2</Chinesesimp>
-				<Russian>Вы продали своё %1 за %2</Russian>
-			</Key>
-		</Container>
-		<Container name="GiveKey">
-		    <Key ID="STR_HG_DLG_GK_REMOVE_TOOLTIP">
-			    <Original>Remove selected co-owner</Original>
-				<French>Supprimer le co-propriétaire sélectionné</French>
-			    <Chinese>刪除選中的共享者</Chinese>
-			    <Chinesesimp>删除选中的共享者</Chinesesimp>
-				<Russian>Удалить выбранного совладельца</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GK_REFRESH_TOOLTIP">
-			    <Original>Refresh player list</Original>
-				<French>Rafraîchir la liste des joueurs</French>
-			    <Chinese>刷新玩家列表</Chinese>
-			    <Chinesesimp>刷新玩家列表</Chinesesimp>
-				<Russian>Обновить список игроков</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GK_GIVE_TOOLTIP">
-			    <Original>Give key to selected player</Original>
-				<French>Donner la clé au joueur sélectionné</French>
-			    <Chinese>給予選中的玩家鑰匙</Chinese>
-			    <Chinesesimp>给予选中的玩家钥匙</Chinesesimp>
-				<Russian>Дать ключ выбранному игроку</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GK_GIVE">
-			    <Original>You have given the %1 key to %2</Original>
-				<French>Vous avez donné la clé de votre %1 à %2</French>
-			    <Chinese>你把%1的鑰匙給了%2</Chinese>
-			    <Chinesesimp>你把%1的钥匙给了%2</Chinesesimp>
-				<Russian>Вы дали %1 ключ %2</Russian>
-			</Key>
-			<Key ID="STR_HG_DLG_GK_GIVEN">
-			    <Original>%1 gave you the key of his %2</Original>
-				<French>%1 vous avez donné la clé de son %2</French>
-			    <Chinese>%1給了你他%2的鑰匙</Chinese>
-			    <Chinesesimp>%1给了你他%2的钥匙</Chinesesimp>
-				<Russian>%1 дал вам ключ от своего %2</Russian>
-			</Key>
-		</Container>
-	</Package>
-	<Package name="Shops">
-	    <Key ID="STR_HG_GEAR_SHOP">
-		    <Original>Gear Shop</Original>
-			<Spanish>Tienda de Equipo</Spanish>
-			<French>Magasin d'équipement</French>
-			<Chinese>裝備商店</Chinese>
-			<Chinesesimp>装备商店</Chinesesimp>
-			<Russian>Магазин снаряжения</Russian>
-		</Key>
-		<Key ID="STR_HG_ITEMS_SHOP">
-		    <Original>Items Shop</Original>
-			<Spanish>Tienda de Items</Spanish>
-			<French>Magasin d'items</French>
-			<Chinese>物品商店</Chinese>
-			<Chinesesimp>物品商店</Chinesesimp>
-			<Russian>Магазин предметов</Russian>
-		</Key>
-		<Key ID="STR_HG_VEHICLES_SHOP">
-		    <Original>Vehicles Shop</Original>
-			<Spanish>Tienda de Vehiculos</Spanish>
-			<French>Magasin de véhicules</French>
-			<Chinese>載具商店</Chinese>
-			<Chinesesimp>载具商店</Chinesesimp>
-			<Russian>Магазин техники</Russian>
-		</Key>
-		<Key ID="STR_HG_UNITS_SHOP">
-		    <Original>Units Shop</Original>
-			<French>Magasin de troupes</French>
-			<Russian>Магазин наёмников</Russian>
-			<Chinese>傭兵商店</Chinese>
-			<Chinesesimp>佣兵商店</Chinesesimp>
-		</Key>
-		<Key ID="STR_HG_ATM">
-		    <Original>ATM</Original>
-			<French>DAB</French>
-			<Russian>Банкомат</Russian>
-			<Chinese>ATM</Chinese>
-			<Chinesesimp>ATM</Chinesesimp>
-		</Key>
-		<Key ID="STR_HG_TRADER">
-		    <Original>Trader</Original>
-			<Spanish>Comerciante</Spanish>
-			<French>Commerçant</French>
-			<Chinese>二手收購商</Chinese>
-			<Chinesesimp>二手收购商</Chinesesimp>
-			<Russian>Торговец</Russian>
-		</Key>
-		<Key ID="STR_HG_DEALER">
-		    <Original>Car Dealer</Original>
-			<Spanish>Vehiculos Comerciante</Spanish>
-			<French>Commerçant de véhicules</French>
-			<Chinese>載具二手收購商</Chinese>
-			<Chinesesimp>载具二手收购商</Chinesesimp>
-			<Russian>Продавец техники</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_ASSIGNED">
-		    <Original>Assigned Items</Original>
-			<Spanish>Objetos Asignados</Spanish>
-			<French>Objets Assignés</French>
-			<Chinese>指定物品</Chinese>
-			<Chinesesimp>指定物品</Chinesesimp>
-			<Russian>Назначенные предметы</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_PRIM_WEAPON">
-			<Original>Prim. Weapon</Original>
-			<Spanish>Arma Primaria</Spanish>
-		    <French>Arme Primaire</French>
-			<Chinese>主武器</Chinese>
-			<Chinesesimp>主武器</Chinesesimp>
-			<Russian>Первичное оружие</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_SEC_WEAPON">
-			<Original>Sec. Weapon</Original>
-			<Spanish>Arma Secundaria</Spanish>
-		    <French>Arme Secondaire</French>
-			<Chinese>副武器</Chinese>
-			<Chinesesimp>副武器</Chinesesimp>
-			<Russian>Вторичное оружие</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_UNIFORM">
-		    <Original>Uniform</Original>
-			<Spanish>Uniforme</Spanish>
-			<French>Uniforme</French>
-			<Chinese>制服</Chinese>
-			<Chinesesimp>制服</Chinesesimp>
-			<Russian>Униформа</Russian>
-		</Key>
-	    <Key ID="STR_HG_SHOP_UNIFORMS">
-		    <Original>Uniforms</Original>
-			<Spanish>Uniformes</Spanish>
-			<French>Uniformes</French>
-			<Chinese>制服</Chinese>
-			<Chinesesimp>制服</Chinesesimp>
-			<Russian>Одежда</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_VEST">
-		    <Original>Vest</Original>
-			<Spanish>Chaleco</Spanish>
-			<French>Veste</French>
-			<Chinese>背心</Chinese>
-			<Chinesesimp>背心</Chinesesimp>
-			<Russian>Разгрузка</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_VESTS">
-		    <Original>Vests</Original>
-			<Spanish>Chalecos</Spanish>
-			<French>Vestes</French>
-			<Chinese>背心</Chinese>
-			<Chinesesimp>背心</Chinesesimp>
-			<Russian>Разгрузки</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_BACKPACK">
-		    <Original>Backpack</Original>
-			<Spanish>Mochila</Spanish>
-			<French>Sac à dos</French>
-			<Chinese>背包</Chinese>
-			<Chinesesimp>背包</Chinesesimp>
-			<Russian>Рюкзак</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_BACKPACKS">
-		    <Original>Backpacks</Original>
-			<Spanish>Mochilas</Spanish>
-			<French>Sacs à dos</French>
-			<Chinese>背包</Chinese>
-			<Chinesesimp>背包</Chinesesimp>
-			<Russian>Рюкзаки/Сумки/Обвязки</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_HEADGEAR">
-		    <Original>Headgear</Original>
-			<Spanish>Casco</Spanish>
-			<French>Casque</French>
-			<Chinese>頭盔</Chinese>
-			<Chinesesimp>头盔</Chinesesimp>
-			<Russian>Головные уборы</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_HEADGEARS">
-		    <Original>Headgear</Original>
-			<Spanish>Cascos</Spanish>
-			<French>Casques</French>
-			<Chinese>頭盔</Chinese>
-			<Chinesesimp>头盔</Chinesesimp>
-			<Russian>Защита головы</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_FACEWEAR">
-		    <Original>Facewear</Original>
-			<Spanish>Accesorio</Spanish>
-			<French>Accessoire</French>
-			<Chinese>臉飾</Chinese>
-			<Chinesesimp>脸饰</Chinesesimp>
-			<Russian>Для лица</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_FACEWEARS">
-		    <Original>Facewear</Original>
-			<Spanish>Accesorios</Spanish>
-			<French>Accessoires</French>
-			<Chinese>臉飾</Chinese>
-			<Chinesesimp>脸饰</Chinesesimp>
-			<Russian>Защита лица</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_MISSILE_LAUNCHER">
-		    <Original>Missile Launcher</Original>
-			<Spanish>Lanzador de Misiles</Spanish>
-			<Chinese>導彈發射器</Chinese>
-			<Chinesesimp>导弹发射器</Chinesesimp>
-			<Russian>Ракетная установка(ЗУ)</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
-		    <Original>Rocket Launcher</Original>
-			<Spanish>Lanzacohetes</Spanish>
-			<French>Lance-missiles</French>
-			<Chinese>火箭發射器</Chinese>
-			<Chinesesimp>火箭发射器</Chinesesimp>
-			<Russian>Ракетная установка(ПТ)</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_HANDGUN">
-		    <Original>Handgun</Original>
-			<Spanish>Pistolas</Spanish>
-			<French>Pistolets</French>
-			<Chinese>手槍</Chinese>
-			<Chinesesimp>手枪</Chinesesimp>
-			<Russian>Пистолеты</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_ASSAULT_RIFLE">
-		    <Original>Assault Rifle</Original>
-			<Spanish>Rifles de Asalto</Spanish>
-			<French>Fusils d'assaut</French>
-			<Chinese>突擊步槍</Chinese>
-			<Chinesesimp>突击步枪</Chinesesimp>
-			<Russian>Штурмовые винтовки</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_MACHINE_GUN">
-		    <Original>Machine Gun</Original>
-			<Spanish>Ametralladoras</Spanish>
-			<French>Mitrailleuses</French>
-			<Chinese>機槍</Chinese>
-			<Chinesesimp>机枪</Chinesesimp>
-			<Russian>Пулемёты</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_SUB_MACHINE_GUN">
-		    <Original>Sub-Machine Gun</Original>
-			<Spanish>Sub ametralladoras</Spanish>
-			<French>Mitraillettes</French>
-			<Chinese>衝鋒槍</Chinese>
-			<Chinesesimp>冲锋枪</Chinesesimp>
-			<Russian>Пистолеты-пулемёты</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_SNIPER_RIFLE">
-		    <Original>Sniper Rifle</Original>
-			<Spanish>Rifles Sniper</Spanish>
-			<French>Fusils de précision</French>
-			<Chinese>狙擊步槍</Chinese>
-			<Chinesesimp>狙击步枪</Chinesesimp>
-			<Russian>Снайперские винтовки</Russian>
-		</Key>
-	    <Key ID="STR_HG_SHOP_SCOPES">
-		    <Original>Scopes</Original>
-			<Spanish>Miras</Spanish>
-			<French>Lunettes</French>
-			<Chinese>瞄具</Chinese>
-			<Chinesesimp>瞄具</Chinesesimp>
-			<Russian>Прицелы</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_MAGAZINES">
-		    <Original>Magazines</Original>
-			<Spanish>Munición</Spanish>
-			<French>Chargeurs</French>
-			<Chinese>彈匣</Chinese>
-			<Chinesesimp>弹匣</Chinesesimp>
-			<Russian>Магазины</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_ITEMS">
-		    <Original>Items</Original>
-			<Spanish>Items</Spanish>
-			<French>Items</French>
-			<Chinese>物品</Chinese>
-			<Chinesesimp>物品</Chinesesimp>
-			<Russian>Предметы</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_CIVILIAN">
-		    <Original>Civilian</Original>
-			<Spanish>Civiles</Spanish>
-			<French>Civil</French>
-			<Chinese>民用</Chinese>
-			<Chinesesimp>民用</Chinesesimp>
-			<Russian>Гражданские</Russian>
-		</Key>
-		<Key ID="STR_HG_SHOP_MILITARY">
-		    <Original>Military</Original>
-			<Spanish>Militares</Spanish>
-			<French>Militaire</French>
-			<Chinese>軍用</Chinese>
-			<Chinesesimp>军用</Chinesesimp>
-			<Russian>Армейские</Russian>
-		</Key>
-		<Key ID="STR_HG_MARKER_1">
-		    <Original>Civilian HQ</Original>
-			<Spanish>HQ Civiles</Spanish>
-			<French>QG Civil</French>
-			<Chinese>民用HQ</Chinese>
-			<Chinesesimp>民用HQ</Chinesesimp>
-			<Russian>Гражданский HQ</Russian>
-		</Key>
-		<Key ID="STR_HG_MARKER_2">
-		    <Original>Military HQ</Original>
-			<Spanish>HQ Militares</Spanish>
-			<French>QG Militaire</French>			
-			<Chinese>軍用HQ</Chinese>
-			<Chinesesimp>军用HQ</Chinesesimp>
-			<Russian>Армейский HQ</Russian>
-		</Key>
-	</Package>
+            <Key ID="STR_HG_DLG_IS_BUY_TOOLTIP">
+                <Original>Buy selected item(s)</Original>
+                <Spanish>Comprar item(s)</Spanish>
+                <French>Acheter le/les item(s) sélectionné(s)</French>
+                <Chinese>購買選中物品</Chinese>
+                <Chinesesimp>购买选中物品</Chinesesimp>
+                <Russian>Купить выбранные предметы</Russian>
+                <German>Ausgewählte Gegenstände kaufen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_IS_TOTAL">
+                <Original>Total - %1</Original>
+                <Spanish>Total - %1</Spanish>
+                <French>Total - %1</French>
+                <Chinese>共計- %1</Chinese>
+                <Chinesesimp>共计- %1</Chinesesimp>
+                <Russian>Итого - %1</Russian>
+                <German>Summe - %1</German>
+            </Key>
+        </Container>
+        <Container name="UnitsShop">
+            <Key ID="STR_HG_DLG_US_BUY_BTN">
+                <Original>Buy selected unit</Original>
+                <French>Acheter l'unité selectionnée</French>
+                <Russian>Нанять выбранного наёмника</Russian>
+                <Chinese>購買所選單位</Chinese>
+                <Chinesesimp>购买所选单位</Chinesesimp>
+                <German>Ausgewählte Einheit kaufen</German>
+            </Key>
+        </Container>
+        <Container name="Trader">
+            <Key ID="STR_HG_DLG_TR_INVENTORY_TITLE">
+                <Original>Your inventory</Original>
+                <Spanish>Tu inventario</Spanish>
+                <French>Votre inventaire</French>
+                <Russian>Ваш инвентарь</Russian>
+                <Chinese>您的庫存</Chinese>
+                <Chinesesimp>您的库存</Chinesesimp>
+                <German>Dein Inventar</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_TRADER_TITLE">
+                <Original>Trader's interest</Original>
+                <Spanish>Interés del comerciante</Spanish>
+                <French>Intérêt du commerçant</French>
+                <Russian>Интерес трейдера</Russian>
+                <Chinese>商人的興趣</Chinese>
+                <Chinesesimp>商人的兴趣</Chinesesimp>
+                <German>Händler's Bedarf</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_SELL_TOOLTIP">
+                <Original>Sell selected item(s)</Original>
+                <Spanish>Vender item(s)</Spanish>
+                <French>Vendre le/les item(s) sélectionné(s)</French>
+                <Chinese>賣出選中物品</Chinese>
+                <Chinesesimp>卖出选中物品</Chinesesimp>
+                <Russian>Продать выбранные предметы</Russian>
+                <German>Verkaufe ausgewählte Gegenstände</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_PRICE">
+                <Original>Price - %1</Original>
+                <Spanish>Precio - %1</Spanish>
+                <French>Prix - %1</French>
+                <Chinese>價格 - %1</Chinese>
+                <Chinesesimp>价格 - %1</Chinesesimp>
+                <Russian>Цена - %1</Russian>
+                <German>Preis - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_TOTAL">
+                <Original>Total - %1</Original>
+                <Spanish>Total - %1</Spanish>
+                <French>Total - %1</French>
+                <Chinese>共計 - %1</Chinese>
+                <Chinesesimp>共计 - %1</Chinesesimp>
+                <Russian>Итого - %1</Russian>
+                <German>Summe - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_NOT_INTERESTED">
+                <Original>Not interested</Original>
+                <Spanish>No interesado</Spanish>
+                <French>Pas intéressé</French>
+                <Chinese>不感興趣</Chinese>
+                <Chinesesimp>不感兴趣</Chinesesimp>
+                <Russian>Не интересно</Russian>
+                <German>Kein Interesse</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_NOT_INTERESTED_BIS">
+                <Original>This trader is not interested...</Original>
+                <Spanish>El comerciante no está interesado...</Spanish>
+                <French>Le commerçant n'est pas intéressé...</French>
+                <Chinese>這個商人不感興趣...</Chinese>
+                <Chinesesimp>这个商人不感兴趣...</Chinesesimp>
+                <Russian>Этому трейдеру не интересно</Russian>
+                <German>Der Händler ist nicht interessiert</German>
+            </Key>
+            <Key ID="STR_HG_DLG_TR_SOLD">
+                <Original>You have sold %1x %2 for %3</Original>
+                <Spanish>Usted ha vendido %1x %2 por %3</Spanish>
+                <French>Vous avez vendu %1x %2 pour %3</French>
+                <Chinese>你賣出了%1x %2, 價值%3</Chinese>
+                <Chinesesimp>你卖出了%1x %2, 价值%3</Chinesesimp>
+                <Russian>Вы продали %1x %2 за %3</Russian>
+                <German>Du hast %1x %2 für %3 verkafut</German>
+            </Key>
+        </Container>
+        <Container name="Dealer">
+            <Key ID="STR_HG_DLG_DE_VEHICLES_TITLE">
+                <Original>Your vehicles</Original>
+                <Spanish>Tus vehiculos</Spanish>
+                <French>Vos véhicules</French>
+                <Russian>Ваши автомобили</Russian>
+                <Chinese>您的車輛</Chinese>
+                <Chinesesimp>您的车辆</Chinesesimp>
+                <German>Deine Fahrzeuge</German>
+            </Key>
+            <Key ID="STR_HG_DLG_DE_DEALER_TITLE">
+                <Original>Dealer's interest</Original>
+                <Spanish>Interés del distribuidor</Spanish>
+                <French>Intérêt du concessionnaire</French>
+                <Russian>Интерес дилера</Russian>
+                <Chinese>商人的興趣</Chinese>
+                <Chinesesimp>商人的兴趣</Chinesesimp>
+                <German>Dealer's Bedarf</German>
+            </Key>
+            <Key ID="STR_HG_DLG_DE_SELL_TOOLTIP">
+                <Original>Sell selected vehicle</Original>
+                <Spanish>Vender vehiculo</Spanish>
+                <French>Vendre le véhicule sélectionné</French>
+                <Chinese>賣出選中載具</Chinese>
+                <Chinesesimp>卖出选中载具</Chinesesimp>
+                <Russian>Продать выбранную технику</Russian>
+                <German>Ausgewähltes Fahrzeug verkaufen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_DE_REFRESH_TOOLTIP">
+                <Original>Refresh vehicle list</Original>
+                <Spanish>Refrescar vehiculos lista</Spanish>
+                <French>Rafraîchir la liste des véhicules</French>
+                <Chinese>刷新車庫列表</Chinese>
+                <Chinesesimp>刷新车库列表</Chinesesimp>
+                <Russian>Обновить список техники</Russian>
+                <German>Fahrzeugliste aktualisieren</German>
+            </Key>
+            <Key ID="STR_HG_DLG_DE_PRICE">
+                <Original>Price - %1</Original>
+                <Spanish>Precio - %1</Spanish>
+                <French>Prix - %1</French>
+                <Chinese>價格 - %1</Chinese>
+                <Chinesesimp>价格 - %1</Chinesesimp>
+                <Russian>Цена - %1</Russian>
+                <German>Preis - %1</German>
+            </Key>
+            <Key ID="STR_HG_DLG_DE_SOLD">
+                <Original>You have sold your %1 for %2</Original>
+                <Spanish>Usted ha vendido %1 por %2</Spanish>
+                <French>Vous avez vendu votre %1 pour %2</French>
+                <Chinese>你賣出了你的%1, 獲得%2</Chinese>
+                <Chinesesimp>你卖出了你的%1, 获得%2</Chinesesimp>
+                <Russian>Вы продали своё %1 за %2</Russian>
+                <German>Du hast dein %1 für %2 verkauft</German>
+            </Key>
+        </Container>
+        <Container name="GiveKey">
+            <Key ID="STR_HG_DLG_GK_REMOVE_TOOLTIP">
+                <Original>Remove selected co-owner</Original>
+                <French>Supprimer le co-propriétaire sélectionné</French>
+                <Chinese>刪除選中的共享者</Chinese>
+                <Chinesesimp>删除选中的共享者</Chinesesimp>
+                <Russian>Удалить выбранного совладельца</Russian>
+                <German>Ausgewählten Neben-Besitzer entfernen</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GK_REFRESH_TOOLTIP">
+                <Original>Refresh player list</Original>
+                <French>Rafraîchir la liste des joueurs</French>
+                <Chinese>刷新玩家列表</Chinese>
+                <Chinesesimp>刷新玩家列表</Chinesesimp>
+                <Russian>Обновить список игроков</Russian>
+                <German>Spielerliste aktualisieren</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GK_GIVE_TOOLTIP">
+                <Original>Give key to selected player</Original>
+                <French>Donner la clé au joueur sélectionné</French>
+                <Chinese>給予選中的玩家鑰匙</Chinese>
+                <Chinesesimp>给予选中的玩家钥匙</Chinesesimp>
+                <Russian>Дать ключ выбранному игроку</Russian>
+                <German>Schlüssel an ausgewählten Spieler übergeben</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GK_GIVE">
+                <Original>You have given the %1 key to %2</Original>
+                <French>Vous avez donné la clé de votre %1 à %2</French>
+                <Chinese>你把%1的鑰匙給了%2</Chinese>
+                <Chinesesimp>你把%1的钥匙给了%2</Chinesesimp>
+                <Russian>Вы дали %1 ключ %2</Russian>
+                <German>Du hast den Schlüssel für %1 an %2 übergeben</German>
+            </Key>
+            <Key ID="STR_HG_DLG_GK_GIVEN">
+                <Original>%1 gave you the key of his %2</Original>
+                <French>%1 vous avez donné la clé de son %2</French>
+                <Chinese>%1給了你他%2的鑰匙</Chinese>
+                <Chinesesimp>%1给了你他%2的钥匙</Chinesesimp>
+                <Russian>%1 дал вам ключ от своего %2</Russian>
+                <German>%1 hat dir den Schlüssel für seinen %2 übergeben</German>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="Shops">
+        <Key ID="STR_HG_GEAR_SHOP">
+            <Original>Gear Shop</Original>
+            <Spanish>Tienda de Equipo</Spanish>
+            <French>Magasin d'équipement</French>
+            <Chinese>裝備商店</Chinese>
+            <Chinesesimp>装备商店</Chinesesimp>
+            <Russian>Магазин снаряжения</Russian>
+            <German>Laden für Ausrüstung</German>
+        </Key>
+        <Key ID="STR_HG_ITEMS_SHOP">
+            <Original>Items Shop</Original>
+            <Spanish>Tienda de Items</Spanish>
+            <French>Magasin d'items</French>
+            <Chinese>物品商店</Chinese>
+            <Chinesesimp>物品商店</Chinesesimp>
+            <Russian>Магазин предметов</Russian>
+            <German>Laden für Gegenstände</German>
+        </Key>
+        <Key ID="STR_HG_VEHICLES_SHOP">
+            <Original>Vehicles Shop</Original>
+            <Spanish>Tienda de Vehiculos</Spanish>
+            <French>Magasin de véhicules</French>
+            <Chinese>載具商店</Chinese>
+            <Chinesesimp>载具商店</Chinesesimp>
+            <Russian>Магазин техники</Russian>
+            <German>Laden für Fahrzeuge</German>
+        </Key>
+        <Key ID="STR_HG_UNITS_SHOP">
+            <Original>Units Shop</Original>
+            <French>Magasin de troupes</French>
+            <Russian>Магазин наёмников</Russian>
+            <Chinese>傭兵商店</Chinese>
+            <Chinesesimp>佣兵商店</Chinesesimp>
+            <German>Laden für Fahrzeuge</German>
+        </Key>
+        <Key ID="STR_HG_ATM">
+            <Original>ATM</Original>
+            <French>DAB</French>
+            <Russian>Банкомат</Russian>
+            <Chinese>ATM</Chinese>
+            <Chinesesimp>ATM</Chinesesimp>
+            <German>Geldautomat</German>
+        </Key>
+        <Key ID="STR_HG_TRADER">
+            <Original>Trader</Original>
+            <Spanish>Comerciante</Spanish>
+            <French>Commerçant</French>
+            <Chinese>二手收購商</Chinese>
+            <Chinesesimp>二手收购商</Chinesesimp>
+            <Russian>Торговец</Russian>
+            <German>Händler</German>
+        </Key>
+        <Key ID="STR_HG_DEALER">
+            <Original>Car Dealer</Original>
+            <Spanish>Vehiculos Comerciante</Spanish>
+            <French>Commerçant de véhicules</French>
+            <Chinese>載具二手收購商</Chinese>
+            <Chinesesimp>载具二手收购商</Chinesesimp>
+            <Russian>Продавец техники</Russian>
+            <German>Fahrzeughändler</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_ASSIGNED">
+            <Original>Assigned Items</Original>
+            <Spanish>Objetos Asignados</Spanish>
+            <French>Objets Assignés</French>
+            <Chinese>指定物品</Chinese>
+            <Chinesesimp>指定物品</Chinesesimp>
+            <Russian>Назначенные предметы</Russian>
+            <German>Zugewiesene Gegenstände</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_PRIM_WEAPON">
+            <Original>Prim. Weapon</Original>
+            <Spanish>Arma Primaria</Spanish>
+            <French>Arme Primaire</French>
+            <Chinese>主武器</Chinese>
+            <Chinesesimp>主武器</Chinesesimp>
+            <Russian>Первичное оружие</Russian>
+            <German>Primäre Waffen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_SEC_WEAPON">
+            <Original>Sec. Weapon</Original>
+            <Spanish>Arma Secundaria</Spanish>
+            <French>Arme Secondaire</French>
+            <Chinese>副武器</Chinese>
+            <Chinesesimp>副武器</Chinesesimp>
+            <Russian>Вторичное оружие</Russian>
+            <German>Sekundäre Waffen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_UNIFORM">
+            <Original>Uniform</Original>
+            <Spanish>Uniforme</Spanish>
+            <French>Uniforme</French>
+            <Chinese>制服</Chinese>
+            <Chinesesimp>制服</Chinesesimp>
+            <Russian>Униформа</Russian>
+            <German>Uniform</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_UNIFORMS">
+            <Original>Uniforms</Original>
+            <Spanish>Uniformes</Spanish>
+            <French>Uniformes</French>
+            <Chinese>制服</Chinese>
+            <Chinesesimp>制服</Chinesesimp>
+            <Russian>Одежда</Russian>
+            <German>Uniformen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_VEST">
+            <Original>Vest</Original>
+            <Spanish>Chaleco</Spanish>
+            <French>Veste</French>
+            <Chinese>背心</Chinese>
+            <Chinesesimp>背心</Chinesesimp>
+            <Russian>Разгрузка</Russian>
+            <German>Weste</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_VESTS">
+            <Original>Vests</Original>
+            <Spanish>Chalecos</Spanish>
+            <French>Vestes</French>
+            <Chinese>背心</Chinese>
+            <Chinesesimp>背心</Chinesesimp>
+            <Russian>Разгрузки</Russian>
+            <German>Westen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_BACKPACK">
+            <Original>Backpack</Original>
+            <Spanish>Mochila</Spanish>
+            <French>Sac à dos</French>
+            <Chinese>背包</Chinese>
+            <Chinesesimp>背包</Chinesesimp>
+            <Russian>Рюкзак</Russian>
+            <German>Rucksack</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_BACKPACKS">
+            <Original>Backpacks</Original>
+            <Spanish>Mochilas</Spanish>
+            <French>Sacs à dos</French>
+            <Chinese>背包</Chinese>
+            <Chinesesimp>背包</Chinesesimp>
+            <Russian>Рюкзаки/Сумки/Обвязки</Russian>
+            <German>Rucksäcke</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_HEADGEAR">
+            <Original>Headgear</Original>
+            <Spanish>Casco</Spanish>
+            <French>Casque</French>
+            <Chinese>頭盔</Chinese>
+            <Chinesesimp>头盔</Chinesesimp>
+            <Russian>Головные уборы</Russian>
+            <German>Kopfbedeckung</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_HEADGEARS">
+            <Original>Headgear</Original>
+            <Spanish>Cascos</Spanish>
+            <French>Casques</French>
+            <Chinese>頭盔</Chinese>
+            <Chinesesimp>头盔</Chinesesimp>
+            <Russian>Защита головы</Russian>
+            <German>Kopfbedeckungen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_FACEWEAR">
+            <Original>Facewear</Original>
+            <Spanish>Accesorio</Spanish>
+            <French>Accessoire</French>
+            <Chinese>臉飾</Chinese>
+            <Chinesesimp>脸饰</Chinesesimp>
+            <Russian>Для лица</Russian>
+            <German>Gesichtsbedeckung</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_FACEWEARS">
+            <Original>Facewear</Original>
+            <Spanish>Accesorios</Spanish>
+            <French>Accessoires</French>
+            <Chinese>臉飾</Chinese>
+            <Chinesesimp>脸饰</Chinesesimp>
+            <Russian>Защита лица</Russian>
+            <German>Gesichtsbedeckungen</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_MISSILE_LAUNCHER">
+            <Original>Missile Launcher</Original>
+            <Spanish>Lanzador de Misiles</Spanish>
+            <Chinese>導彈發射器</Chinese>
+            <Chinesesimp>导弹发射器</Chinesesimp>
+            <Russian>Ракетная установка(ЗУ)</Russian>
+            <German>Raketenwerfer</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
+            <Original>Rocket Launcher</Original>
+            <Spanish>Lanzacohetes</Spanish>
+            <French>Lance-missiles</French>
+            <Chinese>火箭發射器</Chinese>
+            <Chinesesimp>火箭发射器</Chinesesimp>
+            <Russian>Ракетная установка(ПТ)</Russian>
+            <German>Raketenwerer</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_HANDGUN">
+            <Original>Handgun</Original>
+            <Spanish>Pistolas</Spanish>
+            <French>Pistolets</French>
+            <Chinese>手槍</Chinese>
+            <Chinesesimp>手枪</Chinesesimp>
+            <Russian>Пистолеты</Russian>
+            <German>Handfeuerwaffe</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_ASSAULT_RIFLE">
+            <Original>Assault Rifle</Original>
+            <Spanish>Rifles de Asalto</Spanish>
+            <French>Fusils d'assaut</French>
+            <Chinese>突擊步槍</Chinese>
+            <Chinesesimp>突击步枪</Chinesesimp>
+            <Russian>Штурмовые винтовки</Russian>
+            <German>Sturmgewehr</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_MACHINE_GUN">
+            <Original>Machine Gun</Original>
+            <Spanish>Ametralladoras</Spanish>
+            <French>Mitrailleuses</French>
+            <Chinese>機槍</Chinese>
+            <Chinesesimp>机枪</Chinesesimp>
+            <Russian>Пулемёты</Russian>
+            <German>Maschinengewehr</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_SUB_MACHINE_GUN">
+            <Original>Sub-Machine Gun</Original>
+            <Spanish>Sub ametralladoras</Spanish>
+            <French>Mitraillettes</French>
+            <Chinese>衝鋒槍</Chinese>
+            <Chinesesimp>冲锋枪</Chinesesimp>
+            <Russian>Пистолеты-пулемёты</Russian>
+            <German>Maschinenpistole</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_SNIPER_RIFLE">
+            <Original>Sniper Rifle</Original>
+            <Spanish>Rifles Sniper</Spanish>
+            <French>Fusils de précision</French>
+            <Chinese>狙擊步槍</Chinese>
+            <Chinesesimp>狙击步枪</Chinesesimp>
+            <Russian>Снайперские винтовки</Russian>
+            <German>Präzisionsgewehr</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_SCOPES">
+            <Original>Scopes</Original>
+            <Spanish>Miras</Spanish>
+            <French>Lunettes</French>
+            <Chinese>瞄具</Chinese>
+            <Chinesesimp>瞄具</Chinesesimp>
+            <Russian>Прицелы</Russian>
+            <German>Zielrohr</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_MAGAZINES">
+            <Original>Magazines</Original>
+            <Spanish>Munición</Spanish>
+            <French>Chargeurs</French>
+            <Chinese>彈匣</Chinese>
+            <Chinesesimp>弹匣</Chinesesimp>
+            <Russian>Магазины</Russian>
+            <German>Magazine</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_ITEMS">
+            <Original>Items</Original>
+            <Spanish>Items</Spanish>
+            <French>Items</French>
+            <Chinese>物品</Chinese>
+            <Chinesesimp>物品</Chinesesimp>
+            <Russian>Предметы</Russian>
+            <German>Gegenstände</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_CIVILIAN">
+            <Original>Civilian</Original>
+            <Spanish>Civiles</Spanish>
+            <French>Civil</French>
+            <Chinese>民用</Chinese>
+            <Chinesesimp>民用</Chinesesimp>
+            <Russian>Гражданские</Russian>
+            <German>Zivil</German>
+        </Key>
+        <Key ID="STR_HG_SHOP_MILITARY">
+            <Original>Military</Original>
+            <Spanish>Militares</Spanish>
+            <French>Militaire</French>
+            <Chinese>軍用</Chinese>
+            <Chinesesimp>军用</Chinesesimp>
+            <Russian>Армейские</Russian>
+            <German>Militärisch</German>
+        </Key>
+        <Key ID="STR_HG_MARKER_1">
+            <Original>Civilian HQ</Original>
+            <Spanish>HQ Civiles</Spanish>
+            <French>QG Civil</French>
+            <Chinese>民用HQ</Chinese>
+            <Chinesesimp>民用HQ</Chinesesimp>
+            <Russian>Гражданский HQ</Russian>
+            <German>Zivilisten HQ</German>
+        </Key>
+        <Key ID="STR_HG_MARKER_2">
+            <Original>Military HQ</Original>
+            <Spanish>HQ Militares</Spanish>
+            <French>QG Militaire</French>
+            <Chinese>軍用HQ</Chinese>
+            <Chinesesimp>军用HQ</Chinesesimp>
+            <Russian>Армейский HQ</Russian>
+            <German>Militäsches HQ</German>
+        </Key>
+    </Package>
 </Project>
