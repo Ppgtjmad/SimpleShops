@@ -1,7 +1,8 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params["_ctrl","_index","_shopType","_shopContent","_spawnPoints","_exists","_condition","_vName","_ind"];
 

@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 #define HG_NO_IDC                     -1
 

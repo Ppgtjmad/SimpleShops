@@ -3,7 +3,8 @@
 #define WHITELIST_SIDES getArray(getMissionConfig "CfgClient" >> "whitelistSides")
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params["_player","_uid","_result","_cash","_bank"];
 

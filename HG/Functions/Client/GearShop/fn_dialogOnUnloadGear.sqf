@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 
 if(!HG_GEAR_BOUGHT) then

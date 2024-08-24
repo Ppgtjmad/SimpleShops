@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params["_mode","_unit","_vehicle",["_plate",round(random(9999))],["_color",""]];
 

@@ -1,8 +1,8 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
-	
-    Defines available traders
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
+	Description - Defines available traders
 	
 	class YourDealerClass - Used as a param for the call, basically the dealer you want to display
 	{

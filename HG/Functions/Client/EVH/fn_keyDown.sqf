@@ -1,7 +1,8 @@
 #define ADMINS getArray(getMissionConfig "CfgClient" >> "admins")
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params
 [

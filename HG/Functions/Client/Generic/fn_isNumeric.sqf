@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params[["_value","",["",0]],"_in",["_valid",["0","1","2","3","4","5","6","7","8","9"]],["_return",true]];
 

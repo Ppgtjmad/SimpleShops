@@ -1,7 +1,6 @@
 /*
 	Author - Torndeco
 	Description - Initializes extDB3
-	Website - https://bitbucket.org/torndeco/extdb3/wiki/Home
 */
 
 params["_database","_protocol","_custom",["_return",true,[true]]];

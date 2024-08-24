@@ -1,7 +1,8 @@
 #include "HG_Macros.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 	
 	currencyType - STRING - Currency you want to use (ISO format)
 	cashVariable - STRING - Custom cash variable you want to use instead of default one (setVariable'd on player and broadcasted), data held by the variable must be INTEGER
@@ -42,7 +43,7 @@
 	adminKey - INTEGER - Key to push to open admin menu, default is Left Windows (0xDB / 219), see links above
 	hudKey - INTEGER - Key to push to toggle hud on/off, default is * (0x37 / 55), see links above
 	
-	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://northernimpulse.com/wiki#simple-shops)
+	savingMethod - STRING - Use "Profile" for server profile or "extDB" for extDB3, if the latest make sure you have extDB3 setup correctly (see https://github.com/Ppgtjmad/SimpleShops/wiki/database)
 	extDBDatabase - STRING - If "extDB" is used as savingMethod, set the DB config to use (the one defined in @extDB3\extdb3-conf.ini file) *CASE SENSITIVE*
 	extDBProtocol - STRING - If "extDB" is used as savingMethod, set the saving protocol used by extDB3 either "SQL" or "SQL_CUSTOM"
 	extDBCustomFile - STRING - If "extDB" is used as savingMethod & extDBProtocol is "SQL_CUSTOM", set the custom file to use (located in @extDB3\sql_custom folder)
@@ -58,9 +59,9 @@
 			killedReward - INTEGER - Money earned by killer, only used if enableKillReward is set to true
 			xpPenaltyDeath - INTEGER - XP taken when you've been killed, only used if enableDeathPenalty is set to true
 			tkPenaltyPlayer - INTEGER - Money taken when player of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true
-			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly (https://northernimpulse.com/wiki#simple-shops)
+			tkPenaltyAI - INTEGER - Money taken when AI of the same side is killed (team kill), only used if enableTeamKillPenalty is set to true & AI is setup correctly
 			xpPenaltyPlayer - INTEGER - XP taken when player of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty are set to true
-			xpPenaltyAI - INTEGER - XP taken when AI of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty are set to true & AI is setup correctly (https://northernimpulse.com/wiki#simple-shops)
+			xpPenaltyAI - INTEGER - XP taken when AI of the same side is killed (team kill), only used if enableXP & enableTeamKillPenalty are set to true & AI is setup correctly
 			xpReward - INTEGER - XP earned by killer, only used if enableXP & enableKillReward are set to true
 			xpToLvlUp - INTEGER - XP required to rank up, last rank has to be 0, only used if enableXP is set to true
 			iShopDiscount - INTEGER/FLOAT - Items shop discount in %, based on total price, 0 means no discount

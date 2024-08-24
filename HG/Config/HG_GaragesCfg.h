@@ -1,8 +1,8 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
-	
-    Defines available garages
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
+	Description - Defines available garages
 	
 	class YourGarageClass - Used as a param for the call
 	{

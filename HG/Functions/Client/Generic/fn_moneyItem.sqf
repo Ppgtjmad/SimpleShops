@@ -1,6 +1,7 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 params["_num","_unit",["_arr",[]],"_fnc","_r"];
 
@@ -19,7 +20,7 @@ _fnc =
 
     _new = _b / _val;
 
-    if(_new > 1) then
+    if(_new >= 1) then
     {
         _arr pushBack [_item,round(_new)];
 	    _b = _b - (round(_new) * _val);

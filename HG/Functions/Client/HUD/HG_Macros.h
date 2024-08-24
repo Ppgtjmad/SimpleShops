@@ -1,7 +1,8 @@
 #include "..\..\..\UI\HG_IDCS.h"
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
 */
 
 #define HG_HUD_DISP               (uiNamespace getVariable [HG_HUD_TYPE,displayNull])

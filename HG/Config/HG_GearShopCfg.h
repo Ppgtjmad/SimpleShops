@@ -1,8 +1,8 @@
 /*
     Author - HoverGuy
-    Website - https://northernimpulse.com
-	
-    Defines available gear shops
+	GitHub - https://github.com/Ppgtjmad/SimpleShops
+	Steam - https://steamcommunity.com/id/HoverGuy/
+	Description - Defines available gear shops
 	
 	class YourShopClass - Used as a param for the call, basically the shop you want to display
 	{
