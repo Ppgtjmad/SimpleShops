@@ -19,7 +19,7 @@ switch(_mode) do
 		{
 		    {
 			    _x ctrlShow true;
-			} forEach [HG_HUD_XP_BACK,HG_HUD_XP_PIC,HG_HUD_XP_TEXT];
+			} forEach [HG_HUD_XP_BACK,HG_HUD_XP_PROGRESS,HG_HUD_XP_PIC,HG_HUD_XP_TEXT];
 			[2] call HG_fnc_HUD;
 		};
 		if((getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1) then
@@ -50,13 +50,14 @@ switch(_mode) do
 		    _text = (localize "STR_HG_XP_MAXED");
 		};
 		
+		HG_HUD_XP_PROGRESS progressSetPosition ((player getVariable "HG_XP") select 1) / getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "xpToLvlUp");
 		HG_HUD_XP_TEXT ctrlSetText _text;
 	};
 	// HUD Rank Update
 	case 3:
 	{
 	    HG_HUD_RANK_PIC ctrlSetText ([(rank player),"texture"] call BIS_fnc_rankParams);
-		HG_HUD_RANK_TEXT ctrlSetText ([(rank player),"displayName"] call BIS_fnc_rankParams);
+		HG_HUD_RANK_TEXT ctrlSetText (toUpper([(rank player),"displayName"] call BIS_fnc_rankParams));
 	};
 	// HUD Kill Count Update
 	case 4:

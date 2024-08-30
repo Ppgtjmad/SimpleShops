@@ -29,6 +29,16 @@ class HG_HUD
 			h = 0.033 * safezoneH;
 		};
 		
+		class XPProgress: HG_RscProgress
+		{
+			show = 0;
+			idc = HG_HUD_XP_PROGRESS_IDC;
+			x = 0.891875 * safezoneW + safezoneX;
+			y = 0.83 * safezoneH + safezoneY;
+			w = 0.0825 * safezoneW;
+			h = 0.033 * safezoneH;
+		};
+		
 		class XPPicture: HG_RscPicture
 		{
 			show = 0;
@@ -55,6 +65,7 @@ class HG_HUD
 		
 		class KillCountBack: XPBack
 		{
+			show = 0;
 			idc = HG_HUD_KILL_COUNT_BACK_IDC;
 			x = 0.835156 * safezoneW + safezoneX;
 			y = 0.874 * safezoneH + safezoneY;
@@ -156,9 +167,15 @@ class HG_HUD_ALT: HG_HUD
 	
 	class ControlsBackground: ControlsBackground
 	{
-		class XPBack: XPBack 
+		class XPBack: XPBack
 		{
 			text = "HG\UI\Textures\back_alt.paa";
+		};
+		
+		class XPProgress: XPProgress
+		{
+			x = 0.876406 * safezoneW + safezoneX;
+			w = 0.12375 * safezoneW;
 		};
 		
 		class XPPicture: XPPicture
@@ -173,7 +190,7 @@ class HG_HUD_ALT: HG_HUD
 			w = 0.12375 * safezoneW;
 		};
 		
-		class KillCountBack: KillCountBack 
+		class KillCountBack: KillCountBack
 		{
 			text = "HG\UI\Textures\back_alt.paa";
 		};
@@ -197,9 +214,10 @@ class HG_HUD_ALT: HG_HUD
 		
 		class RankPicture: RankPicture
 		{
-		    x = 0.842 * safezoneW + safezoneX;
-			y = 0.912 * safezoneH + safezoneY;
-			w = 0.025 * safezoneW;
+			x = 0.844 * safezoneW + safezoneX;
+			y = 0.918 * safezoneH + safezoneY;
+			w = 0.02 * safezoneW;
+			h = 0.033 * safezoneH;
 		};
 		
 		class RankText: RankText

@@ -19,7 +19,6 @@ HG_BUY_TO_GARAGE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableBuy
 HG_KILL_REWARD_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillReward")) isEqualTo 1;
 HG_DEATH_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableDeathPenalty")) isEqualTo 1;
 HG_TEAM_KILL_PENALTY_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableTeamKillPenalty")) isEqualTo 1;
-HG_CRATE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableCrate")) isEqualTo 1;
 HG_PLAYER_INVENTORY_SAVE_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enablePlayerInventorySave")) isEqualTo 1;
 HG_XP_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableXP")) isEqualTo 1;
 HG_KILL_COUNT_ENABLED = (getNumber(getMissionConfig "CfgClient" >> "enableKillCount")) isEqualTo 1;

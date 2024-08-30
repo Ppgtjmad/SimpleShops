@@ -34,18 +34,13 @@ private "_ind";
 	HG_GEAR_SWITCH lbSetData [_ind,(configName _x)];
 } forEach _shopList;
 
-HG_GEAR_SWITCH lbSetCurSel 0;
-
-if(HG_CRATE_ENABLED AND (isNil "HG_PLAYER_BOX")) then
+if(isNil "HG_PLAYER_BOX") then
 {
-    if(isNil "HG_PLAYER_BOX") then
-	{
-	    HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
-		HG_PLAYER_BOX allowDamage false;
-		HG_PLAYER_BOX setPosATL (getPosATL player);
-        HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_DELETE_CRATE")+"</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog AND ((player distance _target) < 2)'];
-	    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_EMPTY_CRATE")+"</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) AND !dialog && ((player distance _target) < 2)'];
-	};
+	HG_PLAYER_BOX = "Box_NATO_Wps_F" createVehicleLocal getPos player;
+	HG_PLAYER_BOX allowDamage false;
+	HG_PLAYER_BOX setPosATL (getPosATL player);
+    HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_DELETE_CRATE")+"</t>",{deleteVehicle (_this select 0); HG_PLAYER_BOX = nil},"",0,false,false,"",'(alive player) && !dialog AND ((player distance _target) < 2)'];
+	HG_PLAYER_BOX addAction ["<img image='HG\UI\Icons\crate.paa' size='1.5'/><t color='#FF0000'>"+(localize "STR_HG_EMPTY_CRATE")+"</t>",{clearItemCargo (_this select 0); clearMagazineCargo (_this select 0); clearWeaponCargo (_this select 0); clearBackpackCargo (_this select 0); hint (localize "STR_HG_CRATE_EMPTIED")},"",0,false,false,"",'(alive player) AND !dialog && ((player distance _target) < 2)'];
 	
     HG_PLAYER_BOX setPosATL [(getPosATL player select 0)+1,(getPosATL player select 1),(getPosATL player select 2)];
     HG_PLAYER_BOX setDir (getDir player)+90;
@@ -84,18 +79,21 @@ if(sunOrMoon <= 0.5) then
 	} forEach [[-1,0,2],[1,0,2]];
 };
 
-HG_GEAR_PREVIEW = [[],[],[],[],[],[],[],[]];
+HG_GEAR_PREVIEW = [[(uniform player),-1],[(vest player),-1],[(backpack player),-1],[(goggles player),-1],[(headgear player),-1],[(primaryWeapon player),-1],[(secondaryWeapon player),-1],[(handgunWeapon player),-1]];
 HG_GEAR_SAVED = 
 [
     [(uniform player),(uniformItems player)],
     [(vest player),(vestItems player)],
     [(backpack player),(backpackItems player)],
-    (goggles player),
-    (headgear player),
+    [(goggles player)],
+    [(headgear player)],
     [(primaryWeapon player),(primaryWeaponMagazine player),(primaryWeaponItems player),(player ammo primaryWeapon player)],
     [(secondaryWeapon player),(secondaryWeaponMagazine player),(secondaryWeaponItems player),(player ammo secondaryWeapon player)],
     [(handgunWeapon player),(handgunMagazine player),(handgunItems player),(player ammo handgunWeapon player)]
 ];
 HG_GEAR_BOUGHT = false;
+
+HG_GEAR_BUY ctrlEnable false;
+HG_GEAR_SWITCH lbSetCurSel 0;
 
 true;

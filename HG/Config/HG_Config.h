@@ -15,7 +15,6 @@
 	enableKillReward - BOOL - Enable kill reward?
 	enableDeathPenalty - BOOL - Enable death penalty?
 	enableTeamKillPenalty - BOOL - Works only if enableKillReward is set to true
-	enableCrate - BOOL - Enable old stuff saving in crate when buying new clothes?
 	enableGiveMoney - BOOL - Enable ability to give money to others?
 	enableBuyToGarage - BOOL - Enable ability to automatically store vehicle in garage when bought? Set it to false if you don't use garage
 	clearInventory - BOOL - Clear vehicle default inventory (FAKs etc...) when spawning (retrieving vehicle from garage and buying)?
@@ -84,7 +83,6 @@ enablePaycheck = true;
 enableKillReward = true;
 enableDeathPenalty = true;
 enableTeamKillPenalty = true;
-enableCrate = true;
 enableGiveMoney = true;
 enableBuyToGarage = true;
 clearInventory = true;

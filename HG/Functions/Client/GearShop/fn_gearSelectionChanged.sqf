@@ -8,10 +8,10 @@ params["_ctrl","_index",["_price",0],["_count",0],"_discount"];
 	
 disableSerialization;
 
-[(_ctrl lbData _index)] call HG_fnc_handleGear;
+[(_ctrl lbData _index),(_ctrl lbValue _index)] call HG_fnc_handleGear;
 
 {
-    if((count _x) != 0) then
+    if((_x select 1) != -1) then
     {
         _price = _price + (_x select 1);
     } else {
@@ -19,14 +19,7 @@ disableSerialization;
 	};
 } forEach HG_GEAR_PREVIEW;
 
-_discount = ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) != 0) AND (_price != 0);
-
-if(_discount) then
-{
-    _price = round(_price - (_price * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)));
-};
-
-if(((count HG_GEAR_PREVIEW) isEqualTo _count) OR (!([_price] call HG_fnc_hasEnoughMoney))) then 
+if(((count HG_GEAR_PREVIEW) isEqualTo _count) OR (!([_price] call HG_fnc_hasEnoughMoney))) then
 {
     HG_GEAR_BUY ctrlEnable false;
 } else {

@@ -13,9 +13,10 @@ _condition = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage 
 _isOk = (_condition isEqualTo "") OR (call compile _condition);
 if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 
-private["_allowedTypes","_storePoint","_pos","_near"];
+private["_allowedTypes","_storePoint","_storePointRadius","_pos","_near"];
 _allowedTypes = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
 _storePoint = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
+_storePointRadius = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePointRadius");
 
 if(_storePoint isEqualTo "") then
 {
@@ -24,7 +25,7 @@ if(_storePoint isEqualTo "") then
     _pos = markerPos _storePoint;
 };
 
-_near = (nearestObjects [_pos,_allowedTypes,8]) select {alive _x};
+_near = (nearestObjects [_pos,_allowedTypes,_storePointRadius]) select {alive _x};
 
 if((count _near) > 0) then
 {

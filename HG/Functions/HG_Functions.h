@@ -74,8 +74,10 @@ class HG
 		class buyGear {};
 		class dialogOnLoadGear {};
 		class dialogOnUnloadGear {};
-		class fillBox {};
+		class dummy {};
+		class fillGear {};
 		class gearSelectionChanged {};
+		class getCurrentGear {};
 		class handleGear {};
 		class reset {};
 		class viewControl {};

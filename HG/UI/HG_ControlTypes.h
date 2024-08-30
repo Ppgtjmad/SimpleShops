@@ -358,3 +358,14 @@ class HG_RscTree
 		color[] = {1,1,1,1};
 	};
 };
+
+class HG_RscProgress
+{
+	idc = -1;
+	style = 0;
+	type = 8;
+	shadow = 2;
+	texture = "#(argb,8,8,3)color(1,1,1,1)";
+	colorFrame[] = {0,0,0,0};
+	colorBar[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"};
+};

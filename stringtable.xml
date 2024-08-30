@@ -952,6 +952,14 @@
 				<Chinese>放大/縮小</Chinese>
 				<Chinesesimp>放大/缩小</Chinesesimp>
 		    </Key>
+			<Key ID="STR_HG_DLG_GS_LIST_CURRENT">
+		        <Original>[CURRENT EQUIPMENT]</Original>
+			    <Spanish>[EQUIPO ACTUAL]</Spanish>
+				<French>[ÉQUIPEMENT ACTUEL]</French>
+				<Russian>[ТЕКУЩЕЕ ОБОРУДОВАНИЕ]</Russian>
+				<Chinese>[現有設備]</Chinese>
+				<Chinesesimp>[现有设备]</Chinesesimp>
+			</Key>
 		</Container>
 		<Container name="Garage">
 		    <Key ID="STR_HG_GRG_LIST">
