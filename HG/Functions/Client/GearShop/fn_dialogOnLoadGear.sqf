@@ -79,7 +79,7 @@ if(sunOrMoon <= 0.5) then
 	} forEach [[-1,0,2],[1,0,2]];
 };
 
-HG_GEAR_PREVIEW = [[(uniform player),-1],[(vest player),-1],[(backpack player),-1],[(goggles player),-1],[(headgear player),-1],[(primaryWeapon player),-1],[(secondaryWeapon player),-1],[(handgunWeapon player),-1]];
+HG_GEAR_PREVIEW = [[(uniform player),-1,false],[(vest player),-1,false],[(backpack player),-1,false],[(goggles player),-1,false],[(headgear player),-1,false],[(primaryWeapon player),-1,false],[(secondaryWeapon player),-1,false],[(handgunWeapon player),-1,false]];
 HG_GEAR_SAVED = 
 [
     [(uniform player),(uniformItems player)],
