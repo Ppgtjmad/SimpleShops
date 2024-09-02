@@ -26,16 +26,16 @@ HG_CLIENT = nil;
 if(_where isEqualTo 0) then
 {
     player setVariable [HG_CASH_VAR,_newVal,true];
-	
-	if(HG_HUD_ENABLED) then
-    {
-	    if(HG_HUD_TOGGLED) then
-		{
-            [1] call HG_fnc_HUD;
-		};
-    };
 } else {
     player setVariable [HG_BANK_VAR,_newVal,true];
+};
+
+if(HG_HUD_ENABLED) then
+{
+	if(HG_HUD_TOGGLED) then
+	{
+        [1] call HG_fnc_HUD;
+	};
 };
 
 if(HG_ATM_ENABLED) then

@@ -16,7 +16,7 @@ if(!_isOk) exitWith {hint (localize "STR_HG_ACCESS_DENIED");};
 private["_allowedTypes","_storePoint","_storePointRadius","_pos","_near"];
 _allowedTypes = getArray(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "allowedTypes");
 _storePoint = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePoint");
-_storePointRadius = getText(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePointRadius");
+_storePointRadius = getNumber(getMissionConfig "CfgClient" >> "HG_GaragesCfg" >> _garage >> "storePointRadius");
 
 if(_storePoint isEqualTo "") then
 {
