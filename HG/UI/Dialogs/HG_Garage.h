@@ -60,42 +60,6 @@ class HG_Garage
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
-		
-		class RefreshBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\refresh.paa";
-			x = 0.474219 * safeZoneW + safeZoneX;
-			y = 0.291 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class SpawnBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\spawn.paa";
-			x = 0.510312 * safeZoneW + safeZoneX;
-			y = 0.291 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class DeleteBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\delete.paa";
-			x = 0.546406 * safeZoneW + safeZoneX;
-			y = 0.291 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.5825 * safeZoneW + safeZoneX;
-			y = 0.291 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
 	    
 		class GarageInfo: HG_RscText
 		{
@@ -131,9 +95,10 @@ class HG_Garage
 			h = 0.022 * safezoneH;
 		};
 		
-		class RefreshBtn: HG_RscButtonInvisible
+		class RefreshBtn: HG_RscActivePicture
 		{
 			idc = HG_GARAGE_REFRESH_BTN_IDC;
+			text = "HG\UI\Icons\refresh.paa";
 			tooltip = "$STR_HG_GRG_REFRESH_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_refreshGarage";
 			x = 0.474219 * safeZoneW + safeZoneX;
@@ -142,9 +107,10 @@ class HG_Garage
 			h = 0.044 * safeZoneH;
 		};
 		
-		class SpawnBtn: HG_RscButtonInvisible
+		class SpawnBtn: HG_RscActivePicture
 		{
 			idc = HG_GARAGE_SPAWN_BTN_IDC;
+			text = "HG\UI\Icons\spawn.paa";
 			tooltip = "$STR_HG_GRG_SPAWN_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_garageSpawn";
 			x = 0.510312 * safeZoneW + safeZoneX;
@@ -153,9 +119,10 @@ class HG_Garage
 			h = 0.044 * safeZoneH;
 		};
 		
-		class DeleteBtn: HG_RscButtonInvisible
+		class DeleteBtn: HG_RscActivePicture
 		{
 			idc = HG_GARAGE_DELETE_BTN_IDC;
+			text = "HG\UI\Icons\delete.paa";
 			tooltip = "$STR_HG_GRG_DELETE_TOOLTIP";
 			onButtonClick = "[] spawn HG_fnc_delVehicle";
 			x = 0.546406 * safeZoneW + safeZoneX;
@@ -164,8 +131,9 @@ class HG_Garage
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.5825 * safeZoneW + safeZoneX;

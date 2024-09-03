@@ -61,57 +61,6 @@ class HG_AdminMenu
 			h = 0.044 * safeZoneH;
 		};
 		
-		class RefreshBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\refresh.paa";
-			x = 0.350469 * safezoneW + safezoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class KillBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\dead.paa";
-			x = 0.438124 * safezoneW + safezoneX;
-		};
-		
-		class SetRankBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\medal.paa";
-			x = 0.474218 * safezoneW + safezoneX;
-		};
-		
-		class SetXPBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\xp.paa";
-			x = 0.510312 * safezoneW + safezoneX;
-		};
-		
-		class SetKillsBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\gun.paa";
-			x = 0.546406 * safezoneW + safezoneX;
-		};
-		
-		class SetCashBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\money.paa";
-			x = 0.5825 * safezoneW + safezoneX;
-		};
-		
-		class SetBankBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\bank.paa";
-			x = 0.618594 * safezoneW + safezoneX;
-		};
-		
-		class ExitBtnPicture: RefreshBtnPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.654688 * safezoneW + safezoneX;
-		};
-		
 		class InfosText: HG_RscStructuredText
 		{
 			idc = HG_ADM_TEXT_IDC;
@@ -229,22 +178,6 @@ class HG_AdminMenu
 			h = 0.0022 * safezoneH;
 		};
 		
-		class AddUIDBtnPicture: RefreshBtnPicture
-		{
-			show = 0;
-			idc = HG_WL_UID_ADD_PIC_IDC;
-			text = "HG\UI\Icons\add_bis.paa";
-			x = 0.242187 * safezoneW + safezoneX;
-		};
-		
-		class RemoveBtnPicture: RefreshBtnPicture
-		{
-			show = 0;
-			idc = HG_WL_UID_REMOVE_PIC_IDC;
-			text = "HG\UI\Icons\sub_bis.paa";
-			x = 0.278281 * safezoneW + safezoneX;
-		};
-		
 		class WhitelistInfo: HG_RscText
 		{
 			show = 0;
@@ -283,9 +216,10 @@ class HG_AdminMenu
 			h = 0.022 * safeZoneH;
 		};
 		
-		class RefreshButton: HG_RscButtonInvisible
+		class RefreshButton: HG_RscActivePicture
 		{
 			idc = HG_ADM_REFRESH_IDC;
+			text = "HG\UI\Icons\refresh.paa";
 			tooltip = "$STR_HG_DLG_AM_REFRESH_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_refreshPlayers";
 			x = 0.350469 * safezoneW + safezoneX;
@@ -297,6 +231,7 @@ class HG_AdminMenu
 		class KillButton: RefreshButton
 		{
 			idc = HG_ADM_KILL_IDC;
+			text = "HG\UI\Icons\dead.paa";
 			tooltip = "$STR_HG_DLG_AM_KILL_TOOLTIP";
 			onButtonClick = "[4] call HG_fnc_adminMenuBtns";
 			x = 0.438124 * safezoneW + safezoneX;
@@ -305,6 +240,7 @@ class HG_AdminMenu
 		class SetRankButton: RefreshButton
 		{
 			idc = HG_ADM_RANK_IDC;
+			text = "HG\UI\Icons\medal.paa";
 			tooltip = "$STR_HG_DLG_AM_RANK_TOOLTIP";
 			onButtonClick = "[5] call HG_fnc_adminMenuBtns";
 			x = 0.474218 * safezoneW + safezoneX;
@@ -313,6 +249,7 @@ class HG_AdminMenu
 		class SetXPButton: RefreshButton
 		{
 			idc = HG_ADM_XP_IDC;
+			text = "HG\UI\Icons\xp.paa";
 			tooltip = "$STR_HG_DLG_AM_XP_TOOLTIP";
 			onButtonClick = "[0] call HG_fnc_adminMenuBtns";
 			x = 0.510312 * safezoneW + safezoneX;
@@ -321,6 +258,7 @@ class HG_AdminMenu
 		class SetKillsButton: RefreshButton
 		{
 			idc = HG_ADM_KILLS_IDC;
+			text = "HG\UI\Icons\gun.paa";
 			tooltip = "$STR_HG_DLG_AM_KILLS_TOOLTIP";
 			onButtonClick = "[1] call HG_fnc_adminMenuBtns";
 			x = 0.546406 * safezoneW + safezoneX;
@@ -329,6 +267,7 @@ class HG_AdminMenu
 		class SetCashButton: RefreshButton
 		{
 			idc = HG_ADM_CASH_IDC;
+			text = "HG\UI\Icons\money.paa";
 			tooltip = "$STR_HG_DLG_AM_CASH_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_adminMenuBtns";
 			x = 0.5825 * safezoneW + safezoneX;
@@ -337,6 +276,7 @@ class HG_AdminMenu
 		class SetBankButton: RefreshButton
 		{
 			idc = HG_ADM_BANK_IDC;
+			text = "HG\UI\Icons\bank.paa";
 			tooltip = "$STR_HG_DLG_AM_BANK_TOOLTIP";
 			onButtonClick = "[3] call HG_fnc_adminMenuBtns";
 			x = 0.618594 * safezoneW + safezoneX;
@@ -425,8 +365,9 @@ class HG_AdminMenu
 			y = 0.72 * safezoneH + safezoneY;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.654688 * safezoneW + safezoneX;
@@ -472,6 +413,7 @@ class HG_AdminMenu
 		{
 			show = 0;
 			idc = HG_WL_UID_ADD_IDC;
+			text = "HG\UI\Icons\add_bis.paa";
 			tooltip = "$STR_HG_DLG_WL_ADD_UID_TOOLTIP";
 			onButtonClick = "[6] call HG_fnc_adminMenuBtns";
 			x = 0.242187 * safezoneW + safezoneX;
@@ -481,6 +423,7 @@ class HG_AdminMenu
 		{
 			show = 0;
 			idc = HG_WL_UID_REMOVE_IDC;
+			text = "HG\UI\Icons\sub_bis.paa";
 			tooltip = "$STR_HG_DLG_WL_REMOVE_TOOLTIP";
 			onButtonClick = "[7] call HG_fnc_adminMenuBtns";
 			x = 0.278281 * safezoneW + safezoneX;

@@ -61,15 +61,6 @@ class HG_ATM
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.577344 * safezoneW + safezoneX;
-			y = 0.302 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class AccFrame: HG_RscFrame
 		{
 			x = 0.396875 * safezoneW + safezoneX;
@@ -116,42 +107,6 @@ class HG_ATM
 			x = 0.396875 * safezoneW + safezoneX;
 			y = 0.577 * safezoneH + safezoneY;
 		};
-		
-		class DepositBtnPic: HG_RscPicture
-		{
-			text = "HG\UI\Icons\up.paa";
-			x = 0.396875 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safezoneH;	
-		};
-		
-		class WithdrawBtnPic: HG_RscPicture
-		{
-			text = "HG\UI\Icons\down.paa";
-			x = 0.427812 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safezoneH;	
-		};
-		
-		class TransferBtnPic: HG_RscPicture
-		{
-			text = "HG\UI\Icons\right.paa";
-			x = 0.572187 * safezoneW + safezoneX;
-			y = 0.5 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safezoneH;
-		};
-		
-		class RefreshBtnPic: HG_RscPicture
-		{
-			text = "HG\UI\Icons\refresh.paa";
-			x = 0.54125 * safezoneW + safezoneX;
-			y = 0.302 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safezoneH;
-		};
 	};
 	
 	class Controls
@@ -171,8 +126,9 @@ class HG_ATM
 			y = 0.544 * safezoneH + safezoneY;
 		};
 		
-		class DepositBtn: HG_RscButtonInvisible
+		class DepositBtn: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\up.paa";
 			tooltip = "$STR_HG_ATM_DEPOSIT_TOOLTIP";
 			onButtonClick = "[0] call HG_fnc_atmBtns";
 			x = 0.396875 * safezoneW + safezoneX;
@@ -181,8 +137,9 @@ class HG_ATM
 			h = 0.044 * safezoneH;	
 		};
 		
-		class WithdrawBtn: HG_RscButtonInvisible
+		class WithdrawBtn: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\down.paa";
 			tooltip = "$STR_HG_ATM_WITHDRAW_TOOLTIP";
 			onButtonClick = "[1] call HG_fnc_atmBtns";
 			x = 0.427812 * safezoneW + safezoneX;
@@ -200,9 +157,10 @@ class HG_ATM
 			h = 0.022 * safezoneH;
 		};
 		
-		class TransferBtn: HG_RscButtonInvisible
+		class TransferBtn: HG_RscActivePicture
 		{
 			idc = HG_ATM_TRANSFER_BTN_IDC;
+			text = "HG\UI\Icons\right.paa";
 			tooltip = "$STR_HG_ATM_TRANSFER_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_atmBtns";
 			x = 0.572187 * safezoneW + safezoneX;
@@ -211,9 +169,10 @@ class HG_ATM
 			h = 0.044 * safezoneH;
 		};
 		
-		class RefreshBtn: HG_RscButtonInvisible
+		class RefreshBtn: HG_RscActivePicture
 		{
 			idc = HG_ATM_REFRESH_BTN_IDC;
+			text = "HG\UI\Icons\refresh.paa";
 			tooltip = "$STR_HG_ATM_REFRESH_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_atmRefresh";
 			x = 0.54125 * safezoneW + safezoneX;
@@ -222,8 +181,9 @@ class HG_ATM
 			h = 0.044 * safezoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.577344 * safezoneW + safezoneX;

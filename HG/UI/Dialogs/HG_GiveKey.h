@@ -59,42 +59,6 @@ class HG_GiveKey
 			w = 0.0309375 * safezoneW;
 			h = 0.044 * safeZoneH;
 		};
-		
-		class RemoveBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.453594 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class RefreshBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\refresh.paa";
-			x = 0.489687 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class GiveBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\keyadd.paa";
-			x = 0.525781 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.044 * safezoneH;
-		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.561875 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
 	};
 
 	class Controls
@@ -118,9 +82,10 @@ class HG_GiveKey
 			h = 0.022 * safezoneH;
 		};
 		
-		class RemoveBtn: HG_RscButtonInvisible
+		class RemoveBtn: HG_RscActivePicture
 		{
 			idc = HG_GK_REMOVE_BTN_IDC;
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_GK_REMOVE_TOOLTIP";
 			onButtonClick = "[0] call HG_fnc_giveKeyBtns";
 			x = 0.453594 * safezoneW + safezoneX;
@@ -129,9 +94,10 @@ class HG_GiveKey
 			h = 0.044 * safeZoneH;
 		};
 		
-		class RefreshBtn: HG_RscButtonInvisible
+		class RefreshBtn: HG_RscActivePicture
 		{
 			idc = HG_GK_REFRESH_BTN_IDC;
+			text = "HG\UI\Icons\refresh.paa";
 			tooltip = "$STR_HG_DLG_GK_REFRESH_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_refreshKeyCombo";
 			x = 0.489687 * safezoneW + safezoneX;
@@ -140,9 +106,10 @@ class HG_GiveKey
 			h = 0.044 * safeZoneH;
 		};
 		
-		class GiveBtn: HG_RscButtonInvisible
+		class GiveBtn: HG_RscActivePicture
 		{
 			idc = HG_GK_GIVE_BTN_IDC;
+			text = "HG\UI\Icons\keyadd.paa";
 			tooltip = "$STR_HG_DLG_GK_GIVE_TOOLTIP";
 			onButtonClick = "[1] call HG_fnc_giveKeyBtns";
 			x = 0.525781 * safezoneW + safezoneX;
@@ -151,8 +118,9 @@ class HG_GiveKey
 			h = 0.044 * safezoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.561875 * safezoneW + safezoneX;

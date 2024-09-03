@@ -61,15 +61,6 @@ class HG_Trader
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.675312 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class QuantityText: HG_RscText
 		{
 			idc = HG_TRADER_QTY_IDC;
@@ -99,33 +90,6 @@ class HG_Trader
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.0876563 * safezoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class SubBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\sub.paa";
-			x = 0.335 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class AddBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\add.paa";
-			x = 0.412344 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class SellBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\sell.paa";
-			x = 0.628906 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
 		
@@ -190,9 +154,10 @@ class HG_Trader
 			h = 0.451388 * safezoneH;
 		};
 		
-		class SubButton: HG_RscButtonInvisible
+		class SubButton: HG_RscActivePicture
 		{
 			idc = HG_TRADER_SUB_BTN_IDC;
+			text = "HG\UI\Icons\sub.paa";
 			tooltip = "-1";
 			onButtonClick = "[0] call HG_fnc_traderBtns";
 			x = 0.335 * safezoneW + safezoneX;
@@ -201,9 +166,10 @@ class HG_Trader
 			h = 0.044 * safeZoneH;
 		};
 		
-		class AddButton: HG_RscButtonInvisible
+		class AddButton: HG_RscActivePicture
 		{
 			idc = HG_TRADER_ADD_BTN_IDC;
+			text = "HG\UI\Icons\add.paa";
 			tooltip = "+1";
 			onButtonClick = "[1] call HG_fnc_traderBtns";
 			x = 0.412344 * safezoneW + safezoneX;
@@ -212,9 +178,10 @@ class HG_Trader
 			h = 0.044 * safeZoneH;
 		};
 		
-		class SellButton: HG_RscButtonInvisible
+		class SellButton: HG_RscActivePicture
 		{
 			idc = HG_TRADER_SELL_BTN_IDC;
+			text = "HG\UI\Icons\sell.paa";
 			tooltip = "$STR_HG_DLG_TR_SELL_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_traderBtns";
 			x = 0.628906 * safezoneW + safezoneX;
@@ -223,8 +190,9 @@ class HG_Trader
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.675312 * safezoneW + safezoneX;

@@ -35,13 +35,13 @@ if(_sel != (localize "STR_HG_NONE")) then
     _text = parseText format
 	[
         "<br/>"+
-		"<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_UID")+ "</t><br/>"+
-		"<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_SIDE")+ "</t><br/>"+
-		"<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_RANK")+ "</t><br/>"+
-		"<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_XP")+ "</t><br/>"+
-	    "<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_CASH")+ "</t><br/>"+
-		"<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_BANK")+ "</t><br/>"+ 
-	    "<t align='center' size='1'>"+ (localize "STR_HG_DLG_AM_KILLS")+ "</t>",
+		"<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_UID")+ "</t><t align='center'> %1</t><br/>"+
+		"<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_SIDE")+ "</t><t align='center'> %2</t><br/>"+
+		"<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_RANK")+ "</t><t align='center'> %3</t><br/>"+
+		"<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_XP")+ "</t><t align='center'> %4</t><br/>"+
+	    "<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_CASH")+ "</t><t align='center'> %5</t><br/>"+
+		"<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_BANK")+ "</t><t align='center'> %6</t><br/>"+ 
+	    "<t align='center' size='1' color='#FF0000'>"+ (localize "STR_HG_DLG_AM_KILLS")+ "</t><t align='center'> %7</t>",
 		(getPlayerUID HG_OBJECT),
 		(side HG_OBJECT),
 		(rank HG_OBJECT),

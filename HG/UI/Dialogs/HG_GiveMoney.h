@@ -59,15 +59,6 @@ class HG_GiveMoney
 			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.546406 * safezoneW + safezoneX;
-			y = 0.401 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
 	};
 
 	class Controls
@@ -93,8 +84,9 @@ class HG_GiveMoney
 			onButtonClick = "[] call HG_fnc_giveMoneyBtn";
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.546406 * safezoneW + safezoneX;

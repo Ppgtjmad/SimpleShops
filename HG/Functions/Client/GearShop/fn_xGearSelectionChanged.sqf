@@ -26,11 +26,11 @@ HG_GEAR_LIST lbSetValue [_ind,-1];
 	if(((_x select 0) != _equipped) AND (_itemConfig != "") AND (_condition)) then
 	{
 	    _itemName = getText(configFile >> _itemConfig >> (_x select 0) >> "displayName");
-		_itemPrice = if(_discount AND (_x select 1) > 0) then {round(_price - (_price * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)))} else {(_x select 1)};
+		_itemPrice = if(_discount AND (_x select 1) > 0) then {round((_x select 1) - ((_x select 1) * ((getNumber(getMissionConfig "CfgClient" >> "HG_MasterCfg" >> (rank player) >> "gShopDiscount")) / 100)))} else {(_x select 1)};
 		_ind = HG_GEAR_LIST lbAdd _itemName;
         HG_GEAR_LIST lbSetData[_ind,(_x select 0)];
         HG_GEAR_LIST lbSetValue[_ind,_itemPrice];
-	    HG_GEAR_LIST lbSetTooltip[_ind,format[(localize "STR_HG_DLG_PRICE_TAG"),if((_x select 1) <= 0) then {(localize "STR_HG_DLG_FREE")} else {([(_x select 1),true] call HG_fnc_currencyToText)}]];
+	    HG_GEAR_LIST lbSetTooltip[_ind,format[(localize "STR_HG_DLG_PRICE_TAG"),if((_x select 1) <= 0) then {(localize "STR_HG_DLG_FREE")} else {([_itemPrice,true] call HG_fnc_currencyToText)}]];
 	};
 } forEach _shopItems;
 

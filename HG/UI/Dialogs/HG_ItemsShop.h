@@ -61,51 +61,6 @@ class HG_ItemsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class AddBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\add.paa";
-			x = 0.443281 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class SubBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\sub.paa";
-			x = 0.365937 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class BuyBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\buy.paa";
-			x = 0.572187 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class MyCashBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\mycash.paa";
-			x = 0.608281 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.644375 * safeZoneW + safeZoneX;
-			y = 0.28 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class ItemText: HG_RscStructuredText
 		{
 			idc = HG_ITEMS_ITEM_TEXT_IDC;
@@ -196,9 +151,10 @@ class HG_ItemsShop
 			h = 0.022 * safeZoneH;
 		};
 		
-		class AddButton: HG_RscButtonInvisible
+		class AddButton: HG_RscActivePicture
 		{
 			idc = HG_ITEMS_ADD_IDC;
+			text = "HG\UI\Icons\add.paa";
 			tooltip = "+1";
 			onButtonClick = "[0] call HG_fnc_itemBtns";
 			x = 0.443281 * safeZoneW + safeZoneX;
@@ -207,9 +163,10 @@ class HG_ItemsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class SubButton: HG_RscButtonInvisible
+		class SubButton: HG_RscActivePicture
 		{
 			idc = HG_ITEMS_SUB_IDC;
+			text = "HG\UI\Icons\sub.paa";
 			tooltip = "-1";
 			onButtonClick = "[1] call HG_fnc_itemBtns";
 			x = 0.365937 * safeZoneW + safeZoneX;
@@ -218,9 +175,10 @@ class HG_ItemsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class BuyButton: HG_RscButtonInvisible
+		class BuyButton: HG_RscActivePicture
 		{
 			idc = HG_ITEMS_BUY_IDC;
+			text = "HG\UI\Icons\buy.paa";
 			tooltip = "$STR_HG_DLG_IS_BUY_TOOLTIP";
 			onButtonClick = "[2] call HG_fnc_itemBtns";
 			x = 0.572187 * safeZoneW + safeZoneX;
@@ -229,9 +187,10 @@ class HG_ItemsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class MyCashButton: HG_RscButtonInvisible
+		class MyCashButton: HG_RscActivePicture
 		{
 			idc = HG_ITEMS_MC_IDC;
+			text = "HG\UI\Icons\mycash.paa";
 			onButtonClick = "hint format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 0.608281 * safeZoneW + safeZoneX;
@@ -240,8 +199,9 @@ class HG_ItemsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.644375 * safeZoneW + safeZoneX;

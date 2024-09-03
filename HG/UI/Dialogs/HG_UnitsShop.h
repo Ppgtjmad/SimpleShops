@@ -72,24 +72,6 @@ class HG_UnitsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class BuyBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\buy.paa";
-			x = 0.628906 * safeZoneW + safeZoneX;
-			y = 0.225 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.675312 * safeZoneW + safeZoneX;
-			y = 0.225 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class ItemFrame: HG_RscFrame
 		{
 		    x = 0.525781 * safezoneW + safezoneX;
@@ -158,9 +140,10 @@ class HG_UnitsShop
 			h = 0.022 * safeZoneH;
 		};
 		
-		class BuyButton: HG_RscButtonInvisible
+		class BuyButton: HG_RscActivePicture
 		{
 			idc = HG_UNITS_BUY_BTN_IDC;
+			text = "HG\UI\Icons\buy.paa";
 			tooltip = "$STR_HG_DLG_US_BUY_BTN";
 			onButtonClick = "[0] call HG_fnc_unitsBtns";
 			x = 0.628906 * safeZoneW + safeZoneX;
@@ -169,8 +152,9 @@ class HG_UnitsShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.675312 * safeZoneW + safeZoneX;

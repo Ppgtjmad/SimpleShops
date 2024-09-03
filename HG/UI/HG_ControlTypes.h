@@ -193,18 +193,6 @@ class HG_RscXListBox
 	tooltipColorShade[] = {0,0,0,0.65};
 };
 
-class HG_RscButtonInvisible: HG_RscButton
-{
-	colorBackground[] = {0,0,0,0};
-	colorBackgroundActive[] = {0,0,0,0};
-	colorBackgroundDisabled[] = {0,0,0,0};
-	colorFocused[] = {0,0,0,0};
-	colorDisabled[] = {0,0,0,0};
-	colorShadow[] = {0,0,0,0};
-    colorBorder[] = {0,0,0,0};
-	colorText[] = {0,0,0,0};
-};
-
 class HG_RscCombo
 {
 	idc = -1;
@@ -368,4 +356,25 @@ class HG_RscProgress
 	texture = "#(argb,8,8,3)color(1,1,1,1)";
 	colorFrame[] = {0,0,0,0};
 	colorBar[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"};
+};
+
+class HG_RscActivePicture
+{
+    idc = -1;
+	style = 48;
+	type = 11;
+    shadow = 2;
+    font = "RobotoCondensed";
+    sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	url = "";
+	color[] = {1,1,1,0.5};
+	colorActive[] = {1,1,1,1};
+    colorDisabled[] = {1,1,1,0.25};
+	tooltipColorText[] = {1,1,1,1};
+	tooltipColorBox[] = {1,1,1,1};
+	tooltipColorShade[] = {0,0,0,0.65};
+	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1};
+	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
+	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
+	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
 };

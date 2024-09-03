@@ -107,42 +107,6 @@ class HG_VehiclesShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ToGarageBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\garage.paa";
-			x = 0.561875 * safeZoneW + safeZoneX;
-			y = 0.00500001 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class BuyBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\buy.paa";
-			x = 0.597969 * safeZoneW + safeZoneX;
-			y = 0.00500001 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class MyCashBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\mycash.paa";
-			x = 0.634062 * safeZoneW + safeZoneX;
-			y = 0.00500001 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.670156 * safeZoneW + safeZoneX;
-			y = 0.00500001 * safeZoneH + safeZoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class VehicleText: HG_RscStructuredText
 		{
 			idc = HG_VEHICLES_TEXT_IDC;
@@ -197,9 +161,10 @@ class HG_VehiclesShop
 			h = 0.022 * safeZoneH;
 		};
 		
-		class ToGarageButton: HG_RscButtonInvisible
+		class ToGarageButton: HG_RscActivePicture
 		{
 			idc = HG_VEHICLES_TG_IDC;
+			text = "HG\UI\Icons\garage.paa";
 			tooltip = "$STR_HG_DLG_VS_TG_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_buyToGarage";
 			x = 0.561875 * safeZoneW + safeZoneX;
@@ -208,9 +173,10 @@ class HG_VehiclesShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class BuyButton: HG_RscButtonInvisible
+		class BuyButton: HG_RscActivePicture
 		{
 			idc = HG_VEHICLES_BUY_IDC;
+			text = "HG\UI\Icons\buy.paa";
 			tooltip = "$STR_HG_DLG_VS_BUY_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_buyVehicle";
 			x = 0.597969 * safeZoneW + safeZoneX;
@@ -219,9 +185,10 @@ class HG_VehiclesShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class MyCashButton: HG_RscButtonInvisible
+		class MyCashButton: HG_RscActivePicture
 		{
 			idc = HG_VEHICLES_MC_IDC;
+			text = "HG\UI\Icons\mycash.paa";
 			onButtonClick = "titleText [format[(localize 'STR_HG_DLG_MC'),([(player getVariable 'HG_Cash'),true] call HG_fnc_currencyToText)],'PLAIN DOWN',0.5]";
 			tooltip = "$STR_HG_DLG_MC_TOOLTIP";
 			x = 0.634062 * safeZoneW + safeZoneX;
@@ -230,8 +197,9 @@ class HG_VehiclesShop
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.670156 * safeZoneW + safeZoneX;

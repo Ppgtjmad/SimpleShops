@@ -61,15 +61,6 @@ class HG_Dealer
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\close.paa";
-			x = 0.675312 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
 		class Price: HG_RscText
 		{
 			idc = HG_DEALER_PRICE_IDC;
@@ -78,24 +69,6 @@ class HG_Dealer
 			x = 0.448438 * safezoneW + safezoneX;
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.0825 * safezoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class RefreshBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\refresh.paa";
-			x = 0.587656 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
-			h = 0.044 * safeZoneH;
-		};
-		
-		class SellBtnPicture: HG_RscPicture
-		{
-			text = "HG\UI\Icons\sell.paa";
-			x = 0.628906 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.0309375 * safeZoneW;
 			h = 0.044 * safeZoneH;
 		};
 		
@@ -161,9 +134,10 @@ class HG_Dealer
 			h = 0.451388 * safezoneH;
 		};
 		
-		class RefreshButton: HG_RscButtonInvisible
+		class RefreshButton: HG_RscActivePicture
 		{
 			idc = HG_DEALER_REFRESH_BTN_IDC;
+			text = "HG\UI\Icons\refresh.paa";
 			tooltip = "$STR_HG_DLG_DE_REFRESH_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_refreshDealer";
 			x = 0.587656 * safezoneW + safezoneX;
@@ -172,9 +146,10 @@ class HG_Dealer
 			h = 0.044 * safeZoneH;
 		};
 		
-		class SellButton: HG_RscButtonInvisible
+		class SellButton: HG_RscActivePicture
 		{
 			idc = HG_DEALER_SELL_BTN_IDC;
+			text = "HG\UI\Icons\sell.paa";
 			tooltip = "$STR_HG_DLG_DE_SELL_TOOLTIP";
 			onButtonClick = "[] call HG_fnc_dealerSell";
 			x = 0.628906 * safezoneW + safezoneX;
@@ -183,8 +158,9 @@ class HG_Dealer
 			h = 0.044 * safeZoneH;
 		};
 		
-		class ExitButton: HG_RscButtonInvisible
+		class ExitButton: HG_RscActivePicture
 		{
+			text = "HG\UI\Icons\close.paa";
 			tooltip = "$STR_HG_DLG_CLOSE_TOOLTIP";
 			onButtonClick = "closeDialog 0";
 			x = 0.675312 * safezoneW + safezoneX;

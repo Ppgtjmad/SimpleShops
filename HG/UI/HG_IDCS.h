@@ -91,14 +91,12 @@
 #define HG_WL_BACK_IDC                9026
 #define HG_WL_BACK_FRAME_IDC          9027
 #define HG_WL_LINE_IDC                9028
-#define HG_WL_UID_ADD_PIC_IDC         9029
-#define HG_WL_UID_REMOVE_PIC_IDC      9030
-#define HG_WL_INFO_TEXT_IDC           9031
-#define HG_WL_SIDE_COMBO_IDC          9032
-#define HG_WL_UID_LIST_IDC            9033
-#define HG_WL_UID_EDIT_IDC            9034
-#define HG_WL_UID_ADD_IDC             9035
-#define HG_WL_UID_REMOVE_IDC          9036
+#define HG_WL_INFO_TEXT_IDC           9029
+#define HG_WL_SIDE_COMBO_IDC          9030
+#define HG_WL_UID_LIST_IDC            9031
+#define HG_WL_UID_EDIT_IDC            9032
+#define HG_WL_UID_ADD_IDC             9033
+#define HG_WL_UID_REMOVE_IDC          9034
 
 #define HG_ATM_IDD                    9100
 #define HG_ATM_ACC_TEXT_IDC           9101

@@ -35,8 +35,6 @@
 #define HG_WL_BACK                (HG_ADM_DISP displayCtrl HG_WL_BACK_IDC)
 #define HG_WL_BACK_FRAME          (HG_ADM_DISP displayCtrl HG_WL_BACK_FRAME_IDC)
 #define HG_WL_LINE                (HG_ADM_DISP displayCtrl HG_WL_LINE_IDC)
-#define HG_WL_UID_ADD_PIC         (HG_ADM_DISP displayCtrl HG_WL_UID_ADD_PIC_IDC)
-#define HG_WL_UID_REMOVE_PIC      (HG_ADM_DISP displayCtrl HG_WL_UID_REMOVE_PIC_IDC)
 #define HG_WL_INFO_TEXT           (HG_ADM_DISP displayCtrl HG_WL_INFO_TEXT_IDC)
 #define HG_WL_SIDE_COMBO          (HG_ADM_DISP displayCtrl HG_WL_SIDE_COMBO_IDC)
 #define HG_WL_UID_LIST            (HG_ADM_DISP displayCtrl HG_WL_UID_LIST_IDC)
