@@ -4,7 +4,7 @@ __EXEC(HG_Profile = allVariables profileNamespace)
     Header
 */
 author = "HoverGuy";
-onLoadName = "Simple Shops [v1.0]";
+onLoadName = "Simple Shops [v1.1]";
 
 /*
     Classes
