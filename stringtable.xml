@@ -38,7 +38,7 @@
 			<French>Vous avez acheté un(e) %1 pour %2, il a été stocké dans votre garage</French>
 			<Chinese>你買了一部%1,花費%2,它被存到了你的車庫</Chinese>
 			<Chinesesimp>你买了一部%1,花费%2, 它被存到了你的车库</Chinesesimp>
-			<Russian>Вы купили %1 за %2,помещён в гараж</Russian>
+			<Russian>Вы купили %1 за %2, транспорт помещён в гараж</Russian>
 		</Key>
 		<Key ID="STR_HG_NOT_ENOUGH_MONEY">
 		    <Original>You don't have enough money, requires %1</Original>
@@ -54,7 +54,7 @@
 			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un STRING</French>
 			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是String(字符)</Chinese>
 			<Chinesesimp>::错误:: 对话读取 - 传递的参数不是String(字符)</Chinesesimp>
-			<Russian>:: ОШИБКА:: Загрузка диалога - Переданный тип параметра не является STRING</Russian>
+			<Russian>:: ОШИБКА:: Загрузка диалога - Переданный тип параметра не является СТРОКОЙ</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_2">
 		    <Original>::ERROR:: Dialog Loading - Passed param is an empty STRING</Original>
@@ -62,7 +62,7 @@
 			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un STRING vide</French>
 			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數是空的String (字符)</Chinese>
 			<Chinesesimp>::错误:: 对话读取 - 传递的参数是空的String(字符)</Chinesesimp>
-			<Russian>ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустая строка.</Russian>
+			<Russian>ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустая СТРОКА</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_3">
 		    <Original>::ERROR:: Dialog Loading - Passed param type is not an ARRAY</Original>
@@ -70,7 +70,7 @@
 			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé n'est pas un ARRAY</French>			
 			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數不是一個Array (序列)</Chinese>
 			<Chinesesimp>::错误:: 对话读取 - 传递的参数不是一个Array (序列)</Chinesesimp>
-			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный тип параметра не является массивом</Russian>
+			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный тип параметра не является МАССИВОМ</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_ON_LOAD_4">
 		    <Original>::ERROR:: Dialog Loading - Passed param is an empty ARRAY</Original>
@@ -78,7 +78,7 @@
 			<French>::ERREUR:: Chargement Dialogue - Le paramètre passé est un ARRAY vide</French>
 			<Chinese>::錯誤:: 對話讀取 - 傳遞的參數是一個空的Array (序列)</Chinese>
 			<Chinesesimp>::错误:: 对话读取 - 传递的参数是一个空的Array (序列)</Chinesesimp>
-			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустой массив</Russian>
+			<Russian>:: ОШИБКА :: Загрузка диалогового окна - Переданный параметр - пустой МАССИВ</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_OBJECT">
 		    <Original>::ERROR:: AI Setup (%1) - Passed param is not an OBJECT</Original>
@@ -86,7 +86,7 @@
 			<French>::ERREUR:: Configuration IA (%1) - Le paramètre passé n'est pas un OBJET</French>
 			<Chinese>::錯誤:: AI設定 -  傳遞的參數不是一個Object (物件)</Chinese>
 			<Chinesesimp>::错误:: AI设定 -  传递的参数不是一个Object (物件)</Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный параметр не является ОБЪЕКТОМ</Russian>
+			<Russian>:: ОШИБКА :: AI Setup (%1) - Переданный параметр не является ОБЪЕКТОМ</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_NOT_MAN">
 		    <Original>::ERROR:: AI Setup (%1) - Passed object is not kind of "Man"</Original>
@@ -94,7 +94,7 @@
 			<French>::ERREUR:: Configuration IA (%1) - L'object passé n'est pas de type "Man"</French>
 			<Chinese>::錯誤:: AI設定 -  參數的物件不是一個"人類" </Chinese>
 			<Chinesesimp>::错误:: AI设定 -  参数的物件不是一个"人类" </Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Пройденный объект не является "Man"</Russian>
+			<Russian>:: ОШИБКА :: Инициализация ИИ (%1) - Переданный объект не является типом "Man"</Russian>
 		</Key>
 		<Key ID="STR_HG_ERR_PLAYER">
 		    <Original>::ERROR:: AI Setup (%1) - Passed object is a player</Original>
@@ -102,7 +102,7 @@
 			<French>::ERREUR:: Configuration IA (%1) - L'objet passé est un joueur</French>
 			<Chinese>::錯誤:: AI設定 -  參數的物件是一個玩家</Chinese>
 			<Chinesesimp>::错误:: AI设定 -  参数的物件是一个玩家</Chinesesimp>
-			<Russian>:: ОШИБКА :: AI Setup (% 1) - Переданный объект - игрок</Russian>
+			<Russian>:: ОШИБКА :: Инициализация ИИ (%1) - Переданный объект - игрок</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_EMPTY">
 		    <Original>Looks like this shop is empty...</Original>
@@ -110,7 +110,7 @@
 			<French>Il semblerait que ce magasin soit vide...</French>
 			<Chinese>看來商店無物可售...</Chinese>
 			<Chinesesimp>看来商店无物可售...</Chinesesimp>
-			<Russian>Похоже,в этом магазине пусто...</Russian>
+			<Russian>Похоже в этом магазине пусто...</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_EMPTY_BIS">
 		    <Original>This trader/dealer is not interested in anything...</Original>
@@ -118,7 +118,7 @@
 			<French>Ce commerçant n'est intéressé en rien...</French>
 			<Chinese>這個商人對什麽都不感興趣...</Chinese>
 			<Chinesesimp>这个商人对什么都不感兴趣...</Chinesesimp>
-			<Russian>Этого трейдера/дилера ничего не интересует ...</Russian>
+			<Russian>Этого трейдера/дилера ничего не интересует...</Russian>
 		</Key>
 		<Key ID="STR_HG_ACCESS_DENIED">
 		    <Original>Access denied</Original>
@@ -158,7 +158,7 @@
 			<French>Vous ne pouvez pas donner plus que ce que vous avez</French>
 			<Chinese>你不能給予別人超過你所擁有的</Chinese>
 			<Chinesesimp>你不能给予别人超过你所拥有的</Chinesesimp>
-			<Russian>Вы не можете дать больше,чем имеете</Russian>
+			<Russian>Вы не можете дать больше, чем имеете</Russian>
 		</Key>
 		<Key ID="STR_HG_SENT_MONEY">
 		    <Original>You have sent %1 to %2</Original>
@@ -254,7 +254,7 @@
 			<French>Vous ne pouvez pas ouvrir l'inventaire quand c'est verrouillé</French>
 			<Chinese>它上鎖了，你打不開物品欄</Chinese>
 			<Chinesesimp>它上锁了，你打不开物品栏</Chinesesimp>
-			<Russian>Вы не можете открыть инвентарь,когда он заблокирован</Russian>
+			<Russian>Вы не можете открыть инвентарь когда он заблокирован</Russian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_LOCKED">
 		    <Original>Vehicle is now LOCKED</Original>
@@ -278,7 +278,7 @@
 			<French>La caisse a été vidé</French>
 			<Chinese>箱子被清空了</Chinese>
 			<Chinesesimp>箱子被清空了</Chinesesimp>
-			<Russian>Опустошить ящик</Russian>
+			<Russian>Ящик ОЧИЩЕН</Russian>
 		</Key>
 		<Key ID="STR_HG_DELETE_CRATE">
 		    <Original>Delete Crate</Original>
@@ -294,7 +294,7 @@
 			<French>Vider Caisse</French>
 			<Chinese>清空箱子</Chinese>
 			<Chinesesimp>清空箱子</Chinesesimp>
-			<Russian>Ящик пустой</Russian>
+			<Russian>Очистить ящик</Russian>
 		</Key>
 		<Key ID="STR_HG_GARAGE">
 		    <Original>Garage</Original>
@@ -326,7 +326,7 @@
 			<French>Vider Véhicule</French>
 			<Chinese>清空車輛</Chinese>
 			<Chinesesimp>清空车辆</Chinesesimp>
-			<Russian>Опустошить инвентарь техники</Russian>
+			<Russian>Очистить инвентарь техники</Russian>
 		</Key>
 		<Key ID="STR_HG_VEHICLE_EMPTIED">
 		    <Original>Vehicle has been EMPTIED</Original>
@@ -334,7 +334,7 @@
 			<French>Le véhicule a été vidé</French>
 			<Chinese>車輛已經被清空</Chinese>
 			<Chinesesimp>车辆已经被清空</Chinesesimp>
-			<Russian>Инвентарь техники теперь пустой</Russian>
+			<Russian>Инвентарь техники ОЧИЩЕН</Russian>
 		</Key>
 		<Key ID="STR_HG_SPAWN_POINT_BUSY">
 		    <Original>This spawn point is busy</Original>
@@ -398,7 +398,7 @@
 			<French>Vous êtes maintenant le propriétaire d'un nouveau véhicule (%1)</French>
 			<Chinese>你現在是一部新載具的主人(%1)</Chinese>
 			<Chinesesimp>你现在是一部新载具的主人(%1)</Chinesesimp>
-			<Russian>Техника ваша (%1)</Russian>
+			<Russian>Теперь вы владелец нового транспортного средства (%1)</Russian>
 		</Key>
 		<Key ID="STR_HG_INVENTORY_FULL">
 		    <Original>It seems like your inventory is either full or it can't hold that many items</Original>
@@ -406,7 +406,7 @@
 			<French>Il semblerait que votre inventaire soit plein ou qu'il ne puisse pas contenir autant d'items</French>
 			<Chinese>你的物品欄可能滿了,或者裝不下這麼多物品</Chinese>
 			<Chinesesimp>你的物品栏可能满了,或者装不下这么多物品</Chinesesimp>
-			<Russian>Похоже,ваш инвентарь либо полон,либо не может вместить столько предметов</Russian>
+			<Russian>Похоже ваш инвентарь либо полон, либо не может вместить столько предметов</Russian>
 		</Key>
 		<Key ID="STR_HG_KILLED_BY_ADMIN">
 		    <Original>You've been killed by an ADMINISTRATOR</Original>
@@ -424,7 +424,7 @@
 			<French>[HG|extDB3] La méthode de sauvegarde est sur "extDB" mais il semblerait qu'extDB3 ne soit pas initialisé... le profil serveur va être utilisé à la place</French>
 			<Chinese>[HG|extDB3] 保存方法被設置為"extDB"，但似乎未加載extDB3...服務器配置文件被用作備用</Chinese>
 			<Chinesesimp>[HG|extDB3] 保存方法被设置为"extDB"，但似乎未加载extDB3...服务器配置文件被用作备用</Chinesesimp>
-			<Russian>Метод сохранения установлен на "extDB",но похоже extDB3 не загружен ... профиль сервера используется как резервный</Russian>
+			<Russian>[HG|extDB3] Метод сохранения установлен на "extDB", но похоже extDB3 не загружен... профиль сервера используется как резервный способ сохранения</Russian>
 		</Key>
 	</Package>
 	<Package name="Debriefing">
@@ -440,7 +440,7 @@
 		    <French>Vous devez être whitelisé pour choisir ce slot, contactez un admin pour plus d'infos</French>
 			<Chinese>你必須被列入白名單才能使用此角色，請聯繫管理員了解更多信息。</Chinese>
 			<Chinesesimp>你必须被列入白名单才能使用此角色，请联系管理员了解更多信息。</Chinesesimp>
-			<Russian>Чтобы использовать этот слот, вы должны быть внесены в белый список. Для получения дополнительной информации обратитесь к администратору.</Russian>
+			<Russian>Чтобы использовать этот слот вы должны быть внесены в белый список. Для получения дополнительной информации обратитесь к администратору.</Russian>
 		</Key>
 	</Package>
 	<Package name="Dialogs">
@@ -451,7 +451,7 @@
 				<French>[HG] Simple Shops</French>
 			    <Chinese>[HG]便捷商店</Chinese>
 			    <Chinesesimp>[HG]便捷商店</Chinesesimp>
-				<Russian>[HG] Простые магазины</Russian>
+				<Russian>[HG] Простые Магазины</Russian>
 		    </Key>
 		    <Key ID="STR_HG_DLG_CLOSE_TOOLTIP">
 		        <Original>Close current dialog</Original>
@@ -499,7 +499,7 @@
 				<French>Interrogation du serveur...</French>
 			    <Chinese>查詢服務器中...</Chinese>
 			    <Chinesesimp>查询服务器中...</Chinesesimp>
-				<Russian>Запрос сервера ...</Russian>
+				<Russian>Выполняется запрос к серверу...</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_PLAYER_COUNT">
 		        <Original>Online - %1</Original>
@@ -541,7 +541,7 @@
 				<French>Mettre grade</French>
 			    <Chinese>設置軍銜</Chinese>
 			    <Chinesesimp>设置军衔</Chinesesimp>
-				<Russian>Установить ранг</Russian>
+				<Russian>Установить звание</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP_TOOLTIP">
 			    <Original>Set XP</Original>
@@ -573,7 +573,7 @@
 				<French>Donner banque (valeur max 999999)</French>
 			    <Chinese>設置銀行餘額(最大值 999999)</Chinese>
 			    <Chinesesimp>设置银行余额(最大值 999999)</Chinesesimp>
-				<Russian>Установить банк (максимальное значение 999999)</Russian>
+				<Russian>Установить деньги на банковском счёте (максимальное значение 999999)</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_SUB_TOOLTIP">
 			    <Original>Tick this box to REMOVE</Original>
@@ -581,7 +581,7 @@
 				<French>Cocher cette case pour SUPPRIMER</French>
 			    <Chinese>勾選這個框來移除</Chinese>
 			    <Chinesesimp>勾选这个框来移除</Chinesesimp>
-				<Russian>Установите этот флажок, чтобы УДАЛИТЬ</Russian>
+				<Russian>Отметьте этот флажок, чтобы УДАЛИТЬ</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_ADD_TOOLTIP">
 			    <Original>Tick this box to ADD</Original>
@@ -635,7 +635,7 @@
 				<French>Grade - %3</French>
 			    <Chinese>軍銜 - %3</Chinese>
 			    <Chinesesimp>军衔 - %3</Chinesesimp>
-				<Russian>Ранг - %3</Russian>
+				<Russian>Звание - %3</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_XP">
 			    <Original>XP - %4</Original>
@@ -659,7 +659,7 @@
 				<French>Banque - %6</French>
 			    <Chinese>銀行 - %6</Chinese>
 			    <Chinesesimp>银行 - %6</Chinesesimp>
-				<Russian>Банк - %6</Russian>
+				<Russian>Банковский счёт - %6</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_AM_KILLS">
 			    <Original>Kills - %7</Original>
@@ -689,7 +689,7 @@
 				<French>Supprimer l'UID sélectionnée du camp sélectionné</French>
 			    <Chinese>把選中的UID移除于選中的陣營</Chinese>
 			    <Chinesesimp>把选中的UID从选中的阵营中移除</Chinesesimp>
-				<Russian>Удалить выбранный UID с выбранной стороны</Russian>
+				<Russian>Удалить выбранный UID из выбранной стороны</Russian>
 		    </Key>
 			<Key ID="STR_HG_DLG_WL_UID_EMPTY">
 			    <Original>UID field is empty</Original>
@@ -710,7 +710,7 @@
 				<French>L'UID n'est pas valide, il doit y avoir 17 caractères (%1)</French>
 			    <Chinese>UID字段長度無效，應該是17個數字(%1)</Chinese>
 			    <Chinesesimp>UID字段长度无效，应该是17个数字(%1)</Chinesesimp>
-				<Russian>Недопустимая длина поля UID, должна составлять 17 символов (%1)</Russian>
+				<Russian>Недопустимая длина поля UID. Допустимое количество - 17 символов (%1)</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_WL_UID_ALREADY">
 			    <Original>This UID is already whitelisted on selected side</Original>
@@ -792,7 +792,7 @@
 				<French>Déposer</French>
 			    <Chinese>存款</Chinese>
 			    <Chinesesimp>存款</Chinesesimp>
-				<Russian>Депозит</Russian>
+				<Russian>Внести</Russian>
 			</Key>
 		    <Key ID="STR_HG_ATM_WITHDRAW_TOOLTIP">
 			    <Original>Withdraw</Original>
@@ -800,7 +800,7 @@
 				<French>Retirer</French>
 			    <Chinese>取款</Chinese>
 			    <Chinesesimp>取款</Chinesesimp>
-				<Russian>Изымать</Russian>
+				<Russian>Снять</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_TRANSFER_TOOLTIP">
 			    <Original>Transfer</Original>
@@ -808,7 +808,7 @@
 				<French>Transférer</French>
 			    <Chinese>轉賬</Chinese>
 			    <Chinesesimp>转账</Chinesesimp>
-				<Russian>Перевод</Russian>
+				<Russian>Перевести</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_REFRESH_TOOLTIP">
 			    <Original>Refresh</Original>
@@ -854,19 +854,19 @@
 				<French>Vous ne pouvez pas déposer plus que ce que vous possédez</French>
 			    <Chinese>你不能儲存多於當前現金的數額</Chinese>
 			    <Chinesesimp>你不能储存多于当前现金的数额</Chinesesimp>
-				<Russian>Вы не можете внести больше,чем имеете</Russian>
+				<Russian>Вы не можете внести больше чем имеете</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_WITHDRAW">
 			    <Original>You cannot withdraw more than what you have</Original>
 				<French>Vous ne pouvez pas retirer plus que ce que vous possédez</French>
 			    <Chinese>你不能提取多於賬戶餘額的現金</Chinese>
 			    <Chinesesimp>你不能提取多于账户余额的现金</Chinesesimp>
-				<Russian>Вы не можете снять больше,чем имеете</Russian>
+				<Russian>Вы не можете снять больше чем имеете</Russian>
 			</Key>
 			<Key ID="STR_HG_ATM_CANNOT_TRANSFER">
 			    <Original>You cannot transfer more than what's in the bank</Original>
 				<French>Vous ne pouvez pas faire un virement supérieur à votre compte bancaire</French>
-				<Russian>Вы не можете перевести больше,чем есть в банке</Russian>
+				<Russian>Вы не можете перевести больше чем есть в банке</Russian>
 				<Chinese>你轉賬的金額不能超過賬戶餘額</Chinese>
 				<Chinesesimp>你转账的金额不能超过账户余额</Chinesesimp>
 			</Key>
@@ -918,7 +918,7 @@
 				<French>Supprimer Actuel</French>
 			    <Chinese>移除當前</Chinese>
 			    <Chinesesimp>移除当前</Chinesesimp>
-				<Russian>Удалить текущий</Russian>
+				<Russian>Снять текущее</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_GS_RESET_TOOLTIP">
 		        <Original>Reset gear</Original>
@@ -956,7 +956,7 @@
 		        <Original>[CURRENT EQUIPMENT]</Original>
 			    <Spanish>[EQUIPO ACTUAL]</Spanish>
 				<French>[ÉQUIPEMENT ACTUEL]</French>
-				<Russian>[ТЕКУЩЕЕ ОБОРУДОВАНИЕ]</Russian>
+				<Russian>[ТЕКУЩЕЕ СНАРЯЖЕНИЕ]</Russian>
 				<Chinese>[現有設備]</Chinese>
 				<Chinesesimp>[现有设备]</Chinesesimp>
 			</Key>
@@ -992,7 +992,7 @@
 				<French>Supprimer le véhicule sélectionné *IL SERA PERDU POUR TOUJOURS*</French>
 			    <Chinese>刪除選中的載具（將永遠丟失）</Chinese>
 			    <Chinesesimp>删除选中的载具（将永远丢失）</Chinesesimp>
-				<Russian>Удалить выбранную технику *БУДЕТ УТЕРЯН НАВСЕГДА*</Russian>
+				<Russian>Удалить выбранную технику *БУДЕТ УТЕРЯНА НАВСЕГДА*</Russian>
 		    </Key>
 		    <Key ID="STR_HG_GRG_VEHICLE_SPAWNING">
 		        <Original>Requested vehicle is being spawned...</Original>
@@ -1032,7 +1032,7 @@
 				<French>Le véhicule a été stocké</French>
 			    <Chinese>載具被儲存</Chinese>
 			    <Chinesesimp>载具被储存</Chinesesimp>
-				<Russian>Техника в гараже</Russian>
+				<Russian>Техника помещена в гараж</Russian>
 		    </Key>
 		</Container>
 		<Container name="VehiclesShop">
@@ -1191,7 +1191,7 @@
 			    <French>Pas intéressé</French>
 			    <Chinese>不感興趣</Chinese>
 			    <Chinesesimp>不感兴趣</Chinesesimp>
-				<Russian>Не интересно</Russian>
+				<Russian>Не заинтересован</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_TR_NOT_INTERESTED_BIS">
 			    <Original>This trader is not interested...</Original>
@@ -1199,7 +1199,7 @@
 			    <French>Le commerçant n'est pas intéressé...</French>
 			    <Chinese>這個商人不感興趣...</Chinese>
 			    <Chinesesimp>这个商人不感兴趣...</Chinesesimp>
-				<Russian>Этому трейдеру не интересно</Russian>
+				<Russian>Этому трейдеру не заинтересован</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_TR_SOLD">
 			    <Original>You have sold %1x %2 for %3</Original>
@@ -1215,7 +1215,7 @@
 			    <Original>Your vehicles</Original>
 				<Spanish>Tus vehiculos</Spanish>
 				<French>Vos véhicules</French>
-				<Russian>Ваши автомобили</Russian>
+				<Russian>Ваш транспорт</Russian>
 				<Chinese>您的車輛</Chinese>
 				<Chinesesimp>您的车辆</Chinesesimp>
 			</Key>
@@ -1257,7 +1257,7 @@
 			    <French>Vous avez vendu votre %1 pour %2</French>
 			    <Chinese>你賣出了你的%1, 獲得%2</Chinese>
 			    <Chinesesimp>你卖出了你的%1, 获得%2</Chinesesimp>
-				<Russian>Вы продали своё %1 за %2</Russian>
+				<Russian>Вы продали свой %1 за %2</Russian>
 			</Key>
 		</Container>
 		<Container name="GiveKey">
@@ -1367,7 +1367,7 @@
 		    <French>Arme Primaire</French>
 			<Chinese>主武器</Chinese>
 			<Chinesesimp>主武器</Chinesesimp>
-			<Russian>Первичное оружие</Russian>
+			<Russian>Основное оружие</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_SEC_WEAPON">
 			<Original>Sec. Weapon</Original>
@@ -1423,7 +1423,7 @@
 			<French>Sacs à dos</French>
 			<Chinese>背包</Chinese>
 			<Chinesesimp>背包</Chinesesimp>
-			<Russian>Рюкзаки/Сумки/Обвязки</Russian>
+			<Russian>Рюкзаки</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_HEADGEAR">
 		    <Original>Headgear</Original>
@@ -1462,7 +1462,7 @@
 			<Spanish>Lanzador de Misiles</Spanish>
 			<Chinese>導彈發射器</Chinese>
 			<Chinesesimp>导弹发射器</Chinesesimp>
-			<Russian>Ракетная установка(ЗУ)</Russian>
+			<Russian>Ракетная установка (ЗУ)</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_ROCKET_LAUNCHER">
 		    <Original>Rocket Launcher</Original>
@@ -1470,7 +1470,7 @@
 			<French>Lance-missiles</French>
 			<Chinese>火箭發射器</Chinese>
 			<Chinesesimp>火箭发射器</Chinesesimp>
-			<Russian>Ракетная установка(ПТ)</Russian>
+			<Russian>Ракетная установка (ПТ)</Russian>
 		</Key>
 		<Key ID="STR_HG_SHOP_HANDGUN">
 		    <Original>Handgun</Original>
