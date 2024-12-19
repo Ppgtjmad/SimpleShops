@@ -1199,7 +1199,7 @@
 			    <French>Le commerçant n'est pas intéressé...</French>
 			    <Chinese>這個商人不感興趣...</Chinese>
 			    <Chinesesimp>这个商人不感兴趣...</Chinesesimp>
-				<Russian>Этому трейдеру не заинтересован</Russian>
+				<Russian>Этот трейдер не заинтересован</Russian>
 			</Key>
 			<Key ID="STR_HG_DLG_TR_SOLD">
 			    <Original>You have sold %1x %2 for %3</Original>
