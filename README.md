@@ -24,7 +24,7 @@
     Chinese translation<br/>
     <a href="http://steamcommunity.com/profiles/76561198112435564/" target="_blank">Atlas1205</a> | <a href="https://steamcommunity.com/id/1625592417/" target="_blank">strayer-迷幻</a><br/>
     Russian translation<br/>
-    <a href="https://forums.bohemia.net/profile/1166121-vitalyturbovaz/" target="_blank">VitalyTurboVaz</a><br/>
+    <a href="https://forums.bohemia.net/profile/1166121-vitalyturbovaz/" target="_blank">VitalyTurboVaz</a> | <a href="https://github.com/HomelessMage" target="_blank">HomelessMage</a><br/>
     Logo<br/>
     <a href="http://steamcommunity.com/profiles/76561198030800949/" target="_blank">N3V3RD134l0N3</a>
   </b>
